@@ -9,6 +9,9 @@
     }
 }
 @media print, screen and (max-width: 480px) {
+    #header {
+        position: fixed;
+    }
     #banner {
         display: block;
     }
