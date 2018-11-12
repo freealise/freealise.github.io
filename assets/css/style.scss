@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@media print, screen and (max-width: 720px)
+header p {
+    display: block;
+}
+@media print, screen and (max-width: 480px)
+#banner {
+    display: block;
+}
+#banner #logo {
+    top: auto;
+}
