@@ -19,26 +19,16 @@
     color: #ffffff;
 }
 
-@media print, screen and (max-width: 720px) {
-    header p {
-        display: block;
-    }
-    #banner {
-        top: 165px;
-    }
-    section {
-        margin-top: 215px;
-    }
+header {
+    position: fixed;
 }
-@media print, screen and (max-width: 480px) {
-    header {
-        position: fixed;
-    }
-    #banner {
-        display: block;
-        top: 130px;
-    }
-    section {
-        margin-top: 180px;
-    }
+header p {
+    display: block;
+}
+#banner {
+    display: block;
+    top: 165px;
+}
+section {
+    margin-top: 235px;
 }
