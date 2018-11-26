@@ -25,17 +25,15 @@
             <span><a href="/store">Store</a></span>
             <span><a href="/events">Events</a></span>
         </p>
-        <br>
-        <form action="#" id="subscribe-form">
-          <input type="text" value="Email address" onclick="this.value=''">
-          <input type="submit" value="Subscribe">
-        </form>
       </header>
 
       <div id="banner">
         <a href="{{ site.github.repository_url }}"><span id="logo"></span></a>
 
-        <a href="{{ site.url }}" class="button fork"><strong>Home</strong></a>
+        <form action="#" id="subscribe-form">
+          <input type="text" value="Email address" onclick="this.value=''">
+          <input type="submit" value="Subscribe" class="button fork">
+        </form>
         
         {% if site.show_downloads %}
           <div class="downloads">
