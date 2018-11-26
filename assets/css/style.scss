@@ -20,10 +20,10 @@
         display: block;
     }
     #banner {
-        top: 115px;
+        top: 165px;
     }
     section {
-        margin-top: 165px;
+        margin-top: 215px;
     }
 }
 @media print, screen and (max-width: 480px) {
@@ -32,9 +32,9 @@
     }
     #banner {
         display: block;
-        top: 80px;
+        top: 130px;
     }
     section {
-        margin-top: 130px;
+        margin-top: 180px;
     }
 }
