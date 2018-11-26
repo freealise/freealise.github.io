@@ -7,6 +7,7 @@
     width: 256px;
     position: relative;
     margin-left: -128px;
+    padding: 15px 0px;
     left: 50%;
 }
 
@@ -22,10 +23,14 @@
 header {
     position: fixed;
     height: 165px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 header p {
     display: block;
+}
+.des {
+    font-size: 14px;
 }
 #banner {
     display: block;
