@@ -3,10 +3,6 @@
 
 @import "{{ site.theme }}";
 
-#subscribe-form {
-    float: left;
-}
-
 @media print, screen and (max-width: 720px) {
     header p {
         display: block;
