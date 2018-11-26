@@ -18,13 +18,14 @@
 
       <header>
         <a href="{{ site.url }}"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="des">{{ site.description | default: site.github.project_tagline }}</p>
         <p class="nav">
             <span><a href="{{ site.url }}">Home</a></span>
             <span><a href="/blog">Blog</a></span>
             <span><a href="/store">Store</a></span>
             <span><a href="/events">Events</a></span>
         </p>
+        <br>
         <form action="#" id="subscribe-form">
           <input type="text" value="Email address" onclick="this.value=''">
           <input type="submit" value="Subscribe">
