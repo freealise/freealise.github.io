@@ -10,9 +10,13 @@
     left: 50%;
 }
 
-.nav ul li {
+.nav span {
     float: left;
     width: 64px;
+}
+
+.nav span a {
+    color: #ffffff;
 }
 
 @media print, screen and (max-width: 720px) {
