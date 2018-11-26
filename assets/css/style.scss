@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+.nav ul li {
+    float: left;
+}
+
 @media print, screen and (max-width: 720px) {
     header p {
         display: block;
