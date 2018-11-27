@@ -75,7 +75,6 @@ background-color:transparent;
 text-align: right;
 width: 208px;
 z-index: 1;
-opacity: .8;
 float:right;
 }
 #player {
@@ -89,7 +88,8 @@ text-align:left;
 height:160px;
 clear: both;
 padding-top: 10px;
-background:rgba(255,255,255,.5);
+margin-top: 10px;
+background:rgba(255,255,255,1);
 }
 #playlist li {
 float:none;
