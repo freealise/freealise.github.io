@@ -79,7 +79,7 @@ width: 256px;
 z-index: 1;
 background:rgba(255,255,255,.5);
 opacity: .8;
-float:right;
+float:left;
 margin-right:16px;
 margin-bottom:16px;
 }
@@ -115,11 +115,8 @@ margin: 0px;
 .currentTrack {
 font-weight: bold;
 }
-.t {
-float:right;
-}
 #myProgress {
-width: 48px;
+width: 60px;
 height:36px;
 margin-right:4px;
 margin-top:6px;
@@ -132,14 +129,17 @@ height: 36px;
 background-color: rgba(255,255,255,.5);
 }
 #timeCount {
-width:48px;
+width:60px;
 margin-right:4px;
 margin-top:6px;
 padding:7px;
 word-break: normal;
 }
+.t {
+float:left;
+}
 #playButton, #playlistButton {
-width:48px;
+width:60px;
 height: 36px;
 margin-right:4px;
 margin-top:6px;
