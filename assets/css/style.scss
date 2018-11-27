@@ -68,14 +68,13 @@ section {
 }
 #banner .fork {
 padding:0px;
-margin:0px;
+background-color:transparent;
 }
 
 .playerContainer {
 text-align: right;
 width: 208px;
 z-index: 1;
-background:rgba(255,255,255,.5);
 opacity: .8;
 float:right;
 }
@@ -89,6 +88,8 @@ display:none;
 text-align:left;
 height:160px;
 clear: both;
+padding-top: 10px;
+background:rgba(255,255,255,.5);
 }
 #playlist li {
 float:none;
@@ -122,7 +123,6 @@ font-weight: bold;
 width: 48px;
 height:36px;
 margin-right:4px;
-margin-top:6px;
 float: left;
 background-color: grey;
 }
@@ -134,8 +134,7 @@ background-color: rgba(255,255,255,.5);
 #timeCount {
 width:48px;
 margin-right:4px;
-margin-top:6px;
-padding:7px 0px;
+padding:11px 0px;
 word-break: normal;
 }
 .t {
@@ -145,7 +144,6 @@ float:right;
 width:48px;
 height: 36px;
 margin-right:4px;
-margin-top:6px;
 float:left;
 }
 #coverButton, #videoButton {
