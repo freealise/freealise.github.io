@@ -30,13 +30,14 @@
       <div id="banner">
         <a href="{{ site.github.repository_url }}"><span id="logo"></span></a>
 
-        <form action="#" id="subscribe-form">
+        <form action="#" id="subscribe-form" class="downloads">
           <input type="text" value="Email address" id="email" onclick="this.value=''">
           <input type="submit" value="Subscribe" class="button fork">
         </form>
         
+        <!--
         {% if site.show_downloads %}
-          <div class="downloads">
+          <div>
             <span>Downloads:</span>
             <ul>
               <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
@@ -44,6 +45,7 @@
             </ul>
           </div>
         {% endif %}
+        -->
       </div><!-- end banner -->
 
     <div class="wrapper">
@@ -51,6 +53,11 @@
         <ul></ul>
       </nav>
       <section>
+        <div>
+          <span><a href="{{ site.github.zip_url }}" class="button">ZIP</a></span>
+          <span><a href="{{ site.github.tar_url }}" class="button">TAR</a></span>
+        </div>
+        
         {{ content }}
 
       </section>
