@@ -120,27 +120,34 @@ float:right;
 }
 #myProgress {
 width: 48px;
+height:48px;
+margin-right:4px;
 float: left;
 background-color: grey;
 }
 #myBar {
 width: 0%;
-height: 30px;
+height: 48px;
 background-color: rgba(255,255,255,.5);
 }
-#playButton, #playlistButton, #videoButton, #coverButton{
+#coverButton {
+width:48px;
+height: 48px;
+float:left;
+}
+#playButton, #playlistButton, #videoButton {
 width:48px;
 margin-right:4px;
-height: 30px;
+height: 48px;
 float:left;
 }
 #timeCount {
 width:48px;
 margin-right:4px;
-height:30px;
+height:48px;
 word-break: normal;
 position: absolute;
-top: 4px;
+top: 8px;
 right: 50%;
 margin-right: -24px;
 }
