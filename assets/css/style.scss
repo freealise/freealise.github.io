@@ -66,6 +66,10 @@ section {
     display: inline-block;
     text-align: center;
 }
+#banner .fork {
+padding:0px;
+margin:0px;
+}
 
 .playerContainer {
 text-align: right;
@@ -73,8 +77,6 @@ width: 208px;
 z-index: 1;
 background:rgba(255,255,255,.5);
 opacity: .8;
-margin-right:16px;
-margin-bottom:16px;
 float:right;
 }
 #player {
@@ -86,6 +88,7 @@ height:32px;
 display:none;
 text-align:left;
 height:160px;
+clear: both;
 }
 #playlist li {
 float:none;
@@ -97,10 +100,16 @@ width:180px;
 	#playlist {
 	display:block;
 	}
+	#playerContainer {
+	top: auto;
+	}
 }
 @media screen and (max-width:600px){
 	#playlist {
 	display:none;
+	}
+	#playerContainer {
+	top: 235px;
 	}
 }
 #playlist ol {
