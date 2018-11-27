@@ -75,7 +75,7 @@ section {
 
 .playerContainer {
 text-align: right;
-width: 256px;
+width: 192px;
 z-index: 1;
 background:rgba(255,255,255,.5);
 opacity: .8;
@@ -116,7 +116,7 @@ margin: 0px;
 font-weight: bold;
 }
 #myProgress {
-width: 60px;
+width: 48px;
 height:36px;
 margin-right:4px;
 margin-top:6px;
@@ -129,7 +129,7 @@ height: 36px;
 background-color: rgba(255,255,255,.5);
 }
 #timeCount {
-width:60px;
+width:48px;
 margin-right:4px;
 margin-top:6px;
 padding:7px;
@@ -139,7 +139,7 @@ word-break: normal;
 float:left;
 }
 #playButton, #playlistButton {
-width:60px;
+width:48px;
 height: 36px;
 margin-right:4px;
 margin-top:6px;
