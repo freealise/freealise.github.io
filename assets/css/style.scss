@@ -72,3 +72,67 @@ section {
     display: inline-block;
     text-align: center;
 }
+
+.playerContainer {
+text-align: right;
+width: 256px;
+z-index: 1;
+background:rgba(255,255,255,.5);
+opacity: .8;
+float:left;
+margin-right:16px;
+margin-bottom:16px;
+}
+#player {
+position:relative;
+z-index:1;
+height:32px;
+}
+#playlist {
+display:none;
+text-align:left;
+height:160px;
+}
+#playlist li {
+float:none;
+}
+#playlist li a {
+width:180px;
+}
+@media screen and (min-width:600px){
+	#playlist {
+	display:block;
+	}
+}
+#playlist ol {
+margin: 0px;
+}
+.currentTrack {
+font-weight: bold;
+}
+.t {
+float:right;
+}
+#myProgress {
+width: 48px;
+float: left;
+background-color: grey;
+}
+#myBar {
+width: 0%;
+height: 30px;
+background-color: rgba(255,255,255,.5);
+}
+#playButton, #playlistButton, #videoButton, #coverButton{
+width:48px;
+height: 30px;
+float:left;
+}
+#timeCount {
+width:56px;
+line-height: 30px;
+word-break: normal;
+}
+#video {
+display:none;
+}
