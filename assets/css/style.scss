@@ -99,9 +99,14 @@ float:none;
 #playlist li a {
 width:180px;
 }
-@media screen and (min-width:600px){
+@media screen and (min-width:601px){
 	#playlist {
 	display:block;
+	}
+}
+@media screen and (max-width:600px){
+	#playlist {
+	display:none;
 	}
 }
 #playlist ol {
