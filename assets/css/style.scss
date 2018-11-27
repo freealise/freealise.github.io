@@ -41,10 +41,14 @@ header p {
     height: 30px;
     width: 150px;
     float: left;
+    left: 10px;
+    position: relative;
 }
 #banner .fork {
     position: relative;
     margin-left: 0px;
+    float: left;
+    left: 10px;
 }
 nav {
     top: 235px;
