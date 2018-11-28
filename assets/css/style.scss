@@ -139,3 +139,125 @@ width:256px;
 #video {
 display:none;
 }
+
+#payment {
+	overflow:auto;
+	clear:both;
+}
+#payment {
+	position:relative;
+	background: rgba(255,255,255,.75);
+}
+#payForm {
+	display:none;
+}
+#payFormOverlay {
+	position:fixed;
+	width:100vw;
+	height:100vh;
+	top:0px;
+	left:0px;
+	background: rgba(0,0,0,.75);
+    z-index: 102;
+}
+#payFormContainer {
+	background: rgba(255,255,255,.75);
+    padding: 16px;
+	width:256px;
+	height:256px;	
+	position:fixed;
+	top:50vh;
+	left:50vw;
+	margin-left:-128px;
+	margin-top:-128px;
+    z-index: 102;
+}
+#payment-form {
+    text-align:left;
+}
+.pay-form {
+	width: 100%;
+}
+#rateLink {
+float:right;
+font-size:14px;
+}
+#geocode-map {
+	height:128px;
+	display:none;
+}
+#pay-button {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+#costPrice {
+	text-align: right;
+    float: right;
+    font-size: 14px;
+    width: 75%;
+	padding:5px 0;
+}
+#giveawayPurpose {
+	width:100%;
+	max-width: 256px;
+    float: left;
+    margin-bottom: 16px;
+}
+#giveawayExpense {
+	float:right;
+	width: 256px;
+	margin-bottom: 16px;
+}
+@media screen and (min-width:600px){
+	#giveawayPurpose {
+	max-width:50%;
+	}
+}
+@media screen and (min-width:800px){
+	#giveawayPurpose {
+	font-size:18px;
+	}
+}
+#graph {
+    width: 100%;
+    max-width: 256px;
+    float: right;
+}
+#giveProgress {
+    width: 100%;
+    background-color: grey;
+}
+#giveBar {
+    width: 0%;
+    height: 30px;
+    background-color: rgba(255,255,255,.5);
+}
+#recurring {
+float:left;
+}
+#amountNeeded, #amountGiven {
+	text-align:right;
+}
+#amountGiven {
+	width: 48px;
+    float: right;
+	padding: 5px 0 5px 0;
+}
+#queueButton {
+	background: transparent;
+    border: 0;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+	color:rgba(255,255,255,.5);
+}
+#queue {
+	display:none;
+	text-align:left;
+	min-width: 256px;
+    float: left;
+    font-size: 14px;
+	margin: 24px;
+	overflow:scroll;
+}
