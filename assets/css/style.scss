@@ -44,6 +44,9 @@ header p {
     float: left;
     position: relative;
 }
+#email .focused {
+    border:2px solid #4276b6;
+}
 nav {
     top: 235px;
 }
