@@ -18,7 +18,7 @@ var count = document.getElementById('timeCount');
 var audio = document.getElementById('audio');
 var playlist = document.getElementById('playlist');
 var video = document.getElementById('video');
-var share = document.getElementById('share');
+var share = document.getElementById('shareContainer');
 
 function newTrack() {
 seconds = 0;
