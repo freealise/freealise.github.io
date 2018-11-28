@@ -97,24 +97,6 @@ float:none;
 #playlist li a {
 width:180px;
 }
-@media screen and (min-width:601px){
-	#playlist {
-	display:block;
-	}
-	#playerContainer {
-	top: auto;
-	position:fixed;
-	}
-}
-@media screen and (max-width:600px){
-	#playlist {
-	display:none;
-	}
-	#playerContainer {
-	top: 235px;
-	position:absolute;
-	}
-}
 #playlist ol {
 margin: 0px;
 }
