@@ -75,7 +75,6 @@ background-color:transparent;
 text-align: right;
 width: 208px;
 z-index: 1;
-float:right;
 }
 #player {
 position:relative;
@@ -84,7 +83,9 @@ height:32px;
 }
 #playlist {
 display:none;
+position:absolute;
 text-align:left;
+width:256px;
 height:160px;
 clear: both;
 padding-top: 10px;
@@ -124,15 +125,10 @@ word-break: normal;
 .t {
 float:right;
 }
-#playButton, #playlistButton {
+#playButton, #playlistButton, #videoButton {
 width:48px;
 height: 36px;
 margin-right:4px;
-float:left;
-}
-#coverButton, #videoButton {
-width:48px;
-height: 48px;
 float:left;
 }
 #video {
