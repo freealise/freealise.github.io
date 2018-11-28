@@ -11,14 +11,12 @@ var width = 0;
 
 var opened = false;
 var video_opened = false;
-var share_opened = false;
 
 var bar = document.getElementById('myBar');
 var count = document.getElementById('timeCount');
 var audio = document.getElementById('audio');
 var playlist = document.getElementById('playlist');
 var video = document.getElementById('video');
-var shareContainer = document.getElementById('shareContainer');
 
 function newTrack() {
 seconds = 0;
@@ -70,12 +68,4 @@ function closeVideo() {
     video.src = 'about:blank';
     opened = true;
     playlist.style.display='block';
-}
-function openShare() {
-    share_opened = true;
-    shareContainer.style.display='block';
-}
-function closeShare() {
-    share_opened = false;
-    shareContainer.style.display='none';
 }
