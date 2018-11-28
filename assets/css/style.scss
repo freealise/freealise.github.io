@@ -103,6 +103,7 @@ width:180px;
 	}
 	#playerContainer {
 	top: auto;
+	position:fixed;
 	}
 }
 @media screen and (max-width:600px){
@@ -111,6 +112,7 @@ width:180px;
 	}
 	#playerContainer {
 	top: 235px;
+	position:absolute;
 	}
 }
 #playlist ol {
