@@ -86,7 +86,7 @@ display:none;
 position:absolute;
 text-align:left;
 width:256px;
-height:160px;
+height:256px;
 clear: both;
 padding-top: 10px;
 margin-top: 10px;
@@ -130,7 +130,12 @@ height: 36px;
 margin-right:4px;
 float:left;
 }
+#videoContainer {
+position:absolute;
+width:256px;
+height:256px;
+background-color:#ffffff;
+}
 #video {
 display:none;
-position:absolute;
 }
