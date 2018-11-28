@@ -118,8 +118,7 @@ background-color: rgba(255,255,255,.5);
 }
 #timeCount {
 width:48px;
-margin-right:4px;
-padding:11px 0px;
+padding:7px 0px;
 word-break: normal;
 }
 .t {
@@ -133,4 +132,5 @@ float:left;
 }
 #video {
 display:none;
+position:absolute;
 }
