@@ -55,34 +55,6 @@
       </nav>
       <section>
         
-        <div class="playerContainer" id="playerContainer">
-          <div id="player">
-            <button id="videoButton" onclick="if(!video_opened){openVideo();}else{closeVideo();}"><i class="material-icons">local_movies</i></button>
-            <button id="playlistButton" onclick="if(!opened){openPlaylist();}else{closePlaylist();}"><i class="material-icons">queue_music</i></button>
-            <button id="playButton" onclick="if(!playing){play();}else{pause();}"><i class="material-icons" id="player-icon">play_arrow</i></button>
-            <div id="myProgress">
-              <div id="myBar"></div>
-            </div>
-            <span class="t" id="timeCount">8:58</span>
-            <div>
-              <audio height="0" id="audio" onended="if(n!=tracks.length-1){n++;newTrack();play();}else{n=0;newTrack();pause();}" src="https://freealise-181308.appspot.com/mp3/cant-walk-away.mp3" width="0">
-                <embed src="https://freealise-181308.appspot.com/mp3/album.mp3" type="audio/mpeg" width="256" height="32">
-              </audio>
-            </div>
-          </div>
-          <div id="playlist">
-            <ol>
-              <li><a class="currentTrack" href="#" id="track0" onclick="n=0;newTrack();play();">Can't Walk Away <span class="t">3:14</span></a></li>
-              <li><a href="#" id="track1" onclick="n=1;newTrack();play();">Fools' Paradise <span class="t">3:31</span></a></li>
-            </ol>
-          </div>
-          <div id="videoContainer">
-            <iframe allow="autoplay; encrypted-media" allowfullscreen="1" allowtransparency="allowtransparency" frameborder="0" height="100%" id="video" name="video" src="about:blank" width="100%"></iframe>
-          </div>
-          <img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" width="256" height="256" id="cover">
-          <script src="https://freealise-181308.appspot.com/js/player.js" type="text/javascript"></script>
-        </div>
-        
         {{ content }}
 
       </section>
