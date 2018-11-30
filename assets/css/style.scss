@@ -69,16 +69,14 @@ section {
     display: inline-block;
     text-align: center;
 }
-#banner .fork {
-padding:0px;
-background-color:transparent;
-}
 #navContainer {
-background-color: #ffffff;
-margin-top: 50px;
-padding: 8px;
 width:36px;
 height:36px;
+padding:0px;
+}
+#navButton {
+padding: 4px 6px;
+margin: 0px;
 }
 
 .playerContainer {
