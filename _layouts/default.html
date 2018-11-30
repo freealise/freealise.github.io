@@ -37,8 +37,10 @@
           <input type="submit" value="Subscribe" class="button">
         </form>
         
-        <button class="button fork" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
-        <div class="fork" id="navContainer"></div>
+        <div class="fork">
+          <button class="button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
+          <div id="navContainer"></div>
+        </div>
         
         <!--
         {% if site.show_downloads %}
