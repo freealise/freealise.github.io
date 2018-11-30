@@ -74,6 +74,11 @@ width:36px;
 height:36px;
 padding:0px;
 }
+@media print, screen and (max-width: 600px)
+	#banner #navContainer {
+		left:0px;
+	}
+}
 #banner #navButton {
 padding: 4px 6px;
 margin: 0px;
