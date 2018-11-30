@@ -69,12 +69,12 @@ section {
     display: inline-block;
     text-align: center;
 }
-#banner .fork, #navContainer {
+#banner #navContainer {
 width:36px;
 height:36px;
 padding:0px;
 }
-#banner .button, #navButton {
+#banner #navButton {
 padding: 4px 6px;
 margin: 0px;
 }
