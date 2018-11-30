@@ -73,9 +73,11 @@ function closeVideo() {
 }
 function openNav() {
     nav_opened = true;
-    nav.style.display='block';
+    nav.style.width='256px';
+    nav.style.height='256px';
 }
 function closeNav() {
     nav_opened = false;
-    nav.style.display='none';
+    nav.style.width='36px';
+    nav.style.height='36px';
 }
