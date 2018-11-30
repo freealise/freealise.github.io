@@ -41,11 +41,11 @@
           <button id="navButton" class="button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
           <div>
             {% for category in site.categories %}
-              <div>{{ category[0] }}</div>
+              <span>{{ category[0] }}</span><br>
             {% endfor %}
-            <br><br>
+            <hr>
             {% for tag in site.tags %}
-              <span>{{ tag[0] }}</span>&nbsp;
+              <span>{{ tag[0] }}</span>&nbsp;|&nbsp;
             {% endfor %}
           </div>
         </div>
