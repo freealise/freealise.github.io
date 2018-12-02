@@ -34,10 +34,16 @@ layout: default
         </div>
 
         <div>
-          Receive our newsletter, see the recording sessions, listen to singles and demos and have early access to the music.
+          Receive our newsletter, watch the recording sessions, listen to singles and demos and have early access to the music.<br>
           <a href="#" onclick="document.getElementById('email').focus();document.getElementById('email').className+=' focused';" title="Subscribe">
-            Join now
+            <b>Join now</b>
           </a>
+        </div>
+
+        <div>
+            <b>Giveaway</b><br/>
+            Enter your credit or debit card details and your chosen payment, get monthly updates and download the album in lossless quality with lyrics and cover art when it is released.
+            <div><button onclick="document.getElementById('payForm').style.display='block';">Pay now</button></div>
         </div>
 
         <div class="share-buttons">
@@ -47,12 +53,7 @@ layout: default
         
         <div id="payment">
           <div id="giveawayPurpose">
-            <div><b>Giveaway</b></div><br/>
-            Enter your credit or debit card details and your chosen payment, get monthly updates and download the album in lossless quality with lyrics and cover art when it is released.
-            <p><button onclick="document.getElementById('payForm').style.display='block';">Pay now</button></p>
-          </div>
-          <div id='giveawayExpense'>
-            The money will be spent on recording in a UK studio, online and CD distribution, event management and promotion.
+            The money will be spent on studio recording, online and CD distribution, event management and promotion.
           </div>
           <div id="graph">
             <button id="queueButton" onclick="if(!q_opened){queue();openQueue();}else{closeQueue();}"><i class='material-icons'>people</i></button>
