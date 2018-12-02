@@ -78,6 +78,6 @@ function openNav() {
 }
 function closeNav() {
     nav_opened = false;
-    nav.style.width='36px';
+    nav.style.width='38px';
     nav.style.height='36px';
 }
