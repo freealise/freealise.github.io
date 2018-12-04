@@ -26,7 +26,8 @@ function initialize() {
   var t = d.getTime();
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var georssLayer = new google.maps.KmlLayer({
-    url: 'https://www.freealise.com/feeds/posts/default/?q=label:map|label:event&max=500&max-results=500&time='+t
+    //url: 'https://www.freealise.com/feeds/posts/default/?q=label:map|label:event&max=500&max-results=500&time='+t
+    url: 'https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml&time='+t
   });
   georssLayer.setMap(map);
   var geocoder = new google.maps.Geocoder();
