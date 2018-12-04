@@ -1,0 +1,76 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+<style type="text/css">
+#map-canvas {
+  height: 256px;
+  margin: 0;
+  padding: 0;
+}
+</style>
+
+<div id="map-canvas"></div>
+<div id="demo"></div>
+<script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(49.496675,-102.65625);
+  var mapOptions = {
+    zoom: 4,
+    center: myLatlng
+  }
+  var d = new Date();
+  var t = d.getTime();
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  var georssLayer = new google.maps.KmlLayer({
+    url: 'https://www.freealise.com/feeds/posts/default/?q=label:map|label:event&max=500&max-results=500&time='+t
+  });
+  georssLayer.setMap(map);
+  var geocoder = new google.maps.Geocoder();
+  var address = new Array();
+  google.maps.event.addListener(georssLayer, 'click', function(e) {
+    //var eLatLng = e.latLng.toString().replace(" ", "");
+    if (window.XMLHttpRequest) {
+        // code for modern browsers
+        xhttp = new XMLHttpRequest();
+    } else {
+        // code for old IE browsers
+        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           // Typical action to be performed when the document is ready:
+           xmlDoc = xhttp.responseXML;
+           txt = "";
+           x = xmlDoc.getElementsByTagName("entry");
+           for (i = 0; i < x.length; i++) {
+             txt += "<a href='" + x[i].getElementsByTagName("link")[1].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
+             txt += x[i].getElementsByTagName("content")[0].innerHTML + "<br>";
+           }
+           document.getElementById("demo").innerHTML = txt;
+        }
+    };
+    geocoder.geocode({
+      'latLng': e.latLng
+    }, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        if (results[0]) {
+          address = results[0].formatted_address.split(", ");
+          alert(address[0]);
+          //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
+          xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml");
+          xhttp.send();
+        }
+      }
+    });
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDONbj1HFMLs7UI3yBortL4qwLm-0C7mYM&callback=initialize"></script>
+
+<div id="text">
+
+</div>
