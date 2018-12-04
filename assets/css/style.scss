@@ -3,6 +3,11 @@
 
 @import "{{ site.theme }}";
 
+@media print, screen and (max-width: 720px) {
+	body {
+	    word-wrap: normal;
+	}
+}
 .nav {
     width: 256px;
     position: relative;
