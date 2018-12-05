@@ -30,6 +30,10 @@ function initialize() {
     url: 'https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml&time='+t
   });
   georssLayer.setMap(map);
+  var kmlLayer = new google.maps.KmlLayer({
+    url: 'https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=events&time='+t
+  });
+  kmlLayer.setMap(map);
   var geocoder = new google.maps.Geocoder();
   var address = new Array();
   google.maps.event.addListener(georssLayer, 'click', function(e) {
