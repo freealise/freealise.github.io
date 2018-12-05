@@ -56,9 +56,14 @@ function initialize() {
            x = xmlDoc.getElementsByTagName("entry");
            for (i = 0; i < x.length; i++) {
              var point = x[i].getElementsByTagName("georss:point")[0];
-             if (point && point.innerText == e.latLng.lat()+" "+e.latLng.lng()) {
-               txt += "<a href='" + x[i].getElementsByTagName("link")[0].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
-               txt += x[i].getElementsByTagName("summary")[0].innerHTML + "<br>";
+             if (point && point.innerHTML) {
+               var coords = point.innerHTML.split(" ");
+               var lat = parseFloat(coords[0]).toFixed(2);
+               var lng = parseFloat(coords[1]).toFixed(2);
+               if (lat==e.latLng.lat().toFixed(2) && lng==e.latLng.lng().toFixed(2)) {
+                 txt += "<a href='" + x[i].getElementsByTagName("link")[0].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
+                 txt += x[i].getElementsByTagName("summary")[0].innerHTML + "<br>";
+               }
              }
            }
            document.getElementById("text").innerHTML = txt;
