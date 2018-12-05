@@ -38,6 +38,7 @@ function initialize() {
   var address = new Array();
   google.maps.event.addListener(georssLayer, 'click', function(e) {
     //var eLatLng = e.latLng.toString().replace(" ", "");
+    var xhttp, xmlDoc, txt, x, i;
     if (window.XMLHttpRequest) {
         // code for modern browsers
         xhttp = new XMLHttpRequest();
