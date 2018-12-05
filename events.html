@@ -53,24 +53,14 @@ function initialize() {
            x = xmlDoc.getElementsByTagName("entry");
            for (i = 0; i < x.length; i++) {
              txt += "<a href='" + x[i].getElementsByTagName("link")[1].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
-             txt += x[i].getElementsByTagName("content")[0].innerHTML + "<br>";
+             txt += x[i].getElementsByTagName("summary")[0].innerHTML + "<br>";
            }
-           document.getElementById("demo").innerHTML = txt;
+           document.getElementById("text").innerHTML = txt;
         }
     };
-    geocoder.geocode({
-      'latLng': e.latLng
-    }, function(results, status) {
-      if (status == google.maps.GeocoderStatus.OK) {
-        if (results[0]) {
-          address = results[0].formatted_address.split(", ");
-          alert(address[0]);
-          //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
-          xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml");
-          xhttp.send();
-        }
-      }
-    });
+    //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
+    xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml");
+    xhttp.send();
   });
 }
 </script>
