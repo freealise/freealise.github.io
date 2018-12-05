@@ -55,7 +55,7 @@ function initialize() {
            txt = "";
            x = xmlDoc.getElementsByTagName("entry");
            for (i = 0; i < x.length; i++) {
-             txt += "<a href='" + x[i].getElementsByTagName("link")[1].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
+             txt += "<a href='" + x[i].getElementsByTagName("link")[0].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
              txt += x[i].getElementsByTagName("summary")[0].innerHTML + "<br>";
            }
            document.getElementById("text").innerHTML = txt;
