@@ -14,7 +14,9 @@ layout: default
 </style>
 
 <div id="map-canvas"></div>
-<div id="demo"></div>
+<!--add timeline-->
+<div id="text"></div>
+
 <script>
 function initialize() {
   var myLatlng = new google.maps.LatLng(49.496675,-102.65625);
@@ -60,13 +62,9 @@ function initialize() {
         }
     };
     //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
-    xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml");
+    xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml", true);
     xhttp.send();
   });
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDONbj1HFMLs7UI3yBortL4qwLm-0C7mYM&callback=initialize"></script>
-
-<div id="text">
-
-</div>
