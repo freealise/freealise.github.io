@@ -38,17 +38,16 @@ function initialize() {
     url: 'https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=events&time='+t
   });
   kmlLayer.setMap(map);
-  var geocoder = new google.maps.Geocoder();
-  var address = new Array();
   google.maps.event.addListener(georssLayer, 'click', function(e) {
-    if (map.getZoom()<8) {
-    	map.setZoom(12);
+    var zoom = map.getZoom();
+    if (zoom<12) {
+    	map.setZoom(zoom+4);
     }
     map.setCenter(e.latLng);
     var xhttp, xmlDoc, txt, x, i;
     var bounds = map.getBounds();
-	  var ne = bounds.getNorthEast();
-	  var sw = bounds.getSouthWest();
+    var ne = bounds.getNorthEast();
+    var sw = bounds.getSouthWest();
     var maxLat = ne.lat();
     var maxLng = ne.lng();
     var minLat = sw.lat();
@@ -62,9 +61,6 @@ function initialize() {
     }
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-           var eLat = e.latLng.lat().toFixed(0);
-           var eLng = e.latLng.lng().toFixed(0);
-           // Typical action to be performed when the document is ready:
            xmlDoc = xhttp.responseXML;
            txt = "";
            x = xmlDoc.getElementsByTagName("entry");
