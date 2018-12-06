@@ -68,7 +68,6 @@ function initialize() {
   var t = d.getTime();
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var georssLayer = new google.maps.KmlLayer({
-    //url: 'https://www.freealise.com/feeds/posts/default/?q=label:map|label:event&max=500&max-results=500&time='+t
     suppressInfoWindows: true,
     url: 'https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml&time='+t
   });
@@ -92,11 +91,8 @@ function initialize() {
     	map.setZoom(zoom+4);
     }
     map.setCenter(e.latLng);
-    var url = "https://www.freealise.com/feeds/posts/default/?max=500&max-results=500";
+    var url = "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=blog";
     showResults(url);
-    //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?max=500&max-results=500", true);
-    //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
-    //xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml", true);
   });
 }
 </script>
