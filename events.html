@@ -52,6 +52,8 @@ function initialize() {
     }
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+           var eLat = e.latLng.lat().toFixed(0);
+           var eLng = e.latLng.lng().toFixed(0);
            // Typical action to be performed when the document is ready:
            xmlDoc = xhttp.responseXML;
            txt = "";
@@ -62,7 +64,7 @@ function initialize() {
                var coords = point.innerHTML.split(" ");
                var lat = parseFloat(coords[0]).toFixed(0);
                var lng = parseFloat(coords[1]).toFixed(0);
-               if (lat==e.latLng.lat().toFixed(0) && lng==e.latLng.lng().toFixed(0)) {
+               if (lat==eLat && lng==eLng) {
                  txt += "<a href='" + x[i].getElementsByTagName("link")[0].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
                  txt += x[i].getElementsByTagName("summary")[0].innerHTML + "<br>";
                }
