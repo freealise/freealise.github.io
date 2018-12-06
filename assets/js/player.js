@@ -11,14 +11,12 @@ var width = 0;
 
 var opened = false;
 var video_opened = false;
-var nav_opened = false;
 
 var bar = document.getElementById('myBar');
 var count = document.getElementById('timeCount');
 var audio = document.getElementById('audio');
 var playlist = document.getElementById('playlist');
 var video = document.getElementById('video');
-var nav = document.getElementById('navContainer');
 
 function newTrack() {
 seconds = 0;
@@ -70,14 +68,4 @@ function closeVideo() {
     video.src = 'about:blank';
     opened = true;
     playlist.style.display='block';
-}
-function openNav() {
-    nav_opened = true;
-    nav.style.width='256px';
-    nav.style.height='256px';
-}
-function closeNav() {
-    nav_opened = false;
-    nav.style.width='38px';
-    nav.style.height='36px';
 }
