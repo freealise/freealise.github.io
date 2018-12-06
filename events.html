@@ -82,44 +82,8 @@ function initialize() {
     	map.setZoom(zoom+4);
     }
     map.setCenter(e.latLng);
-    var xhttp, xmlDoc, txt, x, i;
-    var bounds = map.getBounds();
-    var ne = bounds.getNorthEast();
-    var sw = bounds.getSouthWest();
-    var maxLat = ne.lat();
-    var maxLng = ne.lng();
-    var minLat = sw.lat();
-    var minLng = sw.lng();
-    if (window.XMLHttpRequest) {
-        // code for modern browsers
-        xhttp = new XMLHttpRequest();
-    } else {
-        // code for old IE browsers
-        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-           xmlDoc = xhttp.responseXML;
-           txt = "";
-           x = xmlDoc.getElementsByTagName("entry");
-           for (i = 0; i < x.length; i++) {
-             var point = x[i].getElementsByTagName("georss:point")[0];
-             if (point && point.innerHTML) {
-               var coords = point.innerHTML.split(" ");
-               var lat = parseFloat(coords[0]);
-               var lng = parseFloat(coords[1]);
-               if (lat>minLat && lat<maxLat && lng>minLng && lng<maxLng) {
-                 txt += "<a href='" + x[i].getElementsByTagName("link")[0].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
-                 txt += x[i].getElementsByTagName("summary")[0].innerHTML + "<br>";
-               }
-             }
-           }
-           document.getElementById("text").innerHTML = txt;
-        }
-    };
-    //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
-    xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml", true);
-    xhttp.send();
+    var url = "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml";
+    showResults(url);
   });
   google.maps.event.addListener(kmlLayer, 'click', function(e) {
     var zoom = map.getZoom();
@@ -132,7 +96,6 @@ function initialize() {
     //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?max=500&max-results=500", true);
     //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
     //xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml", true);
-    
   });
 }
 </script>
