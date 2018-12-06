@@ -49,17 +49,16 @@ function initialize() {
                var lng = parseFloat(coords[1]);
                if (lat>minLat && lat<maxLat && lng>minLng && lng<maxLng) {
                  if (a=="xml") {
-                    txt += "<p><b>" + x[i].getElementsByTagName("title")[0].innerHTML + "</b><br>";
-                    txt += x[i].getElementsByTagName("summary")[0].innerHTML + "</p>";
+                    var html = x[i].getElementsByTagName("summary")[0].innerHTML;
                  } else if (a=="blog") {
-                    txt += "<p><b>" + x[i].getElementsByTagName("title")[0].innerHTML + "</b><br>";
                     var html = x[i].getElementsByTagName("content")[0].innerHTML;
-                    html = html.replace(/&lt;/g, "<");
-                    html = html.replace(/&gt;/g, ">");
-                    html = html.replace(/&quot;/g, '"');
-                    html = html.replace(/&apos;/g, "'");
-                    txt += html + "</p>";           
                  }
+                 html = html.replace(/&lt;/g, "<");
+                 html = html.replace(/&gt;/g, ">");
+                 html = html.replace(/&quot;/g, '"');
+                 html = html.replace(/&apos;/g, "'");
+                 txt += "<p><b>" + x[i].getElementsByTagName("title")[0].innerHTML + "</b><br>";
+                 txt += html + "</p>";  
                }
              }
            }
