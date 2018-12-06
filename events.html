@@ -82,7 +82,7 @@ function initialize() {
     xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml", true);
     xhttp.send();
   });
-  google.maps.event.addListener(georssLayer, 'click', function(e) {
+  google.maps.event.addListener(kmlLayer, 'click', function(e) {
     var zoom = map.getZoom();
     if (zoom<12) {
     	map.setZoom(zoom+4);
