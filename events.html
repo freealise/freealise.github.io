@@ -41,8 +41,18 @@ function initialize() {
   var geocoder = new google.maps.Geocoder();
   var address = new Array();
   google.maps.event.addListener(georssLayer, 'click', function(e) {
-    //var eLatLng = e.latLng.toString().replace(" ", "");
+    if (map.getZoom()<8) {
+    	map.setZoom(12);
+    }
+    map.setCenter(e.latLng);
     var xhttp, xmlDoc, txt, x, i;
+    var bounds = map.getBounds();
+	  var ne = bounds.getNorthEast();
+	  var sw = bounds.getSouthWest();
+    var maxLat = ne.lat();
+    var maxLng = ne.lng();
+    var minLat = sw.lat();
+    var minLng = sw.lng();
     if (window.XMLHttpRequest) {
         // code for modern browsers
         xhttp = new XMLHttpRequest();
@@ -62,9 +72,9 @@ function initialize() {
              var point = x[i].getElementsByTagName("georss:point")[0];
              if (point && point.innerHTML) {
                var coords = point.innerHTML.split(" ");
-               var lat = parseFloat(coords[0]).toFixed(0);
-               var lng = parseFloat(coords[1]).toFixed(0);
-               if (lat==eLat && lng==eLng) {
+               var lat = parseFloat(coords[0]);
+               var lng = parseFloat(coords[1]);
+               if (lat>minLat && lat<maxLat && lng>minLng && lng<maxLng) {
                  txt += "<a href='" + x[i].getElementsByTagName("link")[0].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
                  txt += x[i].getElementsByTagName("summary")[0].innerHTML + "<br>";
                }
