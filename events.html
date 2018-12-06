@@ -59,9 +59,10 @@ function initialize() {
     xhttp.send();
   }
   
+  //geolocate
   var mapOptions = {
     zoom: 4,
-    center: myLatlng
+    center: {lat: -34.397, lng: 150.644}
   }
   var d = new Date();
   var t = d.getTime();
