@@ -88,6 +88,49 @@ function initialize() {
     	map.setZoom(zoom+4);
     }
     map.setCenter(e.latLng);
+    
+    var xhttp, xmlDoc, txt, x, i;
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({'location': e.latLng}, function(results, status) {
+      if (status === 'OK') {
+        if (results[0]) {
+          var address = results[results.length-1].formatted_address;
+          alert(address);
+        } else {
+          alert('No results');
+        }
+      } else {
+        alert('Geocoder failed due to: '+status);
+      }
+    });
+    if (window.XMLHttpRequest) {
+        // code for modern browsers
+        xhttp = new XMLHttpRequest();
+    } else {
+        // code for old IE browsers
+        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           xmlDoc = xhttp.responseXML;
+           txt = "";
+           x = xmlDoc.getElementsByTagName("entry");
+           for (i = 0; i < x.length; i++) {
+             var point = x[i].getElementsByTagName("georss:featurename")[0];
+             if (point && point.innerHTML) {
+               if (point==address) {
+                 txt += "<a href='" + x[i].getElementsByTagName("link")[0].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
+                 txt += x[i].getElementsByTagName("summary")[0].innerHTML + "<br>";
+               }
+             }
+           }
+           document.getElementById("text").innerHTML = txt;
+        }
+    };
+    //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
+    xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml", true);
+    xhttp.send();
+    
   });
 }
 </script>
