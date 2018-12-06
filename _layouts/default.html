@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://freealise.com/" rel="canonical">
+    <link href="https://www.freealise.com/" rel="canonical">
     <link rel="alternate" type="application/atom+xml" title="Freealise - Atom" href="https://freealise.com/feed.xml">
 
 {% seo %}
@@ -24,7 +24,7 @@
         <a href="{{ site.url }}"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
         <p class="des">{{ site.description | default: site.github.project_tagline }}</p>
         <p class="nav">
-            <span><a href="{{ site.url }}">Home</a></span>
+            <span><a href="/">Home</a></span>
             <span><a href="/blog">Blog</a></span>
             <span><a href="/store">Store</a></span>
             <span><a href="/events">Events</a></span>
@@ -42,6 +42,10 @@
         <div id="navContainer" class="fork">
           <button id="navButton" class="button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
           <div>
+            <form action="#" id="search-form">
+              <input type="text" value="Search" id="search" onclick="this.value=''">
+              <input type="submit" value="Find" class="button">
+            </form>
             {% for category in site.categories %}
               <span>{{ category[0] }}</span><br>
             {% endfor %}
