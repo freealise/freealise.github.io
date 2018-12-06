@@ -52,8 +52,7 @@ function initialize() {
                     txt += "<a href='" + x[i].getElementsByTagName("link")[0].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
                     txt += x[i].getElementsByTagName("summary")[0].innerHTML + "<br>";
                  } else if (a=="blog") {
-                    var links = x[i].getElementsByTagName("link");
-                    txt += "<a href='" + links[links.length-1].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
+                    txt += "<a href='" + x[i].getElementsByTagName("link")[4].getAttribute("href") + "'>" + x[i].getElementsByTagName("title")[0].innerHTML + "</a><br>";
                     txt += x[i].getElementsByTagName("content")[0].innerHTML + "<br>";           
                  }
                }
