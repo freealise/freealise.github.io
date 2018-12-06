@@ -95,7 +95,7 @@ function initialize() {
     geocoder.geocode({'location': e.latLng}, function(results, status) {
       if (status === 'OK') {
         if (results[0]) {
-          address = results[results.length-1].formatted_address;
+          address = results[results.length-2].formatted_address;
           alert(address);
         } else {
           alert('No results');
@@ -128,7 +128,8 @@ function initialize() {
            document.getElementById("text").innerHTML = txt;
         }
     };
-    xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
+    xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?max=500&max-results=500", true);
+    //xhttp.open("GET", "https://www.freealise.com/feeds/posts/default/?q="+address+"&max=500&max-results=500", true);
     //xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=xml", true);
     xhttp.send();
     
