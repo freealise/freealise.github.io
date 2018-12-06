@@ -18,7 +18,8 @@ layout: default
 <div id="text"></div>
 
 <script>
-function showResults(url) {
+function initialize() {
+  function showResults(url) {
     var xhttp, xmlDoc, txt, x, i;
     var bounds = map.getBounds();
     var ne = bounds.getNorthEast();
@@ -56,10 +57,8 @@ function showResults(url) {
     };
     xhttp.open("GET", url, true);
     xhttp.send();
-}
-
-function initialize() {
-  var myLatlng = new google.maps.LatLng(49.496675,-102.65625);
+  }
+  
   var mapOptions = {
     zoom: 4,
     center: myLatlng
