@@ -99,3 +99,12 @@ layout: default
             <script src='/assets/js/stripe.js' type='text/javascript'></script>
           </div>
         </div>
+
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              {{ post.excerpt }}
+            </li>
+          {% endfor %}
+        </ul>
