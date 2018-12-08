@@ -63,7 +63,7 @@ function initialize() {
              }
            }
            document.getElementById("text").innerHTML = txt;
-           document.getElementsByTagName("section")[0].style.height="auto";
+           //document.getElementsByTagName("section")[0].style.height="auto";
         }
     };
     xhttp.open("GET", url, true);
@@ -109,3 +109,12 @@ function initialize() {
 }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDONbj1HFMLs7UI3yBortL4qwLm-0C7mYM&callback=initialize"></script>
+
+<form action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="POST">
+  <input type="text" name="name" value="Your name" onclick="this.value=''"><br>
+  <input type="text" name="email" value="Email address" onclick="this.value=''"><br>
+  <input type="text" name="subject" value="Subject" onclick="this.value=''"><br>
+  <textarea name="text" value="Text" onclick="this.value=''"></textarea><br>
+  <input type="hidden" name="a" value="contact"><br>
+  <input type="submit" value="Send">
+</form>
