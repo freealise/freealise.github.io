@@ -37,13 +37,13 @@ layout: default
   <input type="text" name="email" value="Email address" onclick="this.value=''"><br>
   <input type="text" name="subject" value="Subject" onclick="this.value=''"><br>
   <textarea name="text" value="Text" onclick="this.value=''"></textarea><br>
+  <input type="text" name="location" id="location" value="<georss:point></georss:point>">
   <input type="hidden" name="a" value="contact"><br>
   <input type="submit" value="Send">
 </form>
 
     <div id="floating-panel">
       <input id="address" type="textbox" value="Sydney, NSW">
-      <input id="point" type="text" value="<georss:point></georss:point>">
       <input id="submit" type="button" value="Geocode">
     </div>
     <div id="map"></div>
@@ -70,7 +70,7 @@ layout: default
               map: resultsMap,
               position: location
             });
-            document.getElementById('point').value = "<georss:point>"+location.lat()+" "+location.lng()+"</georss:point>";
+            document.getElementById('location').value = "<georss:point>"+location.lat()+" "+location.lng()+"</georss:point>";
           } else {
             alert('Geocode was not successful for the following reason: ' + status);
           }
