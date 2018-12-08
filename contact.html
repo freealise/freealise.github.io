@@ -21,8 +21,8 @@ layout: default
   <textarea name="text" value="Text" onclick="if(this.value=='Text'){this.value='';}"></textarea><br>
   <input type="text" name="address" id="address" value="Location" onclick="if(this.value=='Location'){this.value='';}"><br>
   <input type="text" name="location" id="location" value="<georss:point></georss:point>">
-  <input type="hidden" name="a" value="contact">
-  <div id="send"></div>
+  <input type="hidden" name="a" value="contact"><br>
+  <input type="submit" id="send" value="Send">
 </form>
 
     <div id="map"></div>
@@ -34,9 +34,14 @@ layout: default
         });
         var geocoder = new google.maps.Geocoder();
 
+        document.getElementById('address').addEventListener('focus', function() {
+          document.getElementById('send').style.visibility="hidden";
+        });
+        document.getElementById('address').addEventListener('blur', function() {
+          document.getElementById('send').style.visibility="visible";
+        });
         document.getElementById('address').addEventListener('change', function() {
           geocodeAddress(geocoder, map);
-          document.getElementById('send').innerHTML="<input type='submit' value='Send'>";
         });
       }
 
