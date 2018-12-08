@@ -9,26 +9,8 @@ layout: default
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #floating-panel {
-        position: absolute;
-        top: 10px;
-        left: 25%;
-        z-index: 5;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #999;
-        text-align: center;
-        font-family: 'Roboto','sans-serif';
-        line-height: 30px;
-        padding-left: 10px;
+        width:100%;
+        height: 256px;
       }
     </style>
 
@@ -37,15 +19,12 @@ layout: default
   <input type="text" name="email" value="Email address" onclick="this.value=''"><br>
   <input type="text" name="subject" value="Subject" onclick="this.value=''"><br>
   <textarea name="text" value="Text" onclick="this.value=''"></textarea><br>
+  <input type="text" name="address" id="address" value="Location" onclick="this.value=''"><br>
   <input type="text" name="location" id="location" value="<georss:point></georss:point>">
   <input type="hidden" name="a" value="contact"><br>
-  <input type="submit" value="Send">
+  <input type="submit" id="send" value="Send">
 </form>
 
-    <div id="floating-panel">
-      <input id="address" type="textbox" value="Sydney, NSW">
-      <input id="submit" type="button" value="Geocode">
-    </div>
     <div id="map"></div>
     <script>
       function initMap() {
@@ -55,7 +34,7 @@ layout: default
         });
         var geocoder = new google.maps.Geocoder();
 
-        document.getElementById('submit').addEventListener('click', function() {
+        document.getElementById('address').addEventListener('change', function() {
           geocodeAddress(geocoder, map);
         });
       }
