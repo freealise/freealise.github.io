@@ -15,14 +15,14 @@ layout: default
     </style>
 
 <form action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="POST">
-  <input type="text" name="name" value="Your name" onclick="this.value=''"><br>
-  <input type="text" name="email" value="Email address" onclick="this.value=''"><br>
-  <input type="text" name="subject" value="Subject" onclick="this.value=''"><br>
-  <textarea name="text" value="Text" onclick="this.value=''"></textarea><br>
+  <input type="text" name="name" value="Your name" onclick="if(this.value=='Your name'){this.value='';}"><br>
+  <input type="text" name="email" value="Email address" onclick="if(this.value=='Email address'){this.value='';}"><br>
+  <input type="text" name="subject" value="Subject" onclick="if(this.value=='Subject'){this.value='';}"><br>
+  <textarea name="text" value="Text" onclick="if(this.value=='Text'){this.value='';}"></textarea><br>
   <input type="text" name="address" id="address" value="Location" onclick="if(this.value=='Location'){this.value='';}"><br>
   <input type="text" name="location" id="location" value="<georss:point></georss:point>">
-  <input type="hidden" name="a" value="contact"><br>
-  <input type="submit" id="send" value="Send">
+  <input type="hidden" name="a" value="contact">
+  <div id="send"></div>
 </form>
 
     <div id="map"></div>
@@ -34,8 +34,9 @@ layout: default
         });
         var geocoder = new google.maps.Geocoder();
 
-        document.getElementById('send').addEventListener('click', function() {
+        document.getElementById('address').addEventListener('change', function() {
           geocodeAddress(geocoder, map);
+          document.getElementById('send').innerHTML="<input type='submit' value='Send'>";
         });
       }
 
