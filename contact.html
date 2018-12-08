@@ -19,7 +19,7 @@ layout: default
   <input type="text" name="email" value="Email address" onclick="this.value=''"><br>
   <input type="text" name="subject" value="Subject" onclick="this.value=''"><br>
   <textarea name="text" value="Text" onclick="this.value=''"></textarea><br>
-  <input type="text" name="address" id="address" value="Location" onclick="this.value=''"><br>
+  <input type="text" name="address" id="address" value="Location" onclick="if(this.value=='Location'){this.value='';}"><br>
   <input type="text" name="location" id="location" value="<georss:point></georss:point>">
   <input type="hidden" name="a" value="contact"><br>
   <input type="submit" id="send" value="Send">
@@ -34,7 +34,7 @@ layout: default
         });
         var geocoder = new google.maps.Geocoder();
 
-        document.getElementById('address').addEventListener('change', function() {
+        document.getElementById('send').addEventListener('click', function() {
           geocodeAddress(geocoder, map);
         });
       }
