@@ -22,7 +22,7 @@ layout: default
   <input type="text" name="address" id="address" value="Location" onclick="if(this.value=='Location'){this.value='';}"><br>
   <input type="text" name="location" id="location" value="<georss:point></georss:point>">
   <input type="hidden" name="a" value="contact"><br>
-  <input type="submit" id="send" value="Send">
+  <div id="send"></div>
 </form>
 
     <div id="map"></div>
@@ -35,10 +35,10 @@ layout: default
         var geocoder = new google.maps.Geocoder();
 
         document.getElementById('address').addEventListener('focus', function() {
-          document.getElementById('send').style.visibility="hidden";
+          document.getElementById('send').innerHTML='<input type="submit" value="Send">';
         });
         document.getElementById('address').addEventListener('blur', function() {
-          document.getElementById('send').style.visibility="visible";
+          document.getElementById('send').innerHTML='';
         });
         document.getElementById('address').addEventListener('change', function() {
           geocodeAddress(geocoder, map);
