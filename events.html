@@ -82,12 +82,17 @@ layout: default
   var kmlLayer = new google.maps.KmlLayer({
     url: exec+'?a=events&time='+t
   });
-  kmlLayer.setMap(map);
   var georssLayer = new google.maps.KmlLayer({
     suppressInfoWindows: true,
     url: exec+'?a=xml&time='+t
   });
-  georssLayer.setMap(map);
+  kmlLayer.setMap(map);
+  
+  var listener = google.maps.event.addListener(kmlLayer, 'metadata_changed', function() {
+    google.maps.event.clearListeners(kmlLayer, 'metadata_changed');
+    georssLayer.setMap(map);
+  });
+  
   google.maps.event.addListener(kmlLayer, 'click', function(e) {
     var zoom = map.getZoom();
     if (zoom<12) {
