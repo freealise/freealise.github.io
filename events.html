@@ -86,11 +86,11 @@ layout: default
     suppressInfoWindows: true,
     url: exec+'?a=xml&time='+t
   });
-  kmlLayer.setMap(map);
+  georssLayer.setMap(map);
   
-  var listener = google.maps.event.addListener(kmlLayer, 'metadata_changed', function() {
-    google.maps.event.clearListeners(kmlLayer, 'metadata_changed');
-    georssLayer.setMap(map);
+  var listener = google.maps.event.addListener(georssLayer, 'metadata_changed', function() {
+    google.maps.event.clearListeners(georssLayer, 'metadata_changed');
+    kmlLayer.setMap(map);
   });
   
   google.maps.event.addListener(kmlLayer, 'click', function(e) {
