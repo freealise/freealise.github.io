@@ -15,7 +15,7 @@ function getSum() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var sum = this.responseText;
-      document.getElementById('amountGiven').innerText=sum;
+      document.getElementById('amountGiven').innerText="$"+sum;
       var amountNeeded = document.getElementById('amountNeeded').innerText.slice(1);
       document.getElementById('giveBar').style.width=sum/amountNeeded*100+'%';
     }
