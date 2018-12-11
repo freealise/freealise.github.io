@@ -115,11 +115,8 @@ layout: default
   
   var listener = google.maps.event.addListener(georssLayer, 'metadata_changed', function() {
     google.maps.event.clearListeners(georssLayer, 'metadata_changed');
+    kmlLayer.setMap(map);
     blogLayer.setMap(map);
-    var listener = google.maps.event.addListener(blogLayer, 'metadata_changed', function() {
-      google.maps.event.clearListeners(blogLayer, 'metadata_changed');
-      kmlLayer.setMap(map);
-    });
   });
   
   google.maps.event.addListener(blogLayer, 'click', function(e) {
