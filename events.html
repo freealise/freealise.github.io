@@ -103,6 +103,10 @@ layout: default
   var kmlLayer = new google.maps.KmlLayer({
     url: exec+'?a=events&time='+t
   });
+  var blogLayer = new google.maps.KmlLayer({
+    suppressInfoWindows: true,
+    url: 'https://www.freealise.com/feeds/posts/default/?time='+t
+  });
   var georssLayer = new google.maps.KmlLayer({
     suppressInfoWindows: true,
     url: exec+'?a=xml&time='+t
@@ -111,10 +115,11 @@ layout: default
   
   var listener = google.maps.event.addListener(georssLayer, 'metadata_changed', function() {
     google.maps.event.clearListeners(georssLayer, 'metadata_changed');
+    blogLayer.setMap(map);
     kmlLayer.setMap(map);
   });
   
-  google.maps.event.addListener(kmlLayer, 'click', function(e) {
+  google.maps.event.addListener(blogLayer, 'click', function(e) {
     var zoom = map.getZoom();
     if (zoom<12) {
     	map.setZoom(zoom+4);
