@@ -32,7 +32,7 @@ layout: blank
       },
       "text": {
         "headline": "{{ post.title }}",
-        "text": "{{ post.excerpt | replace: '\"', '\'' }}"
+        "text": "{{ post.excerpt | replace: '"', "'" }}"
       }
     }
     {% unless forloop.last %},{% endunless %}
