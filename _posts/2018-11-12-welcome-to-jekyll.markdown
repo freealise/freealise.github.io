@@ -5,7 +5,7 @@ date:   2018-11-12 15:08:38 +0300
 categories: jekyll update
 tags: new post
 
-url: https://jekyllrb.com/img/logo-2x.png
+media: https://jekyllrb.com/img/logo-2x.png
 caption: Jekyll
 credit: Jekyll
 ---
