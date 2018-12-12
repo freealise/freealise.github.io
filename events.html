@@ -75,7 +75,7 @@ layout: default
                  if (a=="events") {
                     txt += "<p><b>" + x[i].getElementsByTagName("name")[0].innerHTML + "</b><br>";
                  } else {
-                    txt += "<p>" + x[i].getElementsByTagName("updated")[0].innerHTML.split("T")[0] + "<br><b>" + x[i].getElementsByTagName("title")[0].innerHTML + "</b><br>";
+                    txt += "<p>" + x[i].getElementsByTagName("updated")[0].innerHTML.slice(0, 10) + "<br><b>" + x[i].getElementsByTagName("title")[0].innerHTML + "</b><br>";
                  }
                  txt += html + "</p>";  
                }
