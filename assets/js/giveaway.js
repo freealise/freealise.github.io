@@ -33,17 +33,19 @@ function queue() {
       var values, currency;
       var rows = this.responseText.split("\r\n");
       for (i=0;i<rows.length;i++) {
-        values = rows[i].split(", ");
-        if (values[0]=="usd") {
-            currency="$ ";
-        } else if (values[0]=="eur") {
-            currency="€ ";
-        } else if (values[0]=="gbp") {
-            currency="£ ";
-        } else {
-            currency=values[0]+" ";
+        if (rows[i]!="") {
+            values = rows[i].split(", ");
+            if (values[0]=="usd") {
+                currency="$ ";
+            } else if (values[0]=="eur") {
+                currency="€ ";
+            } else if (values[0]=="gbp") {
+                currency="£ ";
+            } else {
+                currency=values[0]+" ";
+            }
+            queue += "<p>" + currency + values[1] + "</p>";
         }
-      	queue += "<p>" + currency + values[1] + "</p>";
       }
       document.getElementById("queue").innerHTML = queue;
     }
