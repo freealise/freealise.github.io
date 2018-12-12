@@ -77,7 +77,7 @@ layout: default
           <div id='payFormOverlay' onclick="this.parentNode.style.display='none';"></div>
           <div id='payFormContainer'>
             <script src='https://js.stripe.com/v3/'></script>
-            <form action='https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec' id='payment-form' method='get' target='_top'>
+            <form action='https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec' id='payment-form' method='post' target='_top'>
               <b>* Email</b> <input class='pay-form follow-by-email-address' expr:placeholder='data:messages.emailAddress' id='stripeEmail' name='stripeEmail' size='16' type='email' value=''/><br/>
               <input name='stripeTokenType' type='hidden' value='card'/>
               <input name='a' type='hidden' value='pay'/>
