@@ -20,7 +20,7 @@ layout: default
 <script>
   function showResults(a) {
     var url = exec+"?a="+a;
-    var xhttp, xmlDoc, txt, x, i;
+    var xhttp, xmlDoc, txt, x, i, point;
     var bounds = map.getBounds();
     var ne = bounds.getNorthEast();
     var sw = bounds.getSouthWest();
@@ -39,24 +39,44 @@ layout: default
         if (this.readyState == 4 && this.status == 200) {
            xmlDoc = xhttp.responseXML;
            txt = "<br>";
-           x = xmlDoc.getElementsByTagName("entry");
+           if (a=="events") {
+              x = xmlDoc.getElementsByTagName("Placemark");
+           } else {
+              x = xmlDoc.getElementsByTagName("entry");
+           }
            for (i = 0; i < x.length; i++) {
-             var point = x[i].getElementsByTagName("georss:point")[0];
+             if (a=="events") {
+               point = x[i].getElementsByTagName("coordinates")[0];
+             } else {
+               point = x[i].getElementsByTagName("georss:point")[0];
+             }
              if (point && point.innerHTML) {
-               var coords = point.innerHTML.split(" ");
-               var lat = parseFloat(coords[0]);
-               var lng = parseFloat(coords[1]);
+               if (a=="events") {
+                 var coords = point.innerHTML.split(",");
+                 var lat = parseFloat(coords[1]);
+                 var lng = parseFloat(coords[0]);
+               } else {
+                 var coords = point.innerHTML.split(" ");
+                 var lat = parseFloat(coords[0]);
+                 var lng = parseFloat(coords[1]);
+               }
                if (lat>minLat && lat<maxLat && lng>minLng && lng<maxLng) {
                  if (a=="xml") {
                     var html = x[i].getElementsByTagName("summary")[0].innerHTML;
                  } else if (a=="blog") {
                     var html = x[i].getElementsByTagName("content")[0].innerHTML;
+                 } else if (a=="events") {
+                    var html = x[i].getElementsByTagName("description")[0].innerHTML;
                  }
                  html = html.replace(/&lt;/g, "<");
                  html = html.replace(/&gt;/g, ">");
                  html = html.replace(/&quot;/g, '"');
                  html = html.replace(/&apos;/g, "'");
-                 txt += "<p><b>" + x[i].getElementsByTagName("title")[0].innerHTML + "</b><br>";
+                 if (a=="events") {
+                    txt += "<p><b>" + x[i].getElementsByTagName("name")[0].innerHTML + "</b><br>";
+                 } else {
+                    txt += "<p><b>" + x[i].getElementsByTagName("title")[0].innerHTML + "</b><br>";
+                 }
                  txt += html + "</p>";  
                }
              }
@@ -97,6 +117,15 @@ layout: default
     blogLayer.setMap(map);
   });
   
+  google.maps.event.addListener(kmlLayer, 'click', function(e) {
+    var zoom = map.getZoom();
+    if (zoom<12) {
+    	map.setZoom(zoom+4);
+    }
+    map.setCenter(e.latLng);
+    var a = "events";
+    showResults(a);
+  });
   google.maps.event.addListener(blogLayer, 'click', function(e) {
     var zoom = map.getZoom();
     if (zoom<12) {
