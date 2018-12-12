@@ -12,7 +12,7 @@ function stripeTokenHandler(token) {
 }
 
 // Create a Stripe client.
-var stripe = Stripe('sk_test_UE7zykTpkTfCcsyBNnJQV1ke');
+var stripe = Stripe('pk_test_AWRrPyyJ0iTw3y0vcrcrM2SL');
 
 // Create an instance of Elements.
 var elements = stripe.elements();
