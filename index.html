@@ -111,40 +111,6 @@ layout: default
 
       <!-- 3 -->
       <script type="text/javascript">
-        var json = {
-          "title": {
-            "media": {
-                "url": "",
-                "caption": "",
-                "credit": ""
-            },
-            "text": {
-                "headline": "Freealise",
-                "text": "Blog"
-            }
-          },
-          "events": [
-          {% for post in site.posts %}
-            {
-              "media": {
-                "url": "{{ post.media }}",
-                "caption": "{{ post.caption }}",
-                "credit": "{{ post.credit }}"
-              },
-              "start_date": {
-                "month": "{{ post.date | date: "%-m" }}", 
-                "day": "{{ post.date | date: "%-d" }}",
-                "year": "{{ post.date | date: "%Y" }}"
-              },
-              "text": {
-                "headline": "{{ post.title }}",
-                "text": "{{ post.excerpt | replace: '"', "'" }}"
-              }
-            }
-            {% unless forloop.last %},{% endunless %}
-          {% endfor %}
-          ]
-        };
         var options = {
           skinny_size: 480
         }
@@ -156,7 +122,7 @@ layout: default
         // optionally, a third argument with configuration options can be passed.
         // See below for more about options.
         //https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=past_events
-        timeline = new TL.Timeline('timeline-embed', json, options);
+        timeline = new TL.Timeline('timeline-embed', '/blog.json', options);
       </script>
 
         <ul>
