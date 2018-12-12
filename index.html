@@ -110,7 +110,6 @@ layout: default
       <div id='timeline-embed' style="width: 100%; height: 600px"></div>
 
       <!-- 3 -->
-      <script type="text/javascript" src="/assets/js/blog.js"></script>
       <script type="text/javascript">
         var options = {
           skinny_size: 480
@@ -123,7 +122,7 @@ layout: default
         // optionally, a third argument with configuration options can be passed.
         // See below for more about options.
         //https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=past_events
-        timeline = new TL.Timeline('timeline-embed', json, options);
+        timeline = new TL.Timeline('timeline-embed', '/blog.json', options);
       </script>
 
         <ul>
