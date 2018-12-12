@@ -30,12 +30,14 @@ function queue() {
     if (this.readyState == 4 && this.status == 200) {
     //document.getElementById("queue").innerHTML = this.responseText + "<br/><br/>";
       var queue = "";
-      for (i=0;i<JSON.parse(this.responseText).rows.length;i++) {
-        var row = JSON.parse(this.responseText).rows[i];
-        if (row[1] != "") {row[1] = "<br/>" + row[1];}
-        if (row[2] != "") {row[2] = "<br/>" + row[2];}
-        if (row[4] != 'undefined') {row[4] = "<br/>" + row[4];} else {row[4]='';}
-      	queue += "<p>" + row[0] + " £" + row[5] + row[1] + row[2] + row[4] + "</p>";
+      var values, currency;
+      var rows = this.responseText.split("\r\n");
+      for (i=0;i<rows.length;i++) {
+        values = rows[i].split(", ");
+        if (values[0]=="gbp") {
+            currency="£ ";
+        }
+      	queue += "<p>" + currency + values[1] + "</p>";
       }
       document.getElementById("queue").innerHTML = queue;
     }
