@@ -1,7 +1,4 @@
----
-layout: null
----
-{
+var json = {
   "title": {
     "media": {
         "url": "",
@@ -34,4 +31,4 @@ layout: null
     {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ]
-}
+};
