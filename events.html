@@ -144,4 +144,22 @@ layout: default
     var a = "xml";
     showResults(a);
   });
+  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var events = "";
+      var values;
+      var rows = this.responseText.split("\r\n");
+      for (i=0;i<rows.length;i++) {
+        if (rows[i]!="") {
+            values = rows[i].split(", ");
+            events += "<p>" + values[0] + " " + values[1] + " " + values[2] + "</p>";
+        }
+      }
+      document.getElementById("text").innerHTML = events;
+    }
+  };
+  xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=events_csv", true);
+  xhttp.send();
 </script>
