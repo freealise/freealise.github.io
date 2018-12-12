@@ -1,4 +1,4 @@
-var json = {
+{
   "title": {
     "media": {
         "url": "",
@@ -31,4 +31,4 @@ var json = {
     {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ]
-};
+}
