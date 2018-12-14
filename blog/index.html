@@ -8,6 +8,10 @@ layout: default
   <p class="author">
     <span class="date">{{ post.date }}</span>
   </p>
+  <div id="share-buttons">
+    <a data-sharer="twitter" data-title="{{ post.title }}" data-hashtags="{{ post.tags }}" data-url="{{ post.url }}"><span class='symbol'>circletwitterbird</span></a>
+    <a data-sharer="facebook" data-hashtag="{{ post.tags }}" data-url="{{ post.url }}"><span class='symbol'>circlefacebook</span></a>
+  </div>
   <div class="content">
     {{ post.content }}
   </div>
