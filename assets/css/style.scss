@@ -226,22 +226,6 @@ font-size:14px;
     width: 75%;
 	padding:5px 0;
 }
-#giveawayPurpose {
-	width:100%;
-	max-width: 256px;
-    float: left;
-    margin-bottom: 16px;
-}
-@media screen and (min-width:600px){
-	#giveawayPurpose {
-	max-width:50%;
-	}
-}
-@media screen and (min-width:800px){
-	#giveawayPurpose {
-	font-size:18px;
-	}
-}
 #graph {
     width: 100%;
     max-width: 256px;
