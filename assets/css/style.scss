@@ -169,12 +169,7 @@ display:none;
 }
 
 #payment {
-	overflow:auto;
-	clear:both;
-}
-#payment {
-	position:relative;
-	background: rgba(255,255,255,.75);
+	overflow:visible;
 }
 #payForm {
 	display:none;
