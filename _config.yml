@@ -24,7 +24,7 @@ twitter_username: freealise
 github_username:  freealise
 
 # Build settings
-paginate: 12
+paginate: 1
 markdown: kramdown
 theme: jekyll-theme-leap-day
 plugins:
