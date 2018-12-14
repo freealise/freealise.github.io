@@ -25,6 +25,7 @@ github_username:  freealise
 
 # Build settings
 paginate: 1
+paginate_path: "blog/page:num"
 markdown: kramdown
 theme: jekyll-theme-leap-day
 plugins:
