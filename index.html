@@ -102,10 +102,10 @@ layout: default
       <!-- 2 -->
       <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
-      <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+      <div id='timeline-embed'></div>
 
       <!-- 3 -->
-      <script type="text/javascript">
+      <script type="text/javascript" onload="document.getElementsByClassName('tl-storyslider')[0].style.height='235px';">
         var options = {
           skinny_size: 480
         }
