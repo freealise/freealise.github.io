@@ -272,6 +272,8 @@ float:left;
 text-align: right;
 }
 #items {
-    width: 100%;
-    clear: both;
+width: 100%;
+clear: both;
+overflow: scroll;
+height: 64px;
 }
