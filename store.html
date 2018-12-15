@@ -21,6 +21,7 @@ layout: default
     }
     total = total.toFixed(2);
     document.getElementById('amount').value=total;
+    document.getElementById('stripeOrder').value=order;
     document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order;
     document.getElementById('payForm').style.display='block';
   }
