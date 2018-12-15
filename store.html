@@ -8,7 +8,12 @@ layout: default
     <h2>{{ item.title }}</h2>
   </a>
   <div>
+    <div id="share-buttons">
+      <a data-sharer="twitter" data-title="{{ item.title }}" data-hashtags="{{ item.tags }}" data-url="{{ site.url }}{{ item.url }}"><span class='symbol'>circletwitterbird</span></a>
+      <a data-sharer="facebook" data-hashtag="{{ item.tags }}" data-url="{{ site.url }}{{ item.url }}"><span class='symbol'>circlefacebook</span></a>
+    </div>
     <p><b>$ {{ item.cost }}</b></p>
-    {{ item.content }}
+    {{ item.description }}<br>
+    <button onclick="addItem();">Add to Basket</button>
   </div>
 {% endfor %}
