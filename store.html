@@ -5,8 +5,10 @@ layout: default
 <script type="text/javascript">
   var items = [];
   var i=0;
+  var total = 0;
   
   function addItem(id, title, cost) {
+    total = total+cost;
     items[i] = id+" - "+title+" $"+cost;
     i++;
     document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
@@ -17,7 +19,7 @@ layout: default
     for (var j=0; j<items.length; j++) {
       order += items[j]+"<br>";
     }
-    document.getElementById("payFormContainer").innerHTML += "<div id='items'>"+order+"</div>";
+    document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order;
     document.getElementById('payForm').style.display='block';
   }
 </script>
