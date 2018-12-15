@@ -3,12 +3,11 @@ layout: default
 ---
 
 <script type="text/javascript">
-  var items = [][];
+  var items = [];
   var i=0;
   
   function addItem(id, title) {
-    items[i][0] = id;
-    items[i][1] = title;
+    items[i] = id+" - "+title;
     i++;
     document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
   }
@@ -16,7 +15,7 @@ layout: default
   function showOrder() {
     var order = "";
     for (var j=0; j<items.length; j++) {
-      order += items[j][0]+" - "+items[j][1]+"<br>";
+      order += items[j]+"<br>";
     }
     document.getElementById("payFormContainer").innerHTML += "<p>"+order+"</p>";
     document.getElementById('payForm').style.display='block';
