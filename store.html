@@ -19,3 +19,14 @@ layout: default
     <button class="button" onclick="addItem({{ item.id }});">Add to Basket</button>
   </div>
 {% endfor %}
+
+            {% assign itemsByCategory =
+                site.items | group_by_exp:"item", "item.category" %}
+            {% for category in itemsByCategory %}
+              <b>{{ category.name }}</b>
+                <ul>
+                  {% for item in category.items %}
+                    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                  {% endfor %}
+                </ul>
+            {% endfor %}
