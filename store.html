@@ -13,7 +13,7 @@ layout: default
   }
 </script>
 
-<div><i class="material-icons">local_mall</i><sup id="qty">0</sup></div>
+<div><i class="material-icons">local_mall</i><span id="qty">0</span></div>
 
 {% for item in site.items %}
   <a href="{{ item.url }}">
@@ -29,6 +29,6 @@ layout: default
       <b>$ {{ item.cost }}</b><br>  
       {{ item.description }}
     </p>
-    <button class="button" onclick="addItem({{ item.id }});">Pre-order</button>
+    <button class="button" onclick="addItem({{ forloop.index }});">Pre-order</button>
   </div>
 {% endfor %}
