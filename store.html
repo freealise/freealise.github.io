@@ -5,6 +5,7 @@ layout: default
 {% for item in site.items %}
   <h2>{{ item.title }}</h2>
   <div>
+    <img src="{{ item.image }}" width="128" height="128" style="float:left">
     <p><b>$ {{ item.cost }}</b></p>
     {{ item.content }}
   </div>
