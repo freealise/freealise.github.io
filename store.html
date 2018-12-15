@@ -3,8 +3,10 @@ layout: default
 ---
 
 {% for item in site.items %}
-  <img src="{{ item.image }}" width="128" height="128" style="float:left">
-  <h2>{{ item.title }}</h2>
+  <a href="{{ item.url }}">
+    <img src="{{ item.image }}" width="128" height="128" style="float:left;padding:8px">
+    <h2>{{ item.title }}</h2>
+  </a>
   <div>
     <p><b>$ {{ item.cost }}</b></p>
     {{ item.content }}
