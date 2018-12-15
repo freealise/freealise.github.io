@@ -6,8 +6,8 @@ layout: default
   var items = [];
   var i=0;
   
-  function addItem(id, title) {
-    items[i] = id+" - "+title;
+  function addItem(id, title, cost) {
+    items[i] = id+" - "+title+" $"+cost;
     i++;
     document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
   }
@@ -17,7 +17,7 @@ layout: default
     for (var j=0; j<items.length; j++) {
       order += items[j]+"<br>";
     }
-    document.getElementById("payFormContainer").innerHTML += "<p>"+order+"</p>";
+    document.getElementById("payFormContainer").innerHTML += "<div id='items'>"+order+"</div>";
     document.getElementById('payForm').style.display='block';
   }
 </script>
@@ -40,6 +40,6 @@ layout: default
       <b>$ {{ item.cost }}</b><br>  
       {{ item.description }}
     </p>
-    <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}');">Pre-order</button>
+    <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', '{{ item.cost }}');">Pre-order</button>
   </div>
 {% endfor %}
