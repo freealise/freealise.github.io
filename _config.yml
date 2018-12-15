@@ -28,6 +28,9 @@ paginate: 1
 paginate_path: "blog/page:num"
 markdown: kramdown
 theme: jekyll-theme-leap-day
+collections:
+  items:
+    output: true
 plugins:
   - jekyll-feed
 
