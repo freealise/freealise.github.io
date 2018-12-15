@@ -2,6 +2,19 @@
 layout: default
 ---
 
+<script type="text/javascript">
+  var items = new Array();
+  var i=0;
+  
+  function addItem(id) {
+    items[i] = id;
+    document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
+    i++;
+  }
+</script>
+
+<div><i class="material-icons">local_mall</i><sup id="qty">0</sup></div>
+
 {% for item in site.items %}
   <a href="{{ item.url }}">
     <img src="{{ item.image }}" width="128" height="128" style="float:left;padding-right:8px">
@@ -16,6 +29,6 @@ layout: default
       <b>$ {{ item.cost }}</b><br>  
       {{ item.description }}
     </p>
-    <button class="button" onclick="addItem({{ item.id }});">Add to Basket</button>
+    <button class="button" onclick="addItem({{ item.id }});">Pre-order</button>
   </div>
 {% endfor %}
