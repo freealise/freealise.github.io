@@ -19,6 +19,7 @@ layout: default
     for (var j=0; j<items.length; j++) {
       order += items[j]+"<br>";
     }
+    total = total.toFixed(2);
     document.getElementById('amount').value=total;
     document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order;
     document.getElementById('payForm').style.display='block';
