@@ -1,0 +1,7 @@
+{% for item in site.items %}
+  <h2>{{ item.title }}</h2>
+  <div>
+    <p><b>$ {{ item.cost }}</b></p>
+    {{ item.content }}
+  </div>
+{% endfor %}
