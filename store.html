@@ -31,18 +31,18 @@ layout: default
 
 {% for item in site.items %}
   <a href="{{ item.url }}">
-    <img src="{{ item.image }}" width="128" height="128" style="float:left;padding-right:8px">
+    <img src="{{ item.image }}" width="128" height="128" style="float:left;padding-right:16px">
     <h2>{{ item.title }}</h2>
   </a>
   <div>
     <div id="share-buttons">
       <a data-sharer="twitter" data-title="{{ item.title }}" data-hashtags="{{ item.tags }}" data-url="{{ site.url }}{{ item.url }}"><span class='symbol'>circletwitterbird</span></a>
       <a data-sharer="facebook" data-hashtag="{{ item.tags }}" data-url="{{ site.url }}{{ item.url }}"><span class='symbol'>circlefacebook</span></a>
-    </div>
-    <p>
+    </div><br>
+    <div>
       <b>$ {{ item.cost }}</b><br>  
       {{ item.description }}
-    </p>
+    </div>
     <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', {{ item.cost }});">Pre-order</button>
   </div>
 {% endfor %}
