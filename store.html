@@ -11,9 +11,20 @@ layout: default
     i++;
     document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
   }
+  
+  function showOrder() {
+    var order = "";
+    for (var j=0; j<items.length; j++) {
+      order += items[j]+"<br>";
+    }
+    document.getElementById("payFormContainer").innerHTML += "<div>"+order+"</div>";
+    document.getElementById('payForm').style.display='block';
+  }
 </script>
 
-<div id=order"><i class="material-icons">local_mall</i><span id="qty">0</span></div>
+<div id="order">
+  <a onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
+</div>
 
 {% for item in site.items %}
   <a href="{{ item.url }}">
