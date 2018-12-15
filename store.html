@@ -4,7 +4,7 @@ layout: default
 
 {% for item in site.items %}
   <a href="{{ item.url }}">
-    <img src="{{ item.image }}" width="128" height="128" style="float:left;padding:8px">
+    <img src="{{ item.image }}" width="128" height="128" style="float:left;padding-right:8px">
     <h2>{{ item.title }}</h2>
   </a>
   <div>
@@ -12,8 +12,10 @@ layout: default
       <a data-sharer="twitter" data-title="{{ item.title }}" data-hashtags="{{ item.tags }}" data-url="{{ site.url }}{{ item.url }}"><span class='symbol'>circletwitterbird</span></a>
       <a data-sharer="facebook" data-hashtag="{{ item.tags }}" data-url="{{ site.url }}{{ item.url }}"><span class='symbol'>circlefacebook</span></a>
     </div>
-    <p><b>$ {{ item.cost }}</b></p>
-    {{ item.description }}<br>
-    <button onclick="addItem();">Add to Basket</button>
+    <p>
+      <b>$ {{ item.cost }}</b><br>  
+      {{ item.description }}
+    </p>
+    <button class="button" onclick="addItem({{ item.id }});">Add to Basket</button>
   </div>
 {% endfor %}
