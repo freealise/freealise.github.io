@@ -42,6 +42,6 @@ layout: default
       <b>$ {{ item.cost }}</b><br>  
       {{ item.description }}
     </p>
-    <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', '{{ item.cost }}');">Pre-order</button>
+    <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', {{ item.cost }});">Pre-order</button>
   </div>
 {% endfor %}
