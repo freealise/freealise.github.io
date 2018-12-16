@@ -22,6 +22,31 @@
 
       <header>
         <a href="{{ site.url }}"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
+        <svg height='4' id='svgOne' width='150'>
+          Sorry, your browser does not support inline SVG.  
+        </svg><br/>
+        <script>
+        var svgns = 'http://www.w3.org/2000/svg';
+        for (var i=1; i!=17; i++) {
+         var rect = document.createElementNS(svgns, 'rect');
+         rect.setAttributeNS(null, 'x', Math.log2(i)*36);
+         rect.setAttributeNS(null, 'y', 0);
+         rect.setAttributeNS(null, 'height', '4');
+         rect.setAttributeNS(null, 'width', '4');
+         rect.setAttributeNS(null, 'fill', '#8888ff');
+         rect.setAttributeNS(null, 'opacity', 1/i);
+         document.getElementById('svgOne').appendChild(rect);
+        }
+        for (var i=0; i!=5; i++) {
+         var rect = document.createElementNS(svgns, 'rect');
+         rect.setAttributeNS(null, 'x', i*36);
+         rect.setAttributeNS(null, 'y', 10);
+         rect.setAttributeNS(null, 'height', '4');
+         rect.setAttributeNS(null, 'width', '4');
+         rect.setAttributeNS(null, 'fill', 'transparent');
+         document.getElementById('svgOne').appendChild(rect);
+        }
+        </script>
         <p class="des">{{ site.description | default: site.github.project_tagline }}</p>
         <p class="nav">
             <span><a href="/">Home</a></span>
