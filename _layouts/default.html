@@ -9,6 +9,7 @@
 {% seo %}
     <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
     <link href='/assets/fonts/monosocialiconsfont.css' rel='stylesheet'/>
+    <link href='https://fontlibrary.org/face/osifont' media='screen' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
@@ -21,7 +22,7 @@
   <body>
 
       <header>
-        <a href="{{ site.url }}"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
+        <a href="{{ site.url }}"><h1 style="font-family:osifontMedium">{{ site.title | default: site.github.repository_name }}</h1></a>
         <svg height='4' id='svgOne' width='150'>
           Sorry, your browser does not support inline SVG.  
         </svg><br/>
