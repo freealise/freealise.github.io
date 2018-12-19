@@ -289,6 +289,8 @@ height: 64px;
 
 #thumbnails {
 width: 256px;
+padding-right: 16px;
+padding-bottom: 16px;
 }
 .thumbnail {
 width:64px;
@@ -303,6 +305,8 @@ height:256px;
 min-width: 256px;
 min-height: 256px;
 float:left;
+padding-right: 16px;
+padding-bottom: 16px;
 }
 .showcase {
 position: absolute;
