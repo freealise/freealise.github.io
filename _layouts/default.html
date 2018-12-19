@@ -118,8 +118,8 @@
         <a id="order" onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
         <script type="text/javascript">
           var item;
-          var i = 0 + getCookie("items");
-          var total = 0.0 + getCookie("total");
+          var i = 0 + parseInt(getCookie("items"));
+          var total = 0.0 + parseFloat(getCookie("total"));
           var order = "" + getCookie("order");
           document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
           document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order.replace(", ", "<br>");
