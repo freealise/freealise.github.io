@@ -199,6 +199,8 @@
               <a data-sharer="twitter" data-title="{{ page.title }}" data-hashtags="{{ page.tags }}" data-url="{{ site.url }}{{ page.url }}"><span class='symbol'>circletwitterbird</span></a>
               <a data-sharer="facebook" data-hashtag="{{ page.tags }}" data-url="{{ site.url }}{{ page.url }}"><span class='symbol'>circlefacebook</span></a>
             </div>
+        {% endif %}
+        {% if page.date %}
             <h2>{{ page.title }}</h2>
         {% endif %}
         
