@@ -93,7 +93,7 @@
           var item;
           var order = "";
           i = getCookie("items");
-          total = parseFloat(getCookie("total"));
+          total = getCookie("total");
           order = getCookie("order");
           document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
           document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order.replace(", ", "<br>");
