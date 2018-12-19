@@ -10,7 +10,11 @@ tags: music
 categories: album
 ---
 
-<img id="myImg" src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256">
+<script type="text/javascript">
+  var showcase = false;
+</script>
+
+<img id="myImg" class="thumbnail" src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256" onclick="if(!showcase){this.className+=' showcase';showcase=true;}else{this.className='thumbnail';showcase=false;}">
 
 Booklet images
 Tracklist<br>
