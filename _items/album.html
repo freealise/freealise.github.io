@@ -35,5 +35,12 @@ categories: album
   <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
 </div>
 
+<h2>{{ page.title }}</h2>
+<div>
+  <b>$ {{ page.cost }}</b><br>
+  {{ page.description }}
+</div>
+<button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Pre-order</button>
+
 Tracklist<br>
-Lyrics or link to them on Blogger or Google Sites<br>
+Link to lyrics on Blogger or Google Sites<br>
