@@ -2,25 +2,17 @@ function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
 }
 
 function getCookie(cname) {
-    var name = cname + "=";
-    alert(document.cookie);
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
+    var decodedCookie = document.cookie;
+    var ca = decodedCookie.replace("; ", ";").split(";");
     for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            	c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            	c = c.substring(name.length, c.length);
-            	if (c && c != "undefined") {
-              		return c;
-            	}
-        }
+        var c = ca[i].split("=");
+	if (c[1] && c[0]==cname) {
+	  return c[1];
+	}
     }
     return "";
 }
