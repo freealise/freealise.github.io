@@ -75,24 +75,28 @@
             }
           }
           
-          var items = [];
           var i=0;
           var total = 0;
+          var item;
+          var order = "";
+          i = getCookie("items");
+          total = getCookie("total");
+          order = getCookie("order");
           function addItem(id, title, cost) {
             total = total+cost;
-            items[i] = id+" - "+title.replace(",", " ");
+            total = total.toFixed(2);
+            if (order != "") {
+              order += ", ";
+            }
+            item = id+" - "+title.replace(",", " ");
+            order += item;
             i++;
+            setCookie("items", i, 365);
+            setCookie("total", total, 365);
+            setCookie("order", order, 365);
             document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
           }
           function showOrder() {
-            var order = "";
-            for (var j=0; j<items.length; j++) {
-              order += items[j];
-              if (j<items.length-1) {
-                  order += ", ";
-              }
-            }
-            total = total.toFixed(2);
             document.getElementById('amount').value=total;
             document.getElementById('stripeOrder').value=order;
             document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order.replace(", ", "<br>");
