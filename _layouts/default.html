@@ -160,6 +160,10 @@
       </nav>
       <section>
         {% if page.id %}
+            <div id="share-buttons">
+              <a data-sharer="twitter" data-title="{{ page.title }}" data-hashtags="{{ page.tags }}" data-url="{{ site.url }}{{ page.url }}"><span class='symbol'>circletwitterbird</span></a>
+              <a data-sharer="facebook" data-hashtag="{{ page.tags }}" data-url="{{ site.url }}{{ page.url }}"><span class='symbol'>circlefacebook</span></a>
+            </div>
             <h2>{{ page.title }}</h2>
         {% endif %}
         
