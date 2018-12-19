@@ -283,3 +283,14 @@ clear: both;
 overflow: scroll;
 height: 64px;
 }
+
+.thumbnail {
+	width:64px;
+	height:64px;
+}
+.showcase {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
