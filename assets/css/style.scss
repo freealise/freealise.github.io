@@ -299,8 +299,10 @@ min-height: 256px;
 float:left;
 }
 .showcase {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: 1;
+position: absolute;
+width: 100%;
+height: auto;
+z-index: 1;
+left: 0px;
+top: auto;
 }
