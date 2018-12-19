@@ -119,7 +119,7 @@
         <script type="text/javascript">
           var item;
           var i = 0 + parseInt(getCookie("items"));
-          var total = 0.0 + parseFloat(getCookie("total"));
+          var total = 0.00 + parseFloat(getCookie("total"));
           var order = "" + getCookie("order");
           document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
           document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order.replace(", ", "<br>");
@@ -132,7 +132,7 @@
             item = id+" - "+title.replace(",", " ");
             order += item;
             i++;
-            setCookie("items", i, 365);
+            setCookie("items", items, 365);
             setCookie("total", total, 365);
             setCookie("order", order, 365);
             document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
