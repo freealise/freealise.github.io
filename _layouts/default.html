@@ -60,7 +60,9 @@
       </header>
 
       <div id="banner">
-        <a href="{{ site.github.repository_url }}"><span id="logo"></span></a>
+        <div id="order">
+          <a onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
+        </div>
 
         <form action="#" id="subscribe-form" class="downloads">
           <input type="text" value="Email address" id="email" onclick="this.value=''">
@@ -227,7 +229,9 @@
             <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
           {% endif %}
           <p>
-            Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a><br>
+            <a href="{{ site.github.repository_url }}"><span id="logo"></span></a><br>
+            Hosted on GitHub Pages<br>
+            Theme by <a href="https://twitter.com/michigangraham">mattgraham</a><br>
             Powered by <a href="https://www.google.com/script/start/" target="_blank">Google Apps Script</a>
           </p>
         </small>
