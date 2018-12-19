@@ -50,51 +50,6 @@
          document.getElementById('svgOne').appendChild(rect);
         }
         </script>
-        <p class="des">{{ site.description | default: site.github.project_tagline }}</p>
-        <p class="nav">
-            <span><a href="/">Home</a></span>
-            <span><a href="/blog">Blog</a></span>
-            <span><a href="/store">Store</a></span>
-            <span><a href="/events">Events</a></span>
-        </p>
-      </header>
-
-      <div id="banner">
-        <a id="order" onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
-
-        <form action="#" id="subscribe-form" class="downloads">
-          <input type="text" value="Email address" id="email" onclick="this.value=''">
-          <input type="submit" value="Join" class="button">
-        </form>
-        
-        <div id="navContainer" class="fork">
-          <button id="navButton" class="button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
-          <div>
-            <form action="#" id="search-form">
-              <input type="text" value="Search" id="search" onclick="this.value=''">
-              <input type="submit" value="Find" class="button">
-            </form>
-            {% for category in site.categories %}
-              <span>{{ category[0] }}</span><br>
-            {% endfor %}
-            <hr>
-            {% for tag in site.tags %}
-              <span>{{ tag[0] }}</span>&nbsp;|&nbsp;
-            {% endfor %}
-            <hr>
-            {% assign postsByYear =
-                site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
-            {% for year in postsByYear %}
-              <b>{{ year.name }}</b>
-                <ul>
-                  {% for post in year.items %}
-                    <li><a href="{{ post.url }}">{{ post.title }}-{{ post.date }}</a></li>
-                  {% endfor %}
-                </ul>
-            {% endfor %}
-          </div>
-        </div>
-        
         <script type="text/javascript">
           var nav = document.getElementById('navContainer');
           var nav_opened = false;
@@ -144,6 +99,50 @@
             document.getElementById('payForm').style.display='block';
           }
         </script>
+        <p class="des">{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="nav">
+            <span><a href="/">Home</a></span>
+            <span><a href="/blog">Blog</a></span>
+            <span><a href="/store">Store</a></span>
+            <span><a href="/events">Events</a></span>
+        </p>
+      </header>
+
+      <div id="banner">
+        <a id="order" onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
+
+        <form action="#" id="subscribe-form" class="downloads">
+          <input type="text" value="Email address" id="email" onclick="this.value=''">
+          <input type="submit" value="Join" class="button">
+        </form>
+        
+        <div id="navContainer" class="fork">
+          <button id="navButton" class="button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
+          <div>
+            <form action="#" id="search-form">
+              <input type="text" value="Search" id="search" onclick="this.value=''">
+              <input type="submit" value="Find" class="button">
+            </form>
+            {% for category in site.categories %}
+              <span>{{ category[0] }}</span><br>
+            {% endfor %}
+            <hr>
+            {% for tag in site.tags %}
+              <span>{{ tag[0] }}</span>&nbsp;|&nbsp;
+            {% endfor %}
+            <hr>
+            {% assign postsByYear =
+                site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+            {% for year in postsByYear %}
+              <b>{{ year.name }}</b>
+                <ul>
+                  {% for post in year.items %}
+                    <li><a href="{{ post.url }}">{{ post.title }}-{{ post.date }}</a></li>
+                  {% endfor %}
+                </ul>
+            {% endfor %}
+          </div>
+        </div>
         
         <!--
         {% if site.show_downloads %}
