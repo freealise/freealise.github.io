@@ -28,11 +28,13 @@ categories: album
   <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256" onclick="showcase(this);">
 </div>
 
-<div class="thumbnail">
-  <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
-</div>
-<div class="thumbnail">
-  <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
+<div>
+  <div class="thumbnail">
+    <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
+  </div>
+  <div class="thumbnail">
+    <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
+  </div>
 </div>
 
 <h2>{{ page.title }}</h2>
@@ -42,5 +44,7 @@ categories: album
 </div>
 <button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Pre-order</button>
 
-Tracklist<br>
-Link to lyrics on Blogger or Google Sites<br>
+<div>
+  Tracklist<br>
+  Link to lyrics on Blogger or Google Sites<br>
+</div>
