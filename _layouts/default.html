@@ -159,6 +159,10 @@
         <ul></ul>
       </nav>
       <section>
+        {% if page.id %}
+            <h2>{{ page.title }}</h2>
+        {% endif %}
+        
         {{ content }}
       </section>
       <footer>
