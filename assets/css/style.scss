@@ -275,7 +275,10 @@ float:left;
 }
 
 #order {
-text-align: right;
+position: absolute;
+right: 20px;
+top: 10px;
+color: #808080;
 }
 #items {
 width: 100%;
