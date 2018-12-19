@@ -134,7 +134,7 @@
           document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
           document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order.replace(", ", "<br>");
           function addItem(id, title, cost) {
-            total = total+cost;
+            total = parseFloat(total)+cost;
             total = total.toFixed(2);
             if (order != "") {
               order += ", ";
