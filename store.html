@@ -2,10 +2,6 @@
 layout: default
 ---
 
-<div id="order">
-  <a onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
-</div>
-
 {% for item in site.items %}
   <a href="{{ item.url }}">
     <img src="{{ item.image }}" width="128" height="128" style="float:left;padding-right:16px">
