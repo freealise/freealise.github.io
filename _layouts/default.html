@@ -81,7 +81,7 @@
           var item;
           var order = "";
           i = getCookie("items");
-          total = getCookie("total");
+          total = parseFloat(getCookie("total"));
           order = getCookie("order");
           function addItem(id, title, cost) {
             total = total+cost;
