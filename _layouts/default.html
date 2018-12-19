@@ -96,18 +96,53 @@
         </div>
         
         <script type="text/javascript">
-            var nav = document.getElementById('navContainer');
-            var nav_opened = false;
-            function openNav() {
-                nav_opened = true;
-                nav.style.width='256px';
-                nav.style.height='256px';
+          var nav = document.getElementById('navContainer');
+          var nav_opened = false;
+          function openNav() {
+              nav_opened = true;
+              nav.style.width='256px';
+              nav.style.height='256px';
+          }
+          function closeNav() {
+              nav_opened = false;
+              nav.style.width='38px';
+              nav.style.height='36px';
+          }
+          
+          var show = false;
+          function showcase(e) {
+            if (!show) {
+              e.className += ' showcase';
+              show = true;
+            } else {
+              e.className = '';
+              show = false;
             }
-            function closeNav() {
-                nav_opened = false;
-                nav.style.width='38px';
-                nav.style.height='36px';
+          }
+          
+          var items = [];
+          var i=0;
+          var total = 0;
+          function addItem(id, title, cost) {
+            total = total+cost;
+            items[i] = id+" - "+title.replace(",", " ");
+            i++;
+            document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
+          }
+          function showOrder() {
+            var order = "";
+            for (var j=0; j<items.length; j++) {
+              order += items[j];
+              if (j<items.length-1) {
+                  order += ", ";
+              }
             }
+            total = total.toFixed(2);
+            document.getElementById('amount').value=total;
+            document.getElementById('stripeOrder').value=order;
+            document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order.replace(", ", "<br>");
+            document.getElementById('payForm').style.display='block';
+          }
         </script>
         
         <!--
