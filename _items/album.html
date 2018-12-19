@@ -12,12 +12,28 @@ categories: album
 
 <script type="text/javascript">
   var showcase = false;
+  
+  function showcase(e) {
+    if (!showcase) {
+      e.className += ' showcase';
+      showcase = true;
+    } else {
+      e.className = '';
+      showcase = false;
+    }
+  }
 </script>
 
-<img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256" onclick="if(!showcase){this.className+=' showcase';showcase=true;}else{this.className='';showcase=false;}">
+<div class="thumbnail" align="left" width="256" height="256">
+  <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256" onclick="showcase(this);">
+</div>
 
-<img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="if(!showcase){this.className+=' showcase';showcase=true;}else{this.className='';showcase=false;}">
-<img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="if(!showcase){this.className+=' showcase';showcase=true;}else{this.className='';showcase=false;}">
+<span class="thumbnail" width="64" height="64">
+  <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
+</span>
+<span class="thumbnail" width="64" height="64">
+  <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
+</span>
 
 Tracklist<br>
 Lyrics or link to them on Blogger or Google Sites<br>
