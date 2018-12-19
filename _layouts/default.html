@@ -118,8 +118,18 @@
         <a id="order" onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
         <script type="text/javascript">
           var item;
-          var i = 0 + parseInt(getCookie("items"));
-          var total = 0.00 + parseFloat(getCookie("total"));
+          var i = getCookie("items");
+          if (i && i != "") {
+            i = parseInt(i);
+          } else {
+            i = 0;
+          }
+          var total = getCookie("total");
+          if (total && total != "") {
+            total = parseFloat(total);
+          } else {
+            total = 0.00;
+          }
           var order = "" + getCookie("order");
           document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
           document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order.replace(", ", "<br>");
@@ -132,8 +142,8 @@
             item = id+" - "+title.replace(",", " ");
             order += item;
             i++;
-            setCookie("items", ""+i, 365);
-            setCookie("total", ""+total, 365);
+            setCookie("items", i.toString(), 365);
+            setCookie("total", total.toString(), 365);
             setCookie("order", order, 365);
             document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
           }
