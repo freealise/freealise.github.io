@@ -14,8 +14,10 @@ categories: album
   var showcase = false;
 </script>
 
-<img id="myImg" class="thumbnail" src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256" onclick="if(!showcase){this.className+=' showcase';showcase=true;}else{this.className='thumbnail';showcase=false;}">
+<img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256" onclick="if(!showcase){this.className+=' showcase';showcase=true;}else{this.className='';showcase=false;}">
 
-Booklet images
+<img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="if(!showcase){this.className+=' showcase';showcase=true;}else{this.className='';showcase=false;}">
+<img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="if(!showcase){this.className+=' showcase';showcase=true;}else{this.className='';showcase=false;}">
+
 Tracklist<br>
 Lyrics or link to them on Blogger or Google Sites<br>
