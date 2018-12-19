@@ -117,17 +117,14 @@
         </div>
         <a id="order" onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
         <script type="text/javascript">
-          var i=0;
-          var total = 0.0;
           var item;
-          var order = "";
-          i = getCookie("items");
-          total = getCookie("total");
-          order = getCookie("order");
+          var i = 0 + getCookie("items");
+          var total = 0.0 + getCookie("total");
+          var order = "" + getCookie("order");
           document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
           document.getElementById("items").innerHTML = "<div align='right'><b>$ "+total+"</b></div>"+order.replace(", ", "<br>");
           function addItem(id, title, cost) {
-            total = parseFloat(total)+cost;
+            total = total+cost;
             total = total.toFixed(2);
             if (order != "") {
               order += ", ";
