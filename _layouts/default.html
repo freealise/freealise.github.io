@@ -75,7 +75,19 @@
               show = false;
             }
           }
-          
+        </script>
+        <p class="des">{{ site.description | default: site.github.project_tagline }}</p>
+        <p class="nav">
+            <span><a href="/">Home</a></span>
+            <span><a href="/blog">Blog</a></span>
+            <span><a href="/store">Store</a></span>
+            <span><a href="/events">Events</a></span>
+        </p>
+      </header>
+
+      <div id="banner">
+        <a id="order" onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
+        <script type="text/javascript">
           var i=0;
           var total = 0.0;
           var item;
@@ -106,17 +118,6 @@
             document.getElementById('payForm').style.display='block';
           }
         </script>
-        <p class="des">{{ site.description | default: site.github.project_tagline }}</p>
-        <p class="nav">
-            <span><a href="/">Home</a></span>
-            <span><a href="/blog">Blog</a></span>
-            <span><a href="/store">Store</a></span>
-            <span><a href="/events">Events</a></span>
-        </p>
-      </header>
-
-      <div id="banner">
-        <a id="order" onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
 
         <form action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="get" id="subscribe-form" class="downloads">
           <input type="text" value="Email address" name="email" id="email" onclick="this.value=''">
