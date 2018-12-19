@@ -10,25 +10,11 @@ tags: music
 categories: album
 ---
 
-<script type="text/javascript">
-  var show = false;
-  
-  function showcase(e) {
-    if (!show) {
-      e.className += ' showcase';
-      show = true;
-    } else {
-      e.className = '';
-      show = false;
-    }
-  }
-</script>
-
 <div class="item_image" align="left">
   <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256" onclick="showcase(this);">
 </div>
 
-<div>
+<div id="thumbnails" align="left">
   <div class="thumbnail">
     <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
   </div>
