@@ -7,6 +7,7 @@ function setCookie(cname,cvalue,exdays) {
 
 function getCookie(cname) {
     var name = cname + "=";
+    alert(document.cookie);
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
     for(var i = 0; i < ca.length; i++) {
