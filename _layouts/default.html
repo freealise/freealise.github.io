@@ -272,6 +272,7 @@
             document.getElementById('subscribe-form').style.display='none';
             document.getElementById('contact-link').style.display='block';
             document.getElementById('logout').style.display='block';
+            document.getElementById('stripeEmail').value=email;
             if (window.location.pathname == '/contact.html') {
                 document.getElementById('contact_email').value=email;
                 document.getElementById('token').value=token;
