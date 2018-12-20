@@ -121,10 +121,7 @@
           <input type="hidden" name="a" value="confirm">
           <input type="submit" value="Join" class="button">
         </form>
-        <span class="downloads">
-          <a id="logout" class="button" href="/contact.html?email=&token=">Logout</a>
-          <a id="contact-link" class="button" href="/contact.html">Contact</a>
-        </span>
+        <span class="downloads" id="contact"></span>
         
         <script src="/assets/js/cookie.js"></script>
         <script type="text/javascript">
@@ -285,8 +282,7 @@
         var token=getCookie("token");
         if (email && email!="" && token && token!="") {
             document.getElementById('subscribe-form').style.display='none';
-            document.getElementById('contact-link').style.display='block';
-            document.getElementById('logout').style.display='block';
+            document.getElementById('contact').innerHTML = '<a id="logout" class="button" href="/contact.html?email=&token=">Logout</a><a id="contact-link" class="button" href="/contact.html">Contact</a>';
             document.getElementById('stripeEmail').value=email;
             if (window.location.pathname == '/contact.html') {
                 document.getElementById('contact_email').value=email;
