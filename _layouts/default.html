@@ -121,6 +121,8 @@
           <input type="hidden" name="a" value="confirm">
           <input type="submit" value="Join" class="button">
         </form>
+        <a id="contact-link" class="button" href="/contact.html" style="display:none">Contact</a>
+        <a id="logout" class="button" href="/contact.html?email=&token=" style="display:none">Logout</a>
         
         <script src="/assets/js/cookie.js"></script>
         <script type="text/javascript">
@@ -261,6 +263,19 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+    <script type="text/javascript">
+        var email=getCookie("email");
+        var token=getCookie("token");
+        if (email && email!="" && token && token!="") {
+            document.getElementById('subscribe-form').style.display='none';
+            document.getElementById('contact-link').style.display='block';
+            document.getElementById('logout').style.display='block';
+            if (window.location.pathname == '/contact.html') {
+                document.getElementById('contact_email').value=email;
+                document.getElementById('token').value=token;
+            }
+        }
+    </script>
     <script src="/assets/js/sharer.min.js" type="text/javascript"></script>
   </body>
 </html>
