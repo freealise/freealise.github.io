@@ -16,7 +16,7 @@ layout: default
             for (var i=0; i<params.length; i++) {
               if (params[i].split("=")[0] == "msg") {
                 msg = params[i].split("=")[1];
-                document.getElementById("msg").innerHTML = msg;
+                document.getElementById("msg").innerHTML = msg.replace("%20", " ");
               }
             }
           }
