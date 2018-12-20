@@ -16,7 +16,8 @@ layout: default
 
 <form action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="POST">
   <input type="text" name="name" value="Your name" onclick="if(this.value=='Your name'){this.value='';}"><br>
-  <input type="text" name="email" value="Email address" onclick="if(this.value=='Email address'){this.value='';}"><br>
+  <input type="text" id="contact_email" name="email" value="Email address" onclick="if(this.value=='Email address'){this.value='';}"><br>
+  <input type="hidden" id="token" name="token" value="">
   <input type="text" name="subject" value="Subject" onclick="if(this.value=='Subject'){this.value='';}"><br>
   <textarea name="text" value="Text" onclick="if(this.value=='Text'){this.value='';}"></textarea><br>
   <input type="text" name="address" id="address" value="Location" onclick="if(this.value=='Location'){this.value='';}"><br>
@@ -66,3 +67,34 @@ layout: default
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDONbj1HFMLs7UI3yBortL4qwLm-0C7mYM&callback=initMap">
     </script>
+
+    var email='0';
+    var token='0';
+    var url = window.location.href.split("?");
+    if (url[1]) {
+      var params = url[1].split("&");
+      if (params) {
+        for (var i=0; i<params.length; i++) {
+          if (params[i].split("=")[0] == "email") {email = params[i].split("=")[1];}
+          if (params[i].split("=")[0] == "token") {token = params[i].split("=")[1];}
+        }
+      }
+      if (email != '0' && token != '0') {
+        if (email != "" && token != "") {
+          setCookie("email", email, 365);
+          setCookie("token", token, 365);
+
+          document.getElementById('contact_email').value=email;
+          document.getElementById('token').value=token;
+        } else if (email == "" && token == "") {
+          setCookie("email", "", -1);
+          setCookie("token", "", -1);
+
+          document.getElementById('contact_email').value='';
+          document.getElementById('token').value='';
+        }
+      }
+    }
+
+    var email=getCookie("email");
+    var token=getCookie("token");
