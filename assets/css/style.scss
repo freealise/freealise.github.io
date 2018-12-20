@@ -328,3 +328,30 @@ top: 0px;
     display: block;
     background: url(/assets/images/octocat-logo.svg);
 }
+
+#cookie-notice {
+	padding: 7px 0px; 
+	display: none; 
+	text-align: center; 
+	position: fixed; 
+	bottom: 0; 
+	width: 100%; 
+	background: #222; 
+	color: rgba(255,255,255,0.8); 
+	z-index: 10;
+}
+#cookie-notice a {
+	cursor: pointer; 
+	margin-left: 10px;
+}
+@media (max-width: 600px) {
+        #cookie-notice span {
+		display: block; 
+		padding-top: 3px; 
+		margin-bottom: 13px;
+	}
+        #cookie-notice a {
+		position: relative; 
+		bottom: 4px;
+	}
+}
