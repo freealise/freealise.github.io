@@ -50,7 +50,6 @@
          document.getElementById('svgOne').appendChild(rect);
         }
         </script>
-        <script src="/assets/js/cookie.js"></script>
         <script type="text/javascript">
           var nav = document.getElementById('navContainer');
           var nav_opened = false;
@@ -115,7 +114,15 @@
             <div id='items'></div>
           </div>
         </div>
+        
         <a id="order" onclick="showOrder();"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
+        <form action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="get" id="subscribe-form" class="downloads">
+          <input type="text" value="Email address" name="email" id="email" onclick="this.value=''">
+          <input type="hidden" name="a" value="confirm">
+          <input type="submit" value="Join" class="button">
+        </form>
+        
+        <script src="/assets/js/cookie.js"></script>
         <script type="text/javascript">
           var item;
           var i = getCookie("items");
@@ -153,12 +160,6 @@
             document.getElementById('payForm').style.display='block';
           }
         </script>
-
-        <form action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="get" id="subscribe-form" class="downloads">
-          <input type="text" value="Email address" name="email" id="email" onclick="this.value=''">
-          <input type="hidden" name="a" value="confirm">
-          <input type="submit" value="Join" class="button">
-        </form>
         
         <div id="navContainer" class="fork">
           <button id="navButton" class="button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
