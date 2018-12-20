@@ -58,6 +58,10 @@ header p {
 #email .focused {
     border:2px solid #4276b6;
 }
+#contact-link, #logout {
+display:none;
+width:50px;
+}
 nav {
     top: 235px;
 }
