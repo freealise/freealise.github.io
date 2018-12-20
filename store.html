@@ -17,5 +17,6 @@ layout: default
       {{ item.description }}
     </div>
     <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', {{ item.cost }});">Pre-order</button>
+    <a onclick="removeItem('{{ item.number }}', '{{ item.title }}', {{ item.cost }});">[X]</a>
   </div>
 {% endfor %}
