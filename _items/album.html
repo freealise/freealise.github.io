@@ -27,7 +27,10 @@ categories: album
   <b>$ {{ page.cost }}</b><br>
   {{ page.description }}
 </div>
-<p><button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Pre-order</button></p>
+<p>
+  <button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Pre-order</button>
+  <a onclick="removeItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">[X]</a>
+</p>
 
 <div>
   Tracklist<br>
