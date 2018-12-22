@@ -63,7 +63,9 @@ width:50px;
 float:right;
 }
 nav {
-    top: 235px;
+top: 235px;
+overflow: scroll;
+max-height: 320px;
 }
 section {
     margin-top: 205px;
