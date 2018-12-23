@@ -21,6 +21,7 @@ function getCookie(cname) {
 }
 
 function getUserData() {
+  var msg="";
   var email='0';
   var token='0';
   var url = window.location.href.split("?");
@@ -28,6 +29,10 @@ function getUserData() {
     var params = url[1].split("&");
     if (params) {
       for (var i=0; i<params.length; i++) {
+        if (params[i].split("=")[0] == "msg" && document.getElementById("msg")) {
+          msg = params[i].split("=")[1];
+          document.getElementById("msg").innerHTML = msg.replace(/%20/g, " ");
+        }
         if (params[i].split("=")[0] == "email") {email = params[i].split("=")[1];}
         if (params[i].split("=")[0] == "token") {token = params[i].split("=")[1];}
       }
