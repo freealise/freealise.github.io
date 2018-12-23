@@ -7,18 +7,6 @@ layout: default
 
 <div id="msg"></div>
 
-    <script type="text/javascript">
-        var msg="";
-        var url = window.location.href.split("?");
-        if (url[1]) {
-          var params = url[1].split("&");
-          if (params) {
-            for (var i=0; i<params.length; i++) {
-              if (params[i].split("=")[0] == "msg") {
-                msg = params[i].split("=")[1];
-                document.getElementById("msg").innerHTML = msg.replace(/%20/g, " ");
-              }
-            }
-          }
-        }
-    </script>
+<script type="text/javascript">
+    getUserData();
+</script>
