@@ -22,8 +22,8 @@ function getCookie(cname) {
 
 function getUserData() {
   var msg="";
-  var email='0';
-  var token='0';
+  var email='undefined';
+  var token='undefined';
   var url = window.location.href.split("?");
   if (url[1]) {
     var params = url[1].split("&");
@@ -37,7 +37,7 @@ function getUserData() {
         if (params[i].split("=")[0] == "token") {token = params[i].split("=")[1];}
       }
     }
-    if (email != '0' && token != '0') {
+    if (email != 'undefined' && token != 'undefined') {
       if (email != "" && token != "") {
         setCookie("email", email, 365);
         setCookie("token", token, 365);
