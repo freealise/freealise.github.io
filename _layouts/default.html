@@ -50,31 +50,6 @@
          document.getElementById('svgOne').appendChild(rect);
         }
         </script>
-        <script type="text/javascript">
-          var nav = document.getElementById('navContainer');
-          var nav_opened = false;
-          function openNav() {
-              nav_opened = true;
-              nav.style.width='256px';
-              nav.style.height='256px';
-          }
-          function closeNav() {
-              nav_opened = false;
-              nav.style.width='38px';
-              nav.style.height='36px';
-          }
-          
-          var show = false;
-          function showcase(e) {
-            if (!show) {
-              e.className += ' showcase';
-              show = true;
-            } else {
-              e.className = '';
-              show = false;
-            }
-          }
-        </script>
         <p class="des">{{ site.description | default: site.github.project_tagline }}</p>
         <p class="nav">
             <span><a href="/">Home</a></span>
@@ -203,6 +178,31 @@
                 </ul>
             {% endfor %}
           </div>
+          <script type="text/javascript">
+            var nav = document.getElementById('navContainer');
+            var nav_opened = false;
+            function openNav() {
+                nav_opened = true;
+                nav.style.width='256px';
+                nav.style.height='256px';
+            }
+            function closeNav() {
+                nav_opened = false;
+                nav.style.width='38px';
+                nav.style.height='36px';
+            }
+
+            var show = false;
+            function showcase(e) {
+              if (!show) {
+                e.className += ' showcase';
+                show = true;
+              } else {
+                e.className = '';
+                show = false;
+              }
+            }
+          </script>
         </div>
         
         <!--
