@@ -88,9 +88,14 @@ section {
 }
 #banner #navContainer {
 width:38px;
-height:36px;
+height:38px;
 padding:0px;
 overflow:hidden;
+}
+#banner #navContainer.opened {
+width:256px;
+height:320px;
+overflow:scroll;
 }
 #banner #navContainer div {
 	margin-left:48px;
