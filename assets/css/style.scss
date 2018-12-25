@@ -95,6 +95,7 @@ left: 0px;
 position: fixed;
 margin: 0px;
 padding:0px;
+background: #ffffff;
 display:none;
 }
 #banner #navContainer.opened {
@@ -193,14 +194,14 @@ display:none;
 #payForm {
 	display:none;
 }
-#payFormOverlay {
+#payFormOverlay, #navOverlay {
 	position:fixed;
 	width:100vw;
 	height:100vh;
 	top:0px;
 	left:0px;
 	background: rgba(0,0,0,.75);
-    z-index: 102;
+    	z-index: 102;
 }
 #payFormContainer {
 	background: rgba(255,255,255,.75);
