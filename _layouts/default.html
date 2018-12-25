@@ -153,9 +153,9 @@
         </script>
         
         <button id="navButton" class="fork button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
-        <div id="navContainer">
+        <div id="navigation">
           <div id="navOverlay" onclick="this.parentNode.style.display='none';"></div>
-          <div>
+          <div id="navContainer">
             {% include search.html %}
             <form action="#" id="search-form">
               <input type="text" value="Search" id="search" onclick="this.value=''">
@@ -181,7 +181,7 @@
             {% endfor %}
           </div>
           <script type="text/javascript">
-            var nav = document.getElementById('navContainer');
+            var nav = document.getElementById('navigation');
             var nav_opened = false;
             function openNav() {
                 nav_opened = true;
