@@ -185,11 +185,11 @@
             var nav_opened = false;
             function openNav() {
                 nav_opened = true;
-                nav.className += ' opened';
+                nav.style.display = 'block';
             }
             function closeNav() {
                 nav_opened = false;
-                nav.className = '';
+                nav.style.display = 'none';
             }
 
             var show = false;
