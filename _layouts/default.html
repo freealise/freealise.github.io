@@ -152,8 +152,8 @@
           }
         </script>
         
-        <div id="navContainer" class="fork">
-          <button id="navButton" class="button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
+        <button id="navButton" class="fork button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
+        <div id="navContainer" class="">
           <div>
             {% include search.html %}
             <form action="#" id="search-form">
@@ -188,7 +188,7 @@
             }
             function closeNav() {
                 nav_opened = false;
-                nav.className = 'fork';
+                nav.className = '';
             }
 
             var show = false;
