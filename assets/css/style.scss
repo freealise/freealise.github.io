@@ -87,15 +87,18 @@ section {
     text-align: center;
 }
 #banner #navContainer {
-width:38px;
-height:38px;
+width: 256px;
+height: 100vh;
+overflow: scroll;
+top: 0px;
+left: 0px;
+position: fixed;
+margin: 0px;
 padding:0px;
-overflow:hidden;
+display:none;
 }
 #banner #navContainer.opened {
-width:256px;
-height:320px;
-overflow:scroll;
+display:block;
 }
 #banner #navContainer div {
 	margin-left:48px;
