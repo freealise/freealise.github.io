@@ -154,7 +154,7 @@
         
         <button id="navButton" class="fork button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
         <div id="navigation">
-          <div id="navOverlay" onclick="this.parentNode.style.display='none';"></div>
+          <div id="navOverlay" onclick="closeNav();"></div>
           <div id="navContainer">
             {% include search.html %}
             <form action="#" id="search-form">
