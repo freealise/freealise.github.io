@@ -157,7 +157,6 @@
           <div id="navOverlay" onclick="closeNav();"></div>
           <div id="navContainer">
             {% include search.html %}
-            <hr>
             {% for tag in site.tags %}
               <a href="#" onclick="tagAdd('{{ tag[0] }}')">{{ tag[0] }}</a>&nbsp;|&nbsp;
             {% endfor %}
@@ -172,6 +171,7 @@
                   {% endfor %}
                 </ul>
             {% endfor %}
+            <hr>
             <div id="lunrsearchresults">
                 <ul></ul>
             </div>
