@@ -63,8 +63,6 @@ function lunr_search(term) {
 
 
 <form onSubmit="var q = document.getElementById('lunrsearch').value;if(q.slice(-1)==','){tagSearch(q);}else{return lunr_search(q);}">
-    <p>
-        <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search via Lunr.js" />
-        <input type="submit" value="Find" class="button">
-    </p>
+  <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search via Lunr.js" />
+  <input type="button" value="Find" class="button" onclick="this.parentElement.submit()">
 </form>
