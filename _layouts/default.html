@@ -157,16 +157,12 @@
           <div id="navOverlay" onclick="closeNav();"></div>
           <div id="navContainer">
             {% include search.html %}
-            <form action="#" id="search-form">
-              <input type="text" value="Search" id="search" onclick="this.value=''">
-              <input type="submit" value="Find" class="button">
-            </form>
             {% for category in site.categories %}
               <span>{{ category[0] }}</span><br>
             {% endfor %}
             <hr>
             {% for tag in site.tags %}
-              <span>{{ tag[0] }}</span>&nbsp;|&nbsp;
+              <span onclick="tagAdd({{ tag[0] }})">{{ tag[0] }}</span>&nbsp;|&nbsp;
             {% endfor %}
             <hr>
             {% assign postsByYear =
@@ -180,7 +176,28 @@
                 </ul>
             {% endfor %}
           </div>
+          <form action="#" id="search-form">
+              <input type="text" value="Search" id="search" onclick="this.value=''">
+              <input type="text" id="tags" name="tags">
+              <input type="submit" value="Find" class="button" onclick="tagSearch()">
+          </form>
+          <div id="searchResults"></div>
           <script type="text/javascript">
+            function tagAdd(tag) {
+              document.getElementById("tags").value += tag + ",";
+            }
+            function tagSearch() {
+              var tags = document.getElementById("tags").value.slice(0, -1);
+              var xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  document.getElementById("searchResults").innerHTML = this.responseText;
+                }
+              };
+              xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=search&tags="+tags, true);
+              xhttp.send();
+            }
+            
             var nav = document.getElementById('navigation');
             var nav_opened = false;
             function openNav() {
