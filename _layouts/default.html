@@ -157,11 +157,8 @@
           <div id="navOverlay" onclick="closeNav();"></div>
           <div id="navContainer">
             {% include search.html %}
-            <form id="search-form">
-              <input type="text" value="Search" id="search" onclick="this.value=''">
-              <input type="text" id="tags" name="tags">
-              <input type="submit" value="Find" class="button" onclick="tagSearch()">
-            </form>
+            <input type="text" id="tags" name="tags">
+            <input type="button" value="Find" class="button" onclick="tagSearch()">
             <hr>
             {% for tag in site.tags %}
               <a href="#" onclick="tagAdd('{{ tag[0] }}')">{{ tag[0] }}</a>&nbsp;|&nbsp;
@@ -170,13 +167,16 @@
             {% assign postsByYear =
                 site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
             {% for year in postsByYear %}
-              <b><a href="#" onclick="showYear('{{ year.name }}')">{{ year.name }}</a></b>
+              <a href="#" onclick="showYear('{{ year.name }}')"><b>{{ year.name }}</b></a>
                 <ul id="year{{ year.name }}" style="display:none">
                   {% for post in year.items %}
                     <li><a href="{{ post.url }}">{{ post.title }}-{{ post.date }}</a></li>
                   {% endfor %}
                 </ul>
             {% endfor %}
+            <div id="lunrsearchresults">
+                <ul></ul>
+            </div>
             <div id="searchResults"></div>
             <script type="text/javascript">
               function showYear(year) {
@@ -196,6 +196,7 @@
                 xhttp.onreadystatechange = function() {
                   if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("searchResults").innerHTML = this.responseText;
+                    document.getElementById("lunrsearchresults").innerHTML = "<ul></ul>";
                   }
                 };
                 xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=search&tags="+tags, true);
