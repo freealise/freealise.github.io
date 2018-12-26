@@ -167,7 +167,7 @@
               <a href="#" onclick="showYear('{{ year.name }}')"><b>{{ year.name }}</b></a>
                 <ul id="year{{ year.name }}" style="display:none">
                   {% for post in year.items %}
-                    <li><a href="{{ post.url }}">{{ post.title }}-{{ post.date }}</a></li>
+                    <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%B %-d" }}</a></li><br>
                   {% endfor %}
                 </ul>
             {% endfor %}
