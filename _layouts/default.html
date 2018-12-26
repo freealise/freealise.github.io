@@ -162,7 +162,7 @@
             {% endfor %}
             <hr>
             {% for tag in site.tags %}
-              <span onclick="tagAdd({{ tag[0] }})">{{ tag[0] }}</span>&nbsp;|&nbsp;
+              <span onclick="tagAdd('{{ tag[0] }}')">{{ tag[0] }}</span>&nbsp;|&nbsp;
             {% endfor %}
             <hr>
             {% assign postsByYear =
