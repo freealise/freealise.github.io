@@ -164,10 +164,10 @@
             {% assign postsByYear =
                 site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
             {% for year in postsByYear %}
-              <a href="#" onclick="showYear('{{ year.name }}')"><b>{{ year.name }}</b></a>
+              <a href="#" onclick="showYear('{{ year.name }}')"><b>{{ year.name }}</b></a><br>
                 <ul id="year{{ year.name }}" style="display:none">
                   {% for post in year.items %}
-                    <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%B %-d" }}</a></li><br>
+                    <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%b %-d" }}</a></li><br>
                   {% endfor %}
                 </ul>
             {% endfor %}
