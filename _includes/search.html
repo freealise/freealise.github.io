@@ -61,8 +61,13 @@ function lunr_search(term) {
     .lunrsearchresult a:hover .title {text-decoration: underline;}
 </style>
 
-
-<form onSubmit="var q = document.getElementById('lunrsearch').value;if(q.slice(-1)==','){tagSearch(q);}else{return lunr_search(q);}">
+<script type="text/javascript">
+    function search() {
+        var q = document.getElementById('lunrsearch').value;
+        if(q.slice(-1)==','){tagSearch(q);}else{return lunr_search(q);}
+    }
+</script>
+<form onSubmit="search()">
   <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search via Lunr.js" />
-  <input type="button" value="Find" class="button" onclick="this.parentElement.submit()">
+  <input type="button" value="Find" class="button" onclick="search()">
 </form>
