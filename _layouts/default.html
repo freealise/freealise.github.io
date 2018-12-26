@@ -157,31 +157,36 @@
           <div id="navOverlay" onclick="closeNav();"></div>
           <div id="navContainer">
             {% include search.html %}
-            {% for category in site.categories %}
-              <span>{{ category[0] }}</span><br>
-            {% endfor %}
+            <form action="#" id="search-form">
+              <input type="text" value="Search" id="search" onclick="this.value=''">
+              <input type="text" id="tags" name="tags">
+              <input type="submit" value="Find" class="button" onclick="tagSearch()">
+            </form>
             <hr>
             {% for tag in site.tags %}
-              <span onclick="tagAdd('{{ tag[0] }}')">{{ tag[0] }}</span>&nbsp;|&nbsp;
+              <a href="#" onclick="tagAdd('{{ tag[0] }}')">{{ tag[0] }}</a>&nbsp;|&nbsp;
             {% endfor %}
             <hr>
             {% assign postsByYear =
                 site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
             {% for year in postsByYear %}
-              <b>{{ year.name }}</b>
-                <ul>
+              <b><a href="#" onclick="showYear('{{ year.name }}')">{{ year.name }}</a></b>
+                <ul id="year{{ year.name }}" style="display:none">
                   {% for post in year.items %}
                     <li><a href="{{ post.url }}">{{ post.title }}-{{ post.date }}</a></li>
                   {% endfor %}
                 </ul>
             {% endfor %}
-            <form action="#" id="search-form">
-                <input type="text" value="Search" id="search" onclick="this.value=''">
-                <input type="text" id="tags" name="tags">
-                <input type="submit" value="Find" class="button" onclick="tagSearch()">
-            </form>
             <div id="searchResults"></div>
             <script type="text/javascript">
+              function showYear(year) {
+                var yearSection = document.getElementById('year'+year);
+                if (yearSection.style.display == 'none') {
+                  yearSection.style.display = 'block';
+                } else {
+                  yearSection.style.display = 'none';
+                }
+              }
               function tagAdd(tag) {
                 document.getElementById("tags").value += tag + ",";
               }
