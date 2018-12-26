@@ -157,8 +157,6 @@
           <div id="navOverlay" onclick="closeNav();"></div>
           <div id="navContainer">
             {% include search.html %}
-            <input type="text" id="tags" name="tags">
-            <input type="button" value="Find" class="button" onclick="tagSearch()">
             <hr>
             {% for tag in site.tags %}
               <a href="#" onclick="tagAdd('{{ tag[0] }}')">{{ tag[0] }}</a>&nbsp;|&nbsp;
@@ -188,10 +186,10 @@
                 }
               }
               function tagAdd(tag) {
-                document.getElementById("tags").value += tag + ",";
+                document.getElementById("lunrsearch").value += tag + ",";
               }
-              function tagSearch() {
-                var tags = document.getElementById("tags").value.slice(0, -1);
+              function tagSearch(q) {
+                var tags = q.slice(0, -1);
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
                   if (this.readyState == 4 && this.status == 200) {
