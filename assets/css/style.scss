@@ -118,6 +118,8 @@ clear: both;
 }
 #banner ul {
 height: auto;
+max-width: 256px;
+word-break: break-word;
 }
 
 .playerContainer {
