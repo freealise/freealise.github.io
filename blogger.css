@@ -1,0 +1,35 @@
+#sidebar {
+width: 50px;
+}
+#content {
+margin-left: 50px;
+}
+.share-controls {
+display: none;
+}
+#header .header-bar .title {
+width: 200px;
+}
+#header .header-bar .title h3 {
+position: absolute;
+top: 120px;
+left: 105px;
+width: 256px;
+height: 100px;
+white-space: normal;
+line-height: 150%;
+color: #000000;
+}
+@media screen and (max-width: 460px) {
+  #header input#search {
+  width:50px;
+  }
+}
+#subscribe-form {
+position: absolute;
+top: 200px;
+left: 100px;
+}
+.article .article-footer {
+display: none;
+}
