@@ -121,6 +121,11 @@ height: auto;
 max-width: 256px;
 word-break: break-word;
 }
+.lunrsearchresult .title {color: #3399cc;}
+.lunrsearchresult .url {color: silver;}
+.lunrsearchresult a {display: block; color: #777;}
+.lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+.lunrsearchresult a:hover .title {text-decoration: underline;}
 
 .playerContainer {
 text-align: right;
