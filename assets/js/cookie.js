@@ -38,6 +38,7 @@ function getUserData() {
         }
         if (params[i].split("=")[0] == "email") {email = params[i].split("=")[1];}
         if (params[i].split("=")[0] == "token") {token = params[i].split("=")[1];}
+        if (params[i].split("=")[0] == "a" && params[i].split("=")[1] == "pay") {removeItems();}
       }
     }
     if (email != 'undefined' && token != 'undefined') {
