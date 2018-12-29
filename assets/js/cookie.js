@@ -31,7 +31,10 @@ function getUserData() {
       for (var i=0; i<params.length; i++) {
         if (params[i].split("=")[0] == "msg" && document.getElementById("msg")) {
           msg = params[i].split("=")[1];
-          document.getElementById("msg").innerHTML = msg.replace(/%20/g, " ");
+          msg = msg.replace(/%20/g, " ");
+          msg = msg.replace(/%3C/g, "<");
+          msg = msg.replace(/%3E/g, ">");
+          document.getElementById("msg").innerHTML = msg;
         }
         if (params[i].split("=")[0] == "email") {email = params[i].split("=")[1];}
         if (params[i].split("=")[0] == "token") {token = params[i].split("=")[1];}
