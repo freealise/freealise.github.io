@@ -14,7 +14,7 @@ layout: default
 <hr>
 
 {% for category in itemsByCategory %}
-  <h2 id="{{ category.name }}">{{ category.name | capitalize }}</h2><br>
+  <h2 id="{{ category.name }}">{{ category.name | capitalize }}</h2>
     {% for item in category.items %}
       <p>
         <a href="{{ item.url }}">
@@ -33,5 +33,6 @@ layout: default
           <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', {{ item.cost }});">Pre-order</button>
         </div>
       </p>
+      <br>
     {% endfor %}
 {% endfor %}
