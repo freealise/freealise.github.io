@@ -5,11 +5,11 @@ layout: default
             {% assign itemsByCategory =
                 site.items | group_by_exp:"item", "item.categories[0]" %}
             {% for category in itemsByCategory %}
-              <a href="#{{ category | downcase | url_escape | strip | replace: ' ', '-' }}"><b>{{ category | downcase | url_escape | strip | replace: ' ', '-' }}</b></a><br>
+              <a href="#{{ category.name }}"><b>{{ category.name }}</b></a><br>
             {% endfor %}
 
             {% for category in itemsByCategory %}
-              <ul id="{{ category | downcase | url_escape | strip | replace: ' ', '-' }}">
+              <ul id="{{ category.name }}">
                 {% for item in category.items %}
                   <li>
                     <a href="{{ item.url }}">{{ item.title }}</a><br>
