@@ -1,0 +1,36 @@
+---
+layout: default
+
+title: Spectral synthesizer mobile app
+number: 4
+cost: 9.99
+image: https://4.bp.blogspot.com/-gaXCaAF_Qgw/XC91HiON0oI/AAAAAAAAA1M/yWNIlvsFmE0wkGfo6wt2JPHmMWkc44ynACLcBGAs/s1600/spectrogram.jpg
+description: This app allows you to play the microtonal screen keyboard and design the sound in a spectral way with harmonics and noise. You can also edit the results like an image.
+tags: synth
+categories: merchandise
+---
+
+<div id="thumbnails" align="left">
+  <div class="item_image" align="left">
+    <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256" onclick="showcase(this);">
+  </div>
+  <div class="thumbnail">
+    <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
+  </div>
+  <div class="thumbnail">
+    <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
+  </div>
+</div>
+
+<h2>{{ page.title }}</h2>
+<div>
+  <b>$ {{ page.cost }}</b><br>
+  {{ page.description }}
+</div>
+<p>
+  <button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Pre-order</button>
+</p>
+
+<div>
+Details about use and adjustment
+</div>
