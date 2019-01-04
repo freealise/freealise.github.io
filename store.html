@@ -4,14 +4,19 @@ layout: default
 
 {% assign itemsByCategory =
     site.items | group_by_exp:"item", "item.categories[0]" %}
+<ul>
 {% for category in itemsByCategory %}
-  <a href="#{{ category.name }}"><b>{{ category.name | capitalize }}</b></a><br>
+    <li>
+      <a href="#{{ category.name }}"><b>{{ category.name | capitalize }}</b></a>
+    </li>
 {% endfor %}
+</ul>
+<hr>
 
 {% for category in itemsByCategory %}
-  <ul id="{{ category.name }}"><h2>{{ category.name | capitalize }}</h2><br>
+  <h2 id="{{ category.name }}">{{ category.name | capitalize }}</h2><br>
     {% for item in category.items %}
-      <li>
+      <p>
         <a href="{{ item.url }}">
           <img src="{{ item.image }}" width="128" height="128" style="float:left;padding-right:16px">
           <h3>{{ item.title }}{% if item.artist %} by {{ item.artist }}{% endif %}</h3>
@@ -27,8 +32,6 @@ layout: default
           </div>
           <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', {{ item.cost }});">Pre-order</button>
         </div>
-        <hr>
-      </li>
+      </p>
     {% endfor %}
-  </ul>
 {% endfor %}
