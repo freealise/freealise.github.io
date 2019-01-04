@@ -14,7 +14,7 @@ layout: default
       <li>
         <a href="{{ item.url }}">
           <img src="{{ item.image }}" width="128" height="128" style="float:left;padding-right:16px">
-          <h3>{{ item.title }}</h3>
+          <h3>{{ item.title }}{% if item.artist %} by {{ item.artist }}{% endif %}</h3>
         </a>
         <div>
           <div id="share-buttons">
