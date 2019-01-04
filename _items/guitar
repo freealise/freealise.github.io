@@ -1,0 +1,36 @@
+---
+layout: default
+
+title: Microtonal stick guitar (12 strings)
+number: 3
+cost: 9.99
+image: https://1.bp.blogspot.com/-1UuCmr1_tKI/XC9mjLyjmvI/AAAAAAAAA08/G-A0QK87omAmrTx51_eEeDnGatm9KRY4QCKgBGAs/s1600/61751MP8HbL._SL1280_.jpg
+description: This guitar is held like a cello and played in tapping style with both hands.
+tags: guitar
+categories: merchandise
+---
+
+<div id="thumbnails" align="left">
+  <div class="item_image" align="left">
+    <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="256" height="256" onclick="showcase(this);">
+  </div>
+  <div class="thumbnail">
+    <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
+  </div>
+  <div class="thumbnail">
+    <img src="{{ page.image }}" alt="{{ page.title }}" align="left" width="64" height="64" onclick="showcase(this);">
+  </div>
+</div>
+
+<h2>{{ page.title }}</h2>
+<div>
+  <b>$ {{ page.cost }}</b><br>
+  {{ page.description }}
+</div>
+<p>
+  <button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Pre-order</button>
+</p>
+
+<div>
+Details about use and handling
+</div>
