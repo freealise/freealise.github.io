@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% for item in site.items %}
+<div>
   <a href="{{ item.url }}">
     <img src="{{ item.image }}" width="128" height="128" style="float:left;padding-right:16px">
     <h2>{{ item.title }}</h2>
@@ -18,4 +19,5 @@ layout: default
     </div>
     <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', {{ item.cost }});">Pre-order</button>
   </div>
+</div>
 {% endfor %}
