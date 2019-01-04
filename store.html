@@ -2,6 +2,22 @@
 layout: default
 ---
 
+            {% assign itemsByCategory =
+                site.items | group_by_exp:"item", "item.categories[0]" %}
+            {% for category in itemsByCategory %}
+              <a href="#{{ category | downcase | url_escape | strip | replace: ' ', '-' }}"><b>{{ category | downcase | url_escape | strip | replace: ' ', '-' }}</b></a><br>
+            {% endfor %}
+
+            {% for category in itemsByCategory %}
+              <ul id="{{ category | downcase | url_escape | strip | replace: ' ', '-' }}">
+                {% for item in category.items %}
+                  <li>
+                    <a href="{{ item.url }}">{{ item.title }}</a><br>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+
 {% for item in site.items %}
   <a href="{{ item.url }}">
     <img src="{{ item.image }}" width="128" height="128" style="float:left;padding-right:16px">
