@@ -1,6 +1,10 @@
 var tracks = new Array();
-tracks[0] = "https://freealise-181308.appspot.com/mp3/cant-walk-away.mp3";
-tracks[1] = "https://freealise-181308.appspot.com/mp3/foolpara-remix.mp3";
+tracks[0] = "https://freealise-181308.appspot.com/mp3/nightingale_bird.mp3";
+tracks[1] = "https://freealise-181308.appspot.com/mp3/skylark_bird.mp3";
+
+var titles = new Array();
+titles[0] = "Nightingale";
+titles[1] = "Skylark";
 
 var playing = false;
 var n = 0;
