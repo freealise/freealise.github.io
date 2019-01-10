@@ -10,10 +10,7 @@ var times = new Array();
 times[0] = "3:59";
 times[1] = "4:59";
 
-for (var i=0; i<tracks.length; i++) {
-    document.getElementById("track"+i).innerHTML = titles[i];
-    document.getElementById("time"+i).innerHTML = times[i];
-}
+var timeCount = "8:58";
 
 var playing = false;
 var n = 0;
@@ -30,6 +27,13 @@ var count = document.getElementById('timeCount');
 var audio = document.getElementById('audio');
 var playlist = document.getElementById('playlist');
 var video = document.getElementById('video');
+
+count.innerHTML = timeCount;
+audio.src = tracks[0];
+for (var i=0; i<tracks.length; i++) {
+    document.getElementById("track"+i).innerHTML = titles[i];
+    document.getElementById("time"+i).innerHTML = times[i];
+}
 
 function newTrack() {
 seconds = 0;
