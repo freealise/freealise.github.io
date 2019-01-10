@@ -6,6 +6,15 @@ var titles = new Array();
 titles[0] = "Nightingale";
 titles[1] = "Skylark";
 
+var times = new Array();
+times[0] = "3:59";
+times[1] = "4:59";
+
+for (var i=0; i<tracks.length; i++) {
+    document.getElementById("track"+i).innerHTML = titles[i];
+    document.getElementById("time"+i).innerHTML = times[i];
+}
+
 var playing = false;
 var n = 0;
 var move;
