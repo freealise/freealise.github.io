@@ -20,7 +20,12 @@
     left: 50%;
     top: 67px;
 }
-
+@media print, screen and (min-width: 650px) {
+	.nav {
+		margin-left: 50px;
+		top: 35px;
+	}
+}
 .nav span {
     float: left;
     width: 64px;
@@ -44,6 +49,12 @@ header p {
     margin-left: -160px;
     position: relative;
     left: 50%;
+}
+@media print, screen and (min-width: 650px) {
+	#title {
+		margin-left: -365px;
+		top: 15px;
+	}
 }
 #logo_ {
     float:left;
