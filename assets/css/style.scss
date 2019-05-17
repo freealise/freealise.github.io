@@ -32,9 +32,9 @@
 
 header {
     position: fixed;
-    height: 135px;
+    height: 80px;
     padding-top: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 header p {
     display: block;
@@ -61,7 +61,7 @@ header p {
 }
 #banner {
     display: block;
-    top: 135px;
+    top: 100px;
 }
 #email {
     margin-top: 6px;
@@ -86,12 +86,12 @@ max-height: 320px;
 }
 @media print, screen and (min-width: 650px) {
 	section {
-	    margin-top: 205px;
+	    margin-top: 175px;
 	}
 }
 @media print, screen and (max-width: 650px) {
 	section {
-    		margin-top: 185px;
+    		margin-top: 155px;
 	}
 }
 .button {
