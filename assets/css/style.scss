@@ -69,11 +69,19 @@ float:right;
 }
 nav {
 top: 235px;
-overflow: scroll;
+overflow-y: scroll;
+overflow-x: visible;
 max-height: 320px;
 }
-section {
-    margin-top: 205px;
+@media print, screen and (min-width: 650px) {
+	section {
+	    margin-top: 205px;
+	}
+}
+@media print, screen and (max-width: 650px) {
+	section {
+    		margin-top: 185px;
+	}
 }
 .button {
     border: 1px solid #dba500;
