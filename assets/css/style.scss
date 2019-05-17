@@ -16,13 +16,13 @@
 .nav {
     width: 256px;
     position: absolute;
-    margin-left: -128px;
-    left: 50%;
+    margin-right: -128px;
+    right: 50%;
     top: 67px;
 }
 @media print, screen and (min-width: 600px) {
 	.nav {
-		margin-left: 50px;
+		margin-right: -256px;
 		top: 35px;
 	}
 }
@@ -52,7 +52,7 @@ header p {
 }
 @media print, screen and (min-width: 600px) {
 	#title {
-		margin-left: -365px;
+		margin-left: -320px;
 		top: 15px;
 	}
 }
