@@ -45,6 +45,10 @@ header p {
     position: relative;
     left: 50%;
 }
+#logo {
+    float:left;
+    width: 192px;
+}
 #svgOne {
     position: absolute;
     top: 48px;
@@ -53,7 +57,9 @@ header p {
 }
 .des {
     font-size: 14px;
-    padding: 10px;
+    padding: 0px;
+    float: right;
+    width: 128px;
 }
 #banner {
     display: block;
