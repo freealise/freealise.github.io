@@ -15,9 +15,10 @@
 
 .nav {
     width: 256px;
-    position: relative;
+    position: absolute;
     margin-left: -128px;
     left: 50%;
+    top: 67px;
 }
 
 .nav span {
@@ -37,6 +38,12 @@ header {
 }
 header p {
     display: block;
+}
+#title {
+    width: 320px;
+    margin-left: -160px;
+    position: relative;
+    left: 50%;
 }
 #svgOne {
     position: absolute;
