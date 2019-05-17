@@ -20,7 +20,7 @@
     left: 50%;
     top: 67px;
 }
-@media print, screen and (min-width: 650px) {
+@media print, screen and (min-width: 600px) {
 	.nav {
 		margin-left: 50px;
 		top: 35px;
@@ -50,7 +50,7 @@ header p {
     position: relative;
     left: 50%;
 }
-@media print, screen and (min-width: 650px) {
+@media print, screen and (min-width: 600px) {
 	#title {
 		margin-left: -365px;
 		top: 15px;
