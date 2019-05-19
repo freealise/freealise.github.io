@@ -117,7 +117,7 @@ max-height: 320px;
     		margin-top: 155px;
 	}
 }
-.button, #banner .button {
+.button {
     border: 1px solid black;
     background: linear-gradient(#b68242, #604423);
     border-radius: 2px;
@@ -132,6 +132,14 @@ max-height: 320px;
     font-weight: bold;
     display: inline-block;
     text-align: center;
+}
+#banner .button {
+    border: 1px solid black;
+    background: linear-gradient(#b68242, #604423);
+    border-radius: 2px;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
+    background-color: #b68242;
+    color: white;
 }
 #banner #navigation {
 display:none;
