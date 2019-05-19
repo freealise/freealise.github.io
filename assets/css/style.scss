@@ -81,6 +81,10 @@ header p {
 #banner {
     display: block;
     top: 100px;
+    background: url(/assets/images/banner_small.png);
+    background-repeat: repeat-x;
+    background-size: 100px 50px;
+    border: 1px solid black;
 }
 #email {
     margin-top: 6px;
