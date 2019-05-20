@@ -119,7 +119,8 @@ max-height: 320px;
 }
 .button {
     border: 1px solid black;
-    background: linear-gradient(#b68242, #604423);
+    background: url(/assets/images/button.png);
+    background-size: 24px 24px;
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
     background-color: #b68242;
