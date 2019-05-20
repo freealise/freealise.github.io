@@ -30,13 +30,9 @@ layout: default
             <b>$ {{ item.cost }}</b><br>  
             {{ item.description }}
           </div>
-      
-            <p style="width:100%;text-align:center;">
-            <script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
-            <span class="soundcite" data-url="https://freealise.github.io/assets/mp3/nightingale_bird.mp3" data-start="0" data-end="164000" data-plays="1">listen</span>
-            </p>
 
-            <p>
+            <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', {{ item.cost }});">Add to basket</button>
+            
             <!-- Load Stripe.js on your website. -->
             <script src="https://js.stripe.com/v3"></script>
 
@@ -75,9 +71,6 @@ layout: default
                 });
               });
             </script>
-            </p>
-
-          <button class="button" onclick="addItem('{{ item.number }}', '{{ item.title }}', {{ item.cost }});">Add to basket</button>
         </div>
       </p>
       <br>
