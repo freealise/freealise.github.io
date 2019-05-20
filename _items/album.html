@@ -36,6 +36,8 @@ categories: music
 </p>
 
 <p>
+<button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Add to basket</button>
+
 <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 
@@ -74,10 +76,6 @@ categories: music
     });
   });
 </script>
-</p>
-
-<p>
-  <button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Add to basket</button>
 </p>
 
 <div>
