@@ -4,6 +4,7 @@ layout: default
 title: Album
 artist: Freealise
 number: 0
+stripe_id: sku_F65eMglXH2jlzL
 cost: 9.99
 image: /assets/images/album.jpg
 description: This new album by our self-titled band is to be released later this year.
@@ -53,7 +54,7 @@ categories: music
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{sku: 'sku_F65eMglXH2jlzL', quantity: quantity}],
+      items: [{sku: '{{ page.stripe_id }}', quantity: quantity}],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
