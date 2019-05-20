@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 * {
-	font-family:'Averia Serif Libre', cursive;
+	font-family:'Averia Serif Libre', serif;
 }
 
 .p {
@@ -118,6 +118,7 @@ max-height: 320px;
 	}
 }
 .button {
+    font-family: 'Averia Serif Libre', serif;
     border: 1px solid black;
     background: url(/assets/images/button.png);
     background-size: 24px 24px;
@@ -135,6 +136,7 @@ max-height: 320px;
     text-align: center;
 }
 #banner .button {
+    font-family: 'Averia Serif Libre', serif;
     border: 1px solid black;
     background: url(/assets/images/button.png);
     background-size: 24px 24px;
