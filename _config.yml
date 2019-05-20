@@ -16,7 +16,7 @@
 title: Freealise
 email: me@freealise.com
 description: >- # this means to ignore newlines until "baseurl:"
-  recording and publishing
+  modern folk rock record publishing
 show_downloads: true
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://freealise.com" # the base hostname & protocol for your site, e.g. http://example.com
