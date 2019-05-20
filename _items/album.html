@@ -28,8 +28,55 @@ categories: music
   <b>$ {{ page.cost }}</b><br>
   {{ page.description }}
 </div>
+
+<p style="width:100%;text-align:center;">
+<script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+<span class="soundcite" data-url="https://freealise.github.io/assets/mp3/nightingale_bird.mp3" data-start="0" data-end="164000" data-plays="1">listen</span>
+</p>
+
 <p>
-  <button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Pre-order</button>
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<input type="text" id="quantity" size="4">
+<a style="background-color:#000000;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em" id="checkout-button-sku_F65eMglXH2jlzL">Pre-order</a>
+
+<div id="error-message"></div>
+
+<script>
+  var stripe = Stripe('pk_test_up7XBxmt0W2fKgzk1SxfQymR');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_F65eMglXH2jlzL');
+  checkoutButton.addEventListener('click', function () {
+   var quantity = parseInt(document.getElementById("quantity").value);
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_F65eMglXH2jlzL', quantity: quantity}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://www.freealise.com/return.html?msg={{ page.title }} by {{ page.artist }} has been pre-ordered. Thanks for your support!',
+      cancelUrl: 'https://www.freealise.com/return.html?msg=Your payment has been cancelled.',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
+</p>
+
+<p>
+  <button class="button" onclick="addItem('{{ page.number }}', '{{ page.title }}', {{ page.cost }});">Add to basket</button>
 </p>
 
 <div>
