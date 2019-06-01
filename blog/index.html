@@ -2,52 +2,25 @@
 layout: default
 ---
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <div id="share-buttons">
-    <a data-sharer="twitter" data-title="{{ post.title }}" data-hashtags="{{ post.tags }}" data-url="{{ site.url }}{{ post.url }}"><span class='symbol'>circletwitterbird</span></a>
-    <a data-sharer="facebook" data-hashtag="{{ post.tags }}" data-url="{{ site.url }}{{ post.url }}"><span class='symbol'>circlefacebook</span></a>
-  </div>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
+      <!-- 1 -->
+      <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
 
-<!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">
-      &laquo; Prev
-    </a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
+      <!-- 2 -->
+      <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">
-        {{ page }}
-      </a>
-    {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">
-        {{ page }}
-      </a>
-    {% endif %}
-  {% endfor %}
+      <div id='timeline-embed'></div>
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">
-      Next &raquo;
-    </a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
-</div>
-{% endif %}
+      <!-- 3 -->
+      <script type="text/javascript" onload="document.getElementsByClassName('tl-storyslider')[0].style.height='235px';">
+        var options = {
+          skinny_size: 480
+        }
+        // The TL.Timeline constructor takes at least two arguments:
+        // the id of the Timeline container (no '#'), and
+        // the URL to your JSON data file or Google spreadsheet.
+        // the id must refer to an element "above" this code,
+        // and the element must have CSS styling to give it width and height
+        // optionally, a third argument with configuration options can be passed.
+        // See below for more about options.
+        timeline = new TL.Timeline('timeline-embed', 'https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=past_events', options);
+      </script>
