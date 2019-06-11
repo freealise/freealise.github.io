@@ -7,14 +7,6 @@
 	font-family:'Averia Serif Libre', serif;
 }
 
-.p {
-  -moz-transform: skewX(10deg); /* Mozilla */
-  -ms-transform: skewX(10deg); /* IE 9 */
-  -webkit-transform: skewX(10deg); /* Safari 3-8, Chrome */
-  -o-transform: skewX(10deg); /* Opera */
-  transform: skewX(10deg);
-}
-
 @media print, screen and (max-width: 720px) {
 	body {
 	    word-wrap: normal;
