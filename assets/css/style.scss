@@ -3,8 +3,22 @@
 
 @import "{{ site.theme }}";
 
+@font-face {
+  font-family: Literata Italic;
+  src: url(/assets/fonts/literata-italic.otf);
+}
+
+@font-face {
+  font-family: Literata;
+  src: url(/assets/fonts/literata-regular.otf);
+}
+
 * {
-	font-family:'Averia Serif Libre', serif;
+	font-family:'Literata', serif;
+}
+
+i {
+	font-family:'Literata Italic', serif;
 }
 
 @media print, screen and (max-width: 720px) {
