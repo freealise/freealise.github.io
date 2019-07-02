@@ -38,7 +38,7 @@ categories: music
           <div id="player">
             <button id="videoButton" onclick="if(!video_opened){openVideo();}else{closeVideo();}"><i class="material-icons">local_movies</i></button>
             <button id="playlistButton" onclick="if(!opened){openPlaylist();}else{closePlaylist();}"><i class="material-icons">queue_music</i></button>
-            <!--<button id="playButton" onclick="if(!playing){play();}else{pause();}"><i class="material-icons" id="player-icon">play_arrow</i></button>-->
+            <button id="playButton" onclick="if(!playing){play();}else{pause();}"><i class="material-icons" id="player-icon">play_arrow</i></button>
             <div id="myProgress">
               <div id="myBar"></div>
             </div>
@@ -48,6 +48,9 @@ categories: music
                 <embed src="https://freealise.com/assets/mp3/album.mp3" type="audio/mpeg" width="256" height="32">
               </audio>
             </div>
+          </div>
+          <div id="videoContainer">
+            <iframe allow="autoplay; encrypted-media" allowfullscreen="1" allowtransparency="allowtransparency" frameborder="0" height="100%" id="video" name="video" src="https://www.youtube.com/embed/djV11Xbc914?list=PL394CAi_eVZkqnaK5pigZRF91t-oBXXg4&amp;listType=playlist&amp;autoplay=0&amp;controls=1&amp;showinfo=1&amp;modestbranding=1&amp;rel=0&amp;cc_lang_pref=en&amp;cc_load_policy=1&amp;fs=2" width="100%"></iframe>
           </div>
           <div id="playlist">
             <ol>
