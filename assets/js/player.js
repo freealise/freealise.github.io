@@ -75,7 +75,7 @@ function closePlaylist() {
 function openVideo() {
     video_opened = true;
     video.style.display='block';
-    video.src = 'https://www.youtube.com/embed/e80qhyovOnA?list=PL394CAi_eVZkqnaK5pigZRF91t-oBXXg4&listType=playlist&autoplay=1&controls=1&showinfo=1&modestbranding=1&rel=0&cc_lang_pref=en&cc_load_policy=1&fs=2';
+    video.src = 'https://www.youtube.com/embed/djV11Xbc914?list=PL394CAi_eVZkqnaK5pigZRF91t-oBXXg4&listType=playlist&autoplay=1&controls=1&showinfo=1&modestbranding=1&rel=0&cc_lang_pref=en&cc_load_policy=1&fs=2';
     opened = false;
     playlist.style.display='none';
 }
