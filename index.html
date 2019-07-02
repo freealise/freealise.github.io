@@ -9,21 +9,20 @@ layout: default
           <iframe allow="autoplay; encrypted-media" allowfullscreen="1" allowtransparency="allowtransparency" frameborder="0" height="100%" id="video" name="video" src="https://www.youtube.com/embed/djV11Xbc914?list=PL394CAi_eVZkqnaK5pigZRF91t-oBXXg4&listType=playlist&autoplay=0&controls=1&showinfo=1&modestbranding=1&rel=0&cc_lang_pref=en&cc_load_policy=1&fs=2" width="100%"></iframe>
         </div>
 
-        <div>
-          <span class="fl"><i class="material-icons">mail_outline</i></span>Receive our newsletter, watch the recording sessions, listen to singles and demos and have early access to the music.<br>
-          <a href="#" onclick="document.getElementById('email').focus();document.getElementById('email').className+=' focused';" title="Subscribe">
-            <b>Join now</b>
-          </a>
-        </div>
-
         <div id="share-buttons">
           <a data-sharer="twitter" data-title="Freealise" data-hashtags="music, folk, rock" data-url="https://freealise.com"><span class='symbol'>circletwitterbird</span></a>
           <a data-sharer="facebook" data-hashtag="music, folk, rock" data-url="https://freealise.com"><span class='symbol'>circlefacebook</span></a>
         </div>
 
+        <div>
+          <span class="fl"><i class="material-icons">mail_outline</i></span>Receive our monthly newsletter, watch the recording sessions, listen to singles and demos, get early access to the music and download the album in lossless quality with lyrics and cover art when it is released.<br>
+          <a href="#" onclick="document.getElementById('email').focus();document.getElementById('email').className+=' focused';" title="Subscribe">
+            <b>Join now</b>
+          </a>
+          <button onclick="document.getElementById('payForm').style.display='block';">Pre-order</button>
+        </div>
+
         <div id="payment">
-          <span class="fl"><i class="material-icons">card_membership</i></span>Enter your credit or debit card details and your chosen payment amount, get monthly updates and download the album in lossless quality with lyrics and cover art when it is released.
-          <div><button onclick="document.getElementById('payForm').style.display='block';">Pre-order</button></div>
           <div id="graph">
             <button id="queueButton" onclick="if(!q_opened){queue();openQueue();}else{closeQueue();}"><i class='material-icons'>people</i></button>
             <div id="giveProgress">
