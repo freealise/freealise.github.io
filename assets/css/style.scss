@@ -260,10 +260,12 @@ float:left;
 }
 #videoContainer {
 position:absolute;
-width:100%;
+width:256px;
+float:left;
+margin-right: 30px;
 }
 #video {
-display:none;
+display:block;
 }
 
 #payment {
