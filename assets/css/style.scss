@@ -269,6 +269,16 @@ margin-top: -30px;
 #video {
 display:block;
 }
+#videoContainer_ {
+position: absolute;
+left: 30px;
+top: 30px;
+width: 256px;
+height: 256px;
+}
+#video_ {
+display:none;
+}
 
 #payment {
 	overflow:visible;
