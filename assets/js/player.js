@@ -26,7 +26,7 @@ var bar = document.getElementById('myBar');
 var count = document.getElementById('timeCount');
 var audio = document.getElementById('audio');
 var playlist = document.getElementById('playlist');
-var video = document.getElementById('video');
+var video = document.getElementById('video_');
 
 count.innerHTML = timeCount;
 audio.src = tracks[0];
