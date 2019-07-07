@@ -15,14 +15,6 @@ layout: default
           <a data-sharer="facebook" data-hashtag="music, folk, rock" data-url="https://freealise.com"><span class='symbol'>circlefacebook</span></a>
         </div>
 
-        <div>
-          <span class="fl"><i class="material-icons">mail_outline</i></span>Receive our monthly newsletter, watch the recording sessions, listen to singles and demos, get early access to the music and download the album in lossless quality with lyrics and cover art when it is released.<br>
-          <a href="#" onclick="document.getElementById('email').focus();document.getElementById('email').className+=' focused';" title="Subscribe">
-            <b>Join now</b>
-          </a>
-          <button onclick="document.getElementById('payForm').style.display='block';">Pre-order</button>
-        </div>
-
         <div id="payment">
           <div id="graph">
             <button id="queueButton" onclick="if(!q_opened){queue();openQueue();}else{closeQueue();}"><i class='material-icons'>people</i></button>
@@ -40,6 +32,14 @@ layout: default
             <div id="queue"></div>
             <script type='text/javascript' src='/assets/js/giveaway.js' onload='getSum();'></script>
           </div>
+        </div>
+
+        <div>
+          <span class="fl"><i class="material-icons">mail_outline</i></span>Receive our monthly newsletter, watch the recording sessions, listen to singles and demos, get early access to the music and download the album in lossless quality with lyrics and cover art when it is released.<br>
+          <a href="#" onclick="document.getElementById('email').focus();document.getElementById('email').className+=' focused';" title="Subscribe">
+            <b>Join now</b>
+          </a>
+          <button onclick="document.getElementById('payForm').style.display='block';">Pre-order</button>
         </div>
 <hr>
 
