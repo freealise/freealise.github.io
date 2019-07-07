@@ -6,4 +6,4 @@ categories: jekyll update
 tags: new post
 ---
 
-<img src="/assets/images/svg/post_outline.svg" alt="Content"/>
+<img src="/assets/images/svg/post_outline.svg" alt="Content" onclick="showcase(this);"/>
