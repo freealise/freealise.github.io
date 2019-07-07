@@ -258,7 +258,7 @@ float:left;
 }
 #videoContainer {
 width: 320px;
-height: 180px;
+min-height: 180px;
 float: left;
 margin-right: 30px;
 margin-left: -30px;
@@ -335,6 +335,7 @@ font-size:14px;
     width: 100%;
     max-width: 256px;
     float: left;
+    margin: 0px 32px;
 }
 #giveProgress {
     width: 100%;
