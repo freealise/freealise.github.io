@@ -5,16 +5,10 @@
 layout: default
 ---
 
-        <div id="videoContainer">
-          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQdObYbqHGBKV1KS-Bb0-ZuJQhl0UuoYWvuJjUNG9ev8rnVp1o_v0q80YBKReoUt13l64_InsFww8np/embed?start=false&loop=false&delayms=60000" frameborder="0" width="320" height="180" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-          <!--<iframe allow="autoplay; encrypted-media" allowfullscreen="1" allowtransparency="allowtransparency" frameborder="0" height="100%" id="video" name="video" src="https://www.youtube.com/embed/djV11Xbc914?list=PL394CAi_eVZkqnaK5pigZRF91t-oBXXg4&listType=playlist&autoplay=0&controls=1&showinfo=1&modestbranding=1&rel=0&cc_lang_pref=en&cc_load_policy=1&fs=2" width="100%"></iframe>-->
-        </div>
-
-        <div id="share-buttons">
-          <a data-sharer="twitter" data-title="Freealise" data-hashtags="music, folk, rock" data-url="https://freealise.com"><span class='symbol'>circletwitterbird</span></a>
-          <a data-sharer="facebook" data-hashtag="music, folk, rock" data-url="https://freealise.com"><span class='symbol'>circlefacebook</span></a>
-        </div>
-
+      <div id="videoContainer">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQdObYbqHGBKV1KS-Bb0-ZuJQhl0UuoYWvuJjUNG9ev8rnVp1o_v0q80YBKReoUt13l64_InsFww8np/embed?start=false&loop=false&delayms=60000" frameborder="0" width="320" height="180" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <!--<iframe allow="autoplay; encrypted-media" allowfullscreen="1" allowtransparency="allowtransparency" frameborder="0" height="100%" id="video" name="video" src="https://www.youtube.com/embed/djV11Xbc914?list=PL394CAi_eVZkqnaK5pigZRF91t-oBXXg4&listType=playlist&autoplay=0&controls=1&showinfo=1&modestbranding=1&rel=0&cc_lang_pref=en&cc_load_policy=1&fs=2" width="100%"></iframe>-->
+        
         <div id="payment">
           <div id="graph">
             <button id="queueButton" onclick="if(!q_opened){queue();openQueue();}else{closeQueue();}"><i class='material-icons'>people</i></button>
@@ -34,13 +28,20 @@ layout: default
           </div>
         </div>
 
-        <div>
-          <span class="fl"><i class="material-icons">mail_outline</i></span>Receive our monthly newsletter, watch the recording sessions, listen to singles and demos, get early access to the music and download the album in lossless quality with lyrics and cover art when it is released.<br>
-          <a href="#" onclick="document.getElementById('email').focus();document.getElementById('email').className+=' focused';" title="Subscribe">
-            <b>Join now</b>
-          </a>
-          <button onclick="document.getElementById('payForm').style.display='block';">Pre-order</button>
-        </div>
+      </div>
+
+      <div id="share-buttons">
+        <a data-sharer="twitter" data-title="Freealise" data-hashtags="music, folk, rock" data-url="https://freealise.com"><span class='symbol'>circletwitterbird</span></a>
+        <a data-sharer="facebook" data-hashtag="music, folk, rock" data-url="https://freealise.com"><span class='symbol'>circlefacebook</span></a>
+      </div>
+
+      <div>
+        <span class="fl"><i class="material-icons">mail_outline</i></span>Receive our monthly newsletter, watch the recording sessions, listen to singles and demos, get early access to the music and download the album in lossless quality with lyrics and cover art when it is released.<br>
+        <a href="#" onclick="document.getElementById('email').focus();document.getElementById('email').className+=' focused';" title="Subscribe">
+          <b>Join now</b>
+        </a>
+        <button onclick="document.getElementById('payForm').style.display='block';">Pre-order</button>
+      </div>
 <hr>
 
 <!-- This loops through the paginated posts -->
