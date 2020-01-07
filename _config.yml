@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   motion picture and record publishing
 show_downloads: true
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://freealise.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://freeali.se" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: freealise
 github_username:  freealise
 google_analytics: UA-140027275-1
