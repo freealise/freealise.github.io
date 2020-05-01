@@ -36,30 +36,8 @@ header {
 header p {
     display: block;
 }
-#title {
-    width: 320px;
-    margin-left: -160px;
-    position: relative;
-    left: 50%;
-}
-@media print, screen and (min-width: 600px) {
-	#title {
-		margin-left: -320px;
-		top: 15px;
-	}
-}
-#logo_ {
-    float:left;
-    width: 192px;
-}
-#logo_ svg {
+#title svg {
     float: left;
-}
-.des {
-    font-size: 14px;
-    padding: 0px;
-    float: right;
-    width: 128px;
 }
 #banner {
     display: block;
