@@ -21,13 +21,14 @@
   <body>
 
     <header>
-      <div id="title">
         <a href="{{ site.url }}">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" height="36" width="32"><path d="M 16 0 L 16 36" stroke="white" stroke-width="4" fill="none"></path><path d="M 16 2 Q 32 10 16 18 0 26 16 34" stroke="white" stroke-width="4" fill="none"></path></svg>
-          <h1>{{ default: site.title | default: site.github.repository_name }}</h1>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" height="36" width="32">
+            <path d="M 16 0 L 16 36" stroke="white" stroke-width="4" fill="none"></path>
+            <path d="M 16 2 Q 32 10 16 18 0 26 16 34" stroke="white" stroke-width="4" fill="none"></path>
+          </svg>
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
-        <p><i>{{ default: site.description | default: site.github.project_tagline }}</i></p>
-      </div>
+        <p><i>{{ site.description | default: site.github.project_tagline }}</i></p>
     </header>
 
       <div id="banner">
