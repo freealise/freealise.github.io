@@ -39,6 +39,12 @@ header p {
 header svg {
     float: left;
 }
+#title {
+    width: 256px;
+    margin-left: 50%;
+    left: -128px;
+    position: relative;
+}
 #banner {
     display: block;
     top: 100px;
