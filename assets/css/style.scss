@@ -37,13 +37,9 @@ header p {
     display: block;
 }
 header svg {
-    float: left;
-}
-#title {
-    width: 256px;
-    margin-left: 50%;
-    left: -128px;
-    position: relative;
+    right: 50%;
+    margin-right: 100px;
+    position: fixed;
 }
 #banner {
     display: block;
