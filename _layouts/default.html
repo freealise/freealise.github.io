@@ -8,7 +8,6 @@
 
 {% seo %}
     <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
-    <link href='/assets/fonts/monosocialiconsfont.css' rel='stylesheet'/>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
@@ -27,221 +26,17 @@
             <a href="{{ site.url }}"><img src="/assets/freealise.png" width="150" alt="{{ site.title | default: site.github.repository_name }}">
               <!--<h1 style="font-family:osifontMedium">{{ site.title | default: site.github.repository_name }}</h1>-->
             </a>
-            <svg height='4' id='svgOne' width='150'>
-              Sorry, your browser does not support inline SVG.  
-            </svg>
-            <script>
-            var svgns = 'http://www.w3.org/2000/svg';
-            for (var i=1; i!=17; i++) {
-             var rect = document.createElementNS(svgns, 'rect');
-             rect.setAttributeNS(null, 'x', Math.log2(i)*36);
-             rect.setAttributeNS(null, 'y', 0);
-             rect.setAttributeNS(null, 'height', '4');
-             rect.setAttributeNS(null, 'width', '4');
-             rect.setAttributeNS(null, 'fill', '#8888ff');
-             rect.setAttributeNS(null, 'opacity', 1/i);
-             document.getElementById('svgOne').appendChild(rect);
-            }
-            for (var i=0; i!=5; i++) {
-             var rect = document.createElementNS(svgns, 'rect');
-             rect.setAttributeNS(null, 'x', i*36);
-             rect.setAttributeNS(null, 'y', 10);
-             rect.setAttributeNS(null, 'height', '4');
-             rect.setAttributeNS(null, 'width', '4');
-             rect.setAttributeNS(null, 'fill', 'transparent');
-             document.getElementById('svgOne').appendChild(rect);
-            }
-            </script>
           </div>
           <i><p class="des">{{ site.description | default: site.github.project_tagline }}</p></i>
         </div>
-        <i><p class="nav">
-            <span><a href="https://player.freealise.com">Player</a></span>
-            <span><a href="/about">About</a></span>
-            <span><a href="/store">Store</a></span>
-            <span><a href="/events">Events</a></span>
-        </p></i>
       </header>
 
       <div id="banner">
-        <div id='payForm'>
-          <div id='payFormOverlay' onclick="this.parentNode.style.display='none';"></div>
-          <div id='payFormContainer'>
-            <script src='https://js.stripe.com/v3/'></script>
-            <form action='https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec' id='payment-form' method='post' target='_top'>
-              <b>* Email</b> <input class='pay-form follow-by-email-address' expr:placeholder='data:messages.emailAddress' id='stripeEmail' name='stripeEmail' size='16' type='email' value=''/><br/>
-              <input name='stripeTokenType' type='hidden' value='card'/>
-              <input name='a' type='hidden' value='pay'/>
-              <input name='stripeOrder' id='stripeOrder' type='hidden' value='to support the artist'/>
-                <b>* $</b> <a href='https://www.google.ru/search?q=$' id='rateLink' target='_blank' onclick='this.href="https://www.google.ru/search?q=$"+document.getElementById("amount").value;'>See current rate</a>
-              <input autocomplete='off' class='follow-by-email-address' id='amount' name='amount' placeholder='Payment' size='4' type='text' value='4.99'/><div id='costPrice'>Enter a payment amount equal or higher than $0.01</div>
-                <div class='form-row'>
-                  <label for='card-element'>
-                    <span class="fl"><i class="material-icons">card_membership</i></span>
-                  </label>
-                  <div id='card-element'>
-                      <!-- A Stripe Element will be inserted here. -->
-                  </div>
-                  <!-- Used to display form errors. -->
-                  <div id='card-errors' role='alert'></div>
-                  <button class='flat-button submit-button follow-by-email-submit' id='pay-button'>Pay now</button>
-                <div style='float:left;font-size:12px;font-weight:bold'>* Required</div>
-                <div style='float:right;font-size:12px;'>Powered by <a href='https://stripe.com' target='_blank'>Stripe</a></div>
-              </div>
-            </form>
-            <script src='/assets/js/stripe.js' type='text/javascript'></script>
-            <div id='items'></div>
-          </div>
-        </div>
-        
-        <a id="order" onclick="showOrder();" href="#"><i class="material-icons">local_mall</i><span id="qty">0</span></a>
-        <form action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="get" id="subscribe-form" class="downloads">
-          <input type="text" value="Email address" name="email" id="email" onclick="this.value=''">
-          <input type="hidden" name="a" value="confirm">
-          <input type="submit" value="Join" class="button">
-        </form>
-        <span class="downloads" id="contact"></span>
-        
-        <script src="/assets/js/cookie.js"></script>
-        <script type="text/javascript">
-          var item;
-          var i = getCookie("items");
-          if (i && i != "") {
-            i = parseInt(i);
-          } else {
-            i = 0;
-          }
-          var total = getCookie("total");
-          if (total && total != "") {
-            total = parseFloat(total);
-          } else {
-            total = 0.00;
-          }
-          var order = "" + getCookie("order");
-          document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
-          function addItem(id, title, cost) {
-            total = parseFloat(total)+cost;
-            total = total.toFixed(2);
-            if (order != "") {
-              order += ", ";
-            }
-            item = id+" - "+title.replace(",", " ");
-            order += item;
-            i++;
-            setCookie("items", i.toString(), 365);
-            setCookie("total", total.toString(), 365);
-            setCookie("order", order, 365);
-            document.getElementById("qty").innerHTML = "<b>"+i+"</b>";
-          }
-          function removeItems() {
-            i=0;
-            total = 0.00;
-            order = "";
-            setCookie("items", "", -1);
-            setCookie("total", "", -1);
-            setCookie("order", "", -1);
-            document.getElementById("qty").innerHTML = "0";
-            document.getElementById('amount').value=0.00;
-            document.getElementById('stripeOrder').value="";
-            document.getElementById("items").innerHTML = "<div align='left'><b>$ 0.00</b></div>";
-          }
-          function showOrder() {
-            document.getElementById('amount').value=total;
-            document.getElementById('stripeOrder').value=order;
-            document.getElementById("items").innerHTML = "<div align='left'><b>$ "+total+"</b></div>";
-            if (order!="") {
-              document.getElementById("items").innerHTML += "<div align='right'><a onclick='removeItems();'>Clear order</a></div>"+order.replace(/, /g, "<br>");
-            }
-            document.getElementById('payForm').style.display='block';
-          }
-        </script>
-        
-        <button id="navButton" class="fork button" onclick="if(!nav_opened){openNav();}else{closeNav();}"><i class="material-icons">search</i></button>
-        <div id="navigation">
-          <div id="navOverlay" onclick="closeNav();"></div>
-          <div id="navContainer">
-            {% include search.html %}
-            {% for tag in site.tags %}
-              <a href="#" onclick="tagAdd('{{ tag[0] }}')">{{ tag[0] }}</a>&nbsp;|&nbsp;
-            {% endfor %}
-            <hr>
-            {% assign postsByYear =
-                site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
-            {% for year in postsByYear %}
-              <a href="#" onclick="showYear('{{ year.name }}')"><b>{{ year.name }}</b></a><br>
-              <ul id="year{{ year.name }}" style="display:none">
-                {% assign postsByMonth =
-                  year.items | group_by_exp:"post", "post.date | date: '%b'" %}
-                {% for month in postsByMonth %}
-                  <li>
-                    <div>
-                      <b>{{ month.name }}</b><br>
-                      {% for post in month.items %}
-                        <a href="{{ post.url }}">{{ post.title }}</a><br>
-                      {% endfor %}
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endfor %}
-            <hr>
-            <div id="lunrsearchresults">
-                <ul></ul>
-            </div>
-            <div id="searchResults"></div>
-            <script type="text/javascript">
-              function showYear(year) {
-                var yearSection = document.getElementById('year'+year);
-                if (yearSection.style.display == 'none') {
-                  yearSection.style.display = 'block';
-                } else {
-                  yearSection.style.display = 'none';
-                }
-              }
-              function tagAdd(tag) {
-                document.getElementById("lunrsearch").value += tag + ",";
-              }
-              function tagSearch(q) {
-                var tags = q.slice(0, -1);
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                  if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("searchResults").innerHTML = this.responseText;
-                    document.getElementById("lunrsearchresults").innerHTML = "<ul></ul>";
-                  }
-                };
-                xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=search&tags="+tags, true);
-                xhttp.send();
-              }
+        <span id="logo"></span>
 
-              var nav = document.getElementById('navigation');
-              var nav_opened = false;
-              function openNav() {
-                  nav_opened = true;
-                  nav.style.display = 'block';
-              }
-              function closeNav() {
-                  nav_opened = false;
-                  nav.style.display = 'none';
-              }
-
-              var show = false;
-              function showcase(e) {
-                if (!show) {
-                  e.className += ' showcase';
-                  show = true;
-                } else {
-                  e.className = '';
-                  show = false;
-                }
-              }
-            </script>
-          </div>
-        </div>
-        
-        <!--
+        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
         {% if site.show_downloads %}
-          <div>
+          <div class="downloads">
             <span>Downloads:</span>
             <ul>
               <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
@@ -249,8 +44,12 @@
             </ul>
           </div>
         {% endif %}
-        -->
 
+        <form action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="get" id="subscribe-form" class="downloads">
+          <input type="text" value="Email address" name="email" id="email" onclick="this.value=''">
+          <input type="hidden" name="a" value="confirm">
+          <input type="submit" value="Join" class="button">
+        </form>
       </div><!-- end banner -->
 
     <div class="wrapper">
@@ -260,8 +59,10 @@
       <section>
         {% if page.id %}
             <div id="share-buttons">
-              <a data-sharer="twitter" data-title="{{ page.title }}" data-hashtags="{{ page.tags }}" data-url="{{ site.url }}{{ page.url }}"><span class='symbol'>circletwitterbird</span></a>
-              <a data-sharer="facebook" data-hashtag="{{ page.tags }}" data-url="{{ site.url }}{{ page.url }}"><span class='symbol'>circlefacebook</span></a>
+                <a href="" onclick="javascript:window.open('https://twitter.com/intent/tweet/?text={{ page.title }}&url={{ site.url }}{{ page.url }}&hashtags={{ page.tags }}');">
+                  <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M17.71,9.33C18.19,8.93 18.75,8.45 19,7.92C18.59,8.13 18.1,8.26 17.56,8.33C18.06,7.97 18.47,7.5 18.68,6.86C18.16,7.14 17.63,7.38 16.97,7.5C15.42,5.63 11.71,7.15 12.37,9.95C9.76,9.79 8.17,8.61 6.85,7.16C6.1,8.38 6.75,10.23 7.64,10.74C7.18,10.71 6.83,10.57 6.5,10.41C6.54,11.95 7.39,12.69 8.58,13.09C8.22,13.16 7.82,13.18 7.44,13.12C7.81,14.19 8.58,14.86 9.9,15C9,15.76 7.34,16.29 6,16.08C7.15,16.81 8.46,17.39 10.28,17.31C14.69,17.11 17.64,13.95 17.71,9.33Z" fill="#000000"></path></svg></a>
+                <a href="" onclick="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&hashtag=%23{{ page.tags }}');">
+                  <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" fill="#000000"></path></svg></a>
             </div>
         {% endif %}
         {% if page.date %}
@@ -271,14 +72,10 @@
         {{ content }}
       </section>
       <footer>
-        <p class="follow-buttons">
-          <a href="https://twitter.com/freealise" target="_blank"><span class='symbol'>circletwitterbird</span></a>
-          <a href="https://facebook.com/freealise" target="_blank"><span class='symbol'>circlefacebook</span></a>
-          <a href="/feed.xml" target="_blank"><span class='symbol'>circlerss</span></a>
-        </p>
-        <p>
-          <a href="/credits"><span class='symbol'>circleheart</span> Credits and legal info</a>
-        </p>
+        {% if site.github.is_project_page %}
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
       </footer>
     </div>
 
@@ -292,20 +89,6 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-    <script type="text/javascript">
-        var email=getCookie("email");
-        var token=getCookie("token");
-        if (email && email!="" && token && token!="") {
-            document.getElementById('subscribe-form').style.display='none';
-            document.getElementById('contact').innerHTML = '<a id="logout" class="button" href="/contact.html?email=&token=">Logout</a><a id="contact-link" class="button" href="/contact.html">Contact</a>';
-            document.getElementById('stripeEmail').value=email;
-            if (window.location.pathname == '/contact.html') {
-                document.getElementById('contact_email').value=email;
-                document.getElementById('token').value=token;
-            }
-        }
-    </script>
-    <script src="/assets/js/sharer.min.js" type="text/javascript"></script>
 
     <div id="cookie-notice"><i>We use third party cookies and scripts to improve your experience on this website.</i><a id="cookie-notice-accept" class="btn btn-primary btn-sm">OK</a><a href="/cookies.html" class="btn btn-primary btn-sm">More info</a></div>
     <script src="/assets/js/cookie_notice.js"></script>
