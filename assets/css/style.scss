@@ -27,28 +27,6 @@ i {
 	}
 }
 
-.nav {
-    width: 256px;
-    position: absolute;
-    margin-right: -128px;
-    right: 50%;
-    top: 67px;
-}
-@media print, screen and (min-width: 600px) {
-	.nav {
-		margin-right: -256px;
-		top: 35px;
-	}
-}
-.nav span {
-    float: left;
-    width: 64px;
-}
-
-.nav span a {
-    color: #ffffff;
-}
-
 header {
     position: fixed;
     height: 105px;
@@ -91,6 +69,11 @@ header p {
     background-size: 100px 50px;
     border: 1px solid black;
 }
+#banner .fork {
+    padding: 0px;
+    margin-top: 0px;
+    background-color: transparent;
+}
 #email {
     margin-top: 6px;
     margin-right: 6px;
@@ -102,16 +85,7 @@ header p {
 #email .focused {
     border:2px solid #4276b6;
 }
-#contact-link, #logout {
-width:50px;
-float:right;
-}
-nav {
-top: 235px;
-overflow-y: scroll;
-overflow-x: visible;
-max-height: 320px;
-}
+
 @media print, screen and (min-width: 650px) {
 	section {
 	    margin-top: 175px;
@@ -150,27 +124,7 @@ max-height: 320px;
     background-color: #b68242;
     color: white;
 }
-#banner #navigation {
-display:none;
-}
-#banner #navContainer {
-width: 256px;
-height: 100vh;
-overflow: scroll;
-top: 0px;
-left: 0px;
-position: fixed;
-margin: 0px;
-padding:16px;
-background: #ffffff;
-z-index:10;
-}
-#banner #navButton {
-padding: 4px 6px;
-}
-#lunrsearch {
-width: 180px;
-}
+
 #share-buttons {
 float: right;
 }
@@ -190,241 +144,6 @@ clear: both;
 height: auto;
 max-width: 256px;
 word-break: break-word;
-}
-.lunrsearchresult .title {color: #3399cc;}
-.lunrsearchresult .url {color: silver;}
-.lunrsearchresult a {display: block; color: #777;}
-.lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
-.lunrsearchresult a:hover .title {text-decoration: underline;}
-
-.playerContainer {
-width: 100%;
-margin-bottom: 30px;
-}
-#player {
-position:relative;
-height:32px;
-}
-#playlist {
-display:none;
-position:absolute;
-top: 30px;
-left: 30px;
-text-align:left;
-width:256px;
-height:256px;
-clear: both;
-padding-top: 10px;
-background:rgba(255,255,255,1);
-}
-#playlist li {
-float:none;
-}
-#playlist li a {
-width:180px;
-}
-#playlist ol {
-margin: 0px;
-}
-.currentTrack {
-font-weight: bold;
-}
-#myProgress {
-width: 48px;
-height:36px;
-margin-right:4px;
-float: left;
-background-color: grey;
-}
-#myBar {
-width: 0%;
-height: 36px;
-background-color: rgba(255,255,255,.5);
-}
-#timeCount {
-width:48px;
-padding:7px 0px;
-word-break: normal;
-}
-.t {
-float:right;
-}
-#playButton, #playlistButton, #videoButton {
-width:48px;
-height: 36px;
-margin-right:4px;
-float:left;
-}
-#videoContainer {
-width: 320px;
-min-height: 180px;
-float: left;
-margin-right: 30px;
-margin-left: -30px;
-margin-top: -30px;
-}
-#video {
-display:block;
-}
-#videoContainer_ {
-position: absolute;
-left: 30px;
-top: 30px;
-width: 256px;
-height: 256px;
-}
-#video_ {
-display:none;
-}
-
-#payment {
-	overflow:visible;
-}
-#payForm {
-	display:none;
-}
-#payFormOverlay, #navOverlay {
-	position:fixed;
-	width:100vw;
-	height:100vh;
-	top:0px;
-	left:0px;
-	background: rgba(0,0,0,.75);
-    	z-index: 10;
-}
-#payFormContainer {
-	background: rgba(255,255,255,.75);
-    padding: 16px;
-	width:256px;
-	height:320px;	
-	position:fixed;
-	top:50vh;
-	left:50vw;
-	margin-left:-128px;
-	margin-top:-160px;
-    z-index: 10;
-}
-#payment-form {
-    text-align:left;
-}
-.pay-form {
-	width: 100%;
-}
-#rateLink {
-float:right;
-font-size:14px;
-}
-#geocode-map {
-	height:128px;
-	display:none;
-}
-#pay-button {
-    text-align: center;
-    width: 100%;
-    margin: 0px;
-}
-#costPrice {
-	text-align: right;
-    float: right;
-    font-size: 14px;
-    width: 75%;
-	padding:5px 0;
-}
-#graph {
-    width: 100%;
-    max-width: 256px;
-    float: left;
-    margin: 0px 32px;
-}
-#giveProgress {
-    width: 100%;
-    background-color: grey;
-}
-#giveBar {
-    width: 0%;
-    height: 30px;
-    background-color: rgba(255,255,255,.5);
-}
-#recurring {
-float:left;
-}
-#amountNeeded, #amountGiven {
-	text-align:right;
-}
-#amountGiven {
-	width: 48px;
-    float: right;
-	padding: 5px 0 5px 0;
-}
-#queueButton {
-	background: transparent;
-    border: 0;
-    padding: 0;
-    text-align: right;
-    width: 100%;
-	color:rgba(255,255,255,.5);
-}
-#queue {
-	display:none;
-	text-align:left;
-	min-width: 256px;
-    float: left;
-    font-size: 14px;
-	margin: 24px;
-	overflow:scroll;
-}
-#timeline-embed {
-	height: 400px;
-	width: 100%;
-}
-
-#order {
-position: absolute;
-right: 16px;
-top: 6px;
-color: white;
-background: url(/assets/images/button.png);
-background-size: 24px 24px;
-border: 1px solid black;
-height: 30px;
-padding: 2px;
-}
-#items {
-width: 100%;
-clear: both;
-overflow: scroll;
-height: 64px;
-}
-
-#thumbnails {
-width: 256px;
-height: 336px;
-float: left;
-padding-right: 16px;
-padding-bottom: 16px;
-}
-.thumbnail {
-width:64px;
-height:64px;
-min-width: 64px;
-min-height: 64px;
-float:left;
-}
-.item_image {
-width:256px;
-height:256px;
-min-width: 256px;
-min-height: 256px;
-float:left;
-padding-bottom: 16px;
-}
-.showcase {
-position: absolute;
-width: 100%;
-height: auto;
-z-index: 1;
-left: 0px;
-top: 0px;
 }
 
 #logo {
