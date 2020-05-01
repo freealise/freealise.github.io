@@ -33,7 +33,8 @@
       </header>
 
       <div id="banner">
-        <a href="{{ site.github.repository_url }}" class="button fork"><span id="logo"></span></a>
+        <a href="{{ site.github.repository_url }}"><span id="logo"></span></a>
+
         {% if site.show_downloads %}
           <div class="downloads">
             <span>Downloads:</span>
@@ -44,7 +45,7 @@
           </div>
         {% endif %}
 
-        <form action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="get" id="subscribe-form" class="downloads">
+        <form class="fork" action="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec" method="get" id="subscribe-form" class="downloads">
           <input type="text" value="Email address" name="email" id="email" onclick="this.value=''">
           <input type="hidden" name="a" value="confirm">
           <input type="submit" value="Join" class="button">
