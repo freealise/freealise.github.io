@@ -5,3 +5,8 @@
 https://sourceforge.net/p/forge/helpwanted/
 
 https://zapier.com/shared/2884084f2df01982b94fa07e5f792dce580eb991
+https://docs.google.com/spreadsheets/d/1K_KUiQ1tKU2wF0bPTlSPZsmRxLjl22qOwHsV6k9HkOA/edit?usp=sharing
+
+https://medium.com/@steynviljoen/how-to-share-or-embed-a-google-sheets-chart-that-updates-instantly-no-need-to-wait-for-5-minutes-b6d325cd8598
+
+
