@@ -18,13 +18,13 @@ $ <input type="text" size="2" id="quantity" value="10"> <!-- ADDED LINE - YOU CA
 (function() {
   var stripe = Stripe('pk_test_up7XBxmt0W2fKgzk1SxfQymR');
 
-  var quantity =  document.getElementById('quantity'); <!-- ADDED LINE -->
+  var quantity =  document.getElementById('quantity'); // ADDED LINE
   var checkoutButton = document.getElementById('checkout-button-sku_FQkGdBj6c3phGm');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}], <!-- REPLACED 1 WITH QUANTITY -->
+      items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}], // REPLACED 1 WITH QUANTITY
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
