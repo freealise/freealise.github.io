@@ -16,7 +16,7 @@
 title: Gift economy
 email: me@freealise.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Work for fun and be human.
+  Work for fun and be human
 show_downloads: false
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://freeali.se" # the base hostname & protocol for your site, e.g. http://example.com
