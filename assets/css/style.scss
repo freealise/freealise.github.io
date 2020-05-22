@@ -22,11 +22,11 @@
 }
 
 body {
-	font-family:'Literata', serif;
+	font-family:'Inconsolata', monospace;
 }
 
 i {
-	font-family:'Literata Italic', serif;
+	font-family:'Inconsolata', monospace;
 }
 
 @media print, screen and (max-width: 720px) {
@@ -89,7 +89,7 @@ header svg {
 	}
 }
 .button {
-    font-family: 'Literata Italic', serif;
+    font-family: 'Inconsolata', monospace;
     border: 1px solid black;
     background: url(/assets/images/button.png);
     background-size: 24px 24px;
@@ -107,7 +107,7 @@ header svg {
     text-align: center;
 }
 #banner .button {
-    font-family: 'Literata Italic', serif;
+    font-family: 'Inconsolata', monospace;
     border: 1px solid black;
     background: url(/assets/images/button.png);
     background-size: 24px 24px;
