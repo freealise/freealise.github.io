@@ -16,7 +16,7 @@
 title: freeali.se
 email: me@freealise.com
 description: >- # this means to ignore newlines until "baseurl:"
-  apps for creatives
+  apps for artists
 show_downloads: false
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://freeali.se" # the base hostname & protocol for your site, e.g. http://example.com
