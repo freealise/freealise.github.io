@@ -91,16 +91,16 @@ header svg {
     font-family: 'Inconsolata', monospace;
     border: 1px dashed black;
     background: white;
+    background-color: white;
     background-size: 24px 24px;
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
-    background-color: #b68242;
     margin-left: 5px;
     padding: 10px 12px;
     margin-top: 6px;
     line-height: 14px;
     font-size: 14px;
-    color: white;
+    color: black;
     font-weight: bold;
     display: inline-block;
     text-align: center;
@@ -109,10 +109,10 @@ header svg {
     font-family: 'Inconsolata', monospace;
     border: 1px dashed white;
     background: black;
+    background-color: black;
     background-size: 24px 24px;
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
-    background-color: #b68242;
     color: white;
 }
 
