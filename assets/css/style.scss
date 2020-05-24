@@ -18,9 +18,9 @@
 
 body {
 	font-family:'Inconsolata', monospace;
-	background:url('/assets/images/StudioArtistScreenSnapz1804.jpg.scaled1000.jpg');
-	background-size:auto;
-	background-position:top left;
+	background:url('/assets/images/StudioArtistScreenSnapz1804.jpg.scaled1000.jpg') fixed;
+	background-size:cover;
+	background-position:center;
 }
 
 i {
