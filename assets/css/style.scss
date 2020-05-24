@@ -24,7 +24,8 @@
 body {
 	font-family:'Inconsolata', monospace;
 	background:url('/assets/images/j.jpg');
-	background-size:cover;
+	background-size:auto;
+	background-position:top left;
 }
 
 i {
