@@ -40,7 +40,7 @@ header {
     height: 105px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background:url('/assets/images/java.jpg') #4276b6;
+    background:url('/assets/images/java.jpg') #000000;
 }
 header p {
     display: block;
@@ -54,9 +54,9 @@ header svg {
 #banner {
     display: block;
     top: 100px;
-    background: url(/assets/images/banner_small.png);
-    background-repeat: repeat-x;
-    background-size: 100px 50px;
+    background: #000000;
+    /*background-repeat: repeat-x;
+    background-size: 100px 50px;*/
     border: 1px solid black;
 }
 #banner .fork {
@@ -92,7 +92,7 @@ header svg {
 .button {
     font-family: 'Inconsolata', monospace;
     border: 1px solid black;
-    background: url(/assets/images/button.png);
+    background: url(/assets/images/java.jpg);
     background-size: 24px 24px;
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
