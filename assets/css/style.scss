@@ -89,8 +89,8 @@ header svg {
 }
 .button {
     font-family: 'Inconsolata', monospace;
-    border: 1px solid black;
-    background: url('/assets/images/java.jpg');
+    border: 1px dashed black;
+    background: white;
     background-size: 24px 24px;
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
@@ -107,8 +107,8 @@ header svg {
 }
 #banner .button {
     font-family: 'Inconsolata', monospace;
-    border: 1px solid black;
-    background: url('/assets/images/java.jpg');
+    border: 1px dashed white;
+    background: black;
     background-size: 24px 24px;
     border-radius: 2px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
