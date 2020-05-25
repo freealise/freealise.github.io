@@ -117,11 +117,12 @@ header svg {
 }
 
 pre {
-background-color: white;
+background-color: transparent;
+border: none;
 line-height: normal;
 width: 256px;
 font-family: 'Inconsolata', monospace;
-font-weight: normal;
+font-weight: bold;
 font-size: 18px;
 line-height: 1em;
 }
