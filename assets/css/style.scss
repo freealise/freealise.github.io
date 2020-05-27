@@ -31,11 +31,12 @@ i {
 
 header {
     position: fixed;
-    height: 150px;
+    height: 180px;
     padding-top: 10px;
     padding-bottom: 10px;
     background: url(https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/header.png) bottom center;
-    background-size: 100%;
+    background-repeat:no-repeat;
+    background-size: 75%;
     box-shadow:none;
 }
 header p {
