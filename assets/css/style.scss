@@ -31,10 +31,12 @@ i {
 
 header {
     position: fixed;
-    height: 105px;
+    height: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background:url('https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/header.png') #eee8dd;
+    background: url(https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/header.png) bottom center;
+    background-size: 100%;
+    box-shadow:none;
 }
 header p {
     display: block;
