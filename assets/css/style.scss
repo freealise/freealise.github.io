@@ -36,7 +36,7 @@ header {
     height: 105px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: url('/assets/images/quilt.jpg') center 59%;
+    background: url('/assets/images/quilt_.jpg') center 60%;
     background-repeat:no-repeat;
     background-size: 100%;
 }
@@ -46,12 +46,12 @@ header h1 {
 }
 header div {
 	background: rgba(255, 255, 255, 0.5);
-	max-width:256px;
 	border: dashed 2px black;
 }
 header p {
     display: block;
     margin-top: -10px;
+    font-size:24px;
 }
 header svg {
     right: 50%;
