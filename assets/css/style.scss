@@ -32,13 +32,14 @@ i {
 }
 
 header {
+    filter: hue-rotate(180);
     position: fixed;
     height: 105px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: url('/assets/images/quilt_.png') center;
-    background-repeat:no-repeat;
-    background-size: 200%;
+    background: url('/assets/images/banner.png') center;
+    background-repeat:repeat-x;
+    background-size: 25%;
 }
 header h1 {
 	color: #000000;
