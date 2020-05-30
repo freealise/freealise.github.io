@@ -32,11 +32,11 @@ i {
 }
 
 header {
-    filter: hue-rotate(180);
+    filter: hue-rotate(180deg);
     position: fixed;
-    height: 105px;
+    height: 100px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     background: url('/assets/images/banner.png') center;
     background-repeat:repeat-x;
     background-size: 25%;
