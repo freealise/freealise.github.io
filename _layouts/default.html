@@ -21,10 +21,12 @@
   <body>
 
     <header>
-        <a href="{{ site.url }}"><h1><b>
+      <div>
+        <a href="{{ site.url }}"><h1>
           {{ site.title | default: site.github.repository_name }}
-        </b></h1></a>
+        </h1></a>
         <p><i>{{ site.description | default: site.github.project_tagline }}</i></p>
+      </div>
     </header>
 
       <div id="banner">
