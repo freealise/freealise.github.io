@@ -17,6 +17,7 @@
 }
 
 body {
+	background: url(/assets/images/wood.jpg) bottom center;
 	font-family:'Inconsolata', monospace;
 }
 
@@ -52,10 +53,8 @@ header svg {
 #banner {
     display: block;
     top: 100px;
-    background: #000000;
-    /*background-repeat: repeat-x;
-    background-size: 100px 50px;*/
-    border: 1px solid black;
+    background: url(/assets/images/out.png) center;
+    border: none;
 }
 #banner .fork {
     padding: 0px;
