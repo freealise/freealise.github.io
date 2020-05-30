@@ -18,11 +18,11 @@
 
 body {
 	background: url(/assets/images/wood.jpg) bottom center;
-	font-family:'Inconsolata', monospace;
+	font-family:'Literata Italic', serif;
 }
 
 i {
-	font-family:'Inconsolata', monospace;
+	font-family:'Literata Italic', serif;
 }
 
 @media print, screen and (max-width: 720px) {
@@ -36,9 +36,9 @@ header {
     height: 105px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: url('/assets/images/quilt.jpg') center 67%;
+    background: url('/assets/images/quilt_.png') center;
     background-repeat:no-repeat;
-    background-size: 100%;
+    background-size: 200%;
 }
 header h1 {
 	color: #000000;
@@ -107,7 +107,7 @@ header svg {
 	}
 }
 .button {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Literata Italic', serif;
     border: 1px dashed black;
     background: white;
     background-color: white;
@@ -124,7 +124,7 @@ header svg {
     text-align: center;
 }
 #banner .button {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Literata Italic', serif;
     border: 1px dashed white;
     background: black;
     background-color: black;
@@ -139,7 +139,7 @@ background-color: transparent;
 border: none;
 line-height: normal;
 width: 256px;
-font-family: 'Inconsolata', monospace;
+font-family: 'Literata Italic', serif;
 font-weight: bold;
 font-size: 18px;
 line-height: 1em;
