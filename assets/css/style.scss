@@ -32,13 +32,12 @@ i {
 
 header {
     position: fixed;
-    height: 180px;
+    height: 105px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: url(https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/header.png) bottom center;
+    background: url(/assets/images/wood_.jpg) bottom center;
     background-repeat:no-repeat;
-    background-size: 75%;
-    box-shadow:none;
+    background-size: 100%;
 }
 header p {
     display: block;
