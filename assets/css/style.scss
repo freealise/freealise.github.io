@@ -44,9 +44,10 @@ header h1 {
 	color: #000000;
 	text-shadow: 0px 0px 8px #ffffff;
 }
-header h1 span {
+header h1 b {
 	background: rgba(255, 255, 255, 0.5);
 	padding:15px;
+	border: dashed 2px black;
 }
 header p {
     display: block;
