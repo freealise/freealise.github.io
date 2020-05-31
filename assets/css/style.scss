@@ -16,6 +16,26 @@
   src: url(/assets/fonts/literata-regular.otf);
 }
 
+@font-face {
+  font-family: 'Chiq Black';
+  src: url(/assets/fonts/Chiq_Reduced_Black.otf);
+}
+
+@font-face {
+  font-family: 'Chiq Bold';
+  src: url(/assets/fonts/Chiq_Reduced_Bold.otf);
+}
+
+@font-face {
+  font-family: 'Chiq Regular';
+  src: url(/assets/fonts/Chiq_Reduced_Regular.otf);
+}
+
+@font-face {
+  font-family: 'Chiq Light';
+  src: url(/assets/fonts/Chiq_Reduced_Light.otf);
+}
+
 body {
 	background: url(/assets/images/kit.jpg) bottom left;
 	background-size:cover;
