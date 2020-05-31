@@ -17,7 +17,8 @@
 }
 
 body {
-	background: url(/assets/images/wood.jpg) bottom center;
+	background: url(/assets/images/kit.jpg) bottom left;
+	background-size:cover;
 	font-family:'Literata Italic', serif;
 }
 
@@ -32,24 +33,19 @@ i {
 }
 
 header {
-    filter:hue-rotate(180deg);
     position: fixed;
     height: 100px;
     padding-top: 10px;
     padding-bottom: 15px;
-    background: url('/assets/images/kit.jpg') center 67%;
+    background: url('/assets/images/wood.jpg') bottom center;
     background-repeat:no-repeat;
     background-size: 100%;
 }
 header h1 {
 	color: #000000;
 	text-shadow: 0px 0px 8px #ffffff;
-}
-header .button {
 	font-family: 'Literata Italic';
 	text-transform: lowercase;
-	background: rgba(255, 255, 255, 0.5);
-	border: dashed 2px black;
 }
 header p {
     display: block;
