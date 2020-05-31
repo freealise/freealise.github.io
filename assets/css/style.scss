@@ -16,34 +16,14 @@
   src: url(/assets/fonts/literata-regular.otf);
 }
 
-@font-face {
-  font-family: 'Chiq Black';
-  src: url(/assets/fonts/Chiq_Reduced_Black.otf);
-}
-
-@font-face {
-  font-family: 'Chiq Bold';
-  src: url(/assets/fonts/Chiq_Reduced_Bold.otf);
-}
-
-@font-face {
-  font-family: 'Chiq Regular';
-  src: url(/assets/fonts/Chiq_Reduced_Regular.otf);
-}
-
-@font-face {
-  font-family: 'Chiq Light';
-  src: url(/assets/fonts/Chiq_Reduced_Light.otf);
-}
-
 body {
 	background: url(/assets/images/kit.jpg) bottom left;
 	background-size:cover;
-	font-family:'Literata Italic', serif;
+	font-family:Inconsolata, monospace;
 }
 
 i {
-	font-family:'Literata Italic', serif;
+	font-family:Inconsolata, monospace;
 }
 
 @media print, screen and (max-width: 720px) {
@@ -63,7 +43,7 @@ header {
 }
 header h1 {
     color: #000000;
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
     text-shadow: 0px 0px 8px #ffffff;
     font-family: 'Literata Italic';
@@ -126,7 +106,7 @@ header svg {
 	}
 }
 .button {
-    font-family: 'Literata Italic', serif;
+    font-family: Inconsolata, monospace;
     border: 1px dashed black;
     background: white;
     background-color: white;
@@ -143,7 +123,7 @@ header svg {
     text-align: center;
 }
 #banner .button {
-    font-family: 'Literata Italic', serif;
+    font-family: Inconsolata, monospace;
     border: 1px dashed white;
     background: black;
     background-color: black;
@@ -158,7 +138,7 @@ background-color: transparent;
 border: none;
 line-height: normal;
 width: 256px;
-font-family: 'Literata Italic', serif;
+font-family: Inconsolata, monospace;
 font-weight: bold;
 font-size: 18px;
 line-height: 1em;
