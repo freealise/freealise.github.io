@@ -32,7 +32,7 @@ _________|/   /  /_\/\  |
 &lt; <a href="/graphics.html">Draw with varying line thickness</a>
 
 
-&lt; <a href="/music.html">Convert tabs to custom tunings</a>
+&lt; <a href="/music.html">Convert tabs to a custom tuning</a>
 
   
 &lt; <a href="/lyrics.html">Rhyme words or count syllables</a>
