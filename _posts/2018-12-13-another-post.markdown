@@ -6,4 +6,37 @@ categories: jekyll update
 tags: new post
 ---
 
-<a href="https://2.bp.blogspot.com/-GzdhMpk2wBk/XSn0enSqTOI/AAAAAAAABBg/NjUaSsCYEjIfGod6yAAQ5B03bRTvjI5QgCLcBGAs/s320/creative_block_.jpg" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-GzdhMpk2wBk/XSn0enSqTOI/AAAAAAAABBg/NjUaSsCYEjIfGod6yAAQ5B03bRTvjI5QgCLcBGAs/s320/creative_block_.jpg" width="320" height="180" data-original-width="720" data-original-height="405" /></a>
+<pre style="float: left;">                  .--.
+                  :[]:
+ __________________||
+/    __  _\_____  /||
+|~| /o/ /  \   /___||___
+|_|/0/ /_   ' /|  _||   |
+  /O/  \/____/ | / --/\ |
+     _____    /| \ == / |
+\   / -- /   //| / == \ |
+ \ /    //  // / \___:/ /
+  (====(/  // /    ___ /\
+__________// /____/.'// |
+_________|/   /  /_\/\  |
+        |||   | ^_^__|  /
+        |||   |&gt;@.@&lt;}|)/
+        |||   |}_ _{"|/
+        |||
+        ||/
+</pre>
+<pre style="float: right;">
+
+
+&lt; Draw or paint on the
+  pressure sensitive screen
+  of your phone or tablet.
+  
+&lt; Convert standard
+  text-based guitar tabs
+  to any custom tuning.
+  
+&lt; Find rhyming words by vowels 
+  or count the syllables 
+  in lines of lyrics.
+</pre>
