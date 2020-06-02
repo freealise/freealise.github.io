@@ -28,15 +28,9 @@ _________|/   /  /_\/\  |
 <pre style="float: right;">
 
 
-&lt; Draw or paint on the
-  pressure sensitive screen
-  of your phone or tablet.
+&lt; <a href="/graphics.html">Draw with varying line thickness</a>
   
-&lt; Convert standard
-  text-based guitar tabs
-  to any custom tuning.
+&lt; <a href="/music.html">Convert tabs to custom tunings</a>
   
-&lt; Find rhyming words by vowels 
-  or count the syllables 
-  in lines of lyrics.
+&lt; <a href="/lyrics.html">Rhyme words or count syllables</a>
 </pre>
