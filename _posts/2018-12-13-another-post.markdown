@@ -6,7 +6,7 @@ categories: jekyll update
 tags: new post
 ---
 
-<pre style="float: left;">                  .--.
+<pre style="float: left;height:320px;">                  .--.
                   :[]:
  __________________||
 /    __  _\_____  /||
@@ -25,12 +25,15 @@ _________|/   /  /_\/\  |
         |||
         ||/
 </pre>
-<pre style="float: right;">
+<pre style="float: right;height:320px;">
+
 
 
 &lt; <a href="/graphics.html">Draw with varying line thickness</a>
-  
+
+
 &lt; <a href="/music.html">Convert tabs to custom tunings</a>
+
   
 &lt; <a href="/lyrics.html">Rhyme words or count syllables</a>
 </pre>
