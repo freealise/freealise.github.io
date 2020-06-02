@@ -79,10 +79,10 @@ header svg {
     	left:10px;
 	}
 }
-#logo {
+#banner #logo {
     height:auto;
     width:96px;
-    float:right;
+    background:none;
 }
 #email {
     margin-top: 6px;
@@ -145,7 +145,6 @@ font-size: 18px;
 line-height: 1em;
 }
 #share-buttons {
-float: right;
 }
 section {
 height: auto;
