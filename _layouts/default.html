@@ -27,6 +27,7 @@
           var t_= t.split("");
           j=0;
           for (var i=900; i>=200; i=i-50) {
+            if (i==400) {i++;}
             document.getElementsByTagName("h1")[0].innerHTML+='<span style="font-weight:'+i+';">'+t_[j]+'</span>';
             j++;
           }
