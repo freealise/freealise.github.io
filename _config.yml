@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Microtonal guitar
+title: Electric zither
 email: me@freealise.com
 description: >- # this means to ignore newlines until "baseurl:"
-  held like a cello, played like a piano
+  held as a cello, played as a piano
 show_downloads: false
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://freealise.github.io" # the base hostname & protocol for your site, e.g. http://example.com
