@@ -9,6 +9,14 @@
   src: url('/assets/fonts/ContéScriptReduced.ttf') format('truetype'),
        url('/assets/fonts/ContéScriptReduced.otf') format('opentype');
 }
+@font-face {
+  font-family: Biro;
+  src: url('/assets/fonts/Biro Script Reduced.otf') format('opentype');
+}
+@font-face {
+  font-family: BiroBold;
+  src: url('/assets/fonts/Biro_Script_Bold_Standard_US.otf') format('opentype');
+}
 
 body {
 	background: fixed url(/assets/images/kit.jpg) bottom left;
@@ -40,7 +48,7 @@ header h1 {
     font-size: 48px;
     font-weight: normal;
     text-shadow: 0px 0px 8px #ffffff;
-    font-family: 'Conte', monospace;
+    font-family: 'BiroBold', monospace;
     text-transform: lowercase;
 }
 header h1 span {
