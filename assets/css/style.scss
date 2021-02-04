@@ -5,6 +5,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 @font-face {
+  font-family: DePixel;
+  src: url('/assets/fonts/DePixelHalbfett.otf') format('opentype'),
+       url('/assets/fonts/DePixelHalbfett.ttf') format('truetype');
+}
+@font-face {
   font-family: Conte;
   src: url('/assets/fonts/ContéScriptReduced.ttf') format('truetype'),
        url('/assets/fonts/ContéScriptReduced.otf') format('opentype');
@@ -48,7 +53,7 @@ header h1 {
     font-size: 48px;
     font-weight: normal;
     text-shadow: 0px 0px 8px #ffffff;
-    font-family: 'Biro', monospace;
+    font-family: 'DePixel', monospace;
     text-transform: lowercase;
 }
 header h1 span {
