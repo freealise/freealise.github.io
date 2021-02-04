@@ -3,7 +3,6 @@
 
 @import "{{ site.theme }}";
 
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght,CASL,CRSV,MONO@300..1000,0,1,1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 @font-face {
@@ -19,11 +18,11 @@
 body {
 	background: fixed url(/assets/images/kit.jpg) bottom left;
 	background-size:auto;
-	font-family:Recursive, monospace;
+	font-family:'Syne Mono', monospace;
 }
 
 i {
-	font-family:Recursive, monospace;
+	font-family:'Syne Mono', monospace;
 }
 
 @media print, screen and (max-width: 720px) {
@@ -46,7 +45,7 @@ header h1 {
     font-size: 36px;
     font-weight: normal;
     text-shadow: 0px 0px 8px #ffffff;
-    font-family: Recursive, monospace;
+    font-family: 'Syne Mono', monospace;
     text-transform: lowercase;
 }
 header h1 span {
@@ -108,7 +107,7 @@ header svg {
 	}
 }
 .button {
-    font-family: Recursive, monospace;
+    font-family: 'Syne Mono', monospace;
     border: 1px dashed black;
     background: white;
     background-color: white;
@@ -125,7 +124,7 @@ header svg {
     text-align: center;
 }
 #banner .button {
-    font-family: Recursive, monospace;
+    font-family: 'Syne Mono', monospace;
     border: 1px dashed white;
     background: black;
     background-color: black;
@@ -140,7 +139,7 @@ background-color: transparent;
 border: none;
 line-height: normal;
 width: 256px;
-font-family: Recursive, monospace;
+font-family: 'Syne Mono', monospace;
 font-weight: bold;
 font-size: 16px;
 line-height: 1em;
