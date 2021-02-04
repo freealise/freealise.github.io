@@ -4,6 +4,10 @@
 @import "{{ site.theme }}";
 
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@font-face {
+  font-family: "Biro";
+  src: url("/assets/fonts/Biro_Script_Bold_Standard_US.otf") format("otf");
+}
 
 body {
 	background: fixed url(/assets/images/kit.jpg) bottom left;
