@@ -22,6 +22,16 @@
     <header>
       <a href="{{ site.url }}">
         <h1 title="{{ site.title | default: site.github.repository_name }}">{{ site.title }}</h1>
+        <script>
+          var t = "{{ site.title }}";
+          t = t.split("");
+          var j = 0;
+          document.getElementsByTagName("h1")[0].innerHTML = "";
+          for (var i=1000; i>=300; i=i-40) {
+            document.getElementsByTagName("h1")[0].innerHTML += "<span style='font-weight:"+i+";'>"+t[j]+"</span>";
+            j++;
+          }
+        </script>
         <p><b>{{ site.description | default: site.github.project_tagline }}</b></p>
       </a>
     </header>
