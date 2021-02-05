@@ -3,7 +3,9 @@
 
 @import "{{ site.theme }}";
 
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght,CRSV,MONO@300..1000,1,1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 @font-face {
   font-family: DePixel;
   src: url('/assets/fonts/DePixelHalbfett.otf') format('opentype'),
@@ -53,7 +55,7 @@ header h1 {
     font-size: 24px;
     font-weight: normal;
     text-shadow: 0px 0px 8px #ffffff;
-    font-family: 'DePixel', monospace;
+    font-family: 'Recursive', monospace;
     text-transform: lowercase;
 }
 header h1 span {
