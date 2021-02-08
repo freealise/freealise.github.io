@@ -10,6 +10,11 @@
        url('/assets/fonts/DePixelHalbfett.ttf') format('truetype');
 }
 @font-face {
+  font-family: DePixelIllegible;
+  src: url('/assets/fonts/DePixelIllegible.otf') format('opentype'),
+       url('/assets/fonts/DePixelIllegible.ttf') format('truetype');
+}
+@font-face {
   font-family: Conte;
   src: url('/assets/fonts/ContéScriptReduced.ttf') format('truetype'),
        url('/assets/fonts/ContéScriptReduced.otf') format('opentype');
