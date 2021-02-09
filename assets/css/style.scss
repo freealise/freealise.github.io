@@ -2,35 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-
-@font-face {
-  font-family: DePixel;
-  src: url('/assets/fonts/DePixelHalbfett.otf') format('opentype'),
-       url('/assets/fonts/DePixelHalbfett.ttf') format('truetype');
-}
-@font-face {
-  font-family: DePixelIllegible;
-  src: url('/assets/fonts/DePixelIllegible.otf') format('opentype'),
-       url('/assets/fonts/DePixelIllegible.ttf') format('truetype');
-}
-@font-face {
-  font-family: Conte;
-  src: url('/assets/fonts/ContéScriptReduced.ttf') format('truetype'),
-       url('/assets/fonts/ContéScriptReduced.otf') format('opentype');
-}
-@font-face {
-  font-family: Biro;
-  src: url('/assets/fonts/Biro Script Reduced.otf') format('opentype');
-}
-@font-face {
-  font-family: BiroBold;
-  src: url('/assets/fonts/Biro_Script_Bold_Standard_US.otf') format('opentype');
-}
-@font-face {
-  font-family: Marleen;
-  src: url('/assets/fonts/Marleen Script Medium reduced.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne+Tactile&display=swap');
 
 body {
 	background: fixed url(/assets/images/kit.jpg) bottom left;
@@ -62,7 +34,7 @@ header h1 {
     font-size: 24px;
     font-weight: normal;
     text-shadow: 0px 0px 8px #ffffff;
-    font-family: 'Syne Mono', monospace;
+    font-family: 'Syne Tactile', cursive;
     text-transform: lowercase;
 }
 header h1 span {
