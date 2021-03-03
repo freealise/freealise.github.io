@@ -6,7 +6,8 @@
 
 body {
     background: fixed url(/assets/images/10-Millimeter-Paper-Background-copy.jpg) top center;
-    background-size: auto 50vh;
+    background-size: 320px auto;
+    background-repeat: repeat;
     font-family: 'Syne Mono', monospace;
     font-size: 16px;
 }
