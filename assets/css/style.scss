@@ -25,9 +25,9 @@ header {
     height: 100px;
     padding-top: 10px;
     padding-bottom: 15px;
-    background: url('https://1.bp.blogspot.com/-wWCpN7Wmh38/XsrQ129IUaI/AAAAAAAABYg/i3tL2atlzWQEFKVKd07rjJQ3pHpRBWAJwCPcBGAYYCw/s0/paper.jpg') top center;
-    background-repeat:no-repeat;
-    background-size: 100%;
+    background: url(/assets/images/PIXNIO-197487-3693x2462.jpeg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header h1 {
     color: #000000;
@@ -42,7 +42,10 @@ header h1 span {
 }
 header p {
     display: block;
+    color: #000000;
     font-size:16px;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #ffffff;
 }
 header svg {
     right: 50%;
