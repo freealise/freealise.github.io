@@ -7,17 +7,25 @@
   src: url("../fonts/DePixelBreit.otf") format("opentype"),
        url("../fonts/DePixelBreit.ttf") format("truetype");
 }
+@font-face {
+  font-family: "DejaVu";
+  src: url("/phonetic/fonts/dejavu/DejaVuSansMono.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DejaVuBold";
+  src: url("/phonetic/fonts/dejavu/DejaVuSansMono-Bold.ttf") format("truetype");
+}
 
 body {
     background: fixed url(/assets/images/10-Millimeter-Paper-Background-copy.jpg) top center;
     background-size: 320px auto;
     background-repeat: repeat;
-    font-family: 'Syne Mono', monospace;
+    font-family: 'DejaVu', monospace;
     font-size: 16px;
 }
 
 i {
-	font-family:'Syne Mono', monospace;
+	font-family:'DejaVuBold', monospace;
 }
 
 @media print, screen and (max-width: 720px) {
@@ -104,7 +112,7 @@ header svg {
 	}
 }
 .button {
-    font-family: 'Syne Mono', monospace;
+    font-family: 'DejaVuBold', monospace;
     border: 1px dashed black;
     background: white;
     background-color: white;
@@ -121,7 +129,7 @@ header svg {
     text-align: center;
 }
 #banner .button {
-    font-family: 'Syne Mono', monospace;
+    font-family: 'DejaVuBold', monospace;
     border: 1px dashed white;
     background: black;
     background-color: black;
@@ -136,7 +144,7 @@ background-color: transparent;
 border: none;
 line-height: normal;
 width: 256px;
-font-family: 'Syne Mono', monospace;
+font-family: 'DejaVu', monospace;
 font-weight: bold;
 font-size: 16px;
 line-height: 1em;
