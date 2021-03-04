@@ -3,9 +3,9 @@
 
 @import "{{ site.theme }}";
 @font-face {
-  font-family: "DePixelBreit";
-  src: url("../fonts/DePixelBreit.otf") format("opentype"),
-       url("../fonts/DePixelBreit.ttf") format("truetype");
+  font-family: "DePixel";
+  src: url("../fonts/DePixelHalbfett.otf") format("opentype"),
+       url("../fonts/DePixelHalbfett.ttf") format("truetype");
 }
 @font-face {
   font-family: "DejaVu";
@@ -48,7 +48,7 @@ header h1 {
     font-size: 40px;
     font-weight: normal;
     text-shadow: 0px 0px 8px #000000;
-    font-family: 'DePixelBreit', monospace;
+    font-family: 'DePixel', monospace;
 }
 header h1 span {
     font-size: 36px;
