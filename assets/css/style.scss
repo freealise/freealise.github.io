@@ -13,8 +13,8 @@
 
 body {
     background: fixed url(https://themes.googleusercontent.com/image?id=1PDnBjUh9fvmMXrR15WHgq5VDrThy_n6OaJIxWQs3O_4shhqlYLd2ZdYqGT4Rqh-wZQjv&options=w800) top center;
-    background-size: 320px auto;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'DejaVu', monospace;
     font-size: 16px;
 }
@@ -34,21 +34,23 @@ header {
     height: 100px;
     padding-top: 10px;
     padding-bottom: 15px;
-    background: url(https://themes.googleusercontent.com/image?id=1PDnBjUh9fvmMXrR15WHgq5VDrThy_n6OaJIxWQs3O_4shhqlYLd2ZdYqGT4Rqh-wZQjv&options=w800) center;
+    background: url(https://themes.googleusercontent.com/image?id=1PDnBjUh9fvmMXrR15WHgq5VDrThy_n6OaJIxWQs3O_4shhqlYLd2ZdYqGT4Rqh-wZQjv&options=w800) top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 header h1 {
+    width:150px;
     color: #ffffff;
     font-size: 40px;
     font-weight: normal;
     text-shadow: 0px 0px 8px #000000;
-    font-family: 'DePixel', monospace;
+    font-family: 'DejaVu', monospace;
 }
 header h1 span {
     font-size: 36px;
 }
 header p {
+    width:150px;
     display: block;
     color: #ffffff;
     font-size:16px;
