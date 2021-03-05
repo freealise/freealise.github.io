@@ -12,7 +12,7 @@
 }
 
 body {
-    background: fixed url(/assets/images/10-Millimeter-Paper-Background-copy.jpg) top center;
+    background: fixed url(https://themes.googleusercontent.com/image?id=1PDnBjUh9fvmMXrR15WHgq5VDrThy_n6OaJIxWQs3O_4shhqlYLd2ZdYqGT4Rqh-wZQjv&options=w800) top center;
     background-size: 320px auto;
     background-repeat: repeat;
     font-family: 'DejaVu', monospace;
@@ -34,7 +34,7 @@ header {
     height: 100px;
     padding-top: 10px;
     padding-bottom: 15px;
-    background: url(/assets/images/background.jpg) center;
+    background: url(https://themes.googleusercontent.com/image?id=1PDnBjUh9fvmMXrR15WHgq5VDrThy_n6OaJIxWQs3O_4shhqlYLd2ZdYqGT4Rqh-wZQjv&options=w800) center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -133,7 +133,13 @@ header svg {
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
     color: white;
 }
-
+#overlay {
+	width:100%;
+	height:100vw;
+	position:fixed;
+	top:100px;
+	background: rgba(255,255,255,0.67);
+}
 pre {
 background-color: transparent;
 border: none;
