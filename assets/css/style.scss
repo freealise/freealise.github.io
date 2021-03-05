@@ -3,11 +3,6 @@
 
 @import "{{ site.theme }}";
 @font-face {
-  font-family: "DePixel";
-  src: url("../fonts/DePixelHalbfett.otf") format("opentype"),
-       url("../fonts/DePixelHalbfett.ttf") format("truetype");
-}
-@font-face {
   font-family: "DejaVu";
   src: url("/phonetic/fonts/dejavu/DejaVuSansMono.ttf") format("truetype");
 }
@@ -69,8 +64,8 @@ header svg {
 #banner {
     display: block;
     top: 100px;
-    background: url('https://1.bp.blogspot.com/-FJSBDGFJHQ4/XsrSSjEkPgI/AAAAAAAABY4/cjaD7Iv_yLoXfjb8kMlK-D7T_3NT9KGkQCPcBGAYYCw/s0/ornament.jpg') right;
-    background-size: contain;
+    background: url('/assets/images/out.png') right;
+    background-size: cover;
     border: none;
 }
 #banner .fork {
