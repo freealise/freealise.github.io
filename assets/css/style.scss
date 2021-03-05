@@ -34,7 +34,7 @@ header {
     height: 100px;
     padding-top: 10px;
     padding-bottom: 15px;
-    background: url(https://themes.googleusercontent.com/image?id=1PDnBjUh9fvmMXrR15WHgq5VDrThy_n6OaJIxWQs3O_4shhqlYLd2ZdYqGT4Rqh-wZQjv&options=w800) top center;
+    background: fixed url(https://themes.googleusercontent.com/image?id=1PDnBjUh9fvmMXrR15WHgq5VDrThy_n6OaJIxWQs3O_4shhqlYLd2ZdYqGT4Rqh-wZQjv&options=w800) top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -65,9 +65,8 @@ header svg {
 }
 #banner {
     display: block;
-    top: 100px;
-    background: url('/assets/images/out.png') right;
-    background-size: cover;
+    top: 150px;
+    background: rgba(0,0,0,0.5);
     border: none;
 }
 #banner .fork {
