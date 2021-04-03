@@ -69,7 +69,8 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
   tzinfo-data
-  kramdown (>= 2.3.0)
+  kramdown (>= 2.3.1)
+
 
 BUNDLED WITH
    1.17.1
