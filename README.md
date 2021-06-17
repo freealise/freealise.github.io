@@ -6,4 +6,4 @@ unconventional rhythm (jazz) / rhyming (rap) / layered composition (classics) / 
 text analyser can detect propaganda (divide long and ambiguous data into paragraphs and sentences)<br/>
 can be an editor the same way<br/><br/>
 
-Make sense of language with app containing grammar and frequent vocabulary
+app containing grammar and frequent vocabulary
