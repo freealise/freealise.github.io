@@ -1,6 +1,5 @@
 # freeali.se
 
-unconventional rhythm (jazz) / rhyming (rap) / layered composition (classics) / vivid electronic music<br/>
 [story structure app (AI)]<br/><br/>
 
 text analyser can detect propaganda (divide long and ambiguous data into paragraphs and sentences)<br/>
