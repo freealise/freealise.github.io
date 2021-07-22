@@ -27,7 +27,7 @@ google_analytics: UA-140027275-1
 paginate: 1
 paginate_path: "page:num"
 markdown: kramdown
-theme: jekyll-theme-minimal
+theme: jekyll-theme-leap-day
 collections:
   items:
     output: true
