@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import 'jekyll-theme-leap-day';
 @font-face {
   font-family: "DejaVu";
   src: url("/phonetic/fonts/dejavu/DejaVuSansMono.ttf") format("truetype");
