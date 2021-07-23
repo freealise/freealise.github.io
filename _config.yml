@@ -28,6 +28,9 @@ paginate: 1
 paginate_path: "page:num"
 markdown: kramdown
 theme: jekyll-theme-leap-day
+sass:
+  sass_dir: _sass
+  style: compressed
 collections:
   items:
     output: true
