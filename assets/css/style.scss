@@ -2,6 +2,7 @@
 ---
 
 @import 'jekyll-theme-leap-day';
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@1,700&display=swap');
 @font-face {
   font-family: "DejaVu";
   src: url("/phonetic/fonts/dejavu/DejaVuSansMono.ttf") format("truetype");
@@ -40,22 +41,20 @@ header {
 }
 header h1 {
     width:256px;
-    color: #ffffff;
+    color: #000000;
     font-size: 36px;
     font-weight: bold;
-    text-shadow: 0px 0px 8px #000000;
-    font-family: 'DejaVu', monospace;
+    font-family: 'Averia Sans Libre', cursive;
 }
 header h1 span {
     font-size: 36px;
 }
 header p {
-    width:150px;
+    width:256px;
     display: block;
-    color: #ffffff;
+    color: #000000;
     font-size:16px;
     font-weight: bold;
-    text-shadow: 0px 0px 2px #000000;
 }
 header svg {
     right: 50%;
