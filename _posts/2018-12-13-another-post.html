@@ -40,12 +40,12 @@ tags: new post
     var a_ = document.getElementById(a).childNodes;
     for (var i=0; i<a_.length; i++) {
       if (a_[i].innerText==txt) {
-        if (a_[i].title) {
-          t.innerHTML = a_[i].title;
-        } else {
+        if (a_[i].href) {
           t.innerHTML = "";
-          a = a_[i].href.replace("#", "");
+          a = a_[i].href.substr(1);
           a_[i].click();
+        } else if (a_[i].title) {
+          t.innerHTML = a_[i].title;
         }
       }
     }
