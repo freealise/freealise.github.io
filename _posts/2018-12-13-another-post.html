@@ -10,10 +10,8 @@ tags: new post
   #story, .beat {height: 256px;}
   #story {overflow: hidden;}
   .beat {overflow: scroll;}
+  .beat a {display: none;}
 </style>
-
-<div id="t">
-</div>
 
 <div id="story">
   <div id="setup" class="beat">
@@ -29,7 +27,10 @@ tags: new post
     <a title="Nothing happens.">blink</a>
   </div>
 </div>
-<input type="text" id="r" onchange="parse(this.value);" />
+<br/>
+
+<div id="t"></div>
+<input type="text" id="txt" onchange="parse(this.value);" />
 
 <script>
   var t = document.getElementById("t");
