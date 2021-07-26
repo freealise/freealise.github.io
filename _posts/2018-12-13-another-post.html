@@ -7,39 +7,42 @@ tags: new post
 ---
 
 <style>
-  .beat {display: none;}
-  .beat #setup {display: block;}
+  #story, .beat {height: 256px;}
+  #story {overflow: hidden;}
+  .beat {overflow: scroll;}
 </style>
 
-<div id="demo">
+<div id="t">
 </div>
 
 <div id="story">
-  <div id="setup" class="beat">
+  <div id="setup" class="beat" style="display: block;">
     section 1
+    <br/>
     <a href="#catalyst">work</a> 
     <a title="Nothing happens.">curse</a>
   </div>
   <div id="catalyst" class="beat">
     section 2
+    <br/>
   </div>
 </div>
 <input type="text" id="r" onchange="parse(this.value);" />
 
 <script>
+  var t = document.getElementById("txt");
   var story = document.getElementById("story");
   var a = "setup";
   
   function parse(txt) {
-    var a_ = document.getElementById(b).childNodes;
+    var a_ = document.getElementById(a).childNodes;
     for (var i=0; i<a_.length; i++) {
       if (a_[i].innerText==txt) {
         if (a_[i].title) {
-          document.getElementById("demo").innerHTML = a_[i].title;
+          t.innerHTML = a_[i].title;
         } else {
-          document.getElementById("demo").innerHTML = "";
-          document.getElementById(b).style.display = "none";
-          document.getElementById(a_[i].href.substr(1)).style.display = "block";
+          t.innerHTML = "";
+          a_[i].click();
         }
       }
     }
