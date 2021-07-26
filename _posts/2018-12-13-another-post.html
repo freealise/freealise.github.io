@@ -8,8 +8,21 @@ tags: new post
 
 <div id="demo">
 </div>
+<input type="text" id="r" onchange="parse(this.value);" />
 
 <script type="text/javascript" src="/story/story.js"></script>
 <script>
-  document.getElementById("demo").innerHTML = json.firstName + " " + json.lastName;
+  document.getElementById("demo").innerHTML = json.setUp.des;
+  
+  function parse(txt) {
+    for (var i=0; i<json.setUp.act.length; i++) {
+      if (json.setUp.act[i]==txt) {
+        if (json.setUp.res[i].charAt(0)) {
+          document.getElementById("demo").innerHTML = json.setUp.res[i];
+        } else {
+          document.getElementById("demo").innerHTML = json.catalyst.des;
+        }
+      }
+    }
+  }
 </script>
