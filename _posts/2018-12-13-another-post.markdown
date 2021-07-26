@@ -6,4 +6,10 @@ categories: jekyll update
 tags: new post
 ---
 
-New blog post
+<div id="demo">
+</div>
+
+<script type="text/javascript" src="/story/story.js"></script>
+<script>
+  document.getElementById("demo").innerHTML = json.firstName + " " + json.lastName;
+</script>
