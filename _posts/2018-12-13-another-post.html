@@ -16,7 +16,7 @@ tags: new post
 </div>
 
 <div id="story">
-  <div id="setup" class="beat" style="display: block;">
+  <div id="setup" class="beat">
     section 1
     <br/>
     <a href="#catalyst">work</a> 
@@ -25,6 +25,8 @@ tags: new post
   <div id="catalyst" class="beat">
     section 2
     <br/>
+    <a href="#setup">sleep</a> 
+    <a title="Nothing happens.">blink</a>
   </div>
 </div>
 <input type="text" id="r" onchange="parse(this.value);" />
@@ -42,6 +44,7 @@ tags: new post
           t.innerHTML = a_[i].title;
         } else {
           t.innerHTML = "";
+          a = a_[i].href.replace("#", "");
           a_[i].click();
         }
       }
