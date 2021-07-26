@@ -6,21 +6,40 @@ categories: jekyll update
 tags: new post
 ---
 
+<style>
+  .beat {display: none;}
+  .beat #setup {display: block;}
+</style>
+
 <div id="demo">
+</div>
+
+<div id="story">
+  <div id="setup" class="beat">
+    section 1
+    <a href="#catalyst">work</a> 
+    <a title="Nothing happens.">curse</a>
+  </div>
+  <div id="catalyst" class="beat">
+    section 2
+  </div>
 </div>
 <input type="text" id="r" onchange="parse(this.value);" />
 
-<script type="text/javascript" src="/story/story.js"></script>
 <script>
-  document.getElementById("demo").innerHTML = json.setUp.des;
+  var story = document.getElementById("story");
+  var a = "setup";
   
   function parse(txt) {
-    for (var i=0; i<json.setUp.act.length; i++) {
-      if (json.setUp.act[i]==txt) {
-        if (json.setUp.res[i].charAt(0)) {
-          document.getElementById("demo").innerHTML = json.setUp.res[i];
+    var a_ = document.getElementById(b).childNodes;
+    for (var i=0; i<a_.length; i++) {
+      if (a_[i].innerText==txt) {
+        if (a_[i].title) {
+          document.getElementById("demo").innerHTML = a_[i].title;
         } else {
-          document.getElementById("demo").innerHTML = json.catalyst.des;
+          document.getElementById("demo").innerHTML = "";
+          document.getElementById(b).style.display = "none";
+          document.getElementById(a_[i].href.substr(1)).style.display = "block";
         }
       }
     }
