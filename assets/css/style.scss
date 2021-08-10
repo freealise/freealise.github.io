@@ -150,16 +150,17 @@ header svg {
 	padding:0px;
 	overflow:hidden;
 }
-.gsc-control-cse {
+#search .gsc-control-cse {
 	padding:0;
 	margin:0;
 	position: relative;
     	top: -0.8em;
+	background-color: transparent;
 }
-table.gsc-search-box td {
+#search table.gsc-search-box td {
 	border:0;
 }
-.gsc-input-box {
+#search .gsc-input-box {
 	height:32px;
 }
 #overlay {
