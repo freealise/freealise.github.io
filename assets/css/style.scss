@@ -149,6 +149,13 @@ header svg {
 	margin:0px;
 	padding:0px;
 }
+#overlay {
+	width:100%;
+	height:100vw;
+	position:fixed;
+	top:150px;
+	background: rgba(255,255,255,0.67);
+}
 pre {
 background-color: transparent;
 border: none;
