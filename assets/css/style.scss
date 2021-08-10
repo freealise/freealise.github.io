@@ -144,10 +144,11 @@ header svg {
     color: white;
 }
 #search {
-	width:256px;
+	width:320px;
 	height:32px;
 	margin:0px;
 	padding:0px;
+	overflow:hidden;
 }
 #overlay {
 	width:100%;
