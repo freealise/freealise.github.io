@@ -158,8 +158,12 @@ header svg {
     	top: 4px;
 	background-color: transparent;
 }
-#search table.gsc-search-box td {
+#search table td {
 	border:0;
+	border-left:0;
+	border-right:0;
+	border-top:0;
+	border-bottom:0;
 }
 #search .gsc-input-box {
 	height:32px;
