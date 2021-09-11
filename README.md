@@ -1,2 +1,2 @@
-train AI on Sefaria -> blog
-[sefaria linker, opensiddur]
+train AI on Sefaria -> blog [sefaria, opensiddur]<br/>
+can be secular [project gutenberg]
