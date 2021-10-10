@@ -1,4 +1,9 @@
-        function subscribeEmail(address, un) {
+        function subscribeEmail(address, s) {
+          if (s === true) {
+            var un = "";
+          } else {
+            var un = "un";
+          }
           var at = address.indexOf('@');
           var dot = address.indexOf('.')+1;
           if (at > 0 && dot > at && address.length > dot) {
