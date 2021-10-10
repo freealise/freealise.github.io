@@ -24,7 +24,7 @@ function confirmUnsubscribe() {
   if (url && url.indexOf("a=unsubscribe") > -1 && url.indexOf("email=") > -1) {
     var address = url.split("email=")[1].split("&")[0].replace("%40", "@");
     if (address && address != "") {
-      document.getElementById("contact-form").innerHTML = "<button onclick='subscribeEmail(&quot;"+address+"&quot;, false);'>Unsubscribe "+address+"</button>";
+      document.getElementById("subscribe-form").innerHTML = "<button onclick='subscribeEmail(&quot;"+address+"&quot;, false);'>Unsubscribe "+address+"</button>";
     }
   }
 }
