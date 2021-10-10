@@ -19,6 +19,7 @@
           }
         }
 
+function confirmUnsubscribe() {
   var url = window.location.href.split("?")[1];
   if (url && url.indexOf("a=unsubscribe") > -1 && url.indexOf("email=") > -1) {
     var address = url.split("email=")[1].split("&")[0].replace("%40", "@");
@@ -26,3 +27,4 @@
       document.getElementById("contact-form").innerHTML = "<button onclick='subscribeEmail(&quot;"+address+"&quot;, false);'>Unsubscribe "+address+"</button>";
     }
   }
+}
