@@ -27,7 +27,12 @@ function sendEmail() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("contact-form-sent").innerHTML = this.responseText;
+        var _response = JSON.parse(this.responseText);
+        if (_response.details.emailSentStatus == "true") {
+          document.getElementById("contact-form-sent").innerHTML = "Your message has been sent";
+        } else {
+          document.getElementById("contact-form-sent").innerHTML = "Could not send your message because of error:<br/>" + this.responseText;
+        }
       }
     };
     xhttp.open("POST", "https://www.blogger.com/contact-form.do?name="+encodeURIComponent(_name)+"&email="+encodeURIComponent(_email)+"&message="+encodeURIComponent(_message)+"&blogID=5409931531965752101", true);
