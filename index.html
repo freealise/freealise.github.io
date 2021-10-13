@@ -344,6 +344,8 @@ height:auto;
     ]
   }
 ];
+  
+function initMap() {
   var d = new Date();
   var t = d.getTime();
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -381,6 +383,7 @@ height:auto;
     var a = "blog";
     showResults(a);
   });
+}
   
   /*var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
