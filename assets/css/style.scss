@@ -117,14 +117,10 @@ header svg {
     margin-right:5px;
 }
 #subscribe-bar {
-	position:fixed;
-	bottom:0px;
-	left:0px;
+	width:320px;
 	height:48px;
-	width:100%;
-	text-align:center;
-	background:url('https://1.bp.blogspot.com/-9oci4DxxDno/Xt06h4MPHLI/AAAAAAAABcY/pN8VXZJsoxcL2Ii8XTD12ljNeWj3d61EwCPcBGAYYCw/s0/cover.jpg') #000000;
-	background-size:cover;
+	margin:0px;
+	padding:0px;
 }
 #subscribe-button {
 	font-style: italic; 
@@ -168,11 +164,17 @@ header svg {
     color: white;
 }
 #search {
-	width:320px;
-	height:50px;
 	margin:0px;
 	padding:0px;
 	overflow:hidden;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	height:48px;
+	width:100%;
+	text-align:center;
+	background:url('https://1.bp.blogspot.com/-9oci4DxxDno/Xt06h4MPHLI/AAAAAAAABcY/pN8VXZJsoxcL2Ii8XTD12ljNeWj3d61EwCPcBGAYYCw/s0/cover.jpg') #000000;
+	background-size:cover;
 }
 #search .gsc-control-cse {
 	padding:0;
