@@ -1,0 +1,68 @@
+<style>
+@media only screen and (min-width: 513px) {
+  #contact-form {
+    float: left;
+    width:50%;
+    margin-left:-10px;
+  }
+  #follow {
+    float:right;
+    width:50%;
+    margin-right:-10px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  #contact-form {
+    float: none;
+    width:100%;
+    margin-left:0;
+  }
+  #follow {
+    float:none;
+    width:100%;
+    margin-right:0;
+  }
+}
+#contact-form-sent {
+  text-align: center;
+  width: 100%;
+}
+#contact {
+  width:100%;
+  text-align:center;
+}
+#contact .material-icons {
+  font-size:32px;
+}
+#location_iframe {
+  width:100%;
+  height:256px;
+  border:0;
+}
+</style>
+
+
+<div id="contact"><br/>
+<a href="https://groups.google.com/a/freealise.com/g/freealise" target="_blank"><i class='material-icons notranslate'>alternate_email</i></a> <a href="https://www.facebook.com/groups/freealise/" target="_blank"><i class='material-icons notranslate'>facebook</i></a>
+</div>
+
+<form name="contact-form" id="contact-form" onsubmit="event.preventDefault();sendEmail();">
+<label>Name<br/>
+<input class="contact-form-name" id="contact-form-name" name="name" size="30" type="text" value="" spellcheck="false" autocomplete="name"></label><br/>
+<label>Email <span style="font-weight: bolder;">*</span><br/>
+<input class="contact-form-email" id="contact-form-email" name="email" size="30" type="email" value="" spellcheck="false" autocomplete="email" required></label><br/>
+<label>Message <span style="font-weight: bolder;">*</span><br/>
+<textarea class="contact-form-email-message" cols="25" id="contact-form-email-message" name="email-message" rows="5" spellcheck="false" autocomplete="off" required></textarea></label><br/>
+<input class="contact-form-button" id="contact-form-submit" type="submit" value="Send"><br/>
+<p id="contact-form-sent"></p>
+</form>
+
+
+<div id="follow">
+<iframe src="https://www.google.com/maps/embed?pb=!4v1634023041162!6m8!1m7!1spm7HeEC1A6W5VeCAc442XA!2m2!1d50.12668839477126!2d14.43193741929996!3f167.07432107021629!4f3.268657950765032!5f1.9587109090973311" width="100%" height="256" id="location_iframe" allowfullscreen="" loading="lazy"></iframe><br/>
+  
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/freealise" data-size="large" data-show-count="true" aria-label="Follow @freealise on GitHub" target="_blank">Follow @freealise</a>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async='async' defer='defer' src='https://buttons.github.io/buttons.js'></script><br/>
+</div>
