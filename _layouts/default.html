@@ -15,9 +15,24 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <link href='https://fonts.gstatic.com' rel='preconnect'/>
+    <link href='https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&amp;display=swap' rel='stylesheet'/>
+	<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
+   	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDONbj1HFMLs7UI3yBortL4qwLm-0C7mYM&amp;callback=initMap'/>
 
-    <link href='https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css' rel='stylesheet' title='timeline-styles'/>
-    <script src='https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js'></script>
+	<link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'/>
+	  
+      <link href='https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css' rel='stylesheet' title='timeline-styles'/>
+      <script src='https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js'/>
+    
+	  <script src='https://js.stripe.com/v3'/>
+
+    <script src='https://freeali.se/main.js'/>
+    <link href='https://freeali.se/main.css' rel='stylesheet' type='text/css'/>
   </head>
   <body>
     <header>
@@ -40,6 +55,8 @@
         <a href="{{ site.github.repository_url }}" target="_blank" id="logo">
           <span id="logo_"></span>
         </a>
+        
+        <div style='position:fixed;bottom:0px;left:0px;height:48px;width:100%;text-align:center;background:url(https://1.bp.blogspot.com/-9oci4DxxDno/Xt06h4MPHLI/AAAAAAAABcY/pN8VXZJsoxcL2Ii8XTD12ljNeWj3d61EwCPcBGAYYCw/s0/cover.jpg) #000000;background-size:cover;'><form id='subscribe-form' onsubmit='event.preventDefault();subscribeEmail(this.firstChild.value, true);'><input autocomplete='email' id='email' name='email' placeholder='Email address' size='16' type='email'/><button style='font-style: italic; font-weight: bold;' type='submit'><i class='material-icons'>mail_outline</i> Subscribe</button></form></div>
 
           {% if site.show_downloads %}
           <div class="downloads">
