@@ -44,6 +44,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+header section {
+    margin-top: 0px;
+    background: transparent;
+    box-shadow: none;
+}
 header #title {
     display: block;
     float: right;
