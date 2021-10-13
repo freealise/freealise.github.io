@@ -66,10 +66,13 @@
           </div>
           {% endif %}
       
-        <div id="search">
-          <script async src="https://cse.google.com/cse.js?cx=69f5fae6aeba217dd"></script>
-          <div class="gcse-search" enableAutoComplete="true"></div>
-        </div>
+        <div id="subscribe-bar">
+	  <form id="subscribe-form" onsubmit="event.preventDefault();subscribeEmail(this.firstChild.value, true);">
+	    <input autocomplete="email" id="email" name="email" placeholder="Email address" size="16" type="email"/>
+	    <button id="subscribe-button" type="submit"><i class="material-icons">mail_outline</i> Subscribe</button>
+	  </form>
+	</div>
+
       </div><!-- end banner -->
     
     <div id="overlay"></div>
@@ -184,12 +187,10 @@
       </footer>
     </div>
 
-        <div id="subscribe-bar">
-	  <form id="subscribe-form" onsubmit="event.preventDefault();subscribeEmail(this.firstChild.value, true);">
-	    <input autocomplete="email" id="email" name="email" placeholder="Email address" size="16" type="email"/>
-	    <button id="subscribe-button" type="submit"><i class="material-icons">mail_outline</i> Subscribe</button>
-	  </form>
-	</div>
+        <div id="search">
+          <script async src="https://cse.google.com/cse.js?cx=69f5fae6aeba217dd"></script>
+          <div class="gcse-search" enableAutoComplete="true"></div>
+        </div>
 
     <div id="cookie-notice"><i>We use third party cookies and scripts to improve your experience on this website.</i><a id="cookie-notice-accept" class="btn btn-primary btn-sm">OK</a><a href="/cookies.html" class="btn btn-primary btn-sm">More info</a></div>
     <script src="/assets/js/cookie_notice.js"></script>
