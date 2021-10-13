@@ -55,13 +55,6 @@
         <a href="{{ site.github.repository_url }}" target="_blank" id="logo">
           <span id="logo_"></span>
         </a>
-        
-        <div id='subscribe-bar'>
-	  <form id='subscribe-form' onsubmit='event.preventDefault();subscribeEmail(this.firstChild.value, true);'>
-	    <input autocomplete='email' id='email' name='email' placeholder='Email address' size='16' type='email'/>
-	    <button style='font-style: italic; font-weight: bold;' type='submit'><i class='material-icons'>mail_outline</i> Subscribe</button>
-	  </form>
-	</div>
 
           {% if site.show_downloads %}
           <div class="downloads">
@@ -191,6 +184,16 @@
       </footer>
     </div>
 
+        <div id="subscribe-bar">
+	  <form id="subscribe-form" onsubmit="event.preventDefault();subscribeEmail(this.firstChild.value, true);">
+	    <input autocomplete="email" id="email" name="email" placeholder="Email address" size="16" type="email"/>
+	    <button id="subscribe-button" type="submit"><i class="material-icons">mail_outline</i> Subscribe</button>
+	  </form>
+	</div>
+
+    <div id="cookie-notice"><i>We use third party cookies and scripts to improve your experience on this website.</i><a id="cookie-notice-accept" class="btn btn-primary btn-sm">OK</a><a href="/cookies.html" class="btn btn-primary btn-sm">More info</a></div>
+    <script src="/assets/js/cookie_notice.js"></script>
+
     {% if site.google_analytics %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -202,7 +205,5 @@
       </script>
     {% endif %}
 
-    <div id="cookie-notice"><i>We use third party cookies and scripts to improve your experience on this website.</i><a id="cookie-notice-accept" class="btn btn-primary btn-sm">OK</a><a href="/cookies.html" class="btn btn-primary btn-sm">More info</a></div>
-    <script src="/assets/js/cookie_notice.js"></script>
   </body>
 </html>
