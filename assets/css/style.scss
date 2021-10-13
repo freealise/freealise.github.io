@@ -116,18 +116,16 @@ header svg {
     background:none;
     margin-right:5px;
 }
-#email {
-    margin-top: 6px;
-    margin-right: 0px;
-    height: 30px;
-    width: 150px;
-    float: left;
-    position: relative;
+#subscribe-bar {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	height:48px;
+	width:100%;
+	text-align:center;
+	background:url('https://1.bp.blogspot.com/-9oci4DxxDno/Xt06h4MPHLI/AAAAAAAABcY/pN8VXZJsoxcL2Ii8XTD12ljNeWj3d61EwCPcBGAYYCw/s0/cover.jpg') #000000;
+	background-size:cover;
 }
-#email .focused {
-    border:2px solid #4276b6;
-}
-
 @media print, screen and (min-width: 650px) {
 	section {
 	    margin-top: 175px;
