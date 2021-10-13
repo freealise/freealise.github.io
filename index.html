@@ -10,51 +10,471 @@ nav li:first-child {display:none;}
 #headline {width: 50%; padding: 16px; font-weight:bold;}
 </style>
 
+<style>
+#content .article {
+  min-height:100vh;
+  max-height:100%;
+  max-width:none;
+  padding: 0px;
+  background:url('https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/bodybg.png') #eee8dd;
+  background-repeat:repeat-y;
+  background-size:100%;
+  background-position:top center;
+}
+@media all and (max-width: 480px) {
+  #content .article {
+    min-height:150vh;
+    background-size:150%;
+  }
+}
+.article .article-header {
+  background:url('https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/header.png');
+  background-size:cover;
+  background-position:bottom center;
+  position: relative;
+  z-index: 1;
+}
+.article .article-header .title {
+  font-size: 24px;
+  max-width: 480px;
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  transform: rotate(1.5deg);
+}
+#content .article .article-header .title a {
+  font-family: 'Averia Serif Libre', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.article .article-content {
+  margin-top:0px;
+  padding:0px;
+  text-align:center;
+  position: relative;
+  top: -20px;
+}
+.article .article-content a {color:#888888;}
+#pay {width: 256px; display: block; margin-left: auto; margin-right: auto;}
+#stripe {float: left;}
+#rateLink, .donate-with-crypto {font-size: 14px;}
+#chart {
+    float: right;
+    width: 140px;
+    height: 52px;
+}
+#checkout-button {font-family:'Averia Sans Libre', sans-serif;}
+.article .article-content .material-icons {font-size: 16px;}
+#checkout-button .material-icons {font-size: 14px;}
+#notice {font-size: 12px;}
+#notice .material-icons {font-size: 10px;}
+p {clear:both;}
+#txt {font-size:16px; width:256px; margin:0; position: absolute; top: 0px; left: 50%; margin-left: -128px;}
+#map-canvas {
+  height: 500px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+  -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+}
+section {
+height:auto;
+}
+.article .article-content img:not(.deferred) {
+    padding: 0px;
+    margin: 0px;
+    max-width: 100vw;
+    border-image: none;
+   -moz-border-image: none;
+   -ms-border-image: none;
+   -o-border-image: none;
+   -webkit-border-image: none;
+}
+</style>
+
+<div id="map-canvas"></div>
+<div id="text"></div>
+
+<script>
+  function showResults(a) {
+    var url = exec+"?a="+a;
+    var xhttp, xmlDoc, txt, x, i, point;
+    var bounds = map.getBounds();
+    var ne = bounds.getNorthEast();
+    var sw = bounds.getSouthWest();
+    var maxLat = ne.lat();
+    var maxLng = ne.lng();
+    var minLat = sw.lat();
+    var minLng = sw.lng();
+    if (window.XMLHttpRequest) {
+        // code for modern browsers
+        xhttp = new XMLHttpRequest();
+    } else {
+        // code for old IE browsers
+        xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           xmlDoc = xhttp.responseXML;
+           txt = "<br/>";
+           x = xmlDoc.getElementsByTagName("entry");
+           for (i = 0; i < x.length; i++) {
+             point = x[i].getElementsByTagName("georss:point")[0];
+             if (point && point.innerHTML) {
+               var coords = point.innerHTML.split(" ");
+               var lat = parseFloat(coords[0]);
+               var lng = parseFloat(coords[1]);
+               if (lat>minLat && lat<maxLat && lng>minLng && lng<maxLng) {
+                 var html = x[i].getElementsByTagName("content")[0].innerHTML;
+                 html = html.replace(/&lt;/g, "<");
+                 html = html.replace(/&gt;/g, ">");
+                 html = html.replace(/&quot;/g, '"');
+                 html = html.replace(/&apos;/g, "'");
+                 txt += "<p/>" + x[i].getElementsByTagName("updated")[0].innerHTML.slice(0, 10) + "<br/><b>" + x[i].getElementsByTagName("title")[0].innerHTML + "</b><br/>";
+                 txt += html + "</p>";  
+               }
+             }
+           }
+           document.getElementById("text").innerHTML = txt;
+           //document.getElementsByTagName("section")[0].style.height="auto";
+        }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+  }
   
-<hr>
+  var exec="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec";
+  //geolocate
+  var mapOptions = {
+    center: {lat: 50.0598058, lng: 14.3255398},
+    zoom: 8,
+    mapTypeId: google.maps.MapTypeId.TERRAIN,
+    mapTypeControl: false,
+    zoomControl: true,
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.SMALL
+    },
+    fullscreenControl: false,
+  }
+  var mapStyles = [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+    ]
+  },
+  {
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#f5f5f5"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dadada"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e5e5e5"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#eeeeee"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#d9d9d9"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  }
+];
+  var d = new Date();
+  var t = d.getTime();
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  map.set('styles', mapStyles);
+  var blogLayer = new google.maps.KmlLayer({
+    suppressInfoWindows: true,
+    url: 'https://www.freealise.com/feeds/posts/default/?time='+t
+  });
+  var flickrLayer = new google.maps.KmlLayer({
+    suppressInfoWindows: true,
+    url: 'http://api.flickr.com/services/feeds/geo/?g=14657467@N21&lang=en-us&format=feed-georss&time='+t
+  });
+  flickrLayer.setMap(map);
+  var listener = google.maps.event.addListener(flickrLayer, 'metadata_changed', function() {
+    google.maps.event.clearListeners(flickrLayer, 'metadata_changed');
+    blogLayer.setMap(map);
+  });
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
+  google.maps.event.addListener(flickrLayer, 'click', function(e) {
+    var zoom = map.getZoom();
+    if (zoom<12) {
+     map.setZoom(zoom+4);
+    }
+    map.setCenter(e.latLng);
+    var a = "photos";
+    showResults(a);
+  });
+  
+  google.maps.event.addListener(blogLayer, 'click', function(e) {
+    var zoom = map.getZoom();
+    if (zoom<12) {
+     map.setZoom(zoom+4);
+    }
+    map.setCenter(e.latLng);
+    var a = "blog";
+    showResults(a);
+  });
+  
+  /*var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var events = "";
+      var values;
+      var rows = this.responseText.split("\r\n");
+      for (i=0;i<rows.length;i++) {
+        if (rows[i]!="") {
+            values = rows[i].split(", ");
+            events += "<p>" + values[0] + " " + values[1] + " " + values[2] + "</p>";
+        }
+      }
+      document.getElementById("text").innerHTML = events;
+      //document.getElementsByTagName("section")[0].style.height="auto";
+    }
+  };
+  xhttp.open("GET", "https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec?a=events_csv", true);
+  xhttp.send();*/
+</script>
 
-<!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">
-      &laquo; Prev
-    </a>
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">
-        {{ page }}
-      </a>
-    {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">
-        {{ page }}
-      </a>
-    {% endif %}
-  {% endfor %}
+<script>
+function highlightEmail() {
+ var e=document.getElementById('email');
+ e.focus();
+ e.placeholder='Your email';
+}
+</script>
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">
-      Next &raquo;
-    </a>
-  {% else %}
-    <span>Next &raquo;</span>
-  {% endif %}
+
+<div id="txt">
+<p><i class="material-icons notranslate">graphic_eq</i></p>
+  <!--music and lyrics - graphic novels have no speech, are badly searchable and copyrighted, movies have speech and are searchable but copyrighted, both have meaningful images which are also a mnemonic device most music videos don't have: break own music videos into frames with speech bubbles and lyric lines for interactive subtitles-->
+  <!--albums include all common words and grammar constructions in books and magazines (controlled vocabulary and standard levels ?)-->
+  <!--learn second language this way for credibility-->
+  <!--phonetic writing and story (folk) / layered composition (classics) / unconventional rhythm as meter (jazz) / slant rhyme (rap) / spectral synthesis (electronic)-->
+
+Type or speak the missing words and phrases in example sentences and word definitions you read and hear to make sense of grammar and vocabulary, and get to compose your own songs with the interactive rhyming <a href="https://freeali.se/phonetic" target="_blank">dictionary</a>.<br />Play the <a href="https://freeali.se/synth" target="_blank">virtual keyboard</a> or guitar <a href="https://freeali.se/guitar/tab_tuning.htm" target="_blank">in any tuning</a>.<br /><br />
+  
+<i>More languages are going to be available besides English.<br /><a href="javascript:highlightEmail();" title="Subscribe"><b>Subscribe</b></a> to the newsletter for early access at no cost.</i><br /><br />
+  
+<!--<img alt="" border="0" data-original-height="144" data-original-width="2000" src="https://1.bp.blogspot.com/-FJSBDGFJHQ4/XsrSSjEkPgI/AAAAAAAABY4/cjaD7Iv_yLoXfjb8kMlK-D7T_3NT9KGkQCPcBGAYYCw/s0/ornament.jpg" style="height:12px;width:auto;"/>-->
+
+<div id="pay">
+<div id="stripe">
+<!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
+            $<input autocomplete="off" id="quantity" size="3" type="text" value="10" />
+  <button id="checkout-button" role="link"><i class="material-icons notranslate">payments</i> Pay</button><br />
+  
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/sponsors/freealise/sponsorships?frequency=one-time&amount=10" aria-label="Sponsor @freealise on GitHub" target="_blank">Sponsor</a>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async='async' defer='defer' src='https://buttons.github.io/buttons.js'></script><br/>
+  
+<a href="https://www.google.com/search?q=usd+to+eur" id="rateLink" target="_blank">Current rate</a><br />
+
+<div id="error-message">
 </div>
-{% endif %}
+<script>
+              var stripe = Stripe('pk_test_up7XBxmt0W2fKgzk1SxfQymR');
+
+              var checkoutButton = document.getElementById('checkout-button');
+              checkoutButton.addEventListener('click', function () {
+               var quantity = parseInt(document.getElementById("quantity").value);
+                // When the customer clicks on the button, redirect
+                // them to Checkout.
+                stripe.redirectToCheckout({
+                  items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}],
+      //items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}, {sku: 'sku_FQkGis4q0yD0Jb', quantity: quantity}],
+                  // Do not rely on the redirect to the successUrl for fulfilling
+                  // purchases, customers may not always reach the success_url after
+                  // a successful payment.
+                  // Instead use one of the strategies described in
+                  // https://stripe.com/docs/payments/checkout/fulfillment
+                  successUrl: 'https://www.freealise.com/p/return.html?msg=You have made the payment. Thanks for your support!',
+                  cancelUrl: 'https://www.freealise.com/p/return.html?msg=Your payment has been cancelled.',
+                })
+                .then(function (result) {
+                  if (result.error) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer.
+                    var displayError = document.getElementById('error-message');
+                    displayError.textContent = result.error.message;
+                  }
+                });
+              });
+            </script>
+</div>
+<iframe border="0" frameborder="0" height="52" id="chart" scrolling="no" seamless="" src="https://docs.google.com/spreadsheets/u/1/d/1K_KUiQ1tKU2wF0bPTlSPZsmRxLjl22qOwHsV6k9HkOA/htmlembed/sheet?gid=407973780&amp;range=A1" width="150"></iframe>
+</div>
+<p id="notice"><i class="material-icons notranslate">content_cut</i>---- <a href="/search/label/$?m=0">receive sponsorship on your own site</a> ----</p>
+
+<!--[spending chart]-->
+<!--[official torrents with sponsor button]-->
+
+<!--<iframe frameborder="0" height="50" scrolling="no" seamless="" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAAF6xO9RpbmCrqMiT6BOyEvdLTQicFhOB72uXWSt_p9fvukKHu5x_726NniR70Sm-mCVkbmLp2nLs/pubchart?oid=929543765&amp;format=interactive" width="151"></iframe>-->
+</div>
