@@ -99,6 +99,7 @@ height:auto;
 <div id="text"></div>
 
 <script>
+  var exec="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec";
   function showResults(a) {
     var url = exec+"?a="+a;
     var xhttp, xmlDoc, txt, x, i, point;
@@ -146,7 +147,7 @@ height:auto;
     xhttp.send();
   }
   
-  var exec="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec";
+function initMap() {
   //geolocate
   var mapOptions = {
     center: {lat: 50.0598058, lng: 14.3255398},
@@ -343,8 +344,6 @@ height:auto;
     ]
   }
 ];
-  
-function initMap() {
   var d = new Date();
   var t = d.getTime();
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
