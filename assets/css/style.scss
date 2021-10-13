@@ -45,6 +45,7 @@ header {
     background-size: cover;
 }
 header #title {
+    display: block;
     float: right;
     width: 50%;
     padding: 0;
@@ -60,7 +61,6 @@ header #pages {
     text-align: left;
 }
 header h1 {
-    width: 256px;
     color: #000000;
     font-size: 32px;
     font-weight: bold;
@@ -73,8 +73,6 @@ header h1 span {
     font-size: 36px;
 }
 header p {
-    width: 256px;
-    display: block;
     color: #000000;
     font-size: 20px;
     font-style: italic;
