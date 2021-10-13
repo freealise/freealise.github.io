@@ -44,6 +44,20 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+header #title {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+header #pages {
+    float: right;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
 header h1 {
     width: 256px;
     color: #000000;
