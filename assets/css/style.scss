@@ -40,9 +40,11 @@ header {
     height: 125px;
     padding-top: 10px;
     padding-bottom: 15px;
-    background: fixed url('/assets/images/notebook.jpg') top center;
+    background: url(https://2.bp.blogspot.com/-gQdfsZat-t4/Xs1QxFj-EBI/AAAAAAAABbM/qSESVutp2xI6H9MDCnH0AIcFs6YrGUZ1ACK4BGAYYCw/s0/books_texture_.jpg) bottom center; 
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 header section {
     max-height: 100px;
@@ -202,7 +204,9 @@ header svg {
 	height:100vw;
 	position:fixed;
 	top:150px;
-	background: rgba(255,255,255,0.67);
+	background: url('https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/bodybg.png') rgba(255,255,255,0.67);
+	background-position: center;
+	background-size:cover;
 }
 pre {
 background-color: transparent;
@@ -275,22 +279,3 @@ word-break: break-word;
 #subscribe-form input {font-size: 18px; width: 8em;}
 #subscribe-form button {font-family: Averia Serif Libre; font-weight: bold; font-size: 18px;}
 #subscribe-form button i {font-size: 12px;}
-
-body, .viewitem-panel .viewitem-background {
-background: url('https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/bodybg.png') fixed #eee8dd;
-background-position: center;
-background-size:100%;
-}
-#header .header-bar {
-z-index:1000;
-background-image: url(https://2.bp.blogspot.com/-gQdfsZat-t4/Xs1QxFj-EBI/AAAAAAAABbM/qSESVutp2xI6H9MDCnH0AIcFs6YrGUZ1ACK4BGAYYCw/s0/books_texture_.jpg);
-padding-bottom:36px;
-background-size:100%;
-background-position:bottom center;
-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
--webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-}
-#header .header-bar .title svg {
-position:relative;
-top:8px;
-}
