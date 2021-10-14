@@ -39,3 +39,16 @@ function sendEmail() {
     xhttp.send();
   }
 }
+
+function showSearch() {
+  var g = document.getElementById("search");
+  if (g.style.display == "none") {
+    g.style.display = "block";
+  } else {
+    g.style.display = "none";
+  }
+}
+
+function highlightEmail() {
+ document.getElementById('email').focus();
+}
