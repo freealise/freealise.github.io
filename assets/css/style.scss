@@ -119,18 +119,24 @@ header svg {
     margin-right:5px;
 }
 #subscribe-bar {
-	width:320px;
+	width:256px;
 	height:48px;
 	margin:0px;
 	padding:0px;
 }
+#subscribe-bar #email {
+	font-size: 18px;
+	width: 8em;
+}
 #subscribe-button {
 	font-style: italic; 
 	font-weight: bold;
+	font-size: 16px;
 }
 #subscribe-button i {
-	font-size: 1em;
+	font-size: 12px;
 }
+
 @media print, screen and (min-width: 650px) {
 	section {
 	    margin-top: 175px;
@@ -274,8 +280,3 @@ word-break: break-word;
 		bottom: 4px;
 	}
 }
-
-#subscribe-form {width: 256px;}
-#subscribe-form input {font-size: 18px; width: 8em;}
-#subscribe-form button {font-family: Averia Serif Libre; font-weight: bold; font-size: 18px;}
-#subscribe-form button i {font-size: 12px;}
