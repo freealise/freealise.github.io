@@ -58,6 +58,7 @@ header #title {
     display: block;
     float: left;
     width: 50%;
+    max-width: 160px;
     padding: 0;
     margin: 0;
     text-align: right;
@@ -66,6 +67,7 @@ header #pages {
     display: block;
     float: right;
     width: 50%;
+    max-width: 128px;
     padding: 0;
     margin: 0;
     text-align: left;
