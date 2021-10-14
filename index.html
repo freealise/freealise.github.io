@@ -359,6 +359,12 @@ function initMap() {
     google.maps.event.clearListeners(flickrLayer, 'metadata_changed');
     blogLayer.setMap(map);
   });
+  var listener_ = google.maps.event.addListener(blogLayer, 'metadata_changed', function() {
+    google.maps.event.clearListeners(blogLayer, 'metadata_changed');
+    var latlng = new google.maps.LatLng(30.0, -40.0);
+    map.setCenter(latlng);
+    map.setZoom(3);
+  });
 
   google.maps.event.addListener(flickrLayer, 'click', function(e) {
     var zoom = map.getZoom();
@@ -379,9 +385,6 @@ function initMap() {
     var a = "blog";
     showResults(a);
   });
-  var latlng = new google.maps.LatLng(30.0, -40.0);
-  map.setCenter(latlng);
-  map.setZoom(3);
 }
   
   /*var xhttp = new XMLHttpRequest();
