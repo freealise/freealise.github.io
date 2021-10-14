@@ -150,6 +150,8 @@ height:auto;
 function initMap() {
   //geolocate
   var mapOptions = {
+    center: {lat: 30.0000000, lng: -40.0000000},
+    zoom: 3,
     mapTypeId: google.maps.MapTypeId.TERRAIN,
     mapTypeControl: false,
     zoomControl: true,
@@ -347,10 +349,12 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   map.set('styles', mapStyles);
   var blogLayer = new google.maps.KmlLayer({
+    preserveViewport: true,
     suppressInfoWindows: true,
     url: 'https://www.freealise.com/feeds/posts/default/?time='+t
   });
   var flickrLayer = new google.maps.KmlLayer({
+    preserveViewport: true,
     suppressInfoWindows: true,
     url: 'http://api.flickr.com/services/feeds/geo/?g=14657467@N21&lang=en-us&format=feed-georss&time='+t
   });
@@ -358,11 +362,6 @@ function initMap() {
   var listener = google.maps.event.addListener(flickrLayer, 'metadata_changed', function() {
     google.maps.event.clearListeners(flickrLayer, 'metadata_changed');
     blogLayer.setMap(map);
-    var listener = google.maps.event.addListener(blogLayer, 'metadata_changed', function() {
-      google.maps.event.clearListeners(blogLayer, 'metadata_changed');
-      map.setCenter({lat: 30.0000000, lng: -40.0000000});
-      map.setZoom(3);
-    });
   });
 
   google.maps.event.addListener(flickrLayer, 'click', function(e) {
