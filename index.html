@@ -360,7 +360,7 @@ function initMap() {
     blogLayer.setMap(map);
     var listener = google.maps.event.addListener(blogLayer, 'metadata_changed', function() {
       google.maps.event.clearListeners(blogLayer, 'metadata_changed');
-      var latlng = new google.maps.LatLng(30.0, -40.0);
+      var latlng = new google.maps.LatLng(30.0000000, -40.0000000);
       map.setCenter(latlng);
       map.setZoom(3);
     });
