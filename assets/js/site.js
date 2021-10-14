@@ -43,12 +43,12 @@ function sendEmail() {
 function showSearch() {
   var e = document.getElementById("subscribe-bar");
   var g = document.getElementById("search");
-  if (g.style.visibility == "hidden") {
+  if (g.style.width == "0%") {
     e.style.visibility == "hidden";
-    g.style.visibility == "visible";
+    g.style.width == "100%";
   } else {
     e.style.visibility == "visible";
-    g.style.visibility == "hidden";
+    g.style.width == "0%";
   }
 }
 
