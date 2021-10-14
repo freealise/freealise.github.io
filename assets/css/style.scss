@@ -99,7 +99,8 @@ header svg {
 #banner {
     display: block;
     top: 100px;
-    background: rgba(0,0,0,0.5);
+    background:url('https://1.bp.blogspot.com/-9oci4DxxDno/Xt06h4MPHLI/AAAAAAAABcY/pN8VXZJsoxcL2Ii8XTD12ljNeWj3d61EwCPcBGAYYCw/s0/cover.jpg') bottom center rgba(0,0,0,0.5);
+    background-size:cover;
     border: none;
 }
 #banner .fork {
@@ -178,14 +179,9 @@ header svg {
 	margin:0px;
 	padding:0px;
 	overflow:hidden;
-	position:fixed;
-	bottom:0px;
-	left:0px;
 	height:48px;
-	width:100%;
+	width:48px;
 	text-align:center;
-	background:url('https://1.bp.blogspot.com/-9oci4DxxDno/Xt06h4MPHLI/AAAAAAAABcY/pN8VXZJsoxcL2Ii8XTD12ljNeWj3d61EwCPcBGAYYCw/s0/cover.jpg') #000000;
-	background-size:cover;
 }
 #search .gsc-control-cse {
 	padding:0;
