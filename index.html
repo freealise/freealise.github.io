@@ -17,7 +17,6 @@ nav li:first-child {display:none;}
     position: fixed;
     left: 0;
     top: 150px;
-    z-index: 1;
     width: 100vw;
     height: 64px;
     background: url('https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/header.png');
@@ -62,77 +61,6 @@ function highlightEmail() {
  document.getElementById('email').focus();
 }
 </script>
-
-<div id="headline"><h3>Write lyrics and music to improve your language skills</h3></div>
-
-<div id="txt">
-<p><i class="material-icons notranslate">graphic_eq</i></p>
-  <!--music and lyrics - graphic novels have no speech, are badly searchable and copyrighted, movies have speech and are searchable but copyrighted, both have meaningful images which are also a mnemonic device most music videos don't have: break own music videos into frames with speech bubbles and lyric lines for interactive subtitles-->
-  <!--albums include all common words and grammar constructions in books and magazines (controlled vocabulary and standard levels ?)-->
-  <!--learn second language this way for credibility-->
-  <!--phonetic writing and story (folk) / layered composition (classics) / unconventional rhythm as meter (jazz) / slant rhyme (rap) / spectral synthesis (electronic)-->
-
-Type or speak the missing words and phrases in example sentences and word definitions you read and hear to make sense of grammar and vocabulary, and get to compose your own songs with the interactive rhyming <a href="https://freeali.se/phonetic" target="_blank">dictionary</a>.<br />Play the <a href="https://freeali.se/synth" target="_blank">virtual keyboard</a> or guitar <a href="https://freeali.se/guitar/tab_tuning.htm" target="_blank">in any tuning</a>.<br /><br />
-  
-<i>More languages are going to be available besides English.<br /><a href="javascript:highlightEmail();" title="Subscribe"><b>Subscribe</b></a> to the newsletter for early access at no cost.</i><br /><br />
-  
-<!--<img alt="" border="0" data-original-height="144" data-original-width="2000" src="https://1.bp.blogspot.com/-FJSBDGFJHQ4/XsrSSjEkPgI/AAAAAAAABY4/cjaD7Iv_yLoXfjb8kMlK-D7T_3NT9KGkQCPcBGAYYCw/s0/ornament.jpg" style="height:12px;width:auto;"/>-->
-
-<div id="pay">
-<div id="stripe">
-<!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
-            $<input autocomplete="off" id="quantity" size="3" type="text" value="10" />
-  <button id="checkout-button" role="link"><i class="material-icons notranslate">payments</i> Pay</button><br />
-  
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/sponsors/freealise/sponsorships?frequency=one-time&amount=10" aria-label="Sponsor @freealise on GitHub" target="_blank">Sponsor</a>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async='async' defer='defer' src='https://buttons.github.io/buttons.js'></script><br/>
-  
-<a href="https://www.google.com/search?q=usd+to+eur" id="rateLink" target="_blank">Current rate</a><br />
-
-<div id="error-message">
-</div>
-<script>
-              var stripe = Stripe('pk_test_up7XBxmt0W2fKgzk1SxfQymR');
-
-              var checkoutButton = document.getElementById('checkout-button');
-              checkoutButton.addEventListener('click', function () {
-               var quantity = parseInt(document.getElementById("quantity").value);
-                // When the customer clicks on the button, redirect
-                // them to Checkout.
-                stripe.redirectToCheckout({
-                  items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}],
-      //items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}, {sku: 'sku_FQkGis4q0yD0Jb', quantity: quantity}],
-                  // Do not rely on the redirect to the successUrl for fulfilling
-                  // purchases, customers may not always reach the success_url after
-                  // a successful payment.
-                  // Instead use one of the strategies described in
-                  // https://stripe.com/docs/payments/checkout/fulfillment
-                  successUrl: 'https://www.freealise.com/p/return.html?msg=You have made the payment. Thanks for your support!',
-                  cancelUrl: 'https://www.freealise.com/p/return.html?msg=Your payment has been cancelled.',
-                })
-                .then(function (result) {
-                  if (result.error) {
-                    // If `redirectToCheckout` fails due to a browser or network
-                    // error, display the localized error message to your customer.
-                    var displayError = document.getElementById('error-message');
-                    displayError.textContent = result.error.message;
-                  }
-                });
-              });
-            </script>
-</div>
-<iframe border="0" frameborder="0" height="52" id="chart" scrolling="no" seamless="" src="https://docs.google.com/spreadsheets/u/1/d/1K_KUiQ1tKU2wF0bPTlSPZsmRxLjl22qOwHsV6k9HkOA/htmlembed/sheet?gid=407973780&amp;range=A1" width="150"></iframe>
-</div>
-<p id="notice"><i class="material-icons notranslate">content_cut</i>---- <a href="/search/label/$?m=0">receive sponsorship on your own site</a> ----</p>
-
-<!--[spending chart]-->
-<!--[official torrents with sponsor button]-->
-
-<!--<iframe frameborder="0" height="50" scrolling="no" seamless="" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAAF6xO9RpbmCrqMiT6BOyEvdLTQicFhOB72uXWSt_p9fvukKHu5x_726NniR70Sm-mCVkbmLp2nLs/pubchart?oid=929543765&amp;format=interactive" width="151"></iframe>-->
-</div>
-
 
 <div id="map-canvas"></div>
 <div id="text"></div>
@@ -444,3 +372,74 @@ function initMap() {
   xhttp.send();*/
 </script>
 <script async src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCE3f8RUs0N-HOYJwC3frw-Pyb_v44U1aU&callback=initMap'></script>
+
+
+<div id="headline"><h3>Write lyrics and music to improve your language skills</h3></div>
+
+<div id="txt">
+<p><i class="material-icons notranslate">graphic_eq</i></p>
+  <!--music and lyrics - graphic novels have no speech, are badly searchable and copyrighted, movies have speech and are searchable but copyrighted, both have meaningful images which are also a mnemonic device most music videos don't have: break own music videos into frames with speech bubbles and lyric lines for interactive subtitles-->
+  <!--albums include all common words and grammar constructions in books and magazines (controlled vocabulary and standard levels ?)-->
+  <!--learn second language this way for credibility-->
+  <!--phonetic writing and story (folk) / layered composition (classics) / unconventional rhythm as meter (jazz) / slant rhyme (rap) / spectral synthesis (electronic)-->
+
+Type or speak the missing words and phrases in example sentences and word definitions you read and hear to make sense of grammar and vocabulary, and get to compose your own songs with the interactive rhyming <a href="https://freeali.se/phonetic" target="_blank">dictionary</a>.<br />Play the <a href="https://freeali.se/synth" target="_blank">virtual keyboard</a> or guitar <a href="https://freeali.se/guitar/tab_tuning.htm" target="_blank">in any tuning</a>.<br /><br />
+  
+<i>More languages are going to be available besides English.<br /><a href="javascript:highlightEmail();" title="Subscribe"><b>Subscribe</b></a> to the newsletter for early access at no cost.</i><br /><br />
+  
+<!--<img alt="" border="0" data-original-height="144" data-original-width="2000" src="https://1.bp.blogspot.com/-FJSBDGFJHQ4/XsrSSjEkPgI/AAAAAAAABY4/cjaD7Iv_yLoXfjb8kMlK-D7T_3NT9KGkQCPcBGAYYCw/s0/ornament.jpg" style="height:12px;width:auto;"/>-->
+
+<div id="pay">
+<div id="stripe">
+<!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
+            $<input autocomplete="off" id="quantity" size="3" type="text" value="10" />
+  <button id="checkout-button" role="link"><i class="material-icons notranslate">payments</i> Pay</button><br />
+  
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/sponsors/freealise/sponsorships?frequency=one-time&amount=10" aria-label="Sponsor @freealise on GitHub" target="_blank">Sponsor</a>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async='async' defer='defer' src='https://buttons.github.io/buttons.js'></script><br/>
+  
+<a href="https://www.google.com/search?q=usd+to+eur" id="rateLink" target="_blank">Current rate</a><br />
+
+<div id="error-message">
+</div>
+<script>
+              var stripe = Stripe('pk_test_up7XBxmt0W2fKgzk1SxfQymR');
+
+              var checkoutButton = document.getElementById('checkout-button');
+              checkoutButton.addEventListener('click', function () {
+               var quantity = parseInt(document.getElementById("quantity").value);
+                // When the customer clicks on the button, redirect
+                // them to Checkout.
+                stripe.redirectToCheckout({
+                  items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}],
+      //items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}, {sku: 'sku_FQkGis4q0yD0Jb', quantity: quantity}],
+                  // Do not rely on the redirect to the successUrl for fulfilling
+                  // purchases, customers may not always reach the success_url after
+                  // a successful payment.
+                  // Instead use one of the strategies described in
+                  // https://stripe.com/docs/payments/checkout/fulfillment
+                  successUrl: 'https://www.freealise.com/p/return.html?msg=You have made the payment. Thanks for your support!',
+                  cancelUrl: 'https://www.freealise.com/p/return.html?msg=Your payment has been cancelled.',
+                })
+                .then(function (result) {
+                  if (result.error) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer.
+                    var displayError = document.getElementById('error-message');
+                    displayError.textContent = result.error.message;
+                  }
+                });
+              });
+            </script>
+</div>
+<iframe border="0" frameborder="0" height="52" id="chart" scrolling="no" seamless="" src="https://docs.google.com/spreadsheets/u/1/d/1K_KUiQ1tKU2wF0bPTlSPZsmRxLjl22qOwHsV6k9HkOA/htmlembed/sheet?gid=407973780&amp;range=A1" width="150"></iframe>
+</div>
+<p id="notice"><i class="material-icons notranslate">content_cut</i>---- <a href="/search/label/$?m=0">receive sponsorship on your own site</a> ----</p>
+
+<!--[spending chart]-->
+<!--[official torrents with sponsor button]-->
+
+<!--<iframe frameborder="0" height="50" scrolling="no" seamless="" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAAF6xO9RpbmCrqMiT6BOyEvdLTQicFhOB72uXWSt_p9fvukKHu5x_726NniR70Sm-mCVkbmLp2nLs/pubchart?oid=929543765&amp;format=interactive" width="151"></iframe>-->
+</div>
