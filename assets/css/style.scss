@@ -114,9 +114,6 @@ header svg {
 	}
 }
 #banner #logo {
-    height:auto;
-    width:96px;
-    background:none;
     margin-right:5px;
 }
 #subscribe-bar {
@@ -124,12 +121,15 @@ header svg {
 	height:48px;
 	margin:0px;
 	padding:0px;
+	float: left;
 }
 #subscribe-bar #email {
+	font-family: 'Averia Serif Libre';
 	font-size: 18px;
 	width: 8em;
 }
 #subscribe-button {
+	font-family: 'Averia Serif Libre';
 	font-style: italic; 
 	font-weight: bold;
 	font-size: 16px;
@@ -180,8 +180,11 @@ header svg {
 	padding:0px;
 	overflow:hidden;
 	height:48px;
-	width:48px;
+	width:100%;
+	max-width:320px;
 	text-align:center;
+	float:right;
+	display:none;
 }
 #search .gsc-control-cse {
 	padding:0;
@@ -243,7 +246,6 @@ word-break: break-word;
 }
 
 #logo_ {
-    margin: 9px auto;
     height: 36px;
     width: 36px;
     display: block;
