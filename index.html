@@ -23,6 +23,7 @@ nav li:first-child {display:none;}
     background-size: cover;
     background-position: bottom center;
     text-align: center;
+    z-index: 1;
 }
 #headline h3 {
   font-weight:bold;
@@ -43,7 +44,7 @@ section .material-icons {font-size: 16px;}
 #notice {font-size: 12px;}
 #notice .material-icons {font-size: 10px;}
 p {clear:both;}
-#txt {font-size:16px; width:256px; margin:0; position: absolute; top: 0px; left: 50%; margin-left: -128px; text-align: center;}
+#txt {font-size:16px; width:256px; margin:0; position: absolute; top: 0px; left: 50%; margin-left: -128px; margin-top: 64px; text-align: center;}
 #map-canvas {
   height: 500px;
   width: 100%;
@@ -374,10 +375,9 @@ function initMap() {
 <script async src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCE3f8RUs0N-HOYJwC3frw-Pyb_v44U1aU&callback=initMap'></script>
 
 
-<div id="headline"><h3>Write lyrics and music to improve your language skills</h3></div>
+<div id="headline"><h3>Write lyrics and music to improve your language skills</h3><p><i class="material-icons notranslate">graphic_eq</i></p></div>
 
 <div id="txt">
-<p><i class="material-icons notranslate">graphic_eq</i></p>
   <!--music and lyrics - graphic novels have no speech, are badly searchable and copyrighted, movies have speech and are searchable but copyrighted, both have meaningful images which are also a mnemonic device most music videos don't have: break own music videos into frames with speech bubbles and lyric lines for interactive subtitles-->
   <!--albums include all common words and grammar constructions in books and magazines (controlled vocabulary and standard levels ?)-->
   <!--learn second language this way for credibility-->
