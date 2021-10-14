@@ -150,8 +150,6 @@ height:auto;
 function initMap() {
   //geolocate
   var mapOptions = {
-    center: {lat: 30.0, lng: -40.0},
-    zoom: 3,
     mapTypeId: google.maps.MapTypeId.TERRAIN,
     mapTypeControl: false,
     zoomControl: true,
@@ -381,10 +379,10 @@ function initMap() {
     var a = "blog";
     showResults(a);
   });
+  var latlng = new google.maps.LatLng(30.0, -40.0);
+  map.setCenter(latlng);
+  map.setZoom(3);
 }
-var latlng = new google.maps.LatLng(30.0, -40.0);
-map.setCenter(latlng);
-map.setZoom(3);
   
   /*var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
