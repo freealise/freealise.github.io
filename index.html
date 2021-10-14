@@ -13,6 +13,9 @@ nav li:first-child {display:none;}
   background-size:100%;
   background-position:top center;
 }
+section {
+  max-height: 512px;
+}
 #headline {
     position: fixed;
     left: 0;
@@ -46,7 +49,7 @@ section .material-icons {font-size: 16px;}
 p {clear:both;}
 #txt {font-size:16px; width:256px; margin:0; position: absolute; top: 0px; left: 50%; margin-left: -128px; margin-top: 64px; text-align: center;}
 #map-canvas {
-  height: 500px;
+  height: 512px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -68,7 +71,7 @@ function highlightEmail() {
 
 <script>
   var exec="https://script.google.com/macros/s/AKfycby9VN3ghF35t1Z4csV9kycvQyBqiYF8irms_ybLMmsZrKFlU9rb/exec";
-  function showResults(a) {
+  function showResults(a, map) {
     var url = exec+"?a="+a;
     var xhttp, xmlDoc, txt, x, i, point;
     var bounds = map.getBounds();
@@ -339,7 +342,7 @@ function initMap() {
     }
     map.setCenter(e.latLng);
     var a = "photos";
-    showResults(a);
+    showResults(a, map);
   });
   
   google.maps.event.addListener(blogLayer, 'click', function(e) {
@@ -349,7 +352,7 @@ function initMap() {
     }
     map.setCenter(e.latLng);
     var a = "blog";
-    showResults(a);
+    showResults(a, map);
   });
 }
   
