@@ -41,10 +41,13 @@ function sendEmail() {
 }
 
 function showSearch() {
+  var e = document.getElementById("subscribe-bar");
   var g = document.getElementById("search");
   if (g.style.display == "none") {
+    e.style.display = "none";
     g.style.display = "block";
   } else {
+    e.style.display = "block";
     g.style.display = "none";
   }
 }
