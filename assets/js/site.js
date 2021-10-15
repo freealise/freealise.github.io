@@ -43,8 +43,7 @@ function sendEmail() {
 function showSearch() {
   var subscribe = document.getElementById("subscribe-bar");
   var search = document.getElementById("search");
-  alert(search.style.visibility);
-  if (search.style.visibility == "hidden") {
+  if (search.style.visibility != "visible") {
     subscribe.style.visibility == "hidden";
     search.style.visibility == "visible";
   } else {
