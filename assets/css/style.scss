@@ -220,6 +220,9 @@ header svg {
 	background-position: top center;
 	background-size:100%;
 }
+nav ul:first-child {
+	display:none;
+}
 pre {
 background-color: transparent;
 border: none;
