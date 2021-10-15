@@ -43,13 +43,13 @@ function sendEmail() {
 function showSearch() {
   var subscribe = document.getElementById("subscribe-bar");
   var search = document.getElementById("search");
-  alert(search.style.width);
-  if (search.style.width == "0%") {
+  alert(search.style.visibility);
+  if (search.style.visibility == "hidden") {
     subscribe.style.visibility == "hidden";
-    search.style.width == "100%";
+    search.style.visibility == "visible";
   } else {
     subscribe.style.visibility == "visible";
-    search.style.width == "0%";
+    search.style.visibility == "hidden";
   }
 }
 
