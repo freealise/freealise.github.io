@@ -3,6 +3,13 @@ layout: default
 ---
 
 <style>
+#contact-form {
+  text-align: center;
+}
+#contact-form input, #contact-form textarea {
+  width: 256px;
+  margin: 4px 0;
+}
 @media only screen and (min-width: 513px) {
   #contact-form {
     float: left;
@@ -28,7 +35,6 @@ layout: default
   }
 }
 #contact-form-sent {
-  text-align: center;
   width: 100%;
 }
 #contact {
@@ -65,11 +71,11 @@ layout: default
 
 <form name="contact-form" id="contact-form" onsubmit="event.preventDefault();sendEmail();">
 <label>Name<br/>
-<input class="contact-form-name" id="contact-form-name" name="name" size="30" type="text" value="" spellcheck="false" autocomplete="name"></label><br/>
+<input class="contact-form-name" id="contact-form-name" name="name" size="25" type="text" value="" spellcheck="false" autocomplete="name"></label><br/>
 <label>Email <span style="font-weight: bolder;">*</span><br/>
-<input class="contact-form-email" id="contact-form-email" name="email" size="30" type="email" value="" spellcheck="false" autocomplete="email" required></label><br/>
+<input class="contact-form-email" id="contact-form-email" name="email" size="25" type="email" value="" spellcheck="false" autocomplete="email" required></label><br/>
 <label>Message <span style="font-weight: bolder;">*</span><br/>
-<textarea class="contact-form-email-message" cols="25" id="contact-form-email-message" name="email-message" rows="5" spellcheck="false" autocomplete="off" required></textarea></label><br/>
+<textarea class="contact-form-email-message" cols="25" id="contact-form-email-message" name="email-message" rows="4" spellcheck="false" autocomplete="off" required></textarea></label><br/>
 <input class="contact-form-button" id="contact-form-submit" type="submit" value="Send"><br/>
 <p id="contact-form-sent"></p>
 </form>
