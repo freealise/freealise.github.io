@@ -25,7 +25,7 @@ google_analytics: UA-140027275-1
 
 # Build settings
 paginate: 1
-paginate_path: "page:num"
+paginate_path: "/blog/page:num/"
 markdown: kramdown
 theme: jekyll-theme-leap-day
 collections:
