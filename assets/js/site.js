@@ -41,9 +41,9 @@ function sendEmail() {
 }
 
 function showSearch() {
-  alert("Hi");
   var subscribe = document.getElementById("subscribe-bar");
   var search = document.getElementById("search");
+  alert(search.style.width);
   if (search.style.width == "0%") {
     subscribe.style.visibility == "hidden";
     search.style.width == "100%";
