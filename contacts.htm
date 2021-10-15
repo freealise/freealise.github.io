@@ -38,9 +38,8 @@ layout: default
   width: 100%;
 }
 #contact {
-  width:100%;
+  width:256px;
   text-align:center;
-  clear:both;
 }
 #contact .material-icons {
   font-size:32px;
@@ -69,6 +68,7 @@ layout: default
   width:100%;
   text-align:center;
   font-size:12px;
+  clear:both;
 }
 #feed {
   bottom: 8px;
@@ -76,12 +76,6 @@ layout: default
 }
 </style>
 
-<div id="contact">
-  <a href="https://groups.google.com/a/freealise.com/g/freealise" target="_blank" title="Google"><i class='material-icons notranslate'>alternate_email</i></a> 
-  <a href="https://www.reddit.com/r/freealise/" target="_blank" title="Reddit"><img height="26" width="26" src="/assets/images/Reddit_Mark_OnWhite.svg" alt="Reddit"></a>
-  <a href="https://www.facebook.com/groups/freealise/" target="_blank" title="Facebook"><i class='material-icons notranslate'>facebook</i></a>
-  <a href="https://www.flickr.com/photos_user_map.gne?path=freealise&mode=group" target="_blank" title="Flickr"><i class="material-icons notranslate">hdr_weak</i></a><br/>
-</div>
 
 <form name="contact-form" id="contact-form" onsubmit="event.preventDefault();sendEmail();">
 <label>Name<br/>
@@ -89,10 +83,17 @@ layout: default
 <label>Email <span style="font-weight: bolder;">*</span><br/>
 <input class="contact-form-email" id="contact-form-email" name="email" size="25" type="email" value="" spellcheck="false" autocomplete="email" required></label><br/>
 <label>Message <span style="font-weight: bolder;">*</span><br/>
-<textarea class="contact-form-email-message" cols="25" id="contact-form-email-message" name="email-message" rows="6" spellcheck="false" autocomplete="off" required></textarea></label><br/>
+<textarea class="contact-form-email-message" cols="25" id="contact-form-email-message" name="email-message" rows="4" spellcheck="false" autocomplete="off" required></textarea></label><br/>
 <input class="contact-form-button" id="contact-form-submit" type="submit" value="Send"><br/>
 <p id="contact-form-sent"></p>
 </form>
+
+<div id="contact">
+  <a href="https://groups.google.com/a/freealise.com/g/freealise" target="_blank" title="Google"><i class='material-icons notranslate'>alternate_email</i></a> 
+  <a href="https://www.reddit.com/r/freealise/" target="_blank" title="Reddit"><img height="26" width="26" src="/assets/images/Reddit_Mark_OnWhite.svg" alt="Reddit"></a>
+  <a href="https://www.facebook.com/groups/freealise/" target="_blank" title="Facebook"><i class='material-icons notranslate'>facebook</i></a>
+  <a href="https://www.flickr.com/photos_user_map.gne?path=freealise&mode=group" target="_blank" title="Flickr"><i class="material-icons notranslate">hdr_weak</i></a><br/>
+</div>
 
 <div id="follow">
 <iframe src="https://www.google.com/maps/embed?pb=!4v1634023041162!6m8!1m7!1spm7HeEC1A6W5VeCAc442XA!2m2!1d50.12668839477126!2d14.43193741929996!3f167.07432107021629!4f3.268657950765032!5f1.9587109090973311" width="100%" height="256" id="location_iframe" allowfullscreen="" loading="lazy"></iframe>
