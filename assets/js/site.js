@@ -41,6 +41,7 @@ function sendEmail() {
 }
 
 function showSearch() {
+  alert("Hi");
   var subscribe = document.getElementById("subscribe-bar");
   var search = document.getElementById("search");
   if (search.style.width == "0%") {
