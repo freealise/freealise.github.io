@@ -73,18 +73,16 @@ layout: default
 </style>
 
 <div id="contact">
-  <p>
-    <form name="contact-form" id="contact-form" onsubmit="event.preventDefault();sendEmail();">
-      <label>Name<br/>
-      <input class="contact-form-name" id="contact-form-name" name="name" size="25" type="text" value="" spellcheck="false" autocomplete="name"></label><br/>
-      <label>Email <span style="font-weight: bolder;">*</span><br/>
-      <input class="contact-form-email" id="contact-form-email" name="email" size="25" type="email" value="" spellcheck="false" autocomplete="email" required></label><br/>
-      <label>Message <span style="font-weight: bolder;">*</span><br/>
-      <textarea class="contact-form-email-message" cols="25" id="contact-form-email-message" name="email-message" rows="4" spellcheck="false" autocomplete="off" required></textarea></label><br/>
-      <input class="contact-form-button" id="contact-form-submit" type="submit" value="Send"><br/>
-      <p id="contact-form-sent"></p>
-    </form>
-  </p>
+  <form name="contact-form" id="contact-form" onsubmit="event.preventDefault();sendEmail();">
+    <label>Name<br/>
+    <input class="contact-form-name" id="contact-form-name" name="name" size="25" type="text" value="" spellcheck="false" autocomplete="name"></label><br/>
+    <label>Email <span style="font-weight: bolder;">*</span><br/>
+    <input class="contact-form-email" id="contact-form-email" name="email" size="25" type="email" value="" spellcheck="false" autocomplete="email" required></label><br/>
+    <label>Message <span style="font-weight: bolder;">*</span><br/>
+    <textarea class="contact-form-email-message" cols="25" id="contact-form-email-message" name="email-message" rows="4" spellcheck="false" autocomplete="off" required></textarea></label><br/>
+    <input class="contact-form-button" id="contact-form-submit" type="submit" value="Send"><br/>
+    <p id="contact-form-sent"></p>
+  </form>
   <p>
     <a href="https://groups.google.com/a/freealise.com/g/freealise" target="_blank" title="Google"><i class='material-icons notranslate'>alternate_email</i></a> 
     <a href="https://www.reddit.com/r/freealise/" target="_blank" title="Reddit"><img height="26" width="26" src="/assets/images/Reddit_Mark_OnWhite.svg" alt="Reddit"></a>
