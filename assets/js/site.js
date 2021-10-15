@@ -41,14 +41,14 @@ function sendEmail() {
 }
 
 function showSearch() {
-  var e = document.getElementById("subscribe-bar");
-  var g = document.getElementById("search");
-  if (g.style.width == "0%") {
-    e.style.visibility == "hidden";
-    g.style.width == "100%";
+  var subscribe = document.getElementById("subscribe-bar");
+  var search = document.getElementById("search");
+  if (search.style.width == "0%") {
+    subscribe.style.visibility == "hidden";
+    search.style.width == "100%";
   } else {
-    e.style.visibility == "visible";
-    g.style.width == "0%";
+    subscribe.style.visibility == "visible";
+    search.style.width == "0%";
   }
 }
 
