@@ -184,13 +184,14 @@ header svg {
 	padding:0px;
 	overflow:hidden;
 	height:48px;
-	width:0%;
+	width:100%;
 	max-width:270px;
 	text-align:center;
 	right:0px;
 	top:100px;
 	position: fixed;
 	z-index: 100;
+	visibility:hidden;
 }
 #search .gsc-control-cse {
 	padding:0;
