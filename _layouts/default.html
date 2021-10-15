@@ -196,6 +196,22 @@
           <script async src="https://cse.google.com/cse.js?cx=69f5fae6aeba217dd"></script>
           <div class="gcse-search" enableAutoComplete="true"></div>
     	</div>
+	  
+	function showSearch() {
+	  var subscribe = document.getElementById("subscribe-bar");
+	  var search = document.getElementById("search");
+	  if (search.style.visibility != "visible") {
+	    subscribe.style.visibility == "hidden";
+	    search.style.visibility == "visible";
+	  } else {
+	    subscribe.style.visibility == "visible";
+	    search.style.visibility == "hidden";
+	  }
+	}
+
+	function highlightEmail() {
+	 document.getElementById('email').focus();
+	}
 
     {% if site.google_analytics %}
       <script>
