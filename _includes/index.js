@@ -29,7 +29,7 @@ var json = {
         },
         "text": {
           "headline": "{{ post.title }}",
-          "text": "{{ post.content }}"
+          "text": "{{ post.content | jsonify }}"
         }
       },
       {% endfor %}
