@@ -37,7 +37,7 @@
     <header>
       <section>
         <a href="{{ site.url }}" id="title">
-          <h1 title="{{ site.title | default: site.github.repository_name }}"><img src="/assets/images/logo.svg" alt="Freealise" />{{ site.title | default: site.github.repository_name }}</h1>
+          <h1 title="{{ site.title | default: site.github.repository_name }}"><img src="/assets/images/logo.svg" alt="Freealise" id="logo"/>{{ site.title | default: site.github.repository_name }}</h1>
           <p><i>{{ site.description | default: site.github.project_tagline }}</i></p>
         </a>
         <ul id="pages">
@@ -51,10 +51,6 @@
     </header>
 
       <div id="banner">
-
-        <a href="javascript:showSearch();" id="logo">
-          <i class="material-icons notranslate">search</i>
-        </a>
 
           {% if site.show_downloads %}
           <div class="downloads">
@@ -73,6 +69,11 @@
 	    <button id="subscribe-button" type="submit"><i class="material-icons">mail_outline</i> Join</button>
 	  </form>
 	</div>
+	      
+	<div id="search">
+          <script async src="https://cse.google.com/cse.js?cx=69f5fae6aeba217dd"></script>
+          <div class="gcse-search" enableAutoComplete="true"></div>
+        </div>
 	      
       </div><!-- end banner -->
     
@@ -113,11 +114,6 @@
 
     <div id="cookie-notice"><i>We use third party cookies and scripts to improve your experience on this website.</i><a id="cookie-notice-accept" class="btn btn-primary btn-sm">OK</a><a href="/cookies.html" class="btn btn-primary btn-sm">More info</a></div>
     <script src="/assets/js/cookie_notice.js"></script>
-	  
-    <div id="search">
-      <script async src="https://cse.google.com/cse.js?cx=69f5fae6aeba217dd"></script>
-      <div class="gcse-search" enableAutoComplete="true"></div>
-    </div>
 
     {% if site.google_analytics %}
       <script>
