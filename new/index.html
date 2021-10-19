@@ -69,6 +69,6 @@ height: 400px;
         // and the element must have CSS styling to give it width and height
         // optionally, a third argument with configuration options can be passed.
         // See below for more about options.
-        var timeline_json = JSON.parse("{% include /index.json | jsonify %}");
+        var timeline_json = JSON.parse("{% include /index.json %}");
         timeline = new TL.Timeline('timeline-embed', timeline_json, options);
       </script>
