@@ -185,6 +185,7 @@ header svg {
 	height:48px;
 	width:100%;
 	max-width:256px;
+	display:inline-block;
 }
 #search .gsc-control-cse {
 	padding:0;
@@ -192,7 +193,6 @@ header svg {
 	border: 0;
 	position: relative;
     	top: 4px;
-	background-color: transparent;
 }
 #search table td {
 	border:0;
@@ -203,10 +203,9 @@ header svg {
 }
 #search .gsc-input-box {
     height:32px;
-    background-color: transparent;
 }
-#search .gsc-input {
-    background-color: transparent;
+#search .gsc-search-button {
+    padding:8px;
 }
 #overlay {
 	width:100%;
