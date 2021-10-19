@@ -1,3 +1,5 @@
+---
+---
 {
   "title": {
     "media": {
@@ -15,8 +17,8 @@
       {
         "media": {
           "url": "{{ post.url }}",
-          "caption": "{{ post.title }}",
-          "credit": "{{ post.author }}"
+          "caption": "{{ post.title | jsonify }}",
+          "credit": "{{ post.author | jsonify }}"
         },
         "start_date": {
           "month": "{{ post.date | date: "%-m" }}",
@@ -24,8 +26,8 @@
           "year": "{{ post.date | date: "%Y" }}"
         },
         "text": {
-          "headline": "{{ post.title }}",
-          "text": "{{ post.content }}"
+          "headline": "{{ post.title | jsonify }}",
+          "text": "{{ post.content | jsonify }}"
         }
       },
       {% endfor %}
