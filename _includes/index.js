@@ -1,7 +1,7 @@
 ---
-layout: json
 ---
-{
+
+var json = {
   "title": {
     "media": {
       "url": "",
@@ -33,4 +33,4 @@ layout: json
       },
       {% endfor %}
   ]
-}
+};
