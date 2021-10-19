@@ -124,7 +124,7 @@ header svg {
 	height:48px;
 	margin:10px 0 0 5px;
 	padding:0px;
-	float: left;
+	float: right;
 }
 #subscribe-bar #email {
 	font-family: 'Averia Serif Libre';
@@ -185,6 +185,9 @@ header svg {
 	height:48px;
 	width:100%;
 	max-width:256px;
+	position:fixed;
+	top:100px;
+	left:0px;
 }
 #search .gsc-control-cse {
 	padding:0;
