@@ -116,7 +116,7 @@ header svg {
     	left:10px;
 	}
 }
-#banner #logo {
+#logo {
     margin-right:5px;
 }
 #subscribe-bar {
@@ -183,15 +183,8 @@ header svg {
 	padding:0px;
 	overflow:hidden;
 	height:48px;
-	width:90px;
-	max-width:256px;
-	position:absolute;
-	right:0px;
-	top:0px;
-	background-color:black;
-}
-#search:focus {
 	width:100%;
+	max-width:256px;
 }
 #search .gsc-control-cse {
 	padding:0;
@@ -211,12 +204,9 @@ header svg {
 #search .gsc-input-box {
     height:32px;
     background-color: transparent;
-    border: none;
-    border-bottom: 1px solid white;
 }
 #search .gsc-input {
     background-color: transparent;
-    color: white;
 }
 #overlay {
 	width:100%;
