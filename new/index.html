@@ -69,5 +69,6 @@ height: 400px;
         // and the element must have CSS styling to give it width and height
         // optionally, a third argument with configuration options can be passed.
         // See below for more about options.
-        timeline = new TL.Timeline('timeline-embed', 'https://freealise.com/index.json', options);
+        var timeline_json = JSON.parse("{% include /index.json | jsonify %}");
+        timeline = new TL.Timeline('timeline-embed', timeline_json, options);
       </script>
