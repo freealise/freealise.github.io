@@ -19,8 +19,8 @@ var json = {
       {
         "media": {
           "url": "{{ post.url }}",
-          "caption": "{{ post.title | jsonify }}",
-          "credit": "{{ post.author | jsonify }}"
+          "caption": "{{ post.title }}",
+          "credit": "{{ post.author }}"
         },
         "start_date": {
           "month": "{{ post.date | date: "%-m" }}",
@@ -28,8 +28,8 @@ var json = {
           "year": "{{ post.date | date: "%Y" }}"
         },
         "text": {
-          "headline": "{{ post.title | jsonify }}",
-          "text": "{{ post.content | jsonify }}"
+          "headline": "{{ post.title }}",
+          "text": "{{ post.content }}"
         }
       },
       {% endfor %}
