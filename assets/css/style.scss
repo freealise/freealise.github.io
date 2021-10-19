@@ -185,9 +185,7 @@ header svg {
 	height:48px;
 	width:100%;
 	max-width:256px;
-	position:fixed;
-	top:100px;
-	left:0px;
+	float: right;
 }
 #search .gsc-control-cse {
 	padding:0;
@@ -208,6 +206,10 @@ header svg {
     height:32px;
     background-color: transparent;
     border: none;
+}
+#search .gsc-input {
+    background-color: transparent;
+    color: white;
 }
 #overlay {
 	width:100%;
