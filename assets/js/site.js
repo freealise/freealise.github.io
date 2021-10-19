@@ -40,18 +40,6 @@ function sendEmail() {
   }
 }
 
-	function showSearch() {
-	  var subscribe = document.getElementById("subscribe-bar");
-	  var search = document.getElementById("search");
-	  if (search.style.visibility != "visible") {
-	    subscribe.style.visibility = "hidden";
-	    search.style.visibility = "visible";
-	  } else {
-	    subscribe.style.visibility = "visible";
-	    search.style.visibility = "hidden";
-	  }
-	}
-
 	function highlightEmail() {
 	 document.getElementById('email').focus();
 	}
