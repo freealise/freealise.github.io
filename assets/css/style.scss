@@ -205,6 +205,11 @@ header svg {
 }
 #search .gsc-input-box {
     height:32px;
+    border:0;
+}
+#search input.gsc-input {
+    position: relative;
+    top: 6px;
 }
 #search button.gsc-search-button {
     padding:8px;
