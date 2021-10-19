@@ -205,7 +205,8 @@ header svg {
 #search .gsc-input-box {
     height:32px;
     background-color: transparent;
-    border: none;
+    border: 0;
+    border-bottom:2px solid white;
 }
 #search .gsc-input {
     background-color: transparent;
