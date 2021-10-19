@@ -85,6 +85,9 @@ header h1 {
 header h1 span {
     font-size: 36px;
 }
+#logo {
+    margin-right:5px;
+}
 header p {
     display: block;
     color: #000000;
@@ -120,12 +123,12 @@ header svg {
 	float:right;
 	width:48px;
 	height:48px;
-	font-size:48px;
 	line-height:1em;
 	color:white;
 }
-#logo {
-    margin-right:5px;
+#banner a .material-icons {
+	font-size:48px;
+	margin-right:5px;
 }
 #subscribe-bar {
 	width:256px;
