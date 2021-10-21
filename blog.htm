@@ -3,19 +3,19 @@ layout: default
 ---
 
 <style>
-  #wiki {
+  #blog {
     width: 100%;
     height: 512px;
     border: 0;
   }
 </style>
 
-<iframe id="wiki" src="https://blog.freealise.com" width="100%" height="512"></iframe>
+<iframe id="blog" src="https://blog.freealise.com" width="100%" height="512"></iframe>
 
 <script>
   var p = document.location.href.split('?p=');
   if (p[1]) {
     p = p[1].split('#')[0];
-    document.getElementById('wiki').src += '/' + p;
+    document.getElementById('blog').src += '/' + p;
   }
 </script>
