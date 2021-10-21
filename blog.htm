@@ -13,12 +13,13 @@ layout: default
 <iframe id="blog" src="" width="100%" height="512"></iframe>
 
 <script>
+  var view = '?view=flipcard';
   var url = 'https://blog.freealise.com/';
   var p = document.location.href.split('?p=');
   if (p[1]) {
     p = p[1].split('#')[0];
-    document.getElementById('blog').src = url + p;
+    document.getElementById('blog').src = url + p + view;
   } else {
-    document.getElementById('blog').src = url;
+    document.getElementById('blog').src = url + view;
   }
 </script>
