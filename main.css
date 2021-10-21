@@ -1,8 +1,3 @@
-#header .header-drawer {
-background: transparent;
-box-shadow:none;
--webkit-box-shadow:none;
-}
 #header #views {
 width:20px;
 padding:8px 15px;
@@ -13,50 +8,21 @@ background-color: black;
 #header #views a {
 color:white;
 }
-#header .menu .menu-background {
-background-color: white;
-}
 #header .header-bar .title h1 {
-color: black;
-font-size: 32px;
-font-weight: bold;
-font-style: italic;
-text-transform: lowercase;
-font-family: Averia Sans Libre;
-margin-left: 8px;
-position: relative;
-top: -4px;
+display:none;
 }
 #header .header-bar .title {
-margin-right: 0;
-position:relative;
 cursor: pointer;
 }
 #header .header-bar .title h3 {
-vertical-align: top;
-font-family: Averia Serif Libre;
+font-family: Averia Sans Libre;
 font-style: italic;
 color: black;
-}
-@media all and (max-width: 480px) {
-#header .header-bar .title h3 {
-position: absolute;
-top: 20px;
-left: 92px;
-font-size: inherit;
-}
 }
 #header #pages {
 font-weight: bold;
 font-style: italic;
-left:50px;
-background-color:#ffccff;
-}
-#sidebar{
-width: 50px;
-}
-.viewitem-panel .viewitem-inner {
-padding:0px;
+margin-left:16px;
 }
 .item.comments .title {
 left: 0px;
@@ -65,64 +31,19 @@ right: 0px;
 .item .title {
 padding: 0px;
 }
-#content{
-padding: 0 0 0 50px;
-margin: -5px 0px;
-background-image:none;
-background:#ffffff;
-}
-#content .article {
-margin: 0px;
-padding:20px;
-}
-#content .article a {
-font-style: italic;
-}
 .gadget-container .gadget-title {
 font-weight: bold;
 }
 .gadget {
 font-style: italic;
 }
-.viewitem-panel .viewitem-content {
-padding: 20px;
-left: 0px;
-max-width: 100%;
-height: 100%;
-overflow: auto;
-}
-.article .article-content {
-text-align: left;
-padding: 20px;
-max-width: 75%;
-}
-@media all and (max-width: 480px) {
-  .article .article-content {
-    text-align: left;
-    padding: 10px;
-    max-width: 100%;
-  }
-}
-.article .article-content img {
-float:right;
-}
-.article .article-content a {
-color:darkgray;
-}
-.article .article-header a {font-weight: bold; font-style: italic;}
-.blogger-comments .comments-replybox, .blogger-comments .comment-replybox-thread {
-max-height:196px;
-filter:grayscale(1);
-}
-#sidebar .item a {
-font-style: italic;
-}
-#sidebar .item .comments-count {
-display:none;
-}
 .gadget-label {
 min-width:120px;
 word-break:normal;
+}
+.blogger-comments .comments-replybox, .blogger-comments .comment-replybox-thread {
+max-height:196px;
+filter:grayscale(1);
 }
 .flipcard #controls{
 width: 100%;
@@ -143,6 +64,7 @@ margin-left: 2px;
 .cookie-choices-info .cookie-choices-text {
 font-size:10px;
 font-family: 'Averia Serif Libre';
+font-style: italic;
 max-height: 30px;
 overflow: scroll;
 }
