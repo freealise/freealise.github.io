@@ -10,12 +10,15 @@ layout: default
   }
 </style>
 
-<iframe id="blog" src="https://blog.freealise.com" width="100%" height="512" onload="window.top.location.href=window.top.location.hostname+'?p='+this.contentWindow.location.pathname;"></iframe>
+<iframe id="blog" src="" width="100%" height="512"></iframe>
 
 <script>
+  var url = 'https://blog.freealise.com/';
   var p = document.location.href.split('?p=');
   if (p[1]) {
     p = p[1].split('#')[0];
-    document.getElementById('blog').src += '/' + p;
+    document.getElementById('blog').src = url + p;
+  } else {
+    document.getElementById('blog').src = url;
   }
 </script>
