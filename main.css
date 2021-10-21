@@ -1,9 +1,7 @@
 #header #views {
-width:20px;
-padding:8px 15px;
-float:right;
-top: 14px;
-background-color: black;
+width: 20px;
+padding: 5px 15px;
+float: right;
 }
 #header #views a {
 color:white;
