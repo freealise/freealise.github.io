@@ -1,8 +1,10 @@
 #header #views {
-width: 20px;
-padding: 5px 15px;
+width: 24px;
+padding: 5px 12px;
 float: right;
-color:white;
+color: white;
+font-weight: bold;
+font-size: 20px;
 }
 #header .header-bar .title h1 {
 display:none;
