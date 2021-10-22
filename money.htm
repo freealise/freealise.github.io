@@ -15,7 +15,7 @@ layout: default
 <script type="text/javascript">
   var msg = window.location.href.split("?msg=");
   if (msg[1]) {
-    msg = msg.split("#")[0];
+    msg = msg[1].split("#")[0];
     if (msg == "true") {
       document.getElementById("msg").innerHTML = 'Your payment has been accepted.<br/> Thanks for your support!';
     } else if (msg == "false") {
