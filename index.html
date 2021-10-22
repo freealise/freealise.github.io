@@ -412,8 +412,8 @@ Type or speak the missing words and phrases in example sentences and word defini
                   // a successful payment.
                   // Instead use one of the strategies described in
                   // https://stripe.com/docs/payments/checkout/fulfillment
-                  successUrl: 'https://freealise.com/money.htm?msg=Your payment has been accepted. Thanks for your support!',
-                  cancelUrl: 'https://freealise.com/money.htm?msg=Your payment has been cancelled.',
+                  successUrl: 'https://freealise.com/money.htm?msg=true',
+                  cancelUrl: 'https://freealise.com/money.htm?msg=false',
                 })
                 .then(function (result) {
                   if (result.error) {
