@@ -390,11 +390,11 @@ Type or speak the missing words and phrases in example sentences and word defini
 <div id="pay">
 <div id="stripe">
 <!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
-            $<input autocomplete="off" id="quantity" size="2" type="text" value="10" />
+            $<input autocomplete="off" id="quantity" size="2" type="text" value="10" onchange="var btn=document.getElementByClassName('btn')[0];btn.href=btn.href.split('&amount=')[0]+'&amount='+this.value;" />
   <button id="checkout-button" role="link"><i class="material-icons notranslate">payments</i> Pay</button><br />
   
 <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="javascript:location.href='https://github.com/sponsors/freealise/sponsorships?frequency=one-time&amount='+document.getElementById('quantity').value;" aria-label="Sponsor @freealise on GitHub" target="_blank">Sponsor</a>
+<a class="github-button" href="https://github.com/sponsors/freealise/sponsorships?frequency=one-time&amount=" aria-label="Sponsor @freealise on GitHub" target="_blank">Sponsor</a>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async='async' defer='defer' src='https://buttons.github.io/buttons.js'></script><br/>
   
