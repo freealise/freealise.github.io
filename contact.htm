@@ -83,14 +83,15 @@ layout: default
 </style>
 
 <div id="contact">
-  <form name="contact-form" id="contact-form" onsubmit="event.preventDefault();sendEmail();">
+  <form name="contact-form" id="contact-form">
     <input title="Name" placeholder="Name" class="contact-form-name" id="contact-form-name" name="name" size="25" type="text" value="" spellcheck="false" autocomplete="name"><br/>
     <input title="Email" placeholder="Email *" class="contact-form-email" id="contact-form-email" name="email" size="25" type="email" value="" spellcheck="false" autocomplete="email" required><br/>
     <input title="Subject" placeholder="Subject *" class="contact-form-subject" id="contact-form-subject" name="subject" size="25" type="text" value="" spellcheck="false" autocomplete="off" required><br/>
     <textarea title="Message" placeholder="Message *" class="contact-form-email-message" cols="25" id="contact-form-email-message" name="email-message" rows="4" spellcheck="false" autocomplete="off" required></textarea><br/>
     <input title="Website" placeholder="Website" class="contact-form-site" id="contact-form-site" name="site" size="25" type="url" value="" spellcheck="false" autocomplete="url"><br/>
-    <input title="Send" class="contact-form-button" id="contact-form-submit" type="submit" value="Send"><br/>
+    <input title="Send" data-sitekey="6Lc4TL0cAAAAANkbofonv3SlLkhDZ9lUeknMB2kr" data-callback='sendEmail' data-action='submit' class="contact-form-button g-recaptcha" id="contact-form-submit" type="submit" value="Send"><br/>
     <p id="contact-form-sent"></p>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </form>
   <p>
     <a href="https://groups.google.com/a/freealise.com/g/freealise" target="_blank" title="Google"><i class='material-icons notranslate'>alternate_email</i></a> 
