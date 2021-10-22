@@ -17,7 +17,7 @@ function subscribeEmail(address, s) {
   }
 }
 
-function sendEmail() {
+function sendEmail(token) {
   var _name = document.getElementById("contact-form-name").value;
   var _site = document.getElementById("contact-form-site").value;
   var _email = document.getElementById("contact-form-email").value;
@@ -32,7 +32,7 @@ function sendEmail() {
         document.getElementById("contact-form-sent").innerHTML = this.responseText;
       }
     };
-    xhttp.open('GET', 'https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=contact&name='+encodeURIComponent(_name)+'&site='+encodeURIComponent(_site)+'&email='+encodeURIComponent(_email)+'&subj='+encodeURIComponent(_subject)+'&msg='+encodeURIComponent(_message), true);
+    xhttp.open('GET', 'https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=contact&name='+encodeURIComponent(_name)+'&site='+encodeURIComponent(_site)+'&email='+encodeURIComponent(_email)+'&subj='+encodeURIComponent(_subject)+'&msg='+encodeURIComponent(_message)+'&token='+token, true);
     xhttp.send();
   }
 }
