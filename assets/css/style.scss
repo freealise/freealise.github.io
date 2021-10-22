@@ -15,6 +15,7 @@
 
 body {
     background: fixed url('/assets/images/wood.jpg') top center;
+    backdrop-filter: grayscale(1);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Averia Serif Libre', serif;
