@@ -15,7 +15,6 @@
 
 body {
     background: fixed url('/assets/images/wood.jpg') top center;
-    backdrop-filter: grayscale(1);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Averia Serif Libre', serif;
@@ -235,6 +234,7 @@ header svg {
 	background: url('https://ssl.gstatic.com/sites/p/c72c63/system/app/themes/notebook/bodybg.png');
 	background-position: top center;
 	background-size:100%;
+	backdrop-filter: grayscale(1);
 }
 nav ul:first-child {
 	display:none;
