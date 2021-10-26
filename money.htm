@@ -24,6 +24,46 @@ layout: default
   }
 </script>
 
+{% highlight javascript %}
+<div id="stripe">
+  <!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
+  $<input autocomplete="off" id="quantity" size="2" type="text" value="10" />
+  <button id="checkout-button" role="link"><i class="material-icons notranslate">payments</i> Pay</button><br />
+  <a href="https://www.google.com/search?q=usd+to+eur" id="rateLink" target="_blank">Current rate</a><br />
+
+<div id="error-message">
+</div>
+<script>
+              var stripe = Stripe(' /* public key here */ ');
+
+              var checkoutButton = document.getElementById('checkout-button');
+              checkoutButton.addEventListener('click', function () {
+               var quantity = parseInt(document.getElementById("quantity").value);
+                // When the customer clicks on the button, redirect
+                // them to Checkout.
+                stripe.redirectToCheckout({
+                  items: [{sku: ' /* item SKU here */ ', quantity: quantity}],
+                  // Do not rely on the redirect to the successUrl for fulfilling
+                  // purchases, customers may not always reach the success_url after
+                  // a successful payment.
+                  // Instead use one of the strategies described in
+                  // https://stripe.com/docs/payments/checkout/fulfillment
+                  successUrl: 'https://freealise.com/money.htm?msg=true',
+                  cancelUrl: 'https://freealise.com/money.htm?msg=false',
+                })
+                .then(function (result) {
+                  if (result.error) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer.
+                    var displayError = document.getElementById('error-message');
+                    displayError.textContent = result.error.message;
+                  }
+                });
+              });
+            </script>
+</div>
+{% endhighlight %}
+
 [stripe dashboard image (https://support.stripe.com/questions/how-to-accept-donations-through-stripe) / client code for custom quantity button]<br/>
 [can buy a link from the map or blog if has an approved online presence]
 
