@@ -65,8 +65,8 @@
           {% endif %}
       
         <div id="subscribe-bar">
-	  <form id="subscribe-form" onsubmit="event.preventDefault();subscribeEmail(this.firstChild.value, true);">
-	    <input autocomplete="email" id="email" name="email" placeholder="Email address" size="16" type="email"/>
+	  <form id="subscribe-form" onsubmit="event.preventDefault();subscribeEmail(document.getElementById('email').value, true);">
+	    <input autocomplete="email" id="email" name="email" placeholder="Email address" size="16" type="email" value="" />
 	    <button id="subscribe-button" type="submit"><i class="material-icons">mail_outline</i> Join</button>
 	  </form>
 	</div>
