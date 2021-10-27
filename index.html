@@ -315,7 +315,7 @@ function initMap() {
   var flickrLayer = new google.maps.KmlLayer({
     preserveViewport: true,
     suppressInfoWindows: true,
-    url: 'http://api.flickr.com/services/feeds/geo/?g=14657467@N21&lang=en-us&format=feed-georss&time='+t
+    url: 'https://api.flickr.com/services/feeds/geo/?g=14657467@N21&lang=en-us&format=kml&time='+t
   });
   flickrLayer.setMap(map);
   var listener = google.maps.event.addListener(flickrLayer, 'metadata_changed', function() {
