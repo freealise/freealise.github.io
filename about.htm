@@ -21,6 +21,7 @@ layout: default
 <div id="about" class="skiptranslate"> 
       <div id="timeline-embed"></div>
 </div>
+<script src="/assets/js/tl.js"></script>
 <script type="text/javascript">
       function loadTl() {
         var options = {
@@ -35,7 +36,6 @@ layout: default
         // and the element must have CSS styling to give it width and height
         // optionally, a third argument with configuration options can be passed.
         // See below for more about options.
-        /* {% include index.js %}
         timeline = new TL.Timeline('timeline-embed', json, options);
       }
       loadTl();
