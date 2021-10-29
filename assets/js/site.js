@@ -40,3 +40,7 @@ function sendEmail(token) {
 function highlightEmail() {
   document.getElementById('email').focus();
 }
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
+}
