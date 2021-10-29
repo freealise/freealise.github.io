@@ -18,9 +18,10 @@ layout: default
 
 <a id="t" href="/about/"><i class="material-icons notranslate">rtt</i></a>
 
-<div id="about" class="skiptranslate" onload="loadTl();"> 
+<div id="about" class="skiptranslate"> 
       <div id="timeline-embed"></div>
-      <script type="text/javascript">
+</div>
+<script type="text/javascript">
       function loadTl() {
         var options = {
           skinny_size: 480,
@@ -37,5 +38,5 @@ layout: default
         /* {% include index.js %}
         timeline = new TL.Timeline('timeline-embed', json, options);
       }
-      </script>
-</div>
+      loadTl();
+</script>
