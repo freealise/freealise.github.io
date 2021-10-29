@@ -37,6 +37,19 @@ function sendEmail(token) {
   }
 }
 
-	function highlightEmail() {
-	 document.getElementById('email').focus();
-	}
+function highlightEmail() {
+  document.getElementById('email').focus();
+}
+
+function showTranslate() {
+    var gte = document.getElementById('google_translate_element');
+    if (gte.style.display!='block') {
+	gte.style.display = 'block';
+    } else {
+    	gte.style.display = 'none';
+    }
+}
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
