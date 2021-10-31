@@ -5,7 +5,7 @@ function subscribeEmail(address, s) {
   }
   var at = address.indexOf('@');
   var dot = address.indexOf('.')+1;
-  if (at > 0 && dot > at && address.length > dot) {
+  if (at > 0 && dot > at && address.length > (dot+1)) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -25,7 +25,8 @@ function sendEmail(token) {
   var _message = document.getElementById("contact-form-email-message").value;
   var at = _email.indexOf('@');
   var dot = _email.indexOf('.')+1;
-  if (at > 0 && dot > at && _email.length > dot) {
+  var sdot = _site.indexOf('.')+1;
+  if (at > 0 && dot > at && _email.length > (dot+1) && sdot > 0 && _site.length > (sdot+1)) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
