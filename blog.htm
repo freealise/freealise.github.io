@@ -23,8 +23,8 @@ layout: default
   var p = document.location.href.split('?p=');
   if (p[1]) {
     p = p[1].split('#')[0];
-    document.getElementById('blog').src = url + p + view;
+    document.getElementById('blogger').src = url + p + view;
   } else {
-    document.getElementById('blog').src = url + view;
+    document.getElementById('blogger').src = url + view;
   }
 </script>
