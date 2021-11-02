@@ -1,16 +1,74 @@
 {
-    "type": "overview",
-    "location": {
-        "lat": 50.0598058,
-        "lon": 14.3255398
-    },
-    "text": {
-        "headline": "No events right now 💉🩹",
-        "text": "Expect author meetings or concerts within the EU in the coming years."
-    },
-    "media": {
-        "url": "",
-        "caption": "",
-        "credit": ""
+    "width": integer,                    // required for embed tool; width of StoryMap
+    "height": integer,                   // required for embed tool; height of StoryMap
+    "font_css": "",                  // optional; font set for UI controls/messages
+    "calculate_zoom": true,              // optional; defaults to true *unless* map_as_image is true.
+    "storymap": {
+        "language": "en",              // required; two-letter ISO language code
+        "map_type": "zoomify",           // required
+        "map_as_image": false,         // required; omit connecting lines between slide locations
+        "map_background_color": "", // optional; hexadecimal color value for map background
+        "zoomify": {
+            "path": "/assets/images/",              // required; URL path to zoomable image folder
+            "width": 256,            // required; maximum width of image
+            "height": 256,           // required; maximum height of image
+            "tolerance": decimal         // required; display tolerance
+        }
+        slides: [
+            {
+                "type": "overview",
+                "location": {
+                    "lat": 50.0598058,
+                    "lon": 14.3255398
+                },
+                "text": {
+                    "headline": "",
+                    "text": ""
+                },
+                "media": {
+                    "url": "",
+                    "caption": "",
+                    "credit": ""
+                }
+            },
+        ]               // required; array of slide objects (see below)
+    }
+}
+
+
+
+{
+    "storymap": {
+        "slides": [{
+            "type": "overview",
+            "date": "2021",
+            "text": {
+                "headline": "No events right now 💉🩹",
+                "text": "Expect author meetings or concerts within the EU in the coming years."
+            },
+            "media": {
+                    "url":              "",
+                    "credit":           "",
+                    "caption":          ""
+                }
+        }, {
+            "date": "2022",
+            "text": {
+                "headline": "Europe",
+                "text": "<span></span>"
+            },
+            "location": {
+                "name": "Prague, Czechia",
+                "lat": 50.0598058,
+                "lon": 14.3255398,
+                "zoom": 10,
+                "line": true
+            },
+            "media": {
+                    "url":              "",
+                    "credit":           "",
+                    "caption":          ""
+                }
+        }]
     }
 }
