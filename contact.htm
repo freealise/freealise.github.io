@@ -10,7 +10,7 @@ layout: default
     display: none;
     margin-left: 20px;
   }
-  #contact {
+  #form {
     text-align:center;
   }
   #contact-form input, #contact-form textarea {
@@ -28,7 +28,7 @@ layout: default
     padding: 4px;
   }
   @media only screen and (min-width: 513px) {
-    #contact {
+    #form {
       float: left;
       width:50%;
       margin-left:-10px;
@@ -40,7 +40,7 @@ layout: default
     }
   }
   @media only screen and (max-width: 512px) {
-    #contact {
+    #form {
       float: none;
       width:100%;
       margin-left:0;
@@ -54,7 +54,7 @@ layout: default
   #contact-form-sent {
     width: 100%;
   }
-  #contact .material-icons {
+  #form .material-icons {
     font-size:32px;
   }
   #follow .material-icons {
@@ -63,13 +63,13 @@ layout: default
   #pro .material-icons {
     font-size:12px;
   }
-  #contact a, #follow a, #pro a {
+  #form a, #follow a, #pro a {
     color: #000000;
     font-size: 12px;
     font-weight: bold;
     margin: 0 2px;
   }
-  #contact a img {
+  #form a img {
     margin-bottom:3px;
   }
   #location_iframe {
@@ -91,7 +91,7 @@ layout: default
 
 <h3>Contact</h3>
 
-<div id="contact">
+<div id="form">
   <form name="contact-form" id="contact-form">
     <input title="Name" placeholder="Name" class="contact-form-name" id="contact-form-name" name="name" size="25" type="text" value="" spellcheck="false" autocomplete="name"><br/>
     <input title="Email" placeholder="Email *" class="contact-form-email" id="contact-form-email" name="email" size="25" type="email" value="" spellcheck="false" autocomplete="email" required><br/>
