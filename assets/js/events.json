@@ -1,16 +1,16 @@
 {
-    "type": "overview",      // optional; if present must be set to "overview"
-    "location": {            // required for all slides except "overview" slide
-        "lat": 50.0598058,      // latitude of point on map
-        "lon": 14.3255398       // longitude of point on map
+    "type": "overview",
+    "location": {
+        "lat": 50.0598058,
+        "lon": 14.3255398
     },
-    "text": {                // optional if media present
+    "text": {
         "headline": "No events right now 💉🩹",
-        "text": "Expect author meetings or concerts within the EU in the coming years."       // may contain HTML markup
+        "text": "Expect author meetings or concerts within the EU in the coming years."
     },
-    "media": {           // optional if text present
-        "url": "",       // url for featured media
-        "caption": "",   // optional; brief explanation of media content
-        "credit": ""     // optional; creator of media content
+    "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
     }
 }
