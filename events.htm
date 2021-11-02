@@ -30,8 +30,15 @@ layout: default
 <script>
 // storymap_data can be an URL or a Javascript object
 var storymap_data = '/assets/js/events.json';
+var storymap_options = {
+  "language": "en",
+  "map_type": "osm:standard",
+  "map_as_image": false,
+  "call_to_action": false,
+  "call_to_action_text": "",
+};
 
-var storymap = new KLStoryMap.StoryMap('mapdiv', storymap_data);
+var storymap = new KLStoryMap.StoryMap('mapdiv', storymap_data, storymap_options);
 window.onresize = function(event) {
     storymap.updateDisplay(); // this isn't automatic
 }
