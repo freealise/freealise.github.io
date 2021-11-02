@@ -247,12 +247,8 @@ header svg {
 	background-size:100%;
 	backdrop-filter:grayscale(0.67);
 }
-nav ul li.tag-h1 {
-	display:none;
-}
-nav ul li.tag-h3 {
+nav ul li.active {
 	font-style:italic;
-	font-weight:bold;
 }
 pre {
 background-color: transparent;
