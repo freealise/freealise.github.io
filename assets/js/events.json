@@ -3,6 +3,8 @@
         "language": "en",
         "map_type": "osm:standard",
         "map_as_image": false,
+        "call_to_action": false,
+        "call_to_action_text": "",
         "slides": [{
             "type": "overview",
             "date": "2021",
