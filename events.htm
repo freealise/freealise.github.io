@@ -6,13 +6,34 @@ layout: default
   h3 {
     display:none;
   }
-  #storymap {
+  #mapdiv {
     float:none;
-    width:100%;
-    height:75vh;
+    width: 100%;
+    height: 320px;
   }
 </style>
 
 <h3>Events</h3>
 
-<iframe id="storymap" frameborder="0" height="320" width="100%" src="https://uploads.knightlab.com/storymapjs/9f6097e756afac76fefdda32744a3956/freealise/index.html"></iframe>
+<!-- The StoryMap container can go anywhere on the page. Be sure to
+    specify a width and height.  The width can be absolute (in pixels) or
+    relative (in percentage), but the height must be an absolute value.
+    Of course, you can specify width and height with CSS instead -->
+<div id="mapdiv"></div>
+
+<!-- Your script tags should be placed before the closing body tag. -->
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
+<script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
+
+<script>
+// storymap_data can be an URL or a Javascript object
+var storymap_data = '/assets/js/events.json';
+
+// certain settings must be passed within a separate options object
+var storymap_options = {};
+
+var storymap = new KLStoryMap.StoryMap('mapdiv', storymap_data, storymap_options);
+window.onresize = function(event) {
+    storymap.updateDisplay(); // this isn't automatic
+}
+</script>
