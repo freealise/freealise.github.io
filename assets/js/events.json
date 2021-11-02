@@ -1,5 +1,4 @@
 {
-    "font_css": "",
     "storymap": {
         "slides": [{
             "type": "overview",
@@ -9,7 +8,7 @@
                 "text": "Expect author meetings or concerts within the EU in the coming years."
             },
             "media": {
-                    "url":              "",
+                    "url":              "/assets/images/bullet.png",
                     "credit":           "",
                     "caption":          ""
                 }
@@ -27,7 +26,7 @@
                 "line": true
             },
             "media": {
-                    "url":              "",
+                    "url":              "/assets/images/bullet.png",
                     "credit":           "",
                     "caption":          ""
                 }
