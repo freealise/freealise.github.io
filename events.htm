@@ -24,10 +24,6 @@ layout: default
     Of course, you can specify width and height with CSS instead -->
 <div id="mapdiv"></div>
 
-<!-- Your script tags should be placed before the closing body tag. -->
-<link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
-<script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
-
 <script>
 // storymap_data can be an URL or a Javascript object
 var storymap_data = '/assets/js/events.json';
@@ -40,3 +36,7 @@ window.onresize = function(event) {
     storymap.updateDisplay(); // this isn't automatic
 }
 </script>
+
+<!-- Your script tags should be placed before the closing body tag. -->
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css"/>
+<script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
