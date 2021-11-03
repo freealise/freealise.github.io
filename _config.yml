@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Freealise
 email: me@freealise.com
-description: records
+description: publishing
 show_downloads: false
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://freealise.com" # the base hostname & protocol for your site, e.g. http://example.com
