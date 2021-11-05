@@ -1,3 +1,7 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 #header #views {
 width: 24px;
 padding: 5px 12px;
