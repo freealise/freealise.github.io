@@ -60,14 +60,14 @@ p {clear:both;}
 }
 #txt span {
   float: left;
-  max-width: 48px;
+  width: 48px;
   font-size: 12px;
   font-weight: bold;
   text-align: left;
 }
 #txt u {
   float: left;
-  max-width: 16px;
+  width: 16px;
 }
 acronym, abbr {
     cursor: help;
@@ -98,56 +98,55 @@ It is more important that the word containing them is a keyword, than the rhyme'
 </p>
 
 <p><i><a href="javascript:highlightEmail();" title="Subscribe"><b>Subscribe</b></a> to the newsletter for updates.</i></p>
-
-<p>
-  <u>💬 </u><span><a href="https://freealise.com/phonetic" target="_blank">Verse editor</a></span> 
-  <u>🎹 </u><span><a href="https://freealise.com/synth" target="_blank">Synth</a></span> 
-  <u>🪕 </u><span><abbr title="Easy to play fretless stick guitar is to be available for preorder">Guitar</abbr></span> 
-  <u>🎛 </u><span><a href="https://freealise.com/guitar/tab_tuning.htm" target="_blank">Tab retuner</a></span>
-</p>
-
 <!--<img alt="" border="0" data-original-height="144" data-original-width="2000" src="https://1.bp.blogspot.com/-FJSBDGFJHQ4/XsrSSjEkPgI/AAAAAAAABY4/cjaD7Iv_yLoXfjb8kMlK-D7T_3NT9KGkQCPcBGAYYCw/s0/ornament.jpg" style="height:12px;width:auto;"/>-->
 
 <div id="pay">
-<div id="stripe">
-<!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
-            $<input autocomplete="off" id="quantity" size="2" type="text" value="10" />
-  <button id="checkout-button" role="link"><i class="material-icons notranslate">payments</i> Sponsor</button><br/>
-  <a href="https://www.google.com/search?q=10+usd+to+eur" id="rateLink" target="_blank" onfocus="this.href=this.href.replace(/\d+/, document.getElementById('quantity').value);"><i class="material-icons notranslate">price_check</i> exchange rate</a>
-  <p>…and get high quality downloads of every new book to keep and share 
-    <img src="/assets/images/Piratpartiet.svg" width="12" height="12" alt="Pirate Party" title="Pirate Party"/>
-    <!--[official torrents with sponsor button]--></p>
+  <div id="stripe">
+  <!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
+              $<input autocomplete="off" id="quantity" size="2" type="text" value="10" />
+    <button id="checkout-button" role="link"><i class="material-icons notranslate">payments</i> Sponsor</button><br/>
+    <a href="https://www.google.com/search?q=10+usd+to+eur" id="rateLink" target="_blank" onfocus="this.href=this.href.replace(/\d+/, document.getElementById('quantity').value);"><i class="material-icons notranslate">price_check</i> exchange rate</a>
+    <p>…and get high quality downloads of every new book to keep and share 
+      <img src="/assets/images/Piratpartiet.svg" width="12" height="12" alt="Pirate Party" title="Pirate Party"/>
+      <!--[official torrents with sponsor button]--></p>
 
-<div id="error-message">
-</div>
-<script>
-              var stripe = Stripe('pk_test_up7XBxmt0W2fKgzk1SxfQymR');
+    <div id="error-message">
+    </div>
+    <script>
+                  var stripe = Stripe('pk_test_up7XBxmt0W2fKgzk1SxfQymR');
 
-              var checkoutButton = document.getElementById('checkout-button');
-              checkoutButton.addEventListener('click', function () {
-               var quantity = parseInt(document.getElementById("quantity").value);
-                // When the customer clicks on the button, redirect
-                // them to Checkout.
-                stripe.redirectToCheckout({
-                  items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}],
-      //items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}, {sku: 'sku_FQkGis4q0yD0Jb', quantity: quantity}],
-                  // Do not rely on the redirect to the successUrl for fulfilling
-                  // purchases, customers may not always reach the success_url after
-                  // a successful payment.
-                  // Instead use one of the strategies described in
-                  // https://stripe.com/docs/payments/checkout/fulfillment
-                  successUrl: 'https://freealise.com/money.htm?msg=true',
-                  cancelUrl: 'https://freealise.com/money.htm?msg=false',
-                })
-                .then(function (result) {
-                  if (result.error) {
-                    // If `redirectToCheckout` fails due to a browser or network
-                    // error, display the localized error message to your customer.
-                    var displayError = document.getElementById('error-message');
-                    displayError.textContent = result.error.message;
-                  }
-                });
-              });
-            </script>
+                  var checkoutButton = document.getElementById('checkout-button');
+                  checkoutButton.addEventListener('click', function () {
+                   var quantity = parseInt(document.getElementById("quantity").value);
+                    // When the customer clicks on the button, redirect
+                    // them to Checkout.
+                    stripe.redirectToCheckout({
+                      items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}],
+          //items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}, {sku: 'sku_FQkGis4q0yD0Jb', quantity: quantity}],
+                      // Do not rely on the redirect to the successUrl for fulfilling
+                      // purchases, customers may not always reach the success_url after
+                      // a successful payment.
+                      // Instead use one of the strategies described in
+                      // https://stripe.com/docs/payments/checkout/fulfillment
+                      successUrl: 'https://freealise.com/money.htm?msg=true',
+                      cancelUrl: 'https://freealise.com/money.htm?msg=false',
+                    })
+                    .then(function (result) {
+                      if (result.error) {
+                        // If `redirectToCheckout` fails due to a browser or network
+                        // error, display the localized error message to your customer.
+                        var displayError = document.getElementById('error-message');
+                        displayError.textContent = result.error.message;
+                      }
+                    });
+                  });
+    </script>
+  </div>
 </div>
-</div>
+
+<p>
+  <u>💬</u><span><a href="https://freealise.com/phonetic" target="_blank">Verse editor</a></span> 
+  <u>🎹</u><span><a href="https://freealise.com/synth" target="_blank">Synth</a></span> 
+  <u>🪕</u><span><abbr title="Easy to play fretless stick guitar is to be available for preorder">Guitar</abbr></span> 
+  <u>🎛</u><span><a href="https://freealise.com/guitar/tab_tuning.htm" target="_blank">Tab retuner</a></span>
+</p>
