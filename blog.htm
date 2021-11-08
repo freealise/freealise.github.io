@@ -19,12 +19,12 @@ layout: default
 
 <script>
   var view = '?view=flipcard&m=0';
-  var url = 'https://blog.freealise.com/p/index.html';
+  var url = 'https://blog.freealise.com';
   var p = document.location.href.split('?p=');
   if (p[1]) {
     p = p[1].split('#')[0];
     document.getElementById('blogger').src = url + p + view;
   } else {
-    document.getElementById('blogger').src = url + view;
+    document.getElementById('blogger').src = url + "/p/index.html" + view;
   }
 </script>
