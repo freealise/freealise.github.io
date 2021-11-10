@@ -10,7 +10,7 @@ var json = {
     },
     "text": {
       "headline": "Notes",
-      "text": "<p>This blog is for musical and voice notation, which is more like MIDI sequencing than the usual score sheets, and doesn't require special literacy. It's actually simplified audio spectrograms.</p>"
+      "text": "<p>This blog is for intuitive musical and voice notation, which is more like MIDI sequencing than the usual score sheets, and doesn't require special literacy. It's actually simplified audio spectrograms.</p>"
     }
   },
   "events": [
