@@ -9,8 +9,8 @@ var json = {
       "credit": ""
     },
     "text": {
-      "headline": "Latest updates",
-      "text": "<p>timeline</p>"
+      "headline": "Notes",
+      "text": "<p>This blog is for musical notation, which is more like MIDI sequencing than the usual score sheets, and doesn't require special literacy. It's actually simplified audio spectrograms.</p>"
     }
   },
   "events": [
