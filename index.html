@@ -44,7 +44,7 @@ section .material-icons {font-size: 16px;}
 #checkout-button .material-icons {font-size: 14px;}
 p {clear:both;}
 #txt {line-height: 1.5em; font-size:14px; width:256px; margin:0; position: absolute; top: 0px; left: 50%; margin-left: -128px; margin-top: 64px; padding: 0; padding-top: 1em; text-align: center;}
-#txt .material-icons {margin-bottom:-4px;}
+#txt .material-icons {top:4px; position:relative;}
 #map-canvas {
   height: 512px;
   width: 100%;
@@ -60,8 +60,10 @@ p {clear:both;}
   position: absolute;
   top: 640px;
 }
-acronym, abbr {
+abbr[title] {
     cursor: help;
+    text-decoration: underline dotted;
+    border-bottom: auto;
 }
 </style>
 
