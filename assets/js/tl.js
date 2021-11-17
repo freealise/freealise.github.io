@@ -17,9 +17,9 @@ var json = {
       {% for post in site.posts %}
       {
         "media": {
-          "url": "{{ post.url }}",
-          "caption": "{{ post.title }}",
-          "credit": "{{ post.author }}"
+          "url": "{{ post.link }}",
+          "caption": "{{ post.caption }}",
+          "credit": "{{ post.credit }}"
         },
         "start_date": {
           "month": "{{ post.date | date: "%-m" }}",
