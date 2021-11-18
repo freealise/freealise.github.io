@@ -10,7 +10,7 @@ var json = {
     },
     "text": {
       "headline": "Story",
-      "text": "As a teenager I had made attempts to compose songs, focusing on the text and trying to make sense of it - only to end up translating. Since then I've been taking a lot of notes, although mostly about music apps and what you would now call artificial intelligence."
+      "text": "Since early age I've been learning English without much conscious effort thanks to rhyming verses in the books and songs. Later I've been taking a lot of notes, although mostly about music apps and what you would now call artificial intelligence."
     }
   },
   "events": [
