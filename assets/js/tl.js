@@ -8,7 +8,7 @@ var json = {
     },
     "text": {
       "headline": "Story",
-      "text": "The origin timeline of this enterprise - including historical events that led to, influenced or are relevant to its foundation."
+      "text": "The origin timeline of this enterprise, along with historical events that had been an influence or led to its foundation."
     }
   },
   "events": [
