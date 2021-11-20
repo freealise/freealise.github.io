@@ -3,14 +3,12 @@
 
 var json = {
   "title": {
-    "media": {
-      "url": "/assets/images/portrait150dpi.png",
-      "caption": "Portrait of a Young Lady",
-      "credit": "G.-C.-J.Zapf, 1843"
+    "background": {
+      "url": "/assets/images/constable.png"
     },
     "text": {
       "headline": "Story",
-      "text": "… of the business including the historical events that influenced or led to its foundation."
+      "text": "Origin timeline of this enterprise, including the historical events that influenced or led to its foundation."
     }
   },
   "events": [
