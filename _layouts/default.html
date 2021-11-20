@@ -102,11 +102,11 @@
           <a rel="nofollow noreferrer" title="Email" href="mailto:%40.?subject={{ page.title }}&body={{ page.tags }}%0A{{ site.url }}{{ page.url }}" target="_blank"><i class="material-icons notranslate">contact_mail</i></a>
         </p>
         {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.repository_url }}">{{ site.github.owner_name }}</a></p>
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
 	<p>
 	  <a href="{{ site.github.owner_url }}" target="_blank"><span id="logo_"></span></a><br/>
-          <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/pages-themes/leap-day" target="_blank">pages-themes</a></small>
+          <small>Hosted on <a href="{{ site.github.repository_url }}" target="_blank">GitHub Pages</a> &mdash; Theme by <a href="https://github.com/pages-themes/leap-day" target="_blank">pages-themes</a></small>
 	</p>
       </footer>
     </div>
