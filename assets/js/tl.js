@@ -10,7 +10,7 @@ var json = {
     },
     "text": {
       "headline": "Story",
-      "text": "Since early age I've been learning English without much conscious effort thanks to rhyming verses in the books and songs. Later I've been taking a lot of notes, although mostly about music apps and what you would now call artificial intelligence."
+      "text": "… of the business including the historical events that influenced or led to its foundation."
     }
   },
   "events": [
