@@ -116,8 +116,12 @@ header svg {
 #banner .fork {
     padding: 0px;
     margin-top: 10px;
-    margin-left: 6px;
     background-color: transparent;
+}
+@media print, screen and (max-width: 720px) {
+	#banner .fork {	
+    	left:6px;
+	}
 }
 #banner a {
 	float:right;
