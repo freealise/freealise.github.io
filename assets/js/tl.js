@@ -8,7 +8,7 @@ var json = {
     },
     "text": {
       "headline": "Story",
-      "text": "The timeline of this enterprise, along with external events that had been an influence, and current software updates."
+      "text": "The timeline of this enterprise, along with external events that had made an impact, and current software updates."
     }
   },
   "events": [
