@@ -48,12 +48,12 @@ layout: default
 
         dataTable.addColumn({ type: 'string', id: 'Number' });
         dataTable.addColumn({ type: 'string', id: 'Song' });
-        dataTable.addColumn({ type: 'timeofday', id: 'Start' });
-        dataTable.addColumn({ type: 'timeofday', id: 'End' });
+        dataTable.addColumn({ type: 'datetime', id: 'Start' });
+        dataTable.addColumn({ type: 'datetime', id: 'End' });
         dataTable.addRows([
-          [ '1', 'Nightingale', [0, 0, 0], [0, 0, 45] ],
-          [ '2', 'Skylark', [0, 0, 45],  [0, 1, 45] ],
-          [ '3', 'Parrot', [0, 1, 45],  [0, 3, 0] ]
+          [ '1', 'Nightingale', new Date(0), new Date(45000) ],
+          [ '2', 'Skylark', new Date(45000),  new Date(60000) ],
+          [ '3', 'Parrot', new Date(60000),  new Date(120000) ]
         ]);
    
         function selectHandler() {
