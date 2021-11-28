@@ -55,7 +55,6 @@ layout: default
     <script src='https://www.gstatic.com/charts/loader.js' type='text/javascript'></script>
     <script type="text/javascript">
       var pb = document.getElementById('pb');
-      var playlist = document.getElementById('playlist');
       var _t;
       function startPlayback() {
         audio.play();
@@ -71,6 +70,9 @@ layout: default
         pb.innerText = 'play_arrow';
         clearInterval(_t);
       }
+      
+      var playlist = document.getElementById('playlist');
+      playlist.style.height = '0px';
       function showPlaylist() {
         if (playlist.style.height != '0px') {
           playlist.style.height = '0px';
