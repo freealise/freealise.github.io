@@ -7,7 +7,7 @@ font-weight: bold;
 font-size: 20px;
 }
 #header .header-bar .title h1 {
-display:none;
+font-size: 20px;
 }
 #header .header-bar .title {
 cursor: pointer;
