@@ -12,8 +12,10 @@ layout: default
     border: 0;
   }
   #progress {
-    height: 32px;
+    font-size: 16px;
+    height: 1em;
     width: 0;
+    overflow: visible;
     background-color: #cccccc;
   }
   #playlist {
@@ -29,15 +31,17 @@ layout: default
   <embed src="https://freealise.com/assets/mp3/album.mp3" type="audio/mpeg" height="32" width="256"></embed>
 </audio>
 
-    <a id="play" href="javascript:startPlayback();">|></a>
-    <a id="stop" href="javascript:stopPlayback();">[]</a>
-    <div id="progress"></div>
+    <div id="progress">
+      <a href="javascript:if(pb.innerText!='pause'){startPlayback();}else{stopPlayback();}"><i id="pb" class="material-icons notranslate">play_arrow</i></a>
+    </div>
     <div id="playlist"></div>
     <script src='https://www.gstatic.com/charts/loader.js' type='text/javascript'></script>
     <script type="text/javascript">
+      var pb = document.getElementById('pb');
       var _t;
       function startPlayback() {
         audio.play();
+        pb.innerText = 'pause';
         _t = setInterval(function(){
           var c = parseInt(document.getElementById('audio').currentTime);
           var d = parseInt(document.getElementById('audio').duration);
@@ -46,6 +50,7 @@ layout: default
       }
       function stopPlayback() {
         audio.pause();
+        pb.innerText = 'play_arrow';
         clearInterval(_t);
       }
       
