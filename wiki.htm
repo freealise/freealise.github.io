@@ -60,8 +60,8 @@ layout: default
           if (selectedItem) {
             var _start = dataTable.getValue(selectedItem.row, 2);
             var _end = dataTable.getValue(selectedItem.row, 3);
-            soundcite.dataset.start = _start.setFullYear(1970).getTime();
-            soundcite.dataset.end = _end.setFullYear(1970).getTime();
+            soundcite.dataset.start = _start.setYear(71).getTime();
+            soundcite.dataset.end = _end.setYear(71).getTime();
           }
         }
 
