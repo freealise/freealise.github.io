@@ -36,6 +36,7 @@ layout: default
       google.charts.load('current', {'packages':['timeline']});
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
+        var soundcite = document.getElementById('soundcite');
         var container = document.getElementById('playlist');
         var chart = new google.visualization.Timeline(container);
         var dataTable = new google.visualization.DataTable();
@@ -57,8 +58,9 @@ layout: default
         function selectHandler() {
           var selectedItem = chart.getSelection()[0];
           if (selectedItem) {
-            var song = dataTable.getValue(selectedItem.row, 2);
-            alert(song);
+            soundcite.dataStart = dataTable.getValue(selectedItem.row, 2).getTime();
+            soundcite.dataEnd = dataTable.getValue(selectedItem.row, 3).getTime();
+            soundcite.click();
           }
         }
 
