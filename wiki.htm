@@ -57,7 +57,8 @@ layout: default
         function selectHandler() {
           var selectedItem = chart.getSelection()[0];
           if (selectedItem) {
-            alert(JSON.stringify(selectedItem));
+            var song = dataTable.getValue(selectedItem.row, 2);
+            alert(song);
           }
         }
 
