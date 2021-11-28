@@ -58,8 +58,10 @@ layout: default
         function selectHandler() {
           var selectedItem = chart.getSelection()[0];
           if (selectedItem) {
-            soundcite.dataset.start = dataTable.getValue(selectedItem.row, 2).setFullYear(1970).getTime();
-            soundcite.dataset.end = dataTable.getValue(selectedItem.row, 3).setFullYear(1970).getTime();
+            var _start = dataTable.getValue(selectedItem.row, 2);
+            var _end = dataTable.getValue(selectedItem.row, 3);
+            soundcite.dataset.start = _start.setFullYear(1970).getTime();
+            soundcite.dataset.end = _end.setFullYear(1970).getTime();
           }
         }
 
