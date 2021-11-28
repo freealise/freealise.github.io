@@ -18,8 +18,7 @@ layout: default
   }
   #playlist {
     width: 100%;
-    height: 160px;
-    overflow: hidden;
+    height: 180px;
   }
 </style>
 
@@ -42,8 +41,9 @@ layout: default
         var dataTable = new google.visualization.DataTable();
         
         var options = {
-          barLabelStyle: { fontName: 'Garamond', fontSize: 14 },
-          timeline: { showRowLabels: false, singleColor: '#999999' }
+          barLabelStyle: { fontName: 'Georgia', fontSize: 14 },
+          timeline: { showRowLabels: false, singleColor: '#dddddd' },
+          hAxis: { format:'#:##'}
         };
 
         dataTable.addColumn({ type: 'string', id: 'Number' });
