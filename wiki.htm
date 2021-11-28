@@ -36,9 +36,14 @@ layout: default
     <script src='https://www.gstatic.com/charts/loader.js' type='text/javascript'></script>
     <script type="text/javascript">
       var audio = document.getElementById('audio');
-      var _t;
+      var progress = document.getElementById('progress');
+      var dr = parseInt(audio.duration);
+      var _t, ct;
       function startPlayback() {
-        _t = setInterval(function(){ document.getElementById("progress").style.width = document.getElementById("audio").currentTime + "px"; }, 1000);
+        _t = setInterval(function(){
+          ct = parseInt(audio.currentTime);
+          progress.style.width = 100 * ct / dr + "%"; 
+        }, 1000);
       }
       function stopPlayback() {
         clearInterval(_t);
@@ -70,6 +75,8 @@ layout: default
           var selectedItem = chart.getSelection()[0];
           if (selectedItem) {
             audio.currentTime = dataTable.getValue(selectedItem.row, 2).getTime();
+            audio.play();
+            startPlayback();
           }
         }
 
