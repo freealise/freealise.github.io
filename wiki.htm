@@ -58,9 +58,9 @@ layout: default
         function selectHandler() {
           var selectedItem = chart.getSelection()[0];
           if (selectedItem) {
-            soundcite.dataStart = dataTable.getValue(selectedItem.row, 2).getTime();
-            soundcite.dataEnd = dataTable.getValue(selectedItem.row, 3).getTime();
-            soundcite.click();
+            soundcite.dataset.start = dataTable.getValue(selectedItem.row, 2).getTime();
+            soundcite.dataset.end = dataTable.getValue(selectedItem.row, 3).getTime();
+            soundcite.dblclick();
           }
         }
 
