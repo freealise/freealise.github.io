@@ -75,7 +75,7 @@ layout: default
         function selectHandler() {
           var selectedItem = chart.getSelection()[0];
           if (selectedItem) {
-            audio.currentTime = dataTable.getValue(selectedItem.row, 2).getTime();
+            audio.currentTime = dataTable.getValue(selectedItem.row, 2).getTime() / 1000;
             startPlayback();
           }
         }
