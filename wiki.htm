@@ -72,10 +72,10 @@ layout: default
         clearInterval(_t);
       }
       function showPlaylist() {
-        if (playlist.style.height == '0px') {
-          playlist.style.height = '180px';
-        } else {
+        if (playlist.style.height != '0px') {
           playlist.style.height = '0px';
+        } else {
+          playlist.style.height = '180px';
         }
       }
       
