@@ -90,15 +90,17 @@ layout: default
           timeline: { barLabelStyle: { fontName: 'Averia Serif Libre', fontSize: 12 }, showRowLabels: false, singleColor: '#cccccc' },
           hAxis: { format: ' ' }
         };
+        var min = 60000;
+        var sec = 1000;
 
         dataTable.addColumn({ type: 'string', id: 'Number' });
         dataTable.addColumn({ type: 'string', id: 'Song' });
         dataTable.addColumn({ type: 'datetime', id: 'Start' });
         dataTable.addColumn({ type: 'datetime', id: 'End' });
         dataTable.addRows([
-          [ '1', 'Nightingale', new Date(0), new Date(45000) ],
-          [ '2', 'Skylark', new Date(45000),  new Date(60000) ],
-          [ '3', 'Parrot', new Date(60000),  new Date(120000) ]
+          [ '1', 'Nightingale', new Date(0), new Date(1*min+39*sec) ],
+          [ '2', 'Skylark', new Date(1*min+39*sec),  new Date(2*min+59*sec) ],
+          [ '3', 'Parrot', new Date(2*min+59*sec),  new Date(3*min+59*sec) ]
         ]);
    
         function selectHandler() {
