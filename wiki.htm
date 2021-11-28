@@ -57,8 +57,7 @@ layout: default
         function selectHandler() {
           var selectedItem = chart.getSelection()[0];
           if (selectedItem) {
-            var song = data.getValue(selectedItem.row, 0);
-            alert('The user selected ' + song);
+            alert(JSON.stringify(selectedItem));
           }
         }
 
