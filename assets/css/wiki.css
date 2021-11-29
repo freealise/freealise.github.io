@@ -1,8 +1,8 @@
-#header #library {
+#header #dock, #header #library {
 width: 24px;
 padding: 5px 12px;
 float: right;
-color: white;
+color: darkgray;
 font-weight: bold;
 font-size: 20px;
 }
