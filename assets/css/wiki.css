@@ -1,4 +1,5 @@
-#header #dock, #header #library {
+#gadget-dock {position: fixed !important; right: 0px !important;}
+#header #library {
 width: 24px;
 padding: 5px 12px;
 float: right;
