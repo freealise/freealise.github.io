@@ -16,7 +16,6 @@ layout: default
     width: 100%;
     clear: both;
     height: 1.5em;
-    overflow: hidden;
   }
   #progress {
     font-size: 16px;
@@ -37,6 +36,8 @@ layout: default
   #playlist {
     width: 100%;
     clear: both;
+    position: absolute;
+    display: none;
   }
 </style>
 
@@ -75,13 +76,13 @@ layout: default
         clearInterval(_t);
       }
       
-      var bar = document.getElementById('bar');
-      bar.style.height = '1.5em';
+      var playlist = document.getElementById('playlist');
+      playlist.style.display = 'none';
       function showPlaylist() {
-        if (bar.style.height != '1.5em') {
-          bar.style.height = '1.5em';
+        if (playlist.style.display != 'none') {
+          playlist.style.display = 'none';
         } else {
-          bar.style.height = '256px';
+          playlist.style.display = 'block';
         }
       }
       
