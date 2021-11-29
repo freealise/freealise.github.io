@@ -1,5 +1,5 @@
-#gadget-dock {position: fixed !important; right: 0px !important;}
-#header #library {
+#gadget-dock {position: fixed !important; right: 0px !important; display: none;}
+#header #nav, #header #library {
 width: 24px;
 padding: 5px 12px;
 float: right;
