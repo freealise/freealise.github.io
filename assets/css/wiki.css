@@ -1,4 +1,8 @@
-#gadget-dock {position: fixed !important; right: 0px !important; display: none;}
+#gadget-dock {
+position: fixed !important;
+right: 0px !important;
+display: none;
+}
 #header #nav {
 width: 24px;
 padding: 5px 12px;
@@ -8,7 +12,7 @@ font-weight: bold;
 font-size: 20px;
 }
 #header .header-bar .title h1 {
-font-size: 20px;
+display: none;
 }
 #header .header-bar .title {
 cursor: pointer;
