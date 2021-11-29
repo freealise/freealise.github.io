@@ -31,7 +31,7 @@ layout: default
   #pl {
     float: right;
     height: 1.5em;
-    margin-top: -1.5em;
+    margin-bottom: -1.5em;
     margin-right: 12px;
   }
   #playlist {
@@ -49,6 +49,7 @@ layout: default
   <embed src="https://freealise.com/assets/mp3/album.mp3" type="audio/mpeg" height="32" width="256"></embed>
 </audio>
 
+    <a id="pl" href="javascript:showPlaylist();" title="Show playlist"><i class="material-icons notranslate">queue_music</i></a>
     <div id="bar">
       <div id="progress">
         <a href="javascript:if(pb.innerText!='pause'){startPlayback();}else{stopPlayback();}" title="Play | Pause">
@@ -57,7 +58,6 @@ layout: default
       </div>
       <div id="playlist"></div>
     </div>
-    <a id="pl" href="javascript:showPlaylist();" title="Show playlist"><i class="material-icons notranslate">queue_music</i></a>
     <script src='https://www.gstatic.com/charts/loader.js' type='text/javascript'></script>
     <script type="text/javascript">
       var pb = document.getElementById('pb');
@@ -78,6 +78,7 @@ layout: default
       }
       
       var bar = document.getElementById('bar');
+      bar.style.height = '1.5em';
       function showPlaylist() {
         if (bar.style.height != '1.5em') {
           bar.style.height = '1.5em';
