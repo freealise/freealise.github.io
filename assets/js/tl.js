@@ -4,11 +4,11 @@
 var json = {
   "title": {
     "background": {
-      "url": "/assets/images/constable.png"
+      "url": ""
     },
     "text": {
-      "headline": "Story",
-      "text": "The timeline of this enterprise, along with external events that had made an impact, and current software updates."
+      "headline": "Songs",
+      "text": "Playlist of all records with lyrics and videos, set on the timeline."
     }
   },
   "events": [
