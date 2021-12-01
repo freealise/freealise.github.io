@@ -109,7 +109,7 @@ layout: default
         var audio = document.getElementById('audio');
         google.charts.load('current', {'packages':['timeline']});
         google.charts.setOnLoadCallback(drawChart);
-        document.body.onresize = drawChart();
+        window.onresize = drawChart;
         function drawChart() {
           var chart = new google.visualization.Timeline(playlist);
           var dataTable = new google.visualization.DataTable();
