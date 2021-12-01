@@ -8,7 +8,7 @@ var json = {
     },
     "text": {
       "headline": "Songs",
-      "text": "Playlist of all records with lyrics and videos, set on the timeline."
+      "text": "Playlist of all records with lyrics and videos released to date, set on the timeline."
     }
   },
   "events": [
