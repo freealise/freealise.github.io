@@ -18,7 +18,7 @@
 /*	Font Base
 ----------------------------------------------------- */
 .tl-timeline {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3em;
@@ -29,28 +29,28 @@
 .tl-timeline h4,
 .tl-timeline h5,
 .tl-timeline h6 {
-  font-family: 'Averia Serif Libre', serif !important;
+  font-family: 'Averia Sans Libre', sans-serif !important;
   text-transform: none !important;
   font-weight: 700;
-  font-size: 24px !important;
-  line-height: 24px !important;
+  font-size: 16px !important;
+  line-height: 16px !important;
 }
 .tl-timeline h2.tl-headline-title {
   font-size: 32px !important;
   line-height: 32px !important;
 }
 .tl-timeline p {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
   font-size: 16px;
   line-height: 1.3em;
 }
 .tl-timeline ul {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
 }
 .tl-timeline .tl-media .tl-media-wikipedia h4 a,
 .tl-timeline .tl-media h4,
 .tl-timeline .tl-media h4 a {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
   font-weight: 700;
   font-size: 24px !important;
   line-height: 24px !important;
@@ -60,14 +60,14 @@
   font-family: 'Averia Sans Libre', sans-serif !important;
 }
 .tl-timeline .vcard {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
   font-weight: normal !important;
 }
 .tl-timeline .tl-slidenav-next,
 .tl-timeline .tl-slidenav-previous,
 .tl-timeline .tl-message,
 .tl-timeline .tl-timegroup-message {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
   font-weight: 700;
   text-transform: none !important;
 }
@@ -88,31 +88,31 @@
   font-weight: normal !important;
 }
 .tl-timeline .tl-timenav-slider {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
   font-weight: 700;
 }
 .tl-timeline .tl-timenav-slider h2.tl-headline {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
   font-weight: 700;
   text-transform: none !important;
 }
 .tl-timeline .tl-timenav-slider .tl-timeaxis {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
   font-weight: 700;
   text-transform: none !important;
 }
 .tl-timeline .tl-menubar {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
 }
 .tl-timeline blockquote,
 .tl-timeline blockquote p {
-  font-family: 'Averia Sans Libre', sans-serif !important;
+  font-family: 'Averia Serif Libre', serif !important;
   font-style: italic;
   font-weight: 400;
   line-height: 1.3;
 }
 input[type="text"].editor-headline {
-  font-family: 'Averia Serif Libre', serif !important;
+  font-family: 'Averia Sans Libre', sans-serif !important;
   text-transform: none !important;
   font-weight: 700;
   font-size: 24px !important;
