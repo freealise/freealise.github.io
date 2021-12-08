@@ -34,10 +34,11 @@
   font-weight: 700;
   font-size: 16px !important;
   line-height: 16px !important;
+  font-style: italic;
 }
 .tl-timeline h2.tl-headline-title {
-  font-size: 32px !important;
-  line-height: 32px !important;
+  font-size: 24px !important;
+  line-height: 24px !important;
 }
 .tl-timeline p {
   font-family: 'Averia Serif Libre', serif !important;
@@ -58,6 +59,7 @@
 .tl-timeline .tl-caption,
 .tl-timeline .tl-credit {
   font-family: 'Averia Sans Libre', sans-serif !important;
+  font-style: italic;
 }
 .tl-timeline .vcard {
   font-family: 'Averia Serif Libre', serif !important;
@@ -82,6 +84,7 @@
   font-family: 'Averia Sans Libre', sans-serif !important;
   font-weight: normal !important;
   text-transform: none !important;
+  font-style: italic;
 }
 .tl-timeline .tl-headline-date small,
 .tl-timeline h3.tl-headline-date small {
@@ -92,9 +95,10 @@
   font-weight: 700;
 }
 .tl-timeline .tl-timenav-slider h2.tl-headline {
-  font-family: 'Averia Serif Libre', serif !important;
+  font-family: 'Averia Sans Libre', sans-serif !important;
   font-weight: 700;
   text-transform: none !important;
+  font-style: italic;
 }
 .tl-timeline .tl-timenav-slider .tl-timeaxis {
   font-family: 'Averia Serif Libre', serif !important;
@@ -117,6 +121,7 @@ input[type="text"].editor-headline {
   font-weight: 700;
   font-size: 24px !important;
   line-height: 24px !important;
+  font-style: italic;
 }
 
 
