@@ -25,6 +25,7 @@ layout: default
     Of course, you can specify width and height with CSS instead -->
 <div id="mapdiv"></div>
 
+<link rel="stylesheet" href="/assets/css/fonts.css"/>
 <link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css"/>
 <script type="text/javascript" src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
 
@@ -37,7 +38,6 @@ var storymap_options = {
   "map_as_image": false,
   "call_to_action": false,
   "call_to_action_text": "",
-  "font_css": "/assets/css/fonts.css",
 };
 
 var storymap = new KLStoryMap.StoryMap('mapdiv', storymap_data, storymap_options);
