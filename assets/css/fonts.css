@@ -1,4 +1,3 @@
-/*@import url(http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:700|PT+Serif:400,400italic);*/
 
 .vco-storymap {
 font-family:'Averia Serif Libre',serif;
@@ -10,12 +9,13 @@ line-height:1.3em
 font-family:'Averia Sans Libre',sans-serif;
 text-transform:none;
 font-weight:700;
-font-size:46px;
-line-height:46px
+font-size:24px;
+line-height:24px;
+font-style:italic;
 }
 .vco-storymap h2.vco-headline-title {
-font-size:58px;
-line-height:58px
+font-size:32px;
+line-height:32px;
 }
 .vco-storymap p {
 font-family:'Averia Serif Libre',serif;
@@ -36,12 +36,14 @@ font-family:'Averia Serif Libre',serif
 }
 .vco-storymap .vcard {
 font-family:'Averia Sans Libre',sans-serif!important;
-font-weight:400!important
+font-weight:400!important;
+font-style:italic;
 }
 .vco-storymap .vco-slidenav-next,.vco-storymap .vco-slidenav-previous,.vco-storymap .vco-message,.vco-storymap .vco-slide-calltoaction-button-text {
 font-family:'Averia Sans Libre',sans-serif;
 font-weight:700;
-text-transform:none
+text-transform:none;
+font-style:italic;
 }
 .vco-storymap .vco-slidenav-next .vco-slidenav-title,.vco-storymap .vco-slidenav-previous .vco-slidenav-title,.vco-storymap .vco-message .vco-slidenav-title,.vco-storymap .vco-slide-calltoaction-button-text .vco-slidenav-title {
 line-height:1.3em!important
@@ -49,14 +51,16 @@ line-height:1.3em!important
 .vco-storymap .vco-headline-date,.vco-storymap h3.vco-headline-date {
 font-family:'Averia Sans Libre',sans-serif!important;
 font-weight:400!important;
-text-transform:uppercase!important
+text-transform:none!important;
+font-style:italic;
 }
 .vco-storymap .vco-headline-date small,.vco-storymap h3.vco-headline-date small {
 font-weight:400!important
 }
 .vco-storymap .vco-menubar {
 font-family:'Averia Sans Libre',sans-serif;
-text-transform:none
+text-transform:none;
+font-style:italic;
 }
 .vco-storymap blockquote,.vco-storymap blockquote p {
 font-family:'Averia Serif Libre',serif;
@@ -66,8 +70,9 @@ line-height:1.3
 }
 input[type=text].editor-headline {
 font-family:'Averia Sans Libre',sans-serif;
-text-transform:uppercase;
+text-transform:none;
 font-weight:700;
-font-size:46px;
-line-height:46px
+font-size:24px;
+line-height:24px;
+font-style:italic;
 }
