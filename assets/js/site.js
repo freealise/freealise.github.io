@@ -42,6 +42,15 @@ function highlightEmail() {
   document.getElementById('email').focus();
 }
 
+function showMsg() {
+  var msg = document.getElementById('msg');
+  if (!msg.style.bottom || msg.style.bottom != '0') {
+    msg.style.bottom = '0';
+  } else {
+    msg.style.bottom = '-144px';
+  }
+}
+
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
 }
