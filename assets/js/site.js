@@ -44,8 +44,8 @@ function highlightEmail() {
 
 function showMsg() {
   var msg = document.getElementById('msg');
-  if (!msg.style.bottom || msg.style.bottom != '0') {
-    msg.style.bottom = '0';
+  if (!msg.style.bottom || msg.style.bottom == '-144px') {
+    msg.style.bottom = '0px';
   } else {
     msg.style.bottom = '-144px';
   }
