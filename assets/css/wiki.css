@@ -1,3 +1,6 @@
+body, input, textarea {
+font-size: 16px !important;
+}
 #gadget-dock {
 position: fixed !important;
 right: 0px !important;
@@ -36,6 +39,7 @@ padding: 0px;
 }
 .gadget-container .gadget-title {
 font-weight: bold;
+font-size: 16px;
 }
 .gadget {
 font-style: italic;
