@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Nothing here at the time"
-link: https://en.m.wikipedia.org/wiki/List_of_music_styles
+link: https://en.wikipedia.org/wiki/List_of_music_styles
 caption: ""
 credit: ""
 date: 2021-12-31 00:00:00 +0300
