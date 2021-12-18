@@ -3,7 +3,7 @@ layout: default
 title: "No records at the time…"
 link: https://en.wikipedia.org/wiki/List_of_music_styles
 caption: ""
-credit: "<a href='https://en.wikipedia.org/wiki/List_of_music_styles' target='_blank'><i class='material-icons notranslate'>format_list_numbered</i><i class='material-icons notranslate'>double_arrow</i></a>"
+credit: "<a href='https://en.wikipedia.org/wiki/List_of_music_styles' target='_blank'><i class='material-icons notranslate'>double_arrow</i></a>"
 date: 2021-12-01 00:00:00 +0300
 categories: jekyll update
 tags: new post
