@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Nothing here at the time"
+title: "No records at the time"
 link: https://en.wikipedia.org/wiki/List_of_music_styles
-caption: ""
+caption: "<a href='https://en.wikipedia.org/wiki/List_of_music_styles' target='_blank'>Read more…</a>"
 credit: ""
 date: 2021-12-01 00:00:00 +0300
 categories: jekyll update
