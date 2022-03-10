@@ -5,29 +5,29 @@
             "type": "overview",
             "date": "2021",
             "text": {
-                "headline": "No events right now",
-                "text": "Expect them to happen within the EU in the coming years."
+                "headline": "No participants right now",
+                "text": ""
             },
             "media": {
-                    "url":              "/assets/images/bullet.png",
+                    "url":              "",
                     "credit":           "",
                     "caption":          ""
                 }
         }, {
             "date": "2022",
             "text": {
-                "headline": "Europe",
-                "text": "<span></span>"
+                "headline": "",
+                "text": ""
             },
             "location": {
                 "name": "Prague, Czechia",
-                "lat": 50.0866075,
-                "lon": 14.4191084,
-                "zoom": 4,
+                "lat": 50.0598058,
+                "lon": 14.3255398,
+                "zoom": 10,
                 "line": true
             },
             "media": {
-                    "url":              "/assets/images/bullet.png",
+                    "url":              "",
                     "credit":           "",
                     "caption":          ""
                 }
