@@ -125,14 +125,12 @@ header svg {
 }
 #banner a {
 	float:right;
-	width:48px;
-	height:48px;
+	width:36px;
+	height:36px;
+	margin:6px;
 	line-height:1em;
 	color:darkmagenta;
-}
-#banner a .material-icons, #banner a svg {
 	font-size:36px;
-	margin:6px;
 }
 #msg {
 	position:fixed;
