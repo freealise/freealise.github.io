@@ -55,9 +55,8 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
 }
 
-function toggleMedium(l) {
+function scrollMedium(l) {
   var i=0;
-  var mdm = document.getElementById("mdm");
   mdm.style.overflow = "hidden";
   intv = setInterval(function(){
     if (i < 1) {
@@ -72,6 +71,13 @@ function toggleMedium(l) {
 
 function showMedium() {
   clearInterval(intv);
-  var mdm = document.getElementById("mdm");
   mdm.style.overflow = "visible";
+}
+
+function toggleMedium() {
+  if (mdm.style.overflow != "visible") {
+    showMedium();
+  } else {
+    scrollMedium(2);
+  }
 }
