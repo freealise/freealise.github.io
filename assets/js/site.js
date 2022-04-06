@@ -54,3 +54,14 @@ function showMsg() {
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
 }
+
+function toggleMedium() {
+  var mdm = document.getElementById("medium");
+  intv = setInterval(function(){
+    if (mdm.options.selectedIndex < mdm.options.length-1) {
+        mdm.options.selectedIndex++;
+    } else {
+        mdm.options.selectedIndex = 0;
+    }
+  }, 2000);
+}
