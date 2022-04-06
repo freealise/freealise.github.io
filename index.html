@@ -90,8 +90,13 @@ abbr[title] {
 <script src='/assets/js/map.js' type='text/javascript'></script>
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCE3f8RUs0N-HOYJwC3frw-Pyb_v44U1aU&callback=initMap'></script>
 
-
-<div id="headline"><h3>Compose lyrics and music videos, even in a foreign language</h3></div>
+<div id="headline"><h3>Compose <!--lyrics and music videos-->
+  <select name="medium" id="medium" size="1" onfocus="clearInterval(intv);" onblur="toggleMedium();">
+      <option value="/fretboard/tab_tuning.htm">music</option>
+      <option value="/phonetic">lyrics</option>
+      <!--<option value="/vocalise">vocals</option>-->
+  </select>, even in a foreign language</h3>
+</div>
 
 <div id="txt">
 	<!--<div id="player">
