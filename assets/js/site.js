@@ -56,7 +56,7 @@ function googleTranslateElementInit() {
 }
 
 function selectMedium() {
-    if (idx < 1) {
+    if (idx < ln-1) {
         mdm.scrollBy(0,mdm.scrollHeight/ln);
         idx++;
     } else {
@@ -66,7 +66,7 @@ function selectMedium() {
 }
 
 function scrollMedium() {
-  intv = setInterval(selectMedium(), 2000);
+  intv = setInterval(selectMedium, 2000);
 }
 
 function toggleMedium() {
