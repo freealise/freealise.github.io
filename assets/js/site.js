@@ -55,29 +55,21 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
 }
 
-function scrollMedium(l) {
-  var i=0;
-  mdm.style.overflow = "hidden";
-  intv = setInterval(function(){
-    if (i < 1) {
-        mdm.scrollBy(0,mdm.scrollHeight/l);
-        i++;
+function selectMedium() {
+    if (idx < 1) {
+        mdm.scrollBy(0,mdm.scrollHeight/ln);
+        idx++;
     } else {
         mdm.scrollTo(0,0);
-        i=0;
+        idx=0;
     }
-  }, 2000);
 }
 
-function showMedium() {
-  clearInterval(intv);
-  mdm.style.overflow = "visible";
+function scrollMedium() {
+  intv = setInterval(selectMedium(), 2000);
 }
 
 function toggleMedium() {
-  if (mdm.style.overflow != "visible") {
-    showMedium();
-  } else {
-    scrollMedium(2);
-  }
+  clearInterval(intv);
+  selectMedium();
 }
