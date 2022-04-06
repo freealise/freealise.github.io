@@ -96,7 +96,7 @@ abbr[title] {
 <script src='/assets/js/map.js' type='text/javascript'></script>
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCE3f8RUs0N-HOYJwC3frw-Pyb_v44U1aU&callback=initMap'></script>
 
-<div id="headline"><h3>Compose <a href="#" onclick="toggleMedium();" onblur="scrollMedium(2);"><i class="material-icons notranslate">unfold_more</i></a>
+<div id="headline"><h3>Compose <a href="#" onclick="toggleMedium();" onblur="scrollMedium();"><i class="material-icons notranslate">unfold_more</i></a>
   <span id="mdm">
 	  <a href="/vocalise" target="_blank"><i class="material-icons notranslate">graphic_eq</i> music </a><br/>
 	  <a href="/phonetic" target="_blank"><i class="material-icons notranslate">lyrics</i> lyrics </a>
@@ -136,7 +136,9 @@ Play the <a href="https://freealise.com/vocalise" target="_blank"><i class="mate
     <script>
 	var mdm = document.getElementById("mdm");
 	var intv;
-	scrollMedium(2);
+	var idx = 0,
+	    ln = 2;
+	scrollMedium();
 	    
                   var stripe = Stripe('pk_test_up7XBxmt0W2fKgzk1SxfQymR');
 
