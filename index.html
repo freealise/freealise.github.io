@@ -31,12 +31,8 @@ section .material-icons {font-size: 16px;}
   transform: rotate(1.5deg);
 }
 #medium {
-    border: 0;
-    background-color: transparent;
-    font-style: italic;
-    font-weight: bold;
-    font-family: inherit;
-    color: inherit;
+    height: 1em;
+    overflow: hidden;
 }
 #pay {clear: both; width: 256px; display: block; margin-left: auto; margin-right: auto;}
 #stripe {width:100%;}
@@ -98,12 +94,12 @@ abbr[title] {
 <script src='/assets/js/map.js' type='text/javascript'></script>
 <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCE3f8RUs0N-HOYJwC3frw-Pyb_v44U1aU&callback=initMap'></script>
 
-<div id="headline"><h3>Compose <!--lyrics and music videos-->
-  <select name="medium" id="medium" size="1" onfocus="clearInterval(intv);" onblur="toggleMedium();" onchange="location.href=this.value;">
-      <option value="/fretboard/tab_tuning.htm">music </option>
-      <option value="/phonetic">lyrics </option>
-      <!--<option value="/vocalise">vocals </option>-->
-  </select>, even in a foreign language</h3>
+<div id="headline"><h3>Compose 
+  <div id="mdm" onfocus="showMedium();" onblur="toggleMedium();">
+	  <a href="/fretboard/tab_tuning.htm" target="_blank"><i class="material-icons">graphic_eq</i> music </a><br/>
+	  <a href="/phonetic" target="_blank"><i class="material-icons">lyrics</i> lyrics </a>
+	  <!--<a href="/vocalise" target="_blank"><i class="material-icons">record_voice_over</i> vocals </a>-->
+  </div>, even in a foreign language</h3>
 </div>
 
 <div id="txt">
