@@ -56,12 +56,19 @@ function googleTranslateElementInit() {
 }
 
 function toggleMedium() {
-  var mdm = document.getElementById("medium");
+  var mdm = document.getElementById("mdm");
+  mdm.style.overflow = "hidden";
   intv = setInterval(function(){
-    if (mdm.options.selectedIndex < mdm.options.length-1) {
-        mdm.options.selectedIndex++;
+    if (mdm.scrollY < 32) {
+        mdm.scrollBy(0,16);
     } else {
-        mdm.options.selectedIndex = 0;
+        mdm.scrollTo(0,0);
     }
   }, 2000);
+}
+
+function showMedium() {
+  clearInterval(intv);
+  var mdm = document.getElementById("mdm");
+  mdm.style.overflow = "visible";
 }
