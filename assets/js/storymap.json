@@ -5,7 +5,7 @@
             "type": "overview",
             "date": "2021",
             "text": {
-                "headline": "No participants right now",
+                "headline": "No upcoming events right now",
                 "text": ""
             },
             "media": {
@@ -16,7 +16,7 @@
         }, {
             "date": "2022",
             "text": {
-                "headline": "",
+                "headline": "...",
                 "text": ""
             },
             "location": {
