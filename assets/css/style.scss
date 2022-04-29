@@ -311,7 +311,7 @@ word-break: break-word;
 	color: rgba(255,255,255,0.8); 
 	z-index: 11;
 }
-#cookie-notice a {
+#cookie-notice-accept {
 	cursor: pointer; 
 	margin-left: 10px;
 }
@@ -321,7 +321,7 @@ word-break: break-word;
 		padding-top: 3px; 
 		margin-bottom: 13px;
 	}
-        #cookie-notice a {
+        #cookie-notice-accept {
 		position: relative; 
 		bottom: 4px;
 	}
