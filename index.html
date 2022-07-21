@@ -106,21 +106,21 @@ abbr[title] {
 </div>
 
 <div id="txt">
-	<!--<a href="https://new.freealise.com" target="_blank"><i class="material-icons notranslate">new_releases</i></a>-->
+	<!--<a href="https://new.freeali.se" target="_blank"><i class="material-icons notranslate">new_releases</i></a>-->
 	<!--<div id="player">
-	<span class="soundcite" data-url="https://freealise.com/assets/mp3/nightingale_bird.mp3" data-start="0" data-end="239000">
+	<span class="soundcite" data-url="{{ site.url }}/assets/mp3/nightingale_bird.mp3" data-start="0" data-end="239000">
 		<b>Nightingale</b>
 	</span>
 	<div style="width:40%;background-color:lightgray;top:0em;">Song 1</div>
 	<div style="width:20%;background-color:darkgray;top:1em;">Song 2</div>
 	<div style="width:40%;background-color:gray;top:2em;">Song 3</div>
-	<audio><embed src="https://freealise.com/assets/mp3/album.mp3" type="audio/mpeg" height="32" width="100%"></embed></audio>
+	<audio><embed src="/assets/mp3/album.mp3" type="audio/mpeg" height="32" width="100%"></embed></audio>
 	</div>-->
 <p><img src="/assets/images/True_South_Antarctic_Flag.svg" width="32" height="19" alt="Eurovision entry for Antarctica placeholder"/></p>
-<p><i>Use the <a href="https://freealise.com/verbalise" target="_blank"><i class="material-icons notranslate">lyrics</i> rhyming dictionary</a>. 
-Play the <a href="https://freealise.com/fretboard" target="_blank"><i class="material-icons notranslate">graphic_eq</i> synth</a> or 
+<p><i>Use the <a href="/verbalise" target="_blank"><i class="material-icons notranslate">lyrics</i> rhyming dictionary</a>. 
+Play the <a href="/fretboard" target="_blank"><i class="material-icons notranslate">graphic_eq</i> synth</a> or 
 <abbr title="Easy to play fretless stick guitar is to be available for preorder"><i class="material-icons notranslate">line_weight</i> guitar</abbr> in 
-<a href="https://freealise.com/fretboard/tab_tuning.htm" target="_blank"><i class="material-icons notranslate">tune</i> simple tuning</a>.<br/>
+<a href="/fretboard/tab_tuning.htm" target="_blank"><i class="material-icons notranslate">tune</i> simple tuning</a>.<br/>
 <a href="javascript:highlightEmail();" title="Subscribe"><b><u>Subscribe</u></b></a> to the newsletter for updates.</i></p>
 <!--<img alt="" border="0" data-original-height="144" data-original-width="2000" src="https://1.bp.blogspot.com/-FJSBDGFJHQ4/XsrSSjEkPgI/AAAAAAAABY4/cjaD7Iv_yLoXfjb8kMlK-D7T_3NT9KGkQCPcBGAYYCw/s0/ornament.jpg" style="height:12px;width:auto;"/>-->
 
@@ -157,8 +157,8 @@ Play the <a href="https://freealise.com/fretboard" target="_blank"><i class="mat
                       // a successful payment.
                       // Instead use one of the strategies described in
                       // https://stripe.com/docs/payments/checkout/fulfillment
-                      successUrl: 'https://freealise.com/money.htm?msg=true',
-                      cancelUrl: 'https://freealise.com/money.htm?msg=false',
+                      successUrl: '{{ site.url }}/money.htm?msg=true',
+                      cancelUrl: '{{ site.url }}/money.htm?msg=false',
                     })
                     .then(function (result) {
                       if (result.error) {
