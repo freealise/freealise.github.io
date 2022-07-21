@@ -250,7 +250,7 @@ function initMap() {
   var blogLayer = new google.maps.KmlLayer({
     preserveViewport: true,
     suppressInfoWindows: true,
-    url: 'https://wiki.freealise.com/feeds/posts/default/?time='+t
+    url: 'https://player.freeali.se/feeds/posts/default/?time='+t
   });
   var flickrLayer = new google.maps.KmlLayer({
     preserveViewport: true,
