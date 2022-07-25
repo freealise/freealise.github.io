@@ -35,6 +35,8 @@ function sendEmail(token) {
     };
     xhttp.open('GET', 'https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=contact&name='+encodeURIComponent(_name)+'&site='+encodeURIComponent(_site)+'&email='+encodeURIComponent(_email)+'&subj='+encodeURIComponent(_subject)+'&msg='+encodeURIComponent(_message)+'&token='+token, true);
     xhttp.send();
+  } else {
+    document.getElementById("contact-form-sent").innerHTML = "Please complete the empty fields :)";
   }
 }
 
