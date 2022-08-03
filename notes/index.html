@@ -2,26 +2,6 @@
 layout: default
 ---
 
-<style>
-.juxtapose {
-max-height: 256px;
-max-width: 256px;
-left: 50%;
-position: relative;
-margin-left: -128px;
-margin-bottom:1em;
-}
-.juxtapose img {
-width:256px;
-min-width:256px;
-height:auto;
-position: absolute;
-top: 0;
-margin: 0;
-padding: 0;
-}
-</style>
-
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
@@ -29,13 +9,7 @@ padding: 0;
     <span class="date">{{ post.date }}</span>
   </p>
   <div class="content">
-    <div class="juxtapose">
-      <img src="{{ post.before }}" />
-      <img src="{{ post.after }}" />
-    </div>
-    <div>
-      {{ post.content }}
-    </div>
+    {{ post.content }}
   </div>
 {% endfor %}
 
@@ -73,6 +47,3 @@ padding: 0;
   {% endif %}
 </div>
 {% endif %}
-
-<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
-<link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
