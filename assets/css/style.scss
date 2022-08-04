@@ -300,6 +300,15 @@ word-break: break-word;
     background: url(/assets/images/octocat-logo.svg);
 }
 
+.comments-replybox {
+  position:fixed;
+  right:0;
+  bottom:36px;
+  width:256px;
+  height:256px;
+  filter: grayscale(1);
+  display:none;
+}
 #cookie-notice {
 	padding: 7px 0px; 
 	display: none; 
