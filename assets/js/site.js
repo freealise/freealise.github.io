@@ -46,10 +46,10 @@ function highlightEmail() {
 
 function showMsg() {
   var msg = document.getElementById('msg');
-  if (!msg.style.bottom || msg.style.bottom == '-144px') {
-    msg.style.bottom = '0px';
+  if (msg.style.display != 'block') {
+    msg.style.display = 'block';
   } else {
-    msg.style.bottom = '-144px';
+    msg.style.display = 'none';
   }
 }
 
