@@ -318,11 +318,16 @@ word-break: break-word;
 	position: fixed; 
 	bottom: 0; 
 	width: 100%; 
-	background: #222; 
-	color: rgba(255,255,255,0.8); 
+	background: #000; 
+	color: #999; 
 	z-index: 11;
+	font-size: 14px;
+    	line-height: 1em;
 }
 #cookie-notice b, #cookie-notice-accept {
 	cursor: pointer; 
 	margin-left: 10px;
+}
+#cookie-notice a {
+	color:#fff;
 }
