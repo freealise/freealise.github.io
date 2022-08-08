@@ -127,7 +127,7 @@ header svg {
 	float:right;
 	width:84px;
 	height:36px;
-	margin-right:12px;
+	margin-right:8px;
 	line-height:1em;
 	color:darkmagenta;
 }
@@ -297,7 +297,7 @@ word-break: break-word;
 #msg_link {
   position:fixed;
   right:0;
-  bottom:0;
+  bottom:-3px;
   max-width: 36px;
 }
 #msg {
