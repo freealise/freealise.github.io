@@ -297,7 +297,7 @@ word-break: break-word;
 #msg_link {
   position:fixed;
   right:0;
-  bottom:-3px;
+  bottom:0;
   max-width: 36px;
 }
 #msg {
@@ -312,7 +312,7 @@ word-break: break-word;
   filter: grayscale(1);
 }
 #cookie-notice {
-	padding: 6px 0px; 
+	padding: 8px 0px; 
 	display: none; 
 	text-align: center; 
 	position: fixed; 
