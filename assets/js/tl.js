@@ -8,7 +8,7 @@ var json = {
     },
     "text": {
       "headline": "History",
-      "text": "Cartoon timeline of past events and updates sent in the newsletter."
+      "text": "Timeline of past events and updates in comics, sent as the newsletter."
     }
   },
   "events": [
