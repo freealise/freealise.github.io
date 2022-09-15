@@ -53,10 +53,6 @@ function showMsg() {
   }
 }
 
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 'google_translate_element');
-}
-
 function selectMedium() {
     if (idx < ln-1) {
         mdm.scrollBy(0,mdm.scrollHeight/ln);
