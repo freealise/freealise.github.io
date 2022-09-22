@@ -89,6 +89,8 @@ header h1 span {
 }
 #logo {
     margin-right:5px;
+    height: 24px;
+    width: 24px;
 }
 header p {
     display: block;
@@ -145,6 +147,7 @@ header svg {
 #subscribe-bar #email {
 	font-family: 'Averia Sans Libre', sans-serif;
 	font-size: 18px;
+	font-style: italic;
 	width: 8em;
 }
 #subscribe-button {
