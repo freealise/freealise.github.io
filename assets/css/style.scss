@@ -17,13 +17,13 @@ body {
     background: fixed url('/assets/images/bg.jpg') center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Averia Serif Libre', serif;
+    font-family: 'Averia Sans Libre', sans-serif;
     font-size: 16px;
     margin-top:-20px;
 }
 
 i {
-	font-family:'Averia Serif Libre', serif;
+	font-family: 'Averia Sans Libre', sans-serif;
 }
 
 a {
@@ -80,7 +80,7 @@ header h1 {
     font-size: 32px;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Averia Sans Libre', sans-serif;
+    font-family: 'Averia Serif Libre', serif;
     text-shadow: none;
     text-transform: lowercase;
 }
@@ -96,7 +96,7 @@ header p {
     font-size: 20px;
     font-style: italic;
     font-weight: normal;
-    font-family: 'Averia Serif Libre', serif;
+    font-family: 'Averia Sans Libre', sans-serif;
     text-shadow: none;
 }
 header svg {
@@ -143,12 +143,12 @@ header svg {
 	color: white;
 }
 #subscribe-bar #email {
-	font-family: 'Averia Serif Libre';
+	font-family: 'Averia Sans Libre', sans-serif;
 	font-size: 18px;
 	width: 8em;
 }
 #subscribe-button {
-	font-family: 'Averia Serif Libre';
+	font-family: 'Averia Serif Libre', serif;
 	font-style: italic; 
 	font-weight: bold;
 	font-size: 16px;
