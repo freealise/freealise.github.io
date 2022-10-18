@@ -7,8 +7,8 @@ var json = {
       "url": ""
     },
     "text": {
-      "headline": "Journal",
-      "text": "Timeline of past events and updates in comics, sent as the newsletter."
+      "headline": "Player",
+      "text": "Timeline of records, music videos, comics, tabs or lyrics, sent as the newsletter."
     }
   },
   "events": [
