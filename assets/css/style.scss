@@ -199,13 +199,16 @@ header svg {
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
     color: white;
 }
+#search-form {
+    width:100%;
+    text-align:center;
+}
 #search {
 	margin:0px;
 	padding:0px;
 	overflow:hidden;
 	height:48px;
-	width:100%;
-	max-width:256px;
+	width:256px;
 	display:inline-block;
 }
 #search .gsc-control-cse {
