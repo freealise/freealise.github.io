@@ -208,36 +208,8 @@ header svg {
 	padding:0px;
 	overflow:hidden;
 	height:48px;
-	width:256px;
+	width:300px;
 	display:inline-block;
-}
-#search .gsc-control-cse {
-	padding:0;
-	margin:0;
-	border: 0;
-	position: relative;
-    	top: 4px;
-	background-color: transparent;
-}
-#search table td {
-	border:0;
-	border-left:0;
-	border-right:0;
-	border-top:0;
-	border-bottom:0;
-	padding:0;
-}
-#search .gsc-input-box {
-    height:32px;
-    border:0;
-    border-left:1px solid darkgray;
-}
-#search input.gsc-input {
-    position: relative;
-    top: 8px;
-}
-#search button.gsc-search-button {
-    padding:8px;
 }
 .skiptranslate .goog-te-banner-frame {
     top: auto;
