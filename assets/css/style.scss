@@ -341,3 +341,20 @@ word-break: break-word;
 #cookie-notice a {
 	color:#fff;
 }
+
+#ua {
+	font-family:'Averia Serif Libre';
+	font-style:italic;
+	font-weight:bold;
+	font-size:12px;
+	line-height:1.2em;
+	z-index:100;
+	position:fixed;
+	top:0;
+	right:0;
+	width:48px;
+	margin-top:4px;
+}
+#ua i {
+	font-size:18px;
+}
