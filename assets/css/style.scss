@@ -341,11 +341,11 @@ word-break: break-word;
 #cookie-notice a {
 	color:#fff;
 }
-#cefr {
-	font-size: 20px;
-}
-#cefr i {
+#cefr, #cefr a i {
 	font-size: 14px;
+}
+#cefr a {
+	font-size: 20px;
 }
 #ua {
 	font-family:'Averia Serif Libre';
