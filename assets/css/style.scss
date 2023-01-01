@@ -341,6 +341,19 @@ word-break: break-word;
 #cookie-notice a {
 	color:#fff;
 }
+#cefr, #license {
+    width: 50%;
+    clear: none;
+}
+#license {
+    text-align: left;
+    float: right;
+}
+#cefr {
+    padding-right:5%;
+    text-align: right;
+    float: left;
+}
 #cefr, #cefr a i {
 	font-size: 12px;
 }
