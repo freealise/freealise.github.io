@@ -341,23 +341,9 @@ word-break: break-word;
 #cookie-notice a {
 	color:#fff;
 }
-#cefr, #license {
-    width: 50%;
-    clear: none;
-}
 #license {
-    text-align: left;
-    float: right;
-}
-#cefr {
-    text-align: right;
-    float: left;
-}
-#cefr, #cefr a i {
-	font-size: 12px;
-}
-#cefr a {
-	font-size: 16px;
+    width: 100%;
+    clear: both;
 }
 #ua {
 	font-family:'Averia Serif Libre';
