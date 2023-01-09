@@ -383,6 +383,7 @@ word-break: break-word;
     }
     [data-info]::after {
 	content: attr(data-info);
+	white-space: normal;
     }    
     [data-info]:hover::after {
 	visibility: visible;
