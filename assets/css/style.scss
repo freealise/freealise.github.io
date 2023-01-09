@@ -360,3 +360,29 @@ word-break: break-word;
 #ua i {
 	font-size:18px;
 }
+
+    [data-info] {
+	border-bottom: dashed thin;
+	position: relative;
+    }
+    [data-info]::after {
+	display: block;
+        width: 20ch;
+	position: absolute;
+	z-index: 100;
+	left: 1ch;
+	top: 1em;
+	content: attr(title);
+	border: solid thin gray;
+        padding: 0.2em;
+	color: black;
+	background: #ffffff;
+	visibility: hidden;
+	line-height: 0.9;
+    }
+    [data-info]::after {
+	content: attr(data-info);
+    }    
+    [data-info]:hover::after {
+	visibility: visible;
+    }
