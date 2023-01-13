@@ -388,3 +388,5 @@ word-break: break-word;
     [data-info]:hover::after {
 	visibility: visible;
     }
+
+/* to un-slant Averia line by line - transform: skewX(20deg); */
