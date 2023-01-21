@@ -84,10 +84,10 @@ header h1 {
     text-shadow: none;
     text-transform: lowercase;
 }
-header h1::first-letter {
-	transform:rotateY(180deg) rotateZ(50deg);
-}
-header h1 span {
+header h1 i {
+    font-style: normal;
+    transform: rotateZ(60deg);
+    display: inline-block;
     font-size: 36px;
 }
 #logo {
