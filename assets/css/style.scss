@@ -84,6 +84,9 @@ header h1 {
     text-shadow: none;
     text-transform: lowercase;
 }
+header h1::first-letter {
+	transform:rotateY(180deg) rotateZ(50deg);
+}
 header h1 span {
     font-size: 36px;
 }
