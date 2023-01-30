@@ -86,7 +86,7 @@ header h1 {
 }
 header h1 i {
     font-style: normal;
-    transform: rotateZ(60deg);
+    transform: rotateX(180deg) rotateZ(60deg);
     display: inline-block;
     font-size: 36px;
 }
