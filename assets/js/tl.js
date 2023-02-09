@@ -8,7 +8,7 @@ var json = {
     },
     "text": {
       "headline": "Player",
-      "text": "Timeline of records, music videos, comics, tabs or lyrics, sent as the newsletter."
+      "text": "Timeline of records, songbooks, music videos, comics, tabs or lyrics, sent as the newsletter."
     }
   },
   "events": [
