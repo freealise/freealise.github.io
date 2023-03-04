@@ -95,8 +95,7 @@ font-size: 14px;
 .cookie-choices-info .cookie-choices-text {
 font-size:12px;
 font-style: italic;
-max-height: 64px;
-overflow: scroll;
+text-align: center;
 }
 .cookie-choices-info .cookie-choices-buttons {
 margin: 0 0 10px;
@@ -105,5 +104,5 @@ margin: 0 0 10px;
 top:auto;
 bottom:0;
 padding: 0;
-font-size:14px;
+font-size:12px;
 }
