@@ -9,9 +9,12 @@ p .sefaria-text {
   src: url("https://freeali.se/assets/fonts/Hero.otf") format("opentype");
 }
 .header h1::before {
-  content: "the <i>Antarctic</i> nation";
+  content: "the ";
 }
-.header h1 i {
+.header h1::after {
+  content: " nation";
+}
+.header h1 {
   font-family: "Hero";
 }
 * {
