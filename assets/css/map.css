@@ -8,7 +8,16 @@ p .sefaria-text {
   font-family: "Hero";
   src: url("https://freeali.se/assets/fonts/Hero.otf") format("opentype");
 }
-.header h1 i {
+.header .title a {
+  color: #ffffff;
+}
+.header .title a::before {
+  content: "the ";
+}
+.header .title a::after {
+  content: " nation";
+}
+.header .title a h1 {
   font-family: "Hero";
   font-style: normal;
 }
