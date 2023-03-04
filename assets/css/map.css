@@ -45,7 +45,6 @@ font-size: 20px;
 cursor: pointer;
 }
 #header .header-bar .title h3 {
-font-family: Andika;
 font-style: italic;
 color: black;
 }
@@ -94,10 +93,9 @@ margin-left: 2px;
 font-size: 14px;
 }
 .cookie-choices-info .cookie-choices-text {
-font-size:10px;
-font-family: 'Andika';
+font-size:12px;
 font-style: italic;
-max-height: 30px;
+max-height: 64px;
 overflow: scroll;
 }
 .cookie-choices-info .cookie-choices-buttons {
@@ -105,7 +103,7 @@ margin: 0 0 10px;
 }
 .cookie-choices-info {
 top:auto;
-bottom:48px;
+bottom:0;
 padding: 0;
-font-size:12px;
+font-size:14px;
 }
