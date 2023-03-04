@@ -1,3 +1,20 @@
+p #sefaria-popup {
+    width: 320px;
+}
+p .sefaria-text {
+    max-height: 200px;
+}
+@font-face {
+  font-family: "Hero";
+  src: url("https://freeali.se/assets/fonts/Hero.otf") format("opentype");
+}
+h1 i {
+  font-family: "Hero";
+}
+* {
+  font-family: Andika;
+  font-style: italic;
+}
 body, input, textarea {
 font-size: 16px !important;
 }
@@ -14,14 +31,11 @@ color: darkgray;
 font-weight: bold;
 font-size: 20px;
 }
-#header .header-bar .title h1 {
-display: none;
-}
 #header .header-bar .title {
 cursor: pointer;
 }
 #header .header-bar .title h3 {
-font-family: Averia Sans Libre;
+font-family: Andika;
 font-style: italic;
 color: black;
 }
@@ -71,7 +85,7 @@ font-size: 14px;
 }
 .cookie-choices-info .cookie-choices-text {
 font-size:10px;
-font-family: 'Averia Serif Libre';
+font-family: 'Andika';
 font-style: italic;
 max-height: 30px;
 overflow: scroll;
