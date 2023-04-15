@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+See# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Freealise
 email: me@freealise.com
-description: studio
+description: software
 show_downloads: false
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://freeali.se" # the base hostname & protocol for your site, e.g. http://example.com
