@@ -202,7 +202,7 @@ header svg {
     box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4), 0px 1px 1px rgba(0,0,0,0.1);
     color: white;
 }
-#search-form {
+#search-form, #eu {
     width:100%;
     text-align:center;
 }
@@ -363,6 +363,14 @@ word-break: break-word;
 #ua i {
 	font-style:normal;
 	font-size:18px;
+}
+#eu {
+	font-size: 14px;
+	font-family: Montserrat;
+	font-variant: small-caps;
+}
+#eu a {
+	font-weight: bold;
 }
 
     [data-info] {
