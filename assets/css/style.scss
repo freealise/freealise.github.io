@@ -133,7 +133,7 @@ header svg {
 	}
 }
 #banner a {
-    font-size: 36px;
+    font-size: 72px;
     float: right;
     width: 36px;
     height: 36px;
@@ -141,7 +141,7 @@ header svg {
     line-height: 1em;
     color: #808080;
 }
-#banner a .material-icons, #banner a svg {
+#banner a .material-icons {
 	font-size:36px;
 }
 #subscribe-bar {
@@ -314,7 +314,7 @@ word-break: break-word;
 #msg_link {
   position:fixed;
   right:0;
-  bottom:0;
+  bottom:-12px;
   max-width: 36px;
 }
 #msg {
