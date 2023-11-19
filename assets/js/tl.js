@@ -7,7 +7,7 @@ var json = {
       "url": ""
     },
     "text": {
-      "headline": "Story",
+      "headline": "Journal",
       "text": "Timeline of what is currently happening, sent as the newsletter."
     }
   },
