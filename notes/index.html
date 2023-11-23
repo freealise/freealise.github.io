@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
@@ -18,34 +18,3 @@ layout: default
       </li>
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
-
-<!-- Pagination links -->
-{% if paginator.total_pages > 0 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">
-      &laquo;-
-    </a>
-  {% else %}
-    <span>&laquo;-</span>
-  {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>-</em>
-    {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">-</a>
-    {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">-</a>
-    {% endif %}
-  {% endfor %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">
-      -&raquo;
-    </a>
-  {% else %}
-    <span>-&raquo;</span>
-  {% endif %}
-</div>
-{% endif %}
