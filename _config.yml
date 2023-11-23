@@ -24,8 +24,6 @@ github_username:  freealise
 google_analytics: UA-140027275-1
 
 # Build settings
-paginate: 4
-paginate_path: "/notes/page:num/"
 markdown: kramdown
 theme: jekyll-theme-leap-day
 collections:
