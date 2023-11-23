@@ -6,19 +6,18 @@ layout: default
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
     {% unless forloop.first %}</ul>{% endunless %}
-    <p class="author">
+    <p class="{% cycle 'odd', 'even' %}">
       <h1 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h1>
-    </p>
-    <ul>
-    {% assign date = currentdate %}
+      <ul>
+      {% assign date = currentdate %}
   {% endif %}
-    <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <div class="content">
-        {{ post.content }}
-      </div>
-    </li>
-  {% if forloop.last %}</ul>{% endif %}
+        <li>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <div class="content">
+            {{ post.content }}
+          </div>
+        </li>
+  {% if forloop.last %}</ul></p>{% endif %}
 {% endfor %}
 
 <!-- Pagination links -->
