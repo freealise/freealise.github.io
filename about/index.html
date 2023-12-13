@@ -2,6 +2,14 @@
 layout: default
 ---
 
+<style>
+  h3 {
+    display:none;
+  }
+</style>
+
+<h3>About</h3>
+
 {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
