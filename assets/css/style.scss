@@ -12,6 +12,10 @@
   font-family: "DejaVuBold";
   src: url("/phonetic/fonts/dejavu/DejaVuSansMono-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Hero";
+  src: url("/assets/fonts/Hero.otf") format("opentype");
+}
 
 body {
     background: fixed url('/assets/images/bg.jpg') center;
