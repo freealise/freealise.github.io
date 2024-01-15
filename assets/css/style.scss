@@ -81,10 +81,11 @@ header #pages {
 }
 header h1 {
     color: #000000;
-    font-size: 25px;
+    font-size: 24px;
     font-family: 'Hero', 'Averia Serif Libre', serif;
     text-shadow: none;
     text-transform: lowercase;
+    text-overflow: initial;
 }
 header h1 i {
     font-weight: bold;
