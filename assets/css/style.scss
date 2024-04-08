@@ -169,7 +169,12 @@ header svg {
 #subscribe-button i, #cookie-notice i {
 	font-size: 12px;
 }
-button { color: black; background-color: lightgray; }
+button {
+  color: black;
+  background-color: lightgray;
+  line-height: 1.5em;
+  border-radius: 0.25em;
+}
 
 @media print, screen and (min-width: 650px) {
 	section {
