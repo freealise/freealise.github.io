@@ -102,7 +102,7 @@ p {clear:both;}
   <div id="stripe">
   <!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
               €<input autocomplete="off" id="quantity" size="2" type="text" value="10" />
-    <button id="checkout-button" role="link"><i class="material-symbols-outlined notranslate">credit_card_heart</i> Sponsor</button>
+    <button id="checkout-button" role="link"><i class="material-symbols-outlined notranslate">credit_card_heart</i> Sponsor</button><progress id="sponsor" value="500" max="1000" style="filter:grayscale(1);width:100px;"></progress><label for="sponsor" style="font-size:12px"> 500</label>
 
   <form action="https://www.paypal.com/cgi-bin/webscr" method="get" target="_blank">
     <input type="hidden" name="cmd" value="_s-xclick" />
@@ -111,7 +111,7 @@ p {clear:both;}
     <input type="hidden" name="quantity" value="10" />
     <input style="filter:saturate(0.25);" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Pay Now" />
   </form>
-  or <form action="https://app.ramp.network/" method="get" target="_blank">
+  <form action="https://app.ramp.network/" method="get" target="_blank">
     <input type="hidden" name="fiatCurrency" value="EUR" />
     <input type="hidden" name="fiatValue" value="10" />
     <input type="hidden" name="variant" value="mobile" />
@@ -123,10 +123,8 @@ p {clear:both;}
     <input type="hidden" name="widgetInstanceId" value="3200339354" />
     <input type="hidden" name="hostUrl" value="https://ramp.network" />
     <input type="hidden" name="userAddress" value="freealise.x" />
-    <button name="submit">buy us crypto with <img src="/assets/images/ramp.svg" border="0" title="Ramp" alt="Ramp"/></button>
+    or <button name="submit">buy us crypto with <img src="/assets/images/ramp.svg" border="0" title="Ramp" alt="Ramp"/></button>
   </form>
-	  
-    <progress id="sponsor" value="500" max="1000" style="filter:grayscale(1);width:100px;"></progress><label for="sponsor" style="font-size:12px"> 500</label><br/>
     <a href="https://www.google.com/search?q=10+usd+to+eur" id="rateLink" target="_blank" onfocus="this.href=this.href.replace(/\d+/, document.getElementById('quantity').value);"><i class="material-icons notranslate">price_check</i> exchange rate</a>
     <p>…to get a link to your page and news featured here.<br/>
       <!--[official torrents with sponsor button]--></p>
