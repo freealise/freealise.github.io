@@ -82,7 +82,7 @@ p {clear:both;}
 </div>
 
 <div id="txt">
-	<!-- Ⓐ🇺🇳🇦🇶👁️‍🗨️ #AntarcticMission [gambling as fundraising] -->
+	<!-- Ⓐ🇺🇳🇦🇶👁️‍🗨️ #AntarcticMission [gambling as fundraising - https://en.m.wikipedia.org/wiki/Charity_gambling] -->
   <div style="width:100%;text-align:center;padding:0;margin:0 0 1em 0;"><span style="font-family:'Averia Serif Libre';"><a><b>꙳✡︎</b></a> Portal under construction</span><br/>
   <iframe width="256" height="144" src="https://www.youtube.com/embed/ckGRHJ-J9G4?si=NbxAlqeQcIzNf9te" title="Eurovision Grand Final 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
   <!--<a href="https://new.freeali.se" target="_blank"><i class="material-icons notranslate">new_releases</i></a>-->
@@ -101,19 +101,19 @@ p {clear:both;}
 <div id="pay">
   <div id="stripe">
   <!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
-    €<input autocomplete="off" id="quantity" size="2" type="text" value="10" />
+    €<input autocomplete="off" id="amount" size="2" type="text" value="10" onchange="document.getElementById('quantity').value=this.value;document.getElementById('fiatValue').value=this.value;"/>
     <button id="checkout-button" role="link"><i class="material-symbols-outlined notranslate">credit_card_heart</i> Sponsor</button>
 
   <form action="https://www.paypal.com/cgi-bin/webscr" method="get" target="_blank">
     <input type="hidden" name="cmd" value="_s-xclick" />
     <input type="hidden" name="hosted_button_id" value="7C5WYDYT3WUFA" />
     <input type="hidden" name="currency_code" value="EUR" />
-    <input type="hidden" name="quantity" value="10" />
+    <input type="hidden" name="quantity" value="10" id="quantity"/>
     <input style="filter:saturate(0.25);" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Pay Now" />
   </form> or
   <form action="https://app.ramp.network/" method="get" target="_blank">
     <input type="hidden" name="fiatCurrency" value="EUR" />
-    <input type="hidden" name="fiatValue" value="10" />
+    <input type="hidden" name="fiatValue" value="10" id="fiatValue"/>
     <input type="hidden" name="variant" value="mobile" />
     <input type="hidden" name="hostAppName" value="Freealise" />
     <input type="hidden" name="hostLogoUrl" value="https://freeali.se/assets/images
@@ -143,12 +143,12 @@ p {clear:both;}
 
                   var checkoutButton = document.getElementById('checkout-button');
                   checkoutButton.addEventListener('click', function () {
-                   var quantity = parseInt(document.getElementById("quantity").value);
+                   var amount = parseInt(document.getElementById("amount").value);
                     // When the customer clicks on the button, redirect
                     // them to Checkout.
                     stripe.redirectToCheckout({
-                      items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}],
-          //items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: quantity}, {sku: 'sku_FQkGis4q0yD0Jb', quantity: quantity}],
+                      items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: amount}],
+          //items: [{sku: 'sku_FQkGdBj6c3phGm', quantity: amount}, {sku: 'sku_FQkGis4q0yD0Jb', quantity: quantity}],
                       // Do not rely on the redirect to the successUrl for fulfilling
                       // purchases, customers may not always reach the success_url after
                       // a successful payment.
