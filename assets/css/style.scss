@@ -329,9 +329,9 @@ word-break: break-word;
   right:0;
   bottom:36px;
   display:none;
-}
-#msg a {
-  font-size: 16px;
+  text-align: right;
+  bottom: 1.33em;
+  font-size: 14px;
 }
 .comments-replybox {
   width:256px;
