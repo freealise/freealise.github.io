@@ -123,23 +123,7 @@
     </div>
 	 
     <div id="msg">
-      <div id="chat"></div>
-<script>
-function loadXMLDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      for (var i=0; i<this.responseXML.getElementsByTagName('item').length; i++) {
-        document.getElementById("chat").innerHTML += this.responseXML.getElementsByTagName('item')[i].getElementsByTagName('author')[0].textContent.split("(")[1].split(")")[0] + " " + this.responseXML.getElementsByTagName('item')[i].getElementsByTagName('pubDate')[0].textContent.slice(0,-5) + "<a target='_new' href='https://blogger.com/delete-comment.g?blogID=7112994929697443518&postID=" + this.responseXML.getElementsByTagName('item')[i].getElementsByTagName('guid')[0].textContent.split(".post-")[1] + "' title='Delete'>[x]</a><br/>" + this.responseXML.getElementsByTagName('item')[i].getElementsByTagName('description')[0].textContent + "<br/><br/>";
-      }
-    }
-  };
-  xhttp.open("GET", "https://notes.freeali.se/feeds/6795449903403785285/comments/default?alt=rss", true);
-  xhttp.send();
-}
-loadXMLDoc();
-</script>
-      <iframe class="comments-replybox" frameborder="0" src="https://www.blogger.com/comment/frame/7112994929697443518?hl=en&pa=6795449903403785285&parentID=" onload="if(comments===true){document.getElementById('chat').click();comments=false;}else{comments=true;}" sandbox="allow-scripts allow-same-origin"></iframe>
+      <iframe class="comments-replybox" frameborder="0" src="https://www.blogger.com/comment/frame/7112994929697443518?hl=en&pa=6795449903403785285&parentID=" sandbox="allow-scripts allow-same-origin"></iframe>
     </div>
     
     <div id="cookie-notice">
