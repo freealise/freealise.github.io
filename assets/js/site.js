@@ -1,5 +1,3 @@
-var comments = null;
-
 function subscribeEmail(address, s) {
   var un = "";
   if (s === false) {
