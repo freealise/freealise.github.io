@@ -21,9 +21,8 @@ layout: default
   var view = '?view=flipcard&m=0';
   var url = 'https://map.freeali.se';
   var p = document.location.href.split('?p=');
-  if (p[1]) {
-    p = p[1].split('#')[0];
-    document.getElementById('blogger').src = url + p + view;
+  if (p[1]) {;
+    document.getElementById('blogger').src = decodeURIComponent(p[1]);
   } else {
     document.getElementById('blogger').src = url + view;
   }
