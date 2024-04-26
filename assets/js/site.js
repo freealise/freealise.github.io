@@ -54,8 +54,8 @@ function showMsg() {
 }
 
 function selectAction() {
-    if (jdx < ln) {
-        act.scrollBy(0,act.scrollHeight/(ln+1));
+    if (jdx < wd-1) {
+        act.scrollBy(0,act.scrollHeight/wd);
         jdx++;
     } else {
         act.scrollTo(0,0);
