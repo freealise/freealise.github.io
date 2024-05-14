@@ -32,18 +32,12 @@ section .material-icons {font-size: 16px;}
   font-style: italic;
   transform: rotate(1.5deg);
 }
-#act, #mdm {
+#mdm {
     font-weight:bold;
     height: 1.25em;
     overflow: hidden;
     display: inline-block;
     vertical-align: top;
-}
-#act {
-  text-align: right;
-}
-#act i {
-  font-style: normal;
 }
 #txt a h1 {
   font-family: "Hero";
@@ -81,13 +75,7 @@ p {clear:both;}
 </style>
 
 <div id="headline"><h3>
-  <span id="act">
-    <i>Think in</i><br/>
-    Listen to<br/>
-	  Speak<br/>
-	  Read<br/>
-	  Write in
-  </span> a foreign language with 
+  Express ideas with 
   <a href="#" onclick="toggleMedium();" onblur="scrollMedium();"><i class="material-icons notranslate">unfold_more</i></a>
   <span id="mdm">
 	  <a href="/fretboard" target="_blank"><i class="material-icons notranslate">gradient</i> music </a><br/>
@@ -152,10 +140,9 @@ p {clear:both;}
     </div>
     <script>
 	var mdm = document.getElementById("mdm");
-  var act = document.getElementById("act");
 	var intv;
-	var idx = 0, jdx = 0,
-	    ln = 3, wd = 5;
+	var idx = 0,
+	    ln = 3;
 	scrollMedium();
 	    
                   var stripe = Stripe('pk_test_up7XBxmt0W2fKgzk1SxfQymR');
