@@ -53,16 +53,6 @@ function showMsg() {
   }
 }
 
-function selectAction() {
-    if (jdx < wd-1) {
-        act.scrollBy(0,act.scrollHeight/wd);
-        jdx++;
-    } else {
-        act.scrollTo(0,0);
-        jdx=0;
-    }
-}
-
 function selectMedium() {
     if (idx < ln-1) {
         mdm.scrollBy(0,mdm.scrollHeight/ln);
@@ -75,7 +65,6 @@ function selectMedium() {
 
 function scrollMedium() {
   intv = setInterval(selectMedium, 2000);
-  setInterval(selectAction, 2000);
 }
 
 function toggleMedium() {
