@@ -14,40 +14,41 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
-  pre {
-    width: 256px;
-    font-size: 12px;
-    position: relative;
-    margin-left: -128px;
-    left: 50%;
-    padding: 0;
-  }
 </style>
 
 <div class="container">
   <h2>404</h2>
 
-  <p><strong>Page not found :(</strong></p>
+  <p><strong>Page not found</strong></p>
   <p>The requested page could not be found.</p>
   
-  <p><pre>
-                  .--.   
-                  :[]:   
- __________________||    
-/    __  _\_____  /||    
-|~| /o/ /  \   /___||___ 
-|_|/0/ /_   ' /|  _||   |
-  /O/  \/____/ | / --/\ |
-     _____    /| \ == / |
-\   / -- /   //| / == \ |
- \ /    //  // / \___:/ /
-  (====(/  // /    ___ /\
-__________// /____/.'// |
-_________|/   /  /_\/\  |
-        |||   | ^_^__|  /
-        |||   |>@.@<}|)/ 
-        |||   |}_ _{&quot;|/  
-        |||              
-        ||/              
-</pre></p>
+  <p>
+    
+<style>
+.google-weather-place {
+    width: calc(750px/2); height: calc(400px/2);
+}
+.google-weather-crop {
+    width: calc(750px/2); height: calc(400px/2);
+    overflow: hidden;
+    transition: 0.001s;
+    position: absolute;
+}
+.google-weather {
+    position: relative;
+    left: -180px; top: -180px;
+    width: 2560px; height: 5120px;
+    transform: scale(0.5);
+    transform-origin: 180px 180px;
+    transition: 0.001s;
+    position: absolute;
+}
+</style>
+<div class="google-weather-place">
+	<div class="google-weather-crop">
+		<iframe class="google-weather" src="https://www.google.com/search?igu=1&q=weather&authuser=0"></iframe>
+	</div>
+</div>
+
+</p>
 </div>
