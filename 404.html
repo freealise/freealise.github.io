@@ -48,12 +48,21 @@ layout: default
     transition: 0.001s;
     position: absolute;
 }
+/*.google-weather-crop:hover {
+    width: 750px; height: 400px;
+}
+.google-weather:hover {
+    transform: scale(1);
+    z-index: 1000;
+}*/
 </style>
 <div class="google-weather-place">
 	<div class="google-weather-crop">
 		<iframe class="google-weather" src="https://www.google.com/search?igu=1&q=weather&authuser=0"></iframe>
 	</div>
 </div>
+
+<!-- Caveat: The google search option <code>igu=1</code> logs out the user (?), so the location may be less accurate. -->
 
 </p>
 </div>
