@@ -144,7 +144,7 @@
 	 
     <div id="ua"><a href="https://war.ukraine.ua/donate/" target="_blank" title="All proceeds received go directly to supporting the front-line defense of Ukraine"><i>🇺🇦🇪🇺</i> Slava Ukraini</a></div>
     
-    <script type="text/javascript" charset="utf-8" src="https://www.sefaria.org/linker.v3.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://www.sefaria.org/linker.v2.js"></script>
 	  <script>
       function linker(ref) {
         document.getElementById('torah').innerText = ref;
@@ -153,7 +153,7 @@
       fetch('https://www.sefaria.org/api/calendars', options)
         .then(response => response.json())
         .then(response => linker(response.calendar_items[10].ref))
-        .then(sefaria.link({mode: "popup-click", dynamic: true, whitelistSelector: "#torah"}))
+        .then(response => sefaria.link({mode: "popup-click", dynamic: true, selector: "#torah"}))
         .catch(err => console.log(err));
     </script>
   </body>
