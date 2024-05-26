@@ -91,16 +91,7 @@
 	</div>
       </div>
       <footer>
-    <script>
-      function linker() {
-        const options = {method: 'GET', headers: {accept: 'application/json'}};
-        fetch('https://www.sefaria.org/api/calendars', options)
-          .then(response => response.json())
-          .then(response => return(response.calendar_items[10].ref))
-          .catch(err => return(err));
-      }
-    </script>
-  <p><small>Daily Bible reading: <span onload="this.innerText=linker();"></span></small></p>
+  <p><small>Daily Bible reading: <span id="torah"></span></small></p>
 	<p id="share-buttons">
 	  <small>Share to:</small><br/>
           <a rel="nofollow noreferrer" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&hashtag=%23{{ page.tags }}" target="_blank"><svg width='24' height='24' viewBox="0 0 24 24"><path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" fill="#000000"></path></svg></a>
@@ -154,6 +145,16 @@
     <div id="ua"><a href="https://war.ukraine.ua/donate/" target="_blank" title="All proceeds received go directly to supporting the front-line defense of Ukraine"><i>🇺🇦🇪🇺</i> Slava Ukraini</a></div>
     
     <script type="text/javascript" charset="utf-8" src="https://www.sefaria.org/linker.v3.js"></script>
-	  <script>sefaria.link({mode: "popup-click"});</script>
+	  <script>
+      function linker(ref) {
+        document.getElementById('torah').innerText = ref;
+        sefaria.link({mode: "popup-click"});
+      }
+      const options = {method: 'GET', headers: {accept: 'application/json'}};
+      fetch('https://www.sefaria.org/api/calendars', options)
+        .then(response => response.json())
+        .then(response => linker(response.calendar_items[10].ref))
+        .catch(err => console.log(err));
+    </script>
   </body>
 </html>
