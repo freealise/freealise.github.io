@@ -148,12 +148,12 @@
 	  <script>
       function linker(ref) {
         document.getElementById('torah').innerText = ref;
-        sefaria.link({mode: "popup-click", dynamic: true});
       }
       const options = {method: 'GET', headers: {accept: 'application/json'}};
       fetch('https://www.sefaria.org/api/calendars', options)
         .then(response => response.json())
         .then(response => linker(response.calendar_items[10].ref))
+        .then(sefaria.link({mode: "popup-click", dynamic: true, whitelistSelector: "#torah"}))
         .catch(err => console.log(err));
     </script>
   </body>
