@@ -148,7 +148,7 @@
 	  <script>
       function linker(ref) {
         document.getElementById('torah').innerText = ref;
-        sefaria.link({mode: "popup-click"});
+        sefaria.link({mode: "popup-click", dynamic: true});
       }
       const options = {method: 'GET', headers: {accept: 'application/json'}};
       fetch('https://www.sefaria.org/api/calendars', options)
