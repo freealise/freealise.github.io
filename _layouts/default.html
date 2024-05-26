@@ -88,6 +88,7 @@
 	<div id="search">
 	  <script async src="https://cse.google.com/cse.js?cx=c67b7f7baea614d96"></script>
 	  <div class="gcse-search" enableAutoComplete="true"></div>
+    Daily Bible reading: <span id="torah"></span>
 	</div>
       </div>
       <footer>
@@ -143,5 +144,14 @@
 	 
     <div id="ua"><a href="https://war.ukraine.ua/donate/" target="_blank" title="All proceeds received go directly to supporting the front-line defense of Ukraine"><i>🇺🇦🇪🇺</i> Slava Ukraini</a></div>
 	  
+    <script type="text/javascript" charset="utf-8" src="https://www.sefaria.org/linker.v3.js"></script>
+	  <script>
+    const options = {method: 'GET', headers: {accept: 'application/json'}};
+    fetch('https://www.sefaria.org/api/calendars', options)
+      .then(response => response.json())
+      .then(response => function(response){document.getElementById('torah').innerText=response.calendar_items[10].ref;})
+      .catch(err => console.error(err));
+    sefaria.link({mode: "popup-click"});
+    </script>
   </body>
 </html>
