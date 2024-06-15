@@ -381,6 +381,12 @@ word-break: break-word;
 	font-style:normal;
 	font-size:18px;
 }
+#bh {
+	z-index:100;
+	position:fixed;
+	top:0;
+	right:0;
+}
 
     [data-info] {
 	cursor: help;
