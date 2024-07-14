@@ -27,15 +27,15 @@
     <!--<script src="https://togetherjs.com/togetherjs-min.js"></script>-->
   </head>
   <body>
-  
     <span id="bh">
       <small>©''</small>
     </span>
     <header>
       <section>
         <a href="{{ site.url }}" id="title">
-          <h1 title="{{ site.title | default: site.github.repository_name }}" class="notranslate"><i>≁</i> {{ site.title | default: site.github.repository_name }}<div class="sketch"></div></h1>
+          <h1 title="{{ site.title | default: site.github.repository_name }}" class="notranslate"><i>≁</i> {{ site.title | default: site.github.repository_name }}</h1>
           <p><i>{{ site.description | default: site.github.project_tagline }}</i></p>
+          <div class="sketch"></div>
         </a>
         <ul id="pages">
           <li><a href="/about/">About</a></li>
@@ -57,7 +57,7 @@
             <ul>
               <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
               <li><a href="{{ site.github.tar_url }}" class="button">TAR</a></li>
-	      <li><a href="{{ site.github.repository_url }}" class="fork button">Code</a></li>
+	            <li><a href="{{ site.github.repository_url }}" class="fork button">Code</a></li>
             </ul>
           </div>
           {% endif %}
