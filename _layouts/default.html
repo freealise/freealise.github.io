@@ -20,7 +20,7 @@
     <link href='https://fonts.gstatic.com' rel='preconnect'/>
     <link href='https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap' rel='stylesheet'/>
     <link href='https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap' rel='stylesheet'/>
-    <link href='https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,40;0,700;1,300;1,400;1,700&display=swap' rel='stylesheet'/>
     <link href='https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap' rel='stylesheet'/>
 	  <script src='/assets/js/site.js'></script>
     <script src='https://js.stripe.com/v3'></script>
@@ -34,9 +34,8 @@
     <header>
       <section>
         <a href="{{ site.url }}" id="title">
-          <h1 title="{{ site.title | default: site.github.repository_name }}" class="notranslate"><i>≁</i> {{ site.title | default: site.github.repository_name }}</h1>
+          <h1 title="{{ site.title | default: site.github.repository_name }}" class="notranslate"><i>≁</i> {{ site.title | default: site.github.repository_name }}<div class="sketch"></div></h1>
           <p><i>{{ site.description | default: site.github.project_tagline }}</i></p>
-          <div class="sketch"></div>
         </a>
         <ul id="pages">
           <li><a href="/about/">About</a></li>
