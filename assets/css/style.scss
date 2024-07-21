@@ -106,7 +106,9 @@ header h1 i {
     left: 0;
     width: 200px;
     height: 48px;
-    background: repeating-linear-gradient(-30deg, transparent 0px, transparent 2px, #fcecd0 2px, #fcecd0 4px);
+    background: repeating-linear-gradient(-30deg, transparent 0px, transparent 2px, #fcecd0 2px, #fcecd0 4px), 
+repeating-linear-gradient(-33deg, transparent 0px, transparent 2.1px, #fcecd0 2.1px, #fcecd0 3.9px),
+repeating-linear-gradient(-29deg, transparent 0px, transparent 1.9px, #fcecd0 1.9px, #fcecd0 4.1px);
 }
 #logo {
     margin-bottom:2px;
