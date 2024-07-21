@@ -147,8 +147,12 @@ p {clear:both;}
     <input type="hidden" name="widgetInstanceId" value="3200339354" />
     <input type="hidden" name="hostUrl" value="https://ramp.network" />
     <input type="hidden" name="userAddress" value="freealise.x" />
-    <div style="display:inline-block;height:30px;border:1px solid black"><input type="image" name="submit" height="8" src="/assets/images/ramp.svg" border="0" title="Ramp" alt="Ramp"/></div>
-    <div style="display:inline-block;height:32px;"><a target="_blank" href="https://bitpay.com/crypto-widget/buy?fiat_currency=eur&fiat_amount=10&crypto_currency=eth&crypto_chain=eth&transaction_method=debit_card&crypto_address=0x368712e390B46Eb19fA72c09DF49DCC5196Dd623"><img height="32" src="/assets/images/bitpay/PayWith-BitPay-Card-GrayScale.svg" border="0" title="Pay with BitPay" alt="Pay with BitPay"/></a></div>
+    <button name="submit" style="background:transparent;border:1px solid black;height:30px">
+      <img height="8" src="/assets/images/ramp.svg" border="0" title="Ramp" alt="Ramp" />
+    </button>
+    <button style="background:transparent;border:0;height:32px" onclick="window.open('https://bitpay.com/crypto-widget/buy?fiat_currency=eur&fiat_amount=10&crypto_currency=eth&crypto_chain=eth&transaction_method=debit_card&crypto_address=0x368712e390B46Eb19fA72c09DF49DCC5196Dd623');">
+      <img height="32" src="/assets/images/bitpay/PayWith-BitPay-Card-GrayScale.svg" border="0" title="Pay with BitPay" alt="Pay with BitPay"/>
+    </button>
   </form>
     <progress id="sponsor" value="500" max="1000" style="filter:grayscale(1);width:100px;"></progress><label for="sponsor" style="font-size:12px"> 500</label><br/>
     <a href="https://www.google.com/search?q=10+usd+to+eur" id="rateLink" target="_blank" onfocus="this.href=this.href.replace(/\d+/, document.getElementById('quantity').value);"><i class="material-icons notranslate">price_check</i> exchange rate</a>
