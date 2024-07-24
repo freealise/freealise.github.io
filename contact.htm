@@ -69,7 +69,7 @@ layout: default
     margin: 0 2px;
     display: inline-block;
   }
-  #follow, #pro, #address {
+  #follow, #pro, .address {
     width:100%;
     text-align:center;
     font-size:12px;
@@ -77,6 +77,11 @@ layout: default
     font-weight: normal;
     font-family: inherit;
     padding: 0;
+  }
+  .address {
+    display:inline-block;
+    width:50%;
+    height:128px;
   }
   #feed {
     bottom: 8px;
@@ -127,10 +132,20 @@ layout: default
     <span id="feed"><i class='material-icons notranslate'>rss_feed</i><a href="{{ site.url }}/feed.xml" target="_blank">XML</a></span>
 </div>
 
-<p><pre id="address">
+<p><pre class="address">
   <i><b>Legal address:</b></i>
   K Haltýři 689/16
   Troja (Praha 8)
-  181 00 Praha
+  Hlavní město Praha
   Czechia
-</pre></p>
+  181 00
+</pre>
+<pre class="address">
+  <i><b>HQ:</b></i>
+  Pranke Island
+  Russell Bay
+  Marie Byrd Land
+  Antarctica
+  73°14′S 124°55′W
+</pre>
+</p>
