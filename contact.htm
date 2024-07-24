@@ -86,8 +86,13 @@ layout: default
     height:64px;
     margin:0;
     padding:0;
-    float:left;
     clear:none;
+  }
+  #address {
+    width:100%;
+    padding:0;
+    margin:0;
+    text-align:center;
   }
   #feed {
     bottom: 8px;
@@ -138,7 +143,8 @@ layout: default
     <span id="feed"><i class='material-icons notranslate'>rss_feed</i><a href="{{ site.url }}/feed.xml" target="_blank">XML</a></span>
 </div>
 
-<p><pre class="address">
+<p id="address">
+<pre class="address">
   <i><b>Legal address:</b></i>
   K Haltýři 689/16
   Troja (Praha 8)
