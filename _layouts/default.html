@@ -32,7 +32,7 @@
     <header>
       <section>
         <a href="{{ site.url }}" id="title">
-          <h1 title="{{ site.title | default: site.github.repository_name }}" class="notranslate"><i>≁&#8408;</i> {{ site.title | default: site.github.repository_name }}</h1>
+          <h1 title="{{ site.title | default: site.github.repository_name }}" class="notranslate"><i>≁&#8408;</i> {{ site.display | default: site.github.repository_name }}</h1>
           <p><i>{{ site.description | default: site.github.project_tagline }}</i></p>
           <div class="sketch"></div>
         </a>
@@ -48,7 +48,6 @@
       <div id="banner">
 	  <a href="javascript:showMsg();" title="Support" id="msg_link"><i class="material-icons notranslate">contact_support</i></a>
 	  <a href="#"><i class="material-symbols-outlined notranslate">credit_card_heart</i></a>
-    <!--<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>-->
 
           {% if site.show_downloads %}
           <div class="downloads">
