@@ -94,7 +94,7 @@ header h1 {
 header h1 i {
     font-weight: bold;
     font-style: normal;
-    transform: rotateX(180deg);
+    transform: translateY(0.67em) rotateX(180deg);
     display: inline-block;
     font-size: 36px;
     line-height: 0.5em;
