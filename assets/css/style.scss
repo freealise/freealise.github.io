@@ -91,16 +91,15 @@ header h1 {
     text-transform: lowercase;
     text-overflow: initial;
 }
-header h1 i {
+header h1 s {
     font-weight: bold;
-    font-style: normal;
-    transform: translateY(0.67em) rotateX(180deg);
+    transform: translateY(0.33em) rotateX(180deg);
     display: inline-block;
     font-size: 36px;
     line-height: 0.5em;
 }
-header h1 s {
-    text-decoration: none;
+header h1 i {
+    font-style: normal;
     position: relative;
     top: 0.43em;
     right: 0.75em;
