@@ -66,3 +66,99 @@ layout: default
 
 </p>
 </div>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div id="chart_div"></div>
+
+<script>
+var id = ["5b71fc48-3dd3-540c-809b-f8c94d0e68b5", "d85dce9b-5b73-5c3c-8978-522ce1d1c1b4", "45f99e13-b522-57d7-8058-c57bf92fe7a3", "c9c24c6e-c045-5fde-98a2-00ea7f520437", "e4f72fa0-3064-4505-9d61-d7a93720c354"];
+var names = ['Bitcoin', 'Ethereum', 'Bitcoin Cash', 'Litecoin', 'Liberland Dollar'];
+var n = 0;
+var d = [];
+
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(loadXMLDoc);
+var data = null;
+
+function drawLineColors(d) {
+  data = new google.visualization.DataTable();
+  data.addColumn('date', 'Date');
+  for (var i=0; i<names.length; i++) {
+    data.addColumn('number', names[i]);
+  }
+  data.addRows(d);
+
+  var options = {
+    height: 128,
+    width: '100%',
+    hAxis: {
+      format: 'yyyy'
+    },
+    vAxis: {
+      title: 'Price',
+      format: 'currency',
+      //curveType: 'function',
+      logScale: true,
+      textStyle: { fontSize: 8 }
+    },
+    /*trendlines: {
+      0: {
+        type: 'polynomial',
+        degree: 3,
+        visibleInLegend: false,
+      },
+      1: {
+        type: 'polynomial',
+        degree: 3,
+        visibleInLegend: false,
+      },
+      2: {
+        type: 'polynomial',
+        degree: 3,
+        visibleInLegend: false,
+      },
+      3: {
+        type: 'polynomial',
+        degree: 3,
+        visibleInLegend: false,
+      }
+    },*/
+    colors: ['#F7931A', '#627EEA', '#8DC351', '#A6A9AA', '#0667D0'],
+    legend: 'top'
+  };
+
+  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+  chart.draw(data, options);
+}
+
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() { 
+    if (this.readyState == 4 && this.status == 200) {
+      var json = JSON.parse(this.responseText).data.prices.all.prices;
+      var a = Object.values(json);
+      var temp;
+
+      for (var i=0; i<Object.keys(json).length; i++) {
+        temp = a[i][1];
+        for (var j=1; j<=id.length; j++) {
+          a[i][j] = null;
+        }
+        a[i][1+n] = parseFloat(a[i][0]);
+        a[i][0] = new Date(temp*1000);
+      }
+      d = d.concat(a);
+      if (n < id.length-1) {
+        n++;
+        loadXMLDoc();
+      } else {
+        drawLineColors(d);
+      }
+    } 
+  }; 
+  xhttp.open("GET", "https://www.coinbase.com/api/v2/assets/prices/" + id[n] + "?base=USD", true); 
+  xhttp.send(); 
+}
+
+</script>
