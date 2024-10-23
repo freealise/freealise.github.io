@@ -379,12 +379,20 @@ word-break: break-word;
     width: 100%;
     clear: both;
 }
+
+#bh {
+	z-index:100;
+	position:fixed;
+	top:0;
+	right:0.25em;
+}
 #ua {
 	font-family:'Averia Serif Libre';
 	font-style:italic;
 	font-weight:bold;
 	font-size:12px;
 	line-height:1.2em;
+  text-align:right;
 	z-index:100;
 	position:fixed;
 	top:32px;
@@ -394,12 +402,6 @@ word-break: break-word;
 #ua i {
 	font-style:normal;
 	font-size:18px;
-}
-#bh {
-	z-index:100;
-	position:fixed;
-	top:0;
-	right:0.25em;
 }
 
     [data-info] {
