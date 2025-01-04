@@ -10,19 +10,33 @@ layout: default
 
 <h3>About</h3>
 
-{% for post in site.posts %}
-  {% assign currentdate = post.date | date: "%Y" %}
-  {% if currentdate != date %}
-    {% unless forloop.first %}</ul>{% endunless %}
-    <h1 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h1>
-    <ul>
-    {% assign date = currentdate %}
-  {% endif %}
-      <li class="{% cycle 'odd', 'even' %}">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <div class="content">
-          {{ post.content }}
-        </div>
-      </li>
-  {% if forloop.last %}</ul>{% endif %}
-{% endfor %}
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["calendar"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+   function drawChart() {
+       var dataTable = new google.visualization.DataTable();
+       dataTable.addColumn({ type: 'date', id: 'Date' });
+       dataTable.addColumn({ type: 'number', id: 'Sentiment' });
+       dataTable.addColumn({ type: 'string', id: 'Status', role: 'tooltip'});
+       dataTable.addRows([
+       {% for post in site.posts %}
+          [ new Date({{post.date | date: "%Y"}}, {{post.date | date: "%M"}}, {{post.date | date: "%D"}}), {{ post.value }}, '<h4><a href="{{ post.url }}">{{ post.title }}</a></h4><div class="content">{{ post.content }}</div>'],
+       {% endfor %}
+       ]);
+
+       var chart = new google.visualization.Calendar(document.getElementById('calendar_basic'));
+
+       var options = {
+         title: "About",
+         height: 350,
+         width: 320,
+         calendar: { cellSize: 5 },
+         tooltip: {isHtml: true},
+       };
+
+       chart.draw(dataTable, options);
+   }
+    </script>
+    <div id="calendar_basic" style="width: 320px; height: 350px;"></div>
