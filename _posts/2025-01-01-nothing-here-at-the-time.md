@@ -10,5 +10,5 @@ tags: new post
 value: 0
 
 ---
-Backstory and timeline of what is happening, sent as the newsletter.
+Backstory and timeline of what is <b>to happen</b>, sent as the newsletter.
 <!--<img src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=47.5763831,-122.4211769&fov=80&heading=70&pitch=0&key=[KEY]&signature=[SIG]" />-->
