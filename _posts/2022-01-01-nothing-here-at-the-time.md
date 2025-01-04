@@ -7,6 +7,7 @@ credit: ""
 date: 2021-12-01 00:00:00 +0300
 categories: jekyll update
 tags: new post
+value: 0
 
 ---
 Backstory and timeline of what is happening, sent as the newsletter.
