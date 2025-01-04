@@ -10,6 +10,9 @@ layout: default
 
 <h3>About</h3>
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div id="calendar_basic" style="width: 320px; height: 350px;"></div>
+    
     <script type="text/javascript">
       google.charts.load("current", {packages:["calendar"]});
       google.charts.setOnLoadCallback(drawChart);
@@ -38,4 +41,3 @@ layout: default
        chart.draw(dataTable, options);
    }
     </script>
-    <div id="calendar_basic" style="width: 320px; height: 350px;"></div>
