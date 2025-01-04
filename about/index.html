@@ -22,7 +22,7 @@ layout: default
        dataTable.addColumn({ type: 'string', id: 'Status', role: 'tooltip'});
        dataTable.addRows([
        {% for post in site.posts %}
-          [ new Date({{post.date | date: "%Y"}}, {{post.date | date: "%m"}}+1, {{post.date | date: "%d"}}), {{ post.value }}, '<h4><a href="{{ post.url }}">{{ post.title }}</a></h4><div class="content">{{ post.content }}</div>'],
+          [ new Date({{ post.date | date: '%Y, %m, %d' }}), {{ post.value }}, '<h4><a href="{{ post.url }}">{{ post.title }}</a></h4><div class="content">{{ post.content }}</div>'],
        {% endfor %}
        ]);
 
