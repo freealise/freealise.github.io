@@ -90,6 +90,7 @@ header h1 {
     text-shadow: none;
     text-transform: lowercase;
     text-overflow: initial;
+    filter: url(#displacementFilter);
 }
 header h1 s {
     text-decoration: none;
@@ -129,6 +130,7 @@ header svg {
     margin-top: 4px;
     margin-right: 64px;
     position: fixed;
+    display: none;
 }
 #banner {
     display: block;
