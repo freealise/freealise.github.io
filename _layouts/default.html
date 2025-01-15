@@ -31,6 +31,22 @@
     </span>
     <header>
       <section>
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <filter id="displacementFilter" color-interpolation-filters="sRGB">
+            <feTurbulence
+              type="turbulence"
+              baseFrequency="0.025"
+              numOctaves="2"
+              result="turbulence" />
+            <feDisplacementMap
+              result="fedm"
+              in2="turbulence"
+              in="SourceGraphic"
+              scale="5"
+              xChannelSelector="R"
+              yChannelSelector="A" />
+          </filter>
+        </svg>
         <a href="{{ site.url }}" id="title">
           <h1 title="{{ site.title | default: site.github.repository_name }}" class="notranslate">{{ site.title | default: site.github.repository_name }}<s>.</s></h1>
           <p><i>{{ site.description | default: site.github.project_tagline }}</i></p>
