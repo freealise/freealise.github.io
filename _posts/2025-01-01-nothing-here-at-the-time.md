@@ -10,5 +10,5 @@ tags: new post
 value: 0
 
 ---
-Backstory and timeline of what is to happen, sent in the newsletter as interview with <i>deterministic</i> AI.
-<!--<img src="https://maps.googleapis.com/maps/api/streetview?size=400x400&location=47.5763831,-122.4211769&fov=80&heading=70&pitch=0&key=[KEY]&signature=[SIG]" />-->
+Backstory of a target audience everyman in second person and timeline of what is to happen from that point of view, sent in the newsletter.
+Own backlog on the site as interview with <i>deterministic</i> AI.
