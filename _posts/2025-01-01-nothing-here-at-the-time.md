@@ -14,5 +14,5 @@ Backstory of a target audience everyman in second person <!-- possibly your frie
 Own backlog on the site as interview with <i>deterministic</i> AI.
 
 <p>
-[example(sentence)]
+This [(is)] an (example) [sentence].
 </p>
