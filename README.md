@@ -1,4 +1,4 @@
 
-docs: get commentary out of program with liquid tags,  
+docs: /assets/docs.js,  
 replace # with h1-h6 for toc, brackets with bold / italic  
-in order of not succession but execution, to wiki  
+in order of not succession but execution; to wiki (?)  
