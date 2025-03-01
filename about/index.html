@@ -7,7 +7,7 @@ layout: default
     display:none;
   }
   
-  #calendar, #latest {
+  #calendar, #torah, #latest {
     width: 320px;
     margin-bottom: 0;
     margin-right: 0;
@@ -55,8 +55,20 @@ layout: default
 
        chart.draw(dataTable, options);
    }
+  
+      function linker(ref) {
+        document.getElementById('torah').innerText = ref;
+      }
+      const options = {method: 'GET', headers: {accept: 'application/json'}};
+      fetch('https://www.sefaria.org/api/calendars?diaspora=1', options)
+        .then(response => response.json())
+        .then(response => linker(response.calendar_items[10].ref))
+        .then(response => sefaria.link({mode: "popup-click", dynamic: true, whitelistSelector: "#torah"}))
+        .catch(err => console.log(err));
+        
     </script>
     
+  <div id="torah"></div>
   <div id="latest">
   {% for post in site.posts offset:0 limit:1 %}
     <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
