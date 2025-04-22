@@ -17,6 +17,7 @@ Own backlog on the site as interview with <i>deterministic</i> AI.
 STT ? radio show with Gemma
 -->
 
-<p>
-This [(is)] an (example) [sentence].
+<p style='text-align:center'>
+<!-- This [(is)] an (example) [sentence]. -->
+<img src='/assets/images/zahradka_rano.jpg' width='256' alt='A cat visiting the overgrown backyard in the morning' />
 </p>
