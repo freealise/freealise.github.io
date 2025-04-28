@@ -43,7 +43,13 @@
             width: '100%',
             height: '100%',
             chartArea: {width: '100%', height: '100%'},
-            legend: 'none'
+            legend: 'none',
+            vAxis: {
+              viewWindow:{
+                max:'auto',
+                min:0
+              }
+            }
       }
 
       var data = response.getDataTable();
