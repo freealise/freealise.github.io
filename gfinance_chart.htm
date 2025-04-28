@@ -47,10 +47,17 @@
       
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       chart.draw(dataView, options);
+      
+      var dataVol = new google.visualization.DataView(data);
+      dataVol.setColumns([0, 5]);
+      
+      var chartVol = new google.visualization.LineChart(document.getElementById('chart_vol'));
+      chartVol.draw(dataVol, options);
     }
     // [END gid]
 
   </script>
   <div id="chart_div" style="width: 100%; height: 320px;"></div>
+  <div id="chart_vol" style="width: 100%; height: 80px;"></div>
 </body>
 </html>
