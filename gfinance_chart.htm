@@ -49,14 +49,16 @@
                 max:'auto',
                 min:0
               }
-            }
+            },
+            seriesType: 'line',
+            series: {5: {type: 'bars'}}
       }
 
       var data = response.getDataTable();
       var dataView = new google.visualization.DataView(data);
       dataView.setColumns([0, 4, {sourceColumn: 1, role: 'interval'}, {sourceColumn: 2, role: 'interval'}, {sourceColumn: 3, role: 'interval'}, {sourceColumn: 4, role: 'interval'}, { calc: volumeFactor, type: 'number'}]);
       
-      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+      var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
       chart.draw(dataView, options);
     }
     // [END gid]
