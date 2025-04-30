@@ -18,7 +18,8 @@ STT ? radio show with Gemma
 
 Free verse is an open form of poetry which does not use a prescribed or regular meter 
 or rhyme and tends to follow the rhythm of natural or irregular speech. 
-Free verse encompasses a large range of poetic form
+Free verse encompasses a large range of poetic form...
+(is not really free, only very complex)
 -->
 
 <!-- This [(is)] an (example) [sentence]. -->
