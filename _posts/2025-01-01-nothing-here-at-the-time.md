@@ -15,6 +15,10 @@ and timeline of what is to happen from their point of view, sent in the newslett
 Own backlog on the site as interview with <i>deterministic</i> AI.  
 
 STT ? radio show with Gemma  
+
+Free verse is an open form of poetry which does not use a prescribed or regular meter 
+or rhyme and tends to follow the rhythm of natural or irregular speech. 
+Free verse encompasses a large range of poetic form
 -->
 
 <!-- This [(is)] an (example) [sentence]. -->
