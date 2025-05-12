@@ -25,6 +25,9 @@ Free verse encompasses a large range of poetic form...
 is different from prose by a _lack of predetermined idea_  
 and following the sound instead of image or along with it, like any verse)  
 
+Music is not luxury or background 
+but an assistance for thinking in verse.  
+
 -->
 
 <!-- This [(is)] an (example) [sentence]. -->
