@@ -28,4 +28,6 @@ and following the sound instead of image or along with it, like any verse)
 -->
 
 <!-- This [(is)] an (example) [sentence]. -->
+
+<img src='/assets/images/natural_tune.png' width='256' />
 <img src='/assets/images/zahradka_rano.jpg' width='256' alt='A cat visiting the overgrown backyard in the morning' />
