@@ -12,9 +12,8 @@ value: 0
 <!--
 Backstory of a target audience everyman in second person (possibly your friend)  
 and timeline of what is to happen from their point of view, sent in the newsletter.  
-Own backlog on the site as interview with <i>deterministic</i> AI.  
-
-STT ? radio show with Gemma  
+  
+Own backlog on the site as audio (?) interview with <i>deterministic</i> AI.  
 -->
 
 <!-- This [(is)] an (example) [sentence]. -->
