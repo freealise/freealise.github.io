@@ -26,7 +26,12 @@ is different from prose by a _lack of predetermined idea_
 and following the sound instead of image or along with it, like any verse)  
 
 Music is not luxury or background 
-but an assistance for thinking in verse.  
+but an assistance for thinking nonverbally and in verse.  
+
+An instrument is required so that another person can do the same  
+even with no sense of pitch or voice,  
+also as meditative and mnemonic device for the working class 
+like for modern people the computer.  
 
 -->
 
