@@ -17,5 +17,9 @@ An instrument is required so that another person can do the same
 even with no sense of pitch or voice,  
 also as meditative and mnemonic device for the working class 
 like for modern people the computer.  
+  
+Tune, rhythm and phoneme formants with harmonized pitch variation  
+and slant rhyme in any place of line are contained in speech -  
+which is like a story on every level (verse / line / bar / beat / note)  
 
 Brainwaves directly synchronize with music (binaural beats are optional).
