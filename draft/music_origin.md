@@ -11,7 +11,7 @@ and following the sound instead of image or along with it, like any verse)
 Music is not luxury or background only for elevated emotional state
 but an assistance for thinking nonverbally and in verse.  
 The tune is the value(s) shift of a story by derivative of (?) pitch,  
-also the stress (by speed, volume and pitch variation) and formant pattern of speech   
+also the semantic stress (by speed, volume and pitch variation) and formant pattern of speech   
 with words in subtext, harmonised and exaggerated for clarity.  
 
 An instrument is required so that another person can do the same  
