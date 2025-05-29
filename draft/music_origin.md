@@ -24,3 +24,7 @@ and slant rhyme in any place of line are contained in speech -
 which is like a story on every level (verse / line / bar / beat / note)  
 
 Brainwaves directly synchronize with music (binaural beats are optional).
+  
+  
+(paper with Anneli ?)  
+  
