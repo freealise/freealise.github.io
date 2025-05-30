@@ -1,0 +1,1 @@
+add wick, lighter and 'gasoline will be free' in font similar to name inscription
