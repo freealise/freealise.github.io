@@ -24,7 +24,7 @@ and slant rhyme in any place of line are contained in speech -
 which is like a story on every level (verse / line / bar / beat / note)  
 
 ! Brainwaves directly synchronize with music (binaural beats are optional).  
-  also applies to visual patterns made for protection from evil  
+  (also applies to visual patterns made for protection from evil)  
   
   
 (paper with Anneli ?)  
