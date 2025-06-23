@@ -16,6 +16,8 @@ and timeline of what is to happen from their point of view, sent in the newslett
 Own _backlog_ on the site as lyrics | script | storyboard  
 -->
 
-<!-- This [(is)] an (example) [sentence]. -->
+<!-- This [(is)] an (example) [sentence]. 
+     use tone letters and spaces of different width for sentence structure
+  -->
 
 <img src='/assets/images/zahradka_rano.jpg' width='256' alt='A cat visiting the overgrown backyard in the morning' />
