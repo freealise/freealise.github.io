@@ -9,13 +9,11 @@ categories: jekyll update
 tags: new post
 value: 0
 ---
-<!--
-Backstory of a target audience everyman in second person (possibly your friend)  
-and timeline of what is to happen from their point of view, sent in the newsletter.  
-  
-Own _backlog_ on the site as presentation  
--->
+
+<iframe
+      src="https://archive.org/embed/storybyrobertmckee"
+      width="560" height="384" frameborder="0"
+      webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen
+    ></iframe>
 
 <!-- This [(is)] an (example) [sentence]. -->
-
-<img src='/assets/images/zahradka_rano.jpg' width='256' alt='A cat visiting the overgrown backyard in the morning' />
