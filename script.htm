@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<style>
+  h3 {
+    display:none;
+  }
+  #blogger {
+    width: 100%;
+    height: 512px;
+    border: 0;
+  }
+</style>
+
+<h3>Script</h3>
+
+<iframe id="blogger" src="" width="100%" height="512"></iframe>
+
+<script>
+  var view = '?view=flipcard&m=0';
+  var url = 'https://map.freeali.se';
+  var p = document.location.href.split('?p=');
+  if (p[1]) {;
+    document.getElementById('blogger').src = decodeURIComponent(p[1]);
+  } else {
+    document.getElementById('blogger').src = url + view;
+  }
+</script>
