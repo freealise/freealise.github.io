@@ -2,6 +2,7 @@
 _Usability < Accessibility_:  
 Design for all users, regardless of their abilities or assistive devices.  
 This not only expands your market but often improves usability for everyone.  
+Do this instead of hype and exaggeration (bluff) in advertising.  
 https://jobs.codebar.io/  
 https://www.google.com/search?q=where+to+hire+testers+for+ui+ux  
   
