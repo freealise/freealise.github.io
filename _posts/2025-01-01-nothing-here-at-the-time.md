@@ -18,7 +18,7 @@ value: 0
 
 <!-- 
 
-fix the [('Noahide')] story: replace (Noah) with [Mary Magdalene] for gentiles
+fix the made-up [('Noahide')] story: replace (Noah) with [Mary Magdalene] for gentiles
 
 This [(is)] an (example) [sentence].
 
