@@ -16,4 +16,10 @@ value: 0
       webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen
     ></iframe>
 
-<!-- This [(is)] an (example) [sentence]. -->
+<!-- 
+
+fix the [('Noahide')] story: replace (Noah) with [Mary Magdalene] for gentiles
+
+This [(is)] an (example) [sentence].
+
+-->
