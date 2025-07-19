@@ -18,6 +18,6 @@ value: 0
 
 <!-- 
 
-fix the unrealistic [('Noahide')] story: replace (Noah) with [Mary Magdalene] for gentiles
+fix the unconvincing [('Noahide')] story: connect (Noah) to [Mary Magdalene] for gentiles
 
 -->
