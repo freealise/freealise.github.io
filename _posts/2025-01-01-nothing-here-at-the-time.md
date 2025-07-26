@@ -20,6 +20,6 @@ value: 0
 
 fix the unconvincing [('Noahide')] story: 
 connect (Noah) to [Mary Magdalene] for gentiles
-leaflet in Georgian
+leaflet in Georgian, also Czech with Tanya reference
 
 -->
