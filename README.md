@@ -12,5 +12,7 @@ in order of not succession but execution; to wiki (?)
   
 https://scholar.google.com/  
 https://patents.google.com/  
-
-https://mui.com/material-ui/material-icons/?query=
+  
+https://mui.com/material-ui/material-icons/?query=  
+  
+proxy: https://developers.cloudflare.com/workers/examples/fetch-html/  
