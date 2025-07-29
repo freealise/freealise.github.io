@@ -17,6 +17,10 @@
   src: url("/assets/fonts/Hero.otf") format("opentype");
 }
 
+* {
+    filter: grayscale(100%);
+}
+
 body {
     background: fixed url('/assets/images/bg.jpg') center;
     background-size: cover;
