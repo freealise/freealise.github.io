@@ -27,5 +27,5 @@ which is like a story on every level (verse / line / bar / beat / note)
   (also applies to visual patterns made for protection from evil)  
   
   
-(paper+album review by Anneli ?)  
+(paper+album peer review by Anneli for credibility)  
   
