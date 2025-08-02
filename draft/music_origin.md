@@ -26,7 +26,7 @@ which is like a story on every level (verse / line / bar / beat / note)
 ! Brainwaves directly synchronize with music (binaural beats are optional).  
   (also applies to visual patterns made for protection from evil)  
   is originally a hypnotic meditative spiritual practice
-  a tune is a set of binary beats added together and averaged (stress = volume -> pitch + length)  
+  a tune is a set of beats with varying loudness (stress = volume + pitch + length)  
   
 (paper+album peer review by Anneli for credibility)  
   
