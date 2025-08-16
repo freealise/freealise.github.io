@@ -15,6 +15,7 @@ in order of not succession but execution; to wiki (?)
 https://scholar.google.com/  
 https://patents.google.com/  
 Canada incubators ?  
+Storygrid editor  
   
 https://mui.com/material-ui/material-icons/?query=  
   
