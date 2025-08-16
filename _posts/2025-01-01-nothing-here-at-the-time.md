@@ -11,6 +11,12 @@ value: 0
 ---
 
 <iframe
+      src="https://archive.org/embed/kabbalahnewpersp0000idel_w3g0"
+      width="560" height="384" frameborder="0"
+      webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen
+    ></iframe>
+
+<iframe
       src="https://archive.org/embed/storybyrobertmckee"
       width="560" height="384" frameborder="0"
       webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen
