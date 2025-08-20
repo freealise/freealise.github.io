@@ -29,7 +29,7 @@ which is like a story on every level (verse / line / bar / beat / note)
   A tune is a a stress (volume + pitch + length) and value shift hierarchy (fractalising)  
   Cantillation = five points connected by four segments, octave range  
   
-Music is used to promote a cause as well as general charity (strength) or education (+in the Temple)  
+Music is used to promote a cause as well as general charity (strength) or education (+in the Temple) = non-commercial advertising  
   
 (paper+album peer review by Anneli for credibility)  
   
