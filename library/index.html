@@ -7,7 +7,7 @@ layout: default
     display:none;
   }
   
-  #calendar, #torah, #latest {
+  #torah, #latest {
     width: 320px;
     margin-bottom: 0;
     margin-right: 0;
@@ -25,37 +25,8 @@ layout: default
 
 <h3>Library</h3>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<div id="calendar"></div>
-    
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["calendar"]});
-      google.charts.setOnLoadCallback(drawChart);
-
-   function drawChart() {
-       var dataTable = new google.visualization.DataTable();
-       dataTable.addColumn({ type: 'date', id: 'Date' });
-       dataTable.addColumn({ type: 'number', id: 'Sentiment' });
-       dataTable.addColumn({ type: 'string', id: 'Status', role: 'tooltip'});
-       dataTable.addRows([
-       {% for post in site.posts %}
-          [ new Date({{ post.date | date: '%Y' }}, {{ post.date | date: '%m' | minus:1 }}, {{ post.date | date: '%d' }}), {{ post.value }}, '<h4><a href="{{ post.url }}">{{ post.title }}</a></h4><div class="content">{{ post.content | newline_to_br | strip_newlines }}</div>'],
-       {% endfor %}
-       ]);
-
-       var chart = new google.visualization.Calendar(document.getElementById('calendar'));
-
-       var options = {
-         title: "Library",
-         height: 128,
-         width: 320,
-         calendar: { cellSize: 5 },
-         tooltip: {isHtml: true},
-       };
-
-       chart.draw(dataTable, options);
-   }
-  
+   <script type="text/javascript">
+   
       function linker(ref) {
         document.getElementById('torah').innerText = ref;
       }
