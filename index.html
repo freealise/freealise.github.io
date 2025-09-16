@@ -105,6 +105,16 @@ p {clear:both;}
   font-size: 200%;
   float: left;
 }
+#calendar {
+    width: 320px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: -160px;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+  }
 </style>
 
 <div id="headline"><h3>
@@ -153,6 +163,38 @@ p {clear:both;}
 	</div>-->
   
 <p id='ad'>🔣 Find out the fast and quality way of learning any language - coming soon!</p>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div id="calendar"></div>
+    
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["calendar"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+   function drawChart() {
+       var dataTable = new google.visualization.DataTable();
+       dataTable.addColumn({ type: 'date', id: 'Date' });
+       dataTable.addColumn({ type: 'number', id: 'Sentiment' });
+       dataTable.addColumn({ type: 'string', id: 'Status', role: 'tooltip'});
+       dataTable.addRows([
+       {% for post in site.posts %}
+          [ new Date({{ post.date | date: '%Y' }}, {{ post.date | date: '%m' | minus:1 }}, {{ post.date | date: '%d' }}), {{ post.value }}, '<h4><a href="{{ post.url }}">{{ post.title }}</a></h4><div class="content">{{ post.content | newline_to_br | strip_newlines }}</div>'],
+       {% endfor %}
+       ]);
+
+       var chart = new google.visualization.Calendar(document.getElementById('calendar'));
+
+       var options = {
+         title: "Library",
+         height: 128,
+         width: 320,
+         calendar: { cellSize: 5 },
+         tooltip: {isHtml: true},
+       };
+
+       chart.draw(dataTable, options);
+   }
+   </script>
 
 <p><i>Combine <a href="https://savethecat.com/beat-sheets/take-on-me-beat-sheet" target="_blank">storytelling</a> and <a href="https://slides.google.com" target="_blank">infographics</a>. Use the <a href="/vocalise" target="_blank"><i class="material-icons notranslate">lyrics</i> <span data-info="Not tested on mobile - may not be usable at all">lyrics composer</span></a> and 
 <a href="/vocalise/synth" target="_blank">vocal synthesizer</a>. Play the virtual <a href="/fretboard" target="_blank"><i class="material-icons notranslate">gradient</i> fretboard</a> or <a href="#"><i class="material-icons notranslate">line_weight</i> <span data-info="Fretless stick guitar is to be available for preorder">guitar</span></a> from tabs in <a href="/fretboard/tab_tuning.htm" target="_blank">simple tuning</a>. Find, edit and show <a href="/panoramera/examples/basic/" target="_blank"><i class="material-icons notranslate">explore</i> panoramas</a> of almost any location. Film <a href="#/image-morph-js" target="_blank"><i class="material-icons notranslate">local_movies</i> <span data-info="Soon to be published">animated videos</span></a> of easy do-it-yourself models made of wire, foil and wax with paper backgrounds.</i></p>
