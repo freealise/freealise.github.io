@@ -22,38 +22,7 @@
     <link href='https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap' rel='stylesheet'/>
     <link href='https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,40;0,700;1,300;1,400;1,700&display=swap' rel='stylesheet'/>
     <link href='https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap' rel='stylesheet'/>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["calendar"]});
-      google.charts.setOnLoadCallback(drawChart);
-
-   function drawChart() {
-       var dataTable = new google.visualization.DataTable();
-       dataTable.addColumn({ type: 'date', id: 'Date' });
-       dataTable.addColumn({ type: 'number', id: 'Sentiment' });
-       dataTable.addColumn({ type: 'string', id: 'Status', role: 'tooltip'});
-       dataTable.addRows([
-          [ new Date(2012, 3, 13), 37032, 'ok' ],
-          [ new Date(2012, 3, 14), 38024, '+' ],
-          [ new Date(2012, 3, 15), 38024, '-' ],
-          [ new Date(2012, 3, 16), 38108, '=' ],
-          [ new Date(2012, 3, 17), 38229, '' ]
-        ]);
-
-       var chart = new google.visualization.Calendar(document.getElementById('calendar'));
-
-       var options = {
-         title: "Library",
-         height: 128,
-         width: 320,
-         calendar: { cellSize: 5 },
-         tooltip: {isHtml: true},
-       };
-
-       chart.draw(dataTable, options);
-   }
-   </script>
-	  <script src='/assets/js/site.js'></script>
+	<script src='/assets/js/site.js'></script>
     <script src='https://js.stripe.com/v3'></script>
   </head>
   <body>
