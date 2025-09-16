@@ -33,10 +33,21 @@
        dataTable.addColumn({ type: 'number', id: 'Sentiment' });
        dataTable.addColumn({ type: 'string', id: 'Status', role: 'tooltip'});
        dataTable.addRows([
-       {% for post in site.posts %}
-          [ new Date({{ post.date | date: '%Y' }}, {{ post.date | date: '%m' | minus:1 }}, {{ post.date | date: '%d' }}), {{ post.value }}, '<h4><a href="{{ post.url }}">{{ post.title }}</a></h4><div class="content">{{ post.content | newline_to_br | strip_newlines }}</div>'],
-       {% endfor %}
-       ]);
+          [ new Date(2012, 3, 13), 37032 ],
+          [ new Date(2012, 3, 14), 38024 ],
+          [ new Date(2012, 3, 15), 38024 ],
+          [ new Date(2012, 3, 16), 38108 ],
+          [ new Date(2012, 3, 17), 38229 ],
+          // Many rows omitted for brevity.
+          [ new Date(2013, 9, 4), 38177 ],
+          [ new Date(2013, 9, 5), -38705 ],
+          [ new Date(2013, 9, 12), 38210 ],
+          [ new Date(2013, 9, 13), 38029 ],
+          [ new Date(2013, 9, 19), 38823 ],
+          [ new Date(2013, 9, 23), 38345 ],
+          [ new Date(2013, 9, 24), 38436 ],
+          [ new Date(2013, 9, 30), 38447 ]
+        ]);
 
        var chart = new google.visualization.Calendar(document.getElementById('calendar'));
 
