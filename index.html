@@ -164,6 +164,37 @@ p {clear:both;}
   
 <p id='ad'>🔣 Find out the fast and quality way of learning any language - coming soon!</p>
 <div id="calendar"></div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["calendar"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+   function drawChart() {
+       var dataTable = new google.visualization.DataTable();
+       dataTable.addColumn({ type: 'date', id: 'Date' });
+       dataTable.addColumn({ type: 'number', id: 'Sentiment' });
+       dataTable.addColumn({ type: 'string', id: 'Status', role: 'tooltip'});
+       dataTable.addRows([
+          [ new Date(2012, 3, 13), 37032, 'ok' ],
+          [ new Date(2012, 3, 14), 38024, '+' ],
+          [ new Date(2012, 3, 15), 38024, '-' ],
+          [ new Date(2012, 3, 16), 38108, '=' ],
+          [ new Date(2012, 3, 17), 38229, '' ]
+        ]);
+
+       var chart = new google.visualization.Calendar(document.getElementById('calendar'));
+
+       var options = {
+         title: "",
+         height: 64,
+         width: 320,
+         calendar: { cellSize: 5 },
+         tooltip: {isHtml: true},
+       };
+
+       chart.draw(dataTable, options);
+   }
+   </script>
 
 <p><i>Combine <a href="https://savethecat.com/beat-sheets/take-on-me-beat-sheet" target="_blank">storytelling</a> and <a href="https://slides.google.com" target="_blank">infographics</a>. Use the <a href="/vocalise" target="_blank"><i class="material-icons notranslate">lyrics</i> <span data-info="Not tested on mobile - may not be usable at all">lyrics composer</span></a> and 
 <a href="/vocalise/synth" target="_blank">vocal synthesizer</a>. Play the virtual <a href="/fretboard" target="_blank"><i class="material-icons notranslate">gradient</i> fretboard</a> or <a href="#"><i class="material-icons notranslate">line_weight</i> <span data-info="Fretless stick guitar is to be available for preorder">guitar</span></a> from tabs in <a href="/fretboard/tab_tuning.htm" target="_blank">simple tuning</a>. Find, edit and show <a href="/panoramera/examples/basic/" target="_blank"><i class="material-icons notranslate">explore</i> panoramas</a> of almost any location. Film <a href="#/image-morph-js" target="_blank"><i class="material-icons notranslate">local_movies</i> <span data-info="Soon to be published">animated videos</span></a> of easy do-it-yourself models made of wire, foil and wax with paper backgrounds.</i></p>
