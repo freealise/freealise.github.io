@@ -29,6 +29,8 @@ which is like a story on every level (verse / line / bar / beat / note)
   A tune is a a stress (volume + pitch + length) and value shift hierarchy (fractalising)  
   Cantillation = five points connected by four segments, octave range  
   
+protective patterns; long landscapes; any vector picture viewed nonlinearly for sound patterns  
+  
 guitar is held against 2nd chkr (belly button) - cure IBS ?  
   
 Music is _also_ used to promote a cause as well as general charity (strength) or education (+in the Temple) = non-commercial advertising  
