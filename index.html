@@ -156,6 +156,7 @@ p {clear:both;}
 
 <div style="position:relative;left:50%;margin-left:-129px;width:258px;height:194px;">
      <img alt="Markerboard" title="Markerboard" style="border:1px dashed lightgray" src="https://docs.google.com/drawings/d/e/2PACX-1vSTQjAY0VUYxMGZenK1p_oBC05YP1MPprcs-m-TWu7rWqFgEA8Nb719ySC2WLakEJJ_NsVm8r_Q21zZ/pub?w=256&h=192">
+     <div id='update'></div>
   </div>
 
 <div><a href="javascript:" onclick="var inv=document.getElementById('inventory'); if (inv.style.display=='block') {inv.style.display='none';} else {inv.style.display='block';}">👾 Show current offers -&gt;</a></div>
@@ -242,7 +243,7 @@ p {clear:both;}
                     });
                   });
                   
-                  displayError.textContent = "Last modified on: " + document.lastModified +"";
+                  document.getElementById('update').textContent = '<small>' + document.lastModified + '</small>';
     </script>
   </div>
 </div>
