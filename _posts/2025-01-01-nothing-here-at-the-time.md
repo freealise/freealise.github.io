@@ -26,6 +26,6 @@ value: 0
 
 fix the unconvincing [('Noahide')] story: 
 connect (Noah) to [Mary Magdalene] for gentiles
-leaflet in Georgian, also Czech with Tanya reference, Greek as original (?), Ukrainian with Coptic font  
+leaflet in Georgian, Czech with Tanya reference, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English also for Liberland  
 
 -->
