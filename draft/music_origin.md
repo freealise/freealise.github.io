@@ -1,4 +1,4 @@
-#### 'I blog in lyrics'
+#### 'I blog in lyrics' <- 'small images'
 
 Free verse is an open form of poetry which does not use a prescribed or regular meter 
 or rhyme and tends to follow the rhythm of natural or irregular speech. 
