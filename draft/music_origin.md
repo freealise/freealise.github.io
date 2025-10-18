@@ -31,6 +31,8 @@ which is like a story on every level (verse / line / bar / beat / note)
   
 "small images" = protective patterns; long landscapes; any vector picture viewed nonlinearly for sound patterns  
   
+  "I've found a page among my papers," said Goethe, "where I describe architecture as frozen music. And there’s something in that, you know; the state of mind produced by architecture is similar to the effect of music."  
+  
 ! How to attain the love and remove the fear:  
   The power of evil can not be used directly, it has to be confused. To confuse it, patterns are made, which are neither traditional (idolatry) nor anyone's personal expression (human worship) nor random (atheism). They are instead found in the environment.  
   
