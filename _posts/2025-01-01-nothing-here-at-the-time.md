@@ -24,8 +24,8 @@ value: 0
 
 <!-- 
 
-fix the unconvincing [('Noahide')] story: 
-connect (Noah) to [Mary Magdalene] for gentiles
-leaflet in Georgian, Czech with Tanya reference, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English (+for Liberland), German  
+fix the unconvincing [('Noahide')] story:  
+connect (Noah) to [Mary Magdalene] for gentiles with Tanya reference  
+leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English (+for Liberland), German  
 
 -->
