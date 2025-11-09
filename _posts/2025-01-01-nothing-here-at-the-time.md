@@ -27,7 +27,7 @@ value: 0
 fix the unconvincing [('Noahide')] story:  
 drinking had a spiritual reason and he probably never did it again  
 connect (Noah) to [Mary Magdalene] for gentiles with Kabbala+Tanya reference  
-leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English (+for Liberland), German, Maltese ?  
+leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English (+for Liberland), German, Greek or Maltese  
 
 https://visa.vfsglobal.com/one-pager/malta/russia/russian/
 
