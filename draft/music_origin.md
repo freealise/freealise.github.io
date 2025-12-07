@@ -36,7 +36,7 @@ which is like a story on every level (verse / line / bar / beat / note)
 ! How to attain the love and remove the fear:  
   The power of evil can not be used directly, it has to be confused. To confuse it, patterns are made, which are neither traditional (idolatry) nor anyone's personal expression (human worship) nor random (atheism). They are instead found in the environment.  
   
-is (along with other show business) a beneficial psychedelic drug, while not a medicine as it has to be personally relevant to be efficient ("white magic")  
+is (along with other show business) a beneficial psychedelic drug, while not a medicine (like herbs that the same practitioners also use) as it has to be personally relevant to be efficient like psychotherapy ("white magic")  
 guitar is held against 2nd chkr (belly button) - cure IBS ?  
   
 Music is _also_ used to promote a cause as well as general charity (strength) or education (+in the Temple) = non-commercial advertising  
