@@ -39,7 +39,7 @@ which is like a story on every level (verse / line / bar / beat / note)
 is (along with other show business) a beneficial psychedelic drug, while not a medicine (like herbs that the same practitioners also use) as it has to be personally relevant to be efficient like psychotherapy ("white magic")  
 guitar is held against 2nd chkr (belly button) - cure IBS ?  
   
-Music is _also_ used to promote a cause as well as general charity (strength) or education (+in the Temple) = non-commercial advertising  
+Semantically, music is used to promote a cause as well as general charity (strength) or education (+in the Temple) = non-commercial advertising  
 (develops the spirit of sacrifice)  
   
 "Your Lord knows best all those in the heavens and the earth. And We have surely favoured some prophets above others, and to David We gave the Psalms." (Quran 17:55)  
