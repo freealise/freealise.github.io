@@ -25,7 +25,7 @@ which is like a story on every level (verse / line / bar / beat / note)
 
 ! Brainwaves directly synchronize with music (binaural beats are optional).  
   (also applies to visual patterns made for protection from evil; can be a spectrogram in two rainbow colored pixel columns on both sides of screen)  
-  is originally a hypnotic meditative spiritual practice
+  is originally a hypnotic meditative spiritual practice (experience for the listeners)  
   A tune is a a stress (volume + pitch + length) and value shift hierarchy (fractalising)  
   Cantillation = five points connected by four segments, octave range  
   
