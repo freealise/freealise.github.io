@@ -45,5 +45,6 @@ Semantically, music is used to promote a cause as well as general charity (stren
  The reason David is singled out here is because some Jewish authorities at the time of the Prophet (ﷺ) claimed that no scripture had been revealed after Moses. So this verse refutes this claim by referring to the Psalms of David.  
   
 - Miriam Wilbury & Co, Vol.2 ($40000)  
-(paper + sci-fi album peer review by Anneli for credibility)  
+(paper + album peer review by Anneli for credibility)  
+documentary music, sci-fi lyrics  
   
