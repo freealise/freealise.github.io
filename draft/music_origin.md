@@ -46,5 +46,5 @@ Semantically, music is used to promote a cause as well as general charity (stren
   
 - Miriam Wilbury & Co, Vol.2 ($40000)  
 (paper + album peer review by Anneli for credibility)  
-documentary music, sci-fi lyrics  
+documentary music, also documentary or sci-fi lyrics  
   
