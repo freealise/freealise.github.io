@@ -23,7 +23,7 @@ value: 0
     ></iframe>
 
 <!-- 
-fix the unconvincing [('Noahide' -> Kabbalist)] story:  
+fix the unconvincing [('Noahide' -> Kabbalist)] story: "Noah was a hippie"  
 drinking had a spiritual reason and he probably never did it again  
 connect (Noah) to [Mary Magdalene] for gentiles with Tanya+_ references  
   
