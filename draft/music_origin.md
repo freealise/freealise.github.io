@@ -43,6 +43,12 @@ Semantically, music can be used to promote a cause as well as general charity (s
   
 "Your Lord knows best all those in the heavens and the earth. And We have surely favoured some prophets above others, and to David We gave the Psalms." (Quran 17:55)  
  The reason David is singled out here is because some Jewish authorities at the time of the Prophet (ﷺ) claimed that no scripture had been revealed after Moses. So this verse refutes this claim by referring to the Psalms of David.  
+Prayer is originally a song like Psalms (earlier and default), not a recitation like the siddur (later and varying); can change G-d's mind about you; selfish request that also includes other people with same requirements  
+  
+- build on the siddur and Psalms musically  
+- learn Hebrew as it is more organized than English and about any combination of phonemes will produce meaning  
+- make an instrument for _effortless_ background accompaniment that might invoke thoughts and speech for prayer  
+  
   
 - Miriam Wilbury & Co, Vol.2 ($40000)  
 (paper + album peer review by Anneli for credibility)  
