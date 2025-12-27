@@ -26,6 +26,7 @@ value: 0
 fix the unconvincing [('Noahide' -> Kabbalist)] story: "Noah was a hippie"  
 drinking had a spiritual reason and he probably never did it again  
 connect (Noah) to [Mary Magdalene] for gentiles with Tanya+_ references  
+Jesus taught the 7 laws which are the basis of Kabbalah, for anything beyond it more evidence is required  
 prompt: https://hebrew4christians.com/Articles/kabbalah/Jesus_Kabbalah/jesus_kabbalah.html  
   
 leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English (+for Liberland), German  
