@@ -49,6 +49,8 @@ Prayer is originally a song like Psalms (earlier and default), not a recitation 
 - learn Hebrew as it is more organized than English and about any combination of phonemes will produce meaning  
 - make an instrument for _effortless_ background accompaniment that might invoke thoughts and speech for prayer  
   
+begin with animals  
+  
   
 - Miriam Wilbury & Co, Vol.2 ($40000)  
 (paper + album peer review by Anneli for credibility)  
