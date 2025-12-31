@@ -55,7 +55,7 @@ begin with animals (specific location and territory, threat warning)
 - Miriam Wilbury & Co, Vol.2 ($40000)  
 (paper + album peer review by Anneli for credibility)  
 documentary music (speech or other natural patterns if instrumental), also documentary (prayer) or sci-fi (potential prophecy) lyrics  
-Antarctic folk (ask the researchers) ?  
+Antarctic folk (ask the researchers)  
   
 summary and reminder of any text (even scientific) can be lyrics  
   
