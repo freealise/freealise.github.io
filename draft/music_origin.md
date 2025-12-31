@@ -49,11 +49,13 @@ Prayer is originally a song like Psalms (earlier and default), not a recitation 
 - learn Hebrew as it is more organized than English and about any combination of phonemes will produce meaning  
 - make an instrument for _effortless_ background accompaniment that might invoke thoughts and speech for prayer  
   
-begin with animals (location and territory, threat warning)  
+begin with animals (specific location and territory, threat warning)  
   
   
 - Miriam Wilbury & Co, Vol.2 ($40000)  
 (paper + album peer review by Anneli for credibility)  
 documentary music (speech or other natural patterns if instrumental), also documentary (prayer) or sci-fi (potential prophecy) lyrics  
 Antarctic folk (ask the researchers) ?  
+  
+summary and reminder of any text (even scientific) can be lyrics  
   
