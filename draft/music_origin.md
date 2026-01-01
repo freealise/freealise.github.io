@@ -52,8 +52,7 @@ Prayer is originally a song like Psalms (earlier and default), not a recitation 
 begin with animals (specific location and territory, competition, warning, _)  
   
   
-- Miriam Wilbury & Co, Vol.2 ($40000)  
-(paper + album peer review by Anneli for credibility)  
+- paper + album peer review by Anneli for credibility  
 documentary music (speech or other natural patterns if instrumental), also documentary (prayer) or sci-fi (potential prophecy) lyrics  
   
 summary and reminder of any text (even scientific) can be lyrics  
