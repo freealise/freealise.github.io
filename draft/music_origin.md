@@ -57,3 +57,4 @@ documentary music (speech or other natural patterns if instrumental), also docum
   
 summary and reminder of any text (even scientific) can be lyrics  
   
+prayer = review ?  
