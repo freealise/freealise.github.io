@@ -169,7 +169,7 @@ p {clear:both;}
   <div id="stripe">
   <!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
     €<input autocomplete="off" id="amount" size="2" type="text" value="10" onchange="document.getElementById('quantity').value=this.value;document.getElementById('fiatValue').value=this.value;"/>
-    <button id="checkout-button" role="link"><i class="material-symbols-outlined notranslate">credit_card_heart</i> Sponsor</button>
+    <button id="checkout-button" role="link"><i class="material-symbols-outlined notranslate">credit_card_heart</i> Support</button>
 
   <form action="https://www.paypal.com/cgi-bin/webscr" method="get" target="_blank">
     <input type="hidden" name="cmd" value="_s-xclick" />
@@ -202,7 +202,7 @@ p {clear:both;}
       <img height="24" src="/assets/images/bitpay/PayWith-BitPay-Card-GrayScale.svg" border="0" title="Pay with BitPay" alt="Pay with BitPay"/>
     </button>
   </form>
-    <progress id="sponsor" value="750" max="1000" style="filter:grayscale(1);width:128px;"></progress><label for="sponsor" style="font-size:12px"> 800 💶</label><br/>
+    <progress id="support" value="750" max="1000" style="filter:grayscale(1);width:128px;"></progress><label for="support" style="font-size:12px"> 800 💶</label><br/>
     <a href="https://www.google.com/search?q=10+usd+to+eur" id="rateLink" target="_blank" onfocus="this.href=this.href.replace(/\d+/, document.getElementById('quantity').value);"><i class="material-icons notranslate">price_check</i> exchange rates</a>
 
     <div id="error-message">
