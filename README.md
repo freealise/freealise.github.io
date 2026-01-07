@@ -1,3 +1,5 @@
+Design is a craft based on experience and science, not personal expression.  
+  
 ### UI/UX  
 GUI -> command line + natural language ?  
   
