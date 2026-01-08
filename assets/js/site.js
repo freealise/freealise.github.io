@@ -12,7 +12,7 @@ function subscribeEmail(address, s) {
         document.getElementById('subscribe-form').innerHTML = this.responseText;
       }
     };
-    xhttp.open('GET', 'https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a='+un+'subscribe&email='+encodeURIComponent(address), true);
+    xhttp.open('GET', 'https://script.google.com/macros/s/AKfycbyYo_zODFB1fWxUPO3hg-3CFh5NNLUVd7E8rtUfDpOuIKDftakLiiNEdIsFeliw_69e/exec?a='+un+'subscribe&email='+encodeURIComponent(address), true);
     xhttp.send();
   }
 }
@@ -33,7 +33,7 @@ function sendEmail(token) {
         document.getElementById("contact-form-sent").innerHTML = this.responseText;
       }
     };
-    xhttp.open('GET', 'https://script.google.com/macros/s/AKfycbz5br4wnfSGtucWKwGQq1Tb07eshJez6uVaFatn4xJAc_rcrcA/exec?a=contact&name='+encodeURIComponent(_name)+'&site='+encodeURIComponent(_site)+'&email='+encodeURIComponent(_email)+'&subj='+encodeURIComponent(_subject)+'&msg='+encodeURIComponent(_message)+'&token='+token, true);
+    xhttp.open('GET', 'https://script.google.com/macros/s/AKfycbyYo_zODFB1fWxUPO3hg-3CFh5NNLUVd7E8rtUfDpOuIKDftakLiiNEdIsFeliw_69e/exec?a=contact&name='+encodeURIComponent(_name)+'&site='+encodeURIComponent(_site)+'&email='+encodeURIComponent(_email)+'&subj='+encodeURIComponent(_subject)+'&msg='+encodeURIComponent(_message)+'&token='+token, true);
     xhttp.send();
   } else {
     document.getElementById("contact-form-sent").innerHTML = "Please complete the empty fields :)";
