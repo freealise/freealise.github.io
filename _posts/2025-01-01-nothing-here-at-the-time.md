@@ -24,7 +24,7 @@ value: 0
 
 <!-- 
 fix the unconvincing [('Noahide' -> Kabbalist)] story: "Noah was a hippie"  
-drinking had a spiritual reason and he probably never did it again  
+drinking had a spiritual reason and he probably never did it again; also wife was a disbeliever  
 ('Sons of Abraham went east')  
 connect to [Mary Magdalene] for gentiles with Tanya+_ references  
 (Jesus) taught the 7 laws which are the basis of Kabbalah, for anything beyond it more evidence is required  
