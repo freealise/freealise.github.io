@@ -56,4 +56,5 @@ begin with animals (specific location and territory, competition, warning, _)
 documentary music (speech or other natural patterns if instrumental), also documentary (prayer) or sci-fi (potential prophecy) lyrics  
   
 summary and reminder of any text (even scientific) can be lyrics  
+"He had to sum up his prophetic message in a way the people would always remember and be inspired by…" (HaAzinu, the Song of Moses)  
   
