@@ -58,3 +58,5 @@ documentary music (speech or other natural patterns if instrumental), also docum
 summary and reminder of any text (even scientific) can be lyrics  
 "He had to sum up his prophetic message in a way the people would always remember and be inspired by…" (HaAzinu, the Song of Moses)  
   
+learn from the professional, relate to the fellow  
+  
