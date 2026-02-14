@@ -11,9 +11,11 @@ and following the sound instead of image or along with it, like any verse)
 Music is not luxury or background only for elevated emotional state
 but an assistance for thinking nonverbally and in verse.  
 The tune is the value(s) shift of a story by derivative of (?) pitch,  
-also the semantic stress (by speed, volume and pitch variation) and formant pattern of speech   
-with words in subtext, harmonised and exaggerated for clarity.  
-
+plus the semantic stress (by speed, volume and pitch variation) and formant pattern of speech   
+with words in subtext, harmonised and possibly exaggerated for clarity.  
+  
+The story either exists prior to music or is in the background of it, later expressed in lyrics.  
+  
 An instrument is required so that another person can do the same  
 even with no sense of pitch or voice,  
 also as meditative and mnemonic device for the working class 
