@@ -43,7 +43,7 @@ guitar is held against 2nd chkr (belly button) - cure IBS ?
   
 Semantically, music can be used to promote a cause as well as general charity (strength) or education (+develops the spirit of sacrifice in the Temple) = non-commercial context-sensitive presentation of a yet nonexistent idea  
   
-In private music serves for meditation and sublimation, can be a form of exorcism which are various  
+In private music serves for meditation and sublimation, can be a form of exorcism - which are various, including an intimate relation with a bashert  
   
 "Your Lord knows best all those in the heavens and the earth. And We have surely favoured some prophets above others, and to David We gave the Psalms." (Quran 17:55)  
  The reason David is singled out here is because some Jewish authorities at the time of the Prophet (ﷺ) claimed that no scripture had been revealed after Moses. So this verse refutes this claim by referring to the Psalms of David.  
