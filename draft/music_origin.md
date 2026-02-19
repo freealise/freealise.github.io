@@ -25,7 +25,7 @@ Tune, rhythm and phoneme formants with harmonized pitch variation
 and slant rhyme in any place of line are contained in speech -  
 which is like a story on every level (verse / line / bar / beat / note)  
 
-! Brainwaves directly synchronize with music (as beats and relative pitch).  
+! Brainwaves synchronize with music (length of notes, beats, relative pitch)  
   (also applies to visual patterns made for protection from evil; can be a spectrogram in two rainbow colored pixel columns on both sides of screen)  
   Complexity is distracting (which can be beneficial), simplicity aids focus  
   is originally a hypnotic meditative spiritual practice (experience for the listeners)  
