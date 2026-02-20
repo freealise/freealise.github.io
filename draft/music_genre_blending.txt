@@ -46,3 +46,4 @@ Antarctic folk (ask the researchers)
 klezmer is originally more similar to Ukrainian folk-pop than jazz (despite improvisations)  
   
 speech & story = natural music without genre idolatry (academic convention)  
+deliberately produce a random sequence by pitch, length, volume and spectrum, where the probabilities are also recursively random and not even (fail)  
