@@ -1,7 +1,7 @@
 Design is a craft based on experience and science, not personal expression.  
   
 ### UI/UX  
-GUI -> command line + natural language ?  
+code documentation as ASCII pics (everyman you-character)  
   
 _Usability < Accessibility_:  
 Design for all users, regardless of their abilities or assistive devices.  
