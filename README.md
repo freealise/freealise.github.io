@@ -2,6 +2,7 @@ Design is a craft based on experience and science, not personal expression.
   
 ### UI/UX  
 code documentation as ASCII pics (everyman you-character)  
+script in ascii (most like coding, least awkward)  
   
 _Usability < Accessibility_:  
 Design for all users, regardless of their abilities or assistive devices.  
