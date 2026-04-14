@@ -37,6 +37,8 @@ which is like a story on every level (verse / line / bar / beat / note)
   
 "small images" = protective patterns; long landscapes; any vector picture viewed nonlinearly for sound patterns  
   
+- average chart of weather (or prices) as melody; historical data for temperature / pressure / wind, find derivatives; speech or music is inspired by terrain and climate (https://www.smithsonianmag.com/smart-news/languages-consonants-and-vowels-could-depend-climate-180957210/); music can be presented as landscape, lyrics are orally transmitted stories with mnemonic devices (rhythm and rhyme)  
+  
   "I've found a page among my papers," said Goethe, "where I describe architecture as frozen music. And there’s something in that, you know; the state of mind produced by architecture is similar to the effect of music."  
   
 ! How to attain the love and remove the fear:  
