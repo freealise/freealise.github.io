@@ -24,7 +24,10 @@ like for modern people the computer.
 Tune, rhythm and phoneme formants with harmonized pitch variation  
 and slant rhyme in any place of line are contained in speech -  
 which is like a story on every level (verse / line / bar / beat / note)  
-
+  
+!! whole composition is a metaphor of speech AND several value shifts in polyphony - represent by FFT (fractalizing); typical speaking rate for English is 4 syllables per second
+    (stress pattern AND drama, value shift <-> pitch) base pitch: bass, 1st f: rhythm, 2nd f: solo, 3nd f: ornament, sibilants: percussion, drums: shamanic effect (~rap) - compose / find musical evidence instead of paper (+basis / sources) (https://en.m.wikipedia.org/wiki/Brainwave_entrainment)
+  
 ! Brainwaves synchronize with music (length of notes, beats, relative pitch)  
   (also applies to visual patterns made for protection from evil; can be a spectrogram in two rainbow colored pixel columns on both sides of screen)  
   Complexity is distracting (which can be beneficial), simplicity aids focus  
