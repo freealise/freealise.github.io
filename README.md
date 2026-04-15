@@ -3,6 +3,7 @@ Design is a craft based on experience and science, not personal expression.
 ### UI/UX  
 code documentation or storyboard as ASCII chart (everyman you-character)  
 script in ascii (most like coding, least awkward)  
+WASM / Electron for cross-platform ?  
   
 _Usability < Accessibility_:  
 Design for all users, regardless of their abilities or assistive devices.  
