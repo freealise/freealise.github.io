@@ -24,4 +24,4 @@ Canada incubators ?
 https://mui.com/material-ui/material-icons/?query=  
 https://pictogrammers.com/library/mdi/  
   
-proxy: https://developers.cloudflare.com/workers/examples/fetch-html/  
+proxy: https://developers.cloudflare.com/workers/examples/fetch-html/ (or firebase ?)  
