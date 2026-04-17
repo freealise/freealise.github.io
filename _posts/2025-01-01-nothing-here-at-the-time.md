@@ -30,5 +30,5 @@ connect to [Mary Magdalene] for gentiles with Tanya+_ references
 (Jesus) taught the 7 laws which are the basis of Kabbalah, for anything beyond it more evidence is required  
 prompt: https://hebrew4christians.com/Articles/kabbalah/Jesus_Kabbalah/jesus_kabbalah.html  
   
-leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English (+for Liberland), German  
+translated gospel of Mary w.comment as leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English (+for Liberland), German  
 -->
