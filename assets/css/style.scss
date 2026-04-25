@@ -118,8 +118,10 @@ header p {
     font-size: 16px;
     font-style: italic;
     font-weight: normal;
-    font-family: 'Averia Serif Libre', serif;
     text-shadow: none;
+}
+header p i {
+    font-family: 'Averia Serif Libre', serif;
 }
 header svg {
     right: 50%;
