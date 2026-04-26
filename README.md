@@ -26,3 +26,5 @@ https://mui.com/material-ui/material-icons/?query=
 https://pictogrammers.com/library/mdi/  
   
 proxy: https://developers.cloudflare.com/workers/examples/fetch-html/ (or firebase ?)  
+  
+banners: prnews.io, google adwords, urbandictionary, ultimate guitar, gearspace  
