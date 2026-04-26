@@ -1,9 +1,9 @@
 Design is a craft based on experience and science, not personal expression.  
   
 ### UI/UX  
-higher level language for screenwriting  
+higher level formal language for screenwriting (~legalese / journalese)  
 code documentation or storyboard as ASCII chart (everyman you-character)  
-script in ascii (most like coding, least awkward)  
+script or OST lyrics in ascii (most like coding, least awkward)  
 WASM / Electron for cross-platform ?  
   
 _Usability < Accessibility_:  
