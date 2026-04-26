@@ -28,3 +28,4 @@ https://pictogrammers.com/library/mdi/
 proxy: https://developers.cloudflare.com/workers/examples/fetch-html/ (or firebase ?)  
   
 banners: prnews.io, google adwords, urbandictionary, ultimate guitar, gearspace  
+networks (rss or zapier)  
