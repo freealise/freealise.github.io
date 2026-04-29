@@ -13,7 +13,7 @@ Do this instead of hype and exaggeration (bluff) in advertising.
 https://jobs.codebar.io/  
 https://www.google.com/search?q=where+to+hire+testers+for+ui+ux  
   
-docs: /assets/js/docs.js, show in tooltips  
+docs: /assets/js/docs.js, show inline docs with links to wikipedia in tooltips  
 replace # with h1-h6 for toc, brackets with bold / italic  
 in order of not succession but execution; to wiki (?)  
 https://geminicli.com/docs/get-started/examples/#explain-a-repository-by-reading-its-code  
