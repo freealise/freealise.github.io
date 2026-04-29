@@ -26,6 +26,8 @@ Canada incubators ?
 https://mui.com/material-ui/material-icons/?query=  
 https://pictogrammers.com/library/mdi/  
   
+test on desktop/mobile and in browsers (offidocs, browserling, browserstack open source)  
+  
 proxy: https://developers.cloudflare.com/workers/examples/fetch-html/ (or firebase ?)  
   
 banners: prnews.io, google adwords, urbandictionary, ultimate guitar, gearspace  
