@@ -5,6 +5,7 @@ higher level formal language for screenwriting (~legalese / journalese)
 code documentation or storyboard as ASCII chart (everyman you-character)  
 script or OST lyrics in ascii (most like coding, least awkward)  
 WASM / Electron for cross-platform ?  
+(mouse+wheel/kbrd/multitouch(radiustouch,rotationangle)/pointer/midi in/out ?)  
   
 _Usability < Accessibility_:  
 Design for all users, regardless of their abilities or assistive devices.  
