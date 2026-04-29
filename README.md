@@ -14,7 +14,7 @@ Do this instead of hype and exaggeration (bluff) in advertising.
 https://jobs.codebar.io/  
 https://www.google.com/search?q=where+to+hire+testers+for+ui+ux  
   
-docs: /assets/js/docs.js, show inline docs with links to wikipedia in tooltips  
+docs: /assets/js/docs.js, show inline docs within app with links to wikipedia in tooltips  
 replace # with h1-h6 for toc, brackets with bold / italic  
 in order of not succession but execution; to wiki (google sites)  
 sitemap (https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap#rss, https://developers.google.com/search/blog/2014/10/best-practices-for-xml-sitemaps-rssatom)  
