@@ -4,7 +4,7 @@ Design is a craft based on experience and science, not personal expression.
 higher level formal language for screenwriting (~legalese / journalese)  
 code documentation or storyboard as ASCII chart (everyman you-character)  
 script or OST lyrics in ascii (most like coding, least awkward)  
-WASM for cross-platform ?  
+WASM for cross-platform (https://github.com/mdn/pwa-examples) ?  
 (mouse+wheel/kbrd/multitouch(radiustouch,rotationangle)/pointer/midi in/out ?)  
   
 _Usability < Accessibility_:  
