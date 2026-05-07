@@ -53,6 +53,15 @@ function showMsg() {
   }
 }
 
+function showPay() {
+  var pay = document.getElementById('pay');
+  if (pay.style.display != 'block') {
+    pay.style.display = 'block';
+  } else {
+    pay.style.display = 'none';
+  }
+}
+
 function selectMedium() {
     if (idx < ln-1) {
         mdm.scrollBy(0,mdm.scrollHeight/ln);
