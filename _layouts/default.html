@@ -64,22 +64,7 @@
       <div id="banner">
 	  <a href="javascript:showMsg();" title="Support" id="msg_link"><i class="material-icons notranslate">contact_support</i></a>
 	  <!--<a href="javascript:showPay();"><i class="material-symbols-outlined notranslate">credit_score</i></a>-->
-	  <button id="sponsor-button" onclick="javascript:showPay();"><i class="material-symbols-outlined notranslate">credit_score</i> Sponsor</button>
-	  
-<style>
-#pay {position: fixed; right: 0; top: 100px; width: 256px; display: none; line-height: 1em; margin-left: auto; margin-right: auto;}
-#stripe {width:100%;}
-#amount {width:3em;}
-#stripe p {
-  font-size: 14px;
-  font-style: italic;
-}
-#rateLink {font-size: 12px;}
-button img {vertical-align: middle;}
-#checkout-button {font-family:'Averia Serif Libre', serif; font-size: 14px; font-style: italic;}
-#checkout-button .material-symbols-outlined {font-size: 14px; top: 2px; position: relative;}
-form button {font-family:'Averia Sans Libre', sans-serif; font-size: 12px; }
-</style>
+
 <div id="pay">
   <div id="stripe">
   <!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
@@ -166,11 +151,12 @@ form button {font-family:'Averia Sans Libre', sans-serif; font-size: 12px; }
           </div>
           {% endif %}
       
-        <div id="subscribe-bar" class="fork">
+    <div id="subscribe-bar" class="fork">
 	  <form id="subscribe-form" onsubmit="event.preventDefault();subscribeEmail(document.getElementById('email').value, true);">
 	    <input autocomplete="email" id="email" name="email" placeholder="Email address" size="16" type="email" value="" />
 	    <button id="subscribe-button" type="submit"><i class="material-icons notranslate">mail_outline</i> Join</button>
 	  </form>
+	  <button id="sponsor-button" onclick="javascript:showPay();"><i class="material-symbols-outlined notranslate">credit_score</i> Sponsor</button>
 	</div>
 	      
       </div><!-- end banner -->
