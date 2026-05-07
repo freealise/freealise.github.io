@@ -161,16 +161,18 @@ header svg {
 }
 #subscribe-bar {
     width: 256px;
-	margin:8px 0 0 5px;
+	margin:10px 0 0 5px;
 	padding:0px;
 	float: left;
 	color: white;
 }
 #subscribe-bar #email {
 	font-family: 'Averia Sans Libre', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
+	padding: 2px 4px;
 	font-style: italic;
 	width: 8em;
+	line-height: 1.5em;
 }
 #subscribe-button, #sponsor-button {
 	font-family: 'Averia Serif Libre', serif;
