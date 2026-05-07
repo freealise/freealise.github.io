@@ -148,7 +148,7 @@ header svg {
     	left:6px;
 	}
 }
-#banner a {
+#msg_link {
     float: right;
     width: 36px;
     height: 36px;
@@ -156,7 +156,7 @@ header svg {
     line-height: 1em;
     color: #808080;
 }
-#banner a .material-icons {
+#msg_link .material-icons {
 	font-size:36px;
 }
 #subscribe-bar {
@@ -183,6 +183,18 @@ header svg {
 #subscribe-button i, #cookie-notice i {
 	font-size: 12px;
 }
+#pay {position: fixed; right: 0; top: 100px; width: 256px; display: none; line-height: 1em; margin-left: auto; margin-right: auto; background-color: white}
+#stripe {width:100%;}
+#amount {width:3em;}
+#stripe p {
+  font-size: 14px;
+  font-style: italic;
+}
+#rateLink {font-size: 12px;}
+button img {vertical-align: middle;}
+#checkout-button {font-family:'Averia Serif Libre', serif; font-size: 14px; font-style: italic;}
+#checkout-button .material-symbols-outlined {font-size: 14px; top: 2px; position: relative;}
+form button {font-family:'Averia Sans Libre', sans-serif; font-size: 12px; }
 button {
   color: black;
   background-color: lightgray;
