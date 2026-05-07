@@ -169,10 +169,11 @@ header svg {
 #subscribe-bar #email {
 	font-family: 'Averia Sans Libre', sans-serif;
 	font-size: 16px;
-	padding: 2px 5px;
+	padding: 2px 4px;
 	font-style: italic;
-	width: 10em;
+	width: 8em;
 	line-height: 1.5em;
+	border: 1px solid lightgray;
 }
 #subscribe-button, #sponsor-button {
 	font-family: 'Averia Serif Libre', serif;
@@ -408,7 +409,7 @@ word-break: break-word;
 	font-weight:bold;
 	font-size:12px;
 	line-height:1.2em;
-  text-align:right;
+    text-align:right;
 	z-index:100;
 	position:fixed;
 	top:32px;
