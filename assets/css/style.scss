@@ -160,7 +160,6 @@ header svg {
 	font-size:36px;
 }
 #subscribe-bar {
-	width:256px;
 	height:48px;
 	margin:10px 0 0 5px;
 	padding:0px;
@@ -173,17 +172,20 @@ header svg {
 	font-style: italic;
 	width: 8em;
 }
-#subscribe-button {
+#subscribe-button, #sponsor-button {
 	font-family: 'Averia Serif Libre', serif;
 	font-style: italic; 
 	font-weight: bold;
 	font-size: 16px;
 	padding: 2px 4px;
 }
+#sponsor-button {
+    float: right;
+}
 #subscribe-button i, #cookie-notice i {
 	font-size: 12px;
 }
-#pay {position: fixed; right: 0; top: 100px; width: 256px; display: none; line-height: 1em; margin-left: auto; margin-right: auto; background-color: white}
+#pay {position: fixed; right: 0; top: 148px; width: 256px; text-align: center; display: none; line-height: 1em; margin-left: auto; margin-right: auto; background-color: white}
 #stripe {width:100%;}
 #amount {width:3em;}
 #stripe p {
