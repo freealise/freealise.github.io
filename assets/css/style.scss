@@ -162,19 +162,19 @@ header svg {
 #subscribe-bar {
     width: 256px;
 	padding:0;
-	margin:0;
 	float: left;
 	color: white;
+	margin:10px 0 0 5px;
 }
 #subscribe-bar #email {
 	font-family: 'Averia Sans Libre', sans-serif;
 	font-size: 16px;
 	padding: 2px 4px;
+	margin:0;
 	font-style: italic;
 	width: 8em;
 	line-height: 1.5em;
 	border: 1px solid lightgray;
-	margin:10px 0 0 5px;
 }
 #subscribe-button, #sponsor-button {
 	font-family: 'Averia Serif Libre', serif;
@@ -182,10 +182,13 @@ header svg {
 	font-weight: bold;
 	font-size: 16px;
 	padding: 2px 4px;
-	margin:10px 0 0 5px;
+}
+#subscribe-button {
+    margin:0;
 }
 #sponsor-button {
     float: right;
+    margin:10px 0 0 5px;
 }
 #subscribe-button i, #sponsor-button i, #rateLink i,  #cookie-notice i {
 	font-size: 12px;
