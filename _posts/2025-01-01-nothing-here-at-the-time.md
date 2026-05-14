@@ -26,4 +26,9 @@ connect to [Mary Magdalene] for gentiles with Tanya+_ references
 prompt: https://hebrew4christians.com/Articles/kabbalah/Jesus_Kabbalah/jesus_kabbalah.html  
   
 translated gospel of Mary w.comment as leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English (+for Liberland), German  
+  
+To Mary of Magdala
+Had Jesus taught Kabbalah,
+The public never heard
+Of it a single word.
 -->
