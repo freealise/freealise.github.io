@@ -32,5 +32,5 @@ test on desktop/mobile and in browsers (offidocs, browserling, browserstack open
   
 proxy: https://developers.cloudflare.com/workers/examples/fetch-html/ (or firebase ?)  
   
-banners: prnews.io, google adwords, urbandictionary, ultimate guitar, gearspace  
+banners: wikipedia, prnews.io, google adwords, urbandictionary, ultimate guitar, gearspace  
 networks (rss or zapier)  
