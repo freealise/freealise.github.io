@@ -1,4 +1,4 @@
-#### 'I blog in lyrics' <- 'small images'
+#### Lyrics are epistolary
 
 Free verse is an open form of poetry which does not use a prescribed or regular meter 
 or rhyme and tends to follow the rhythm of natural or irregular speech. 
@@ -35,7 +35,7 @@ which is like a story on every level (verse / line / bar / beat / note)
   A tune is a a stress (volume + pitch + length) and value shift hierarchy (fractalising)  
   Cantillation = five points connected by four segments, octave range  
   
-"small images" = protective patterns; long landscapes; any vector picture viewed nonlinearly for sound patterns  
+"small images" = pictograms; protective patterns; long landscapes; any vector picture viewed nonlinearly for sound patterns  
   
 - average chart of weather (or prices) as melody; historical data for temperature / pressure / wind, find derivatives; speech or music is inspired by terrain and climate (https://www.smithsonianmag.com/smart-news/languages-consonants-and-vowels-could-depend-climate-180957210/); music can be presented as landscape, lyrics are orally transmitted stories with mnemonic devices (rhythm and rhyme)  
   
