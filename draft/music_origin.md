@@ -1,4 +1,3 @@
-#### Lyrics are messages to a person
 
 Free verse is an open form of poetry which does not use a prescribed or regular meter 
 or rhyme and tends to follow the rhythm of natural or irregular speech. 
