@@ -61,22 +61,3 @@ function showPay() {
     pay.style.display = 'none';
   }
 }
-
-function selectMedium() {
-    if (idx < ln-1) {
-        mdm.scrollBy(0,mdm.scrollHeight/ln);
-        idx++;
-    } else {
-        mdm.scrollTo(0,0);
-        idx=0;
-    }
-}
-
-function scrollMedium() {
-  intv = setInterval(selectMedium, 2000);
-}
-
-function toggleMedium() {
-  clearInterval(intv);
-  selectMedium();
-}
