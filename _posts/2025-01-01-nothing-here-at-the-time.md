@@ -33,8 +33,7 @@ The public never heard
 Of it a single word.
   
 Matthew 10
-8 Heal the sick, raise the dead, cleanse the lepers, cast out demons: freely ye received, freely give.
+8 ... freely ye received, freely give.
 9 Get you no gold, nor silver, nor brass in your purses;
-10 no wallet for [your] journey, neither two coats, nor shoes, nor staff: for the laborer is worthy of his food.
 (not using money is related to no king, like there was neither long ago)
 -->
