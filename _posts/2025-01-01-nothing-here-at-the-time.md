@@ -22,7 +22,7 @@ value: 0
 drinking had a spiritual reason and he probably never did it again; also wife was a disbeliever  
 ('Sons of Abraham went east')  
 connect to [Mary Magdalene] for gentiles with Tanya+_ references  
-Hillel taught the golden rule as a joke, then (Jesus) borrowed it but also taught the 7 laws which are the basis of Kabbalah, for anything beyond it more evidence is required  
+Hillel taught the great commandment as a joke, then (Jesus) borrowed it seriously but also taught the 7 laws which are the basis of Kabbalah, for anything beyond it more evidence is required  
 prompt: https://hebrew4christians.com/Articles/kabbalah/Jesus_Kabbalah/jesus_kabbalah.html  
   
 translated gospel of Mary w.comment as leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English (+for Liberland), German  
@@ -35,6 +35,7 @@ Of it a single word.
 Matthew 10
 8 ... freely ye received, freely give.
 9 Get you no gold, nor silver, nor brass in your purses;
+10 ... for the laborer is worthy of his food.
 (not using money is related to no king, like there was neither long ago)
 the Torah is centrist liberal and Jesus is both left and right anarchist ?
 -->
