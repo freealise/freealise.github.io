@@ -6,6 +6,7 @@ Free verse encompasses a large range of poetic form...
 (is not really free, only very complex,  
 is different from prose by a _lack of predetermined idea_  
 and following the sound instead of image or along with it, like any verse)  
+The rhyming or alliterating words are keywords that might be the beginning of thought.  
 
 Music is not luxury or background only for elevated emotional state
 but an assistance for thinking nonverbally and in verse.  
