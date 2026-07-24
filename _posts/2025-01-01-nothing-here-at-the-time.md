@@ -32,6 +32,8 @@ Had Jesus taught Kabbalah,
 The public never heard
 Of it a single word.
   
+“You worship what you do not know; we worship what we know, for salvation is from the Jews” (John 4:22, ESV)  
+  
 Matthew 10
 8 ... freely ye received, freely give.
 9 Get you no gold, nor silver, nor brass in your purses;
