@@ -40,4 +40,13 @@ Matthew 10
 10 ... for the laborer is worthy of his food.
 (not using money is related to no king, like there was neither long ago)
 the Torah is centrist liberal and Jesus is both left and right anarchist ?
+
+~ Isaiah 55
+Ho, all who are thirsty,
+Come for water,
+Even if you have no money;
+Come, buy food and eat:
+Buy food without money,
+Wine and milk without cost.
+...
 -->
