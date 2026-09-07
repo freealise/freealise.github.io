@@ -176,7 +176,7 @@ header svg {
 	line-height: 1.5em;
 	border: 1px solid lightgray;
 }
-#subscribe-button, #sponsor-button {
+#subscribe-button, #invest-button {
 	font-family: 'Averia Serif Libre', serif;
 	font-style: italic; 
 	font-weight: bold;
@@ -190,7 +190,7 @@ header svg {
     float: right;
     margin:10px 5px 0 0;
 }
-#subscribe-button i, #sponsor-button i, #rateLink i,  #cookie-notice i {
+#subscribe-button i, #invest-button i, #rateLink i,  #cookie-notice i {
 	font-size: 12px;
 }
 #pay {position: fixed; right: 0; top: 150px; width: 256px; text-align: center; display: none; line-height: 1em; margin-left: auto; margin-right: auto; background-color: white; border: 1px dashed lightgray;}
@@ -418,12 +418,12 @@ word-break: break-word;
 	font-size:18px;
 }
 
-    [data-info] {
+[data-info] {
 	cursor: help;
 	border-bottom: dashed thin;
 	position: relative;
     }
-    [data-info]::after {
+[data-info]::after {
 	display: block;
         width: 20ch;
 	position: absolute;
@@ -438,11 +438,11 @@ word-break: break-word;
 	visibility: hidden;
 	line-height: 0.9;
     }
-    [data-info]::after {
+[data-info]::after {
 	content: attr(data-info);
 	white-space: normal;
     }    
-    [data-info]:hover::after {
+[data-info]:hover::after {
 	visibility: visible;
     }
 
