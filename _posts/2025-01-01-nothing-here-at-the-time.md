@@ -26,6 +26,7 @@ Hillel taught the great commandment as a joke, then (Jesus) borrowed it seriousl
 prompt: https://hebrew4christians.com/Articles/kabbalah/Jesus_Kabbalah/jesus_kabbalah.html  
   
 translated gospel of Mary w.comment as leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English, German  
+leaflets / booklets / slides about the seven laws as infographics (VC book "art of data" later this year)  
   
 To Mary of Magdala
 Had Jesus taught Kabbalah,
