@@ -66,6 +66,8 @@
 
 <div id="pay">
   <div id="stripe">
+    for <input autocomplete="off" type="number" id="horizon" value="0" size="2" min="0" max="9" oninput="this.value=this.value.slice(0,1);"/> <label for="horizon">years</label><br/>
+    <sup>0 is sponsorship</sup><br/>
   <!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
     𝓔<input autocomplete="off" id="amount" size="2" type="text" value="10" onchange="document.getElementById('quantity').value=this.value;document.getElementById('fiatValue').value=this.value;"/>
     <button id="checkout-button" role="link">Pay by Stripe</button><br/>
@@ -99,8 +101,6 @@
       <img height="24" src="/assets/images/bitpay/PayWith-BitPay-Card-GrayScale.svg" border="0" title="Pay with BitPay" alt="Pay with BitPay"/>
     </button>
   </form>
-    for <input type="number" id="years" value="0" size="2" min="0" max="9"/> years<br/>
-    <sup>0 is sponsorship</sup><br/>
     <progress id="income" value="1000" max="1250" style="filter:grayscale(1);width:128px;"></progress><label for="income" style="font-size:12px"> 1250 💶</label><br/>
     <a href="https://www.google.com/search?q=10+usd+to+eur" id="rateLink" target="_blank" onfocus="this.href=this.href.replace(/\d+/, document.getElementById('quantity').value);"><i class="material-icons notranslate">price_check</i> exchange rates</a>
 
