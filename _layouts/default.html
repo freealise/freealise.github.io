@@ -66,7 +66,7 @@
 
 <div id="pay">
   <div id="stripe">
-    for <input autocomplete="off" type="number" id="horizon" value="0" size="2" min="0" max="9" oninput="this.value=this.value.slice(0,1);"/> <label for="horizon">years</label> <sup>0 is sponsorship</sup><br/>
+    for <input autocomplete="off" type="number" id="horizon" value="0" size="2" min="0" max="9" oninput="this.value=this.value.slice(0,1);"/> <label for="horizon">years</label> <small>(0 is sponsorship)</small><br/>
   <!--Create a button that your customers click to complete their purchase. Customize the styling to suit your branding.-->
     𝓔<input autocomplete="off" id="amount" size="2" type="text" value="10" onchange="document.getElementById('quantity').value=this.value;document.getElementById('fiatValue').value=this.value;"/>
     <button id="checkout-button" role="link">Pay by Stripe</button><br/>
