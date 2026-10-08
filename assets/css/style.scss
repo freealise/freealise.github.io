@@ -193,12 +193,16 @@ header svg {
 #subscribe-button i, #invest-button i, #rateLink i,  #cookie-notice i {
 	font-size: 12px;
 }
-#pay {position: fixed; right: 0; top: 150px; width: 256px; text-align: center; display: none; line-height: 1.25em; margin-left: auto; margin-right: auto; background-color: white; border: 1px dashed lightgray;}
+#pay {position: fixed; right: 0; top: 150px; width: 256px; text-align: center; display: none; line-height: 1em; margin-left: auto; margin-right: auto; background-color: white; border: 1px dashed lightgray;}
 #stripe {width:100%;}
 #amount {width:3em;}
 #stripe p {
   font-size: 14px;
   font-style: italic;
+}
+#stripe input {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 #rateLink {font-size: 12px;}
 button img {vertical-align: middle;}
