@@ -25,7 +25,7 @@ connect to [Mary Magdalene] for gentiles with Tanya+_ references
 Hillel taught the great commandment as a joke, then (Jesus) borrowed it seriously but also taught the 7 laws which are the basis of Kabbalah, for anything beyond it more evidence is required  
 prompt: https://hebrew4christians.com/Articles/kabbalah/Jesus_Kabbalah/jesus_kabbalah.html  
   
-translated gospel of Mary w.comment as leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English, German  
+translated gospel of Mary + Toldot Yeshu/Talmud w.comment as a play and leaflet in Georgian, Czech, Hebrew and Arabic as original (~Aramaic), Ukrainian with Coptic font, English, German  
 leaflets / booklets / slides about the seven laws as infographics (VC book "art of data" later this year)  
   
 To Mary of Magdala
