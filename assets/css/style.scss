@@ -402,6 +402,8 @@ word-break: break-word;
 	top:0;
 	right:0.25em;
  line-height:1.25em;
+ position:fixed;
+ z-index:100;
 }
 #flags {
 	font-family:'Averia Serif Libre';
