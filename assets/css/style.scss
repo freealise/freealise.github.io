@@ -400,11 +400,10 @@ word-break: break-word;
 
 #bh {
 	top:0;
-	left:0.25em;
- line-height:1em;
+	right:0.25em;
+ line-height:1.5em;
  position:fixed;
  z-index:100;
- transform: rotate(90deg);
 }
 #flags {
 	font-family:'Averia Serif Libre';
