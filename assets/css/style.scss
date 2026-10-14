@@ -422,6 +422,12 @@ word-break: break-word;
 	font-style:normal;
 	font-size:18px;
 }
+#ad {
+  border-style: dashed dashed none none;
+  border-width: 1px;
+  border-color: gray;
+  line-height: 1em;
+}
 
 [data-info] {
 	cursor: help;
