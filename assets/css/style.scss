@@ -423,10 +423,11 @@ word-break: break-word;
 	font-size:18px;
 }
 #ad {
-  border-style: dashed dashed none none;
-  border-width: 1px;
-  border-color: gray;
   line-height: 1em;
+}
+#ad hr {
+  margin: 0;
+  padding: 0;
 }
 
 [data-info] {
